@@ -1,0 +1,15 @@
+{
+  "name": "agentatelier",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test plugins/ui/tools/test/ scripts/test/",
+    "sync": "node scripts/sync-library.mjs",
+    "check": "node scripts/sync-library.mjs --check && node scripts/lint-skills.mjs",
+    "lint": "node scripts/lint-skills.mjs",
+    "linkcheck": "LIVE=1 node --test plugins/ui/tools/test/linkcheck.test.mjs"
+  }
+}

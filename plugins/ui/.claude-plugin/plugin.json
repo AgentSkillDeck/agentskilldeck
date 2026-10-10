@@ -1,0 +1,9 @@
+{
+  "name": "ui",
+  "version": "0.1.0",
+  "description": "Product-specific UI design, review, references and 1:1 image matching, with free font/icon/component search.",
+  "author": { "name": "agentatelier" },
+  "repository": "https://github.com/JKL404/agentatelier",
+  "license": "Apache-2.0",
+  "keywords": ["ui", "ux", "design", "frontend"]
+}

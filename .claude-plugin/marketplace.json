@@ -1,0 +1,16 @@
+{
+  "name": "agentatelier",
+  "owner": { "name": "agentatelier", "url": "https://github.com/JKL404/agentatelier" },
+  "metadata": { "description": "Open plugins for coding agents: design, engineering and more.", "version": "0.1.0" },
+  "plugins": [
+    {
+      "name": "ui",
+      "source": "./plugins/ui",
+      "description": "Product-specific UI design, review, references and 1:1 image matching, with free font/icon/component search.",
+      "version": "0.1.0",
+      "license": "Apache-2.0",
+      "keywords": ["ui", "ux", "design", "frontend", "design-review"],
+      "category": "development"
+    }
+  ]
+}
