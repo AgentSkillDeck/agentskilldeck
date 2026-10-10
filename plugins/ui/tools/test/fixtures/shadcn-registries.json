@@ -1,0 +1,402 @@
+[
+ {
+  "name": "@000h-cojeev",
+  "homepage": "https://000h.cojeev.com",
+  "url": "https://000h.cojeev.com/r/{name}.json",
+  "description": "Expressive React components with organic shapes, purposeful motion, and source you can make your own.",
+  "health": {
+   "status": "healthy",
+   "score": 98.834
+  }
+ },
+ {
+  "name": "@1st-pouf",
+  "homepage": "https://1st-pouf.worksonmy.dev",
+  "url": "https://1st-pouf.worksonmy.dev/r/{name}.json",
+  "description": "Puffy, pastel claymorphism components and app blocks for React, built with Tailwind CSS v4 and Radix UI.",
+  "health": {
+   "status": "healthy",
+   "score": 98.729
+  }
+ },
+ {
+  "name": "@23rd",
+  "homepage": "https://23rd.dev",
+  "url": "https://23rd.dev/r/{name}.json",
+  "description": "Opinionated components for shippers.",
+  "health": {
+   "status": "healthy",
+   "score": 98.352
+  }
+ },
+ {
+  "name": "@3d-viewer",
+  "homepage": "https://shadcn-3d-viewer.vercel.app",
+  "url": "https://shadcn-3d-viewer.vercel.app/r/{name}.json",
+  "description": "A composable 3D model viewer for shadcn/ui with inspection, animation, multiple cameras, screenshots, and fullscreen support.",
+  "health": {
+   "status": "healthy",
+   "score": 93.832
+  }
+ },
+ {
+  "name": "@7ovr",
+  "homepage": "https://7ovr.com",
+  "url": "https://7ovr.com/r/{name}.json",
+  "description": "A collection of shadcn/ui blocks and page templates for building modern, fast, and beautiful websites. Built on Base UI. Works with CLI and presets.",
+  "health": {
+   "status": "healthy",
+   "score": 98.887
+  }
+ },
+ {
+  "name": "@8bitcn",
+  "homepage": "https://www.8bitcn.com",
+  "url": "https://www.8bitcn.com/r/{name}.json",
+  "description": "A set of 8-bit styled retro components. Works with your favorite frameworks. Open Source. Open Code.",
+  "health": {
+   "status": "healthy",
+   "score": 98.821
+  }
+ },
+ {
+  "name": "@8starlabs-ui",
+  "homepage": "https://ui.8starlabs.com",
+  "url": "https://ui.8starlabs.com/r/{name}.json",
+  "description": "A set of beautifully designed components designed for developers who want niche, high-utility UI elements that you won't find in standard libraries.",
+  "health": {
+   "status": "healthy",
+   "score": 98.729
+  }
+ },
+ {
+  "name": "@aayurt",
+  "homepage": "https://8848.aayurtshrestha.com.np",
+  "url": "https://8848.aayurtshrestha.com.np/r/{name}.json",
+  "description": "Minimal, precise Himalayan-inspired React components on Radix primitives and Tailwind CSS. Buttons, overlays, tables, forms and agentic patterns you can own.",
+  "health": {
+   "status": "healthy",
+   "score": 95.13
+  }
+ },
+ {
+  "name": "@abstract",
+  "homepage": "https://build.abs.xyz",
+  "url": "https://build.abs.xyz/r/{name}/json",
+  "description": "A collection of React components for the most common crypto patterns",
+  "health": {
+   "status": "unavailable",
+   "score": 50.741
+  }
+ },
+ {
+  "name": "@abui",
+  "homepage": "https://abui.io",
+  "url": "https://abui.io/r/{name}.json",
+  "description": "A shadcn-compatible registry of reusable components, blocks, and utilities conforming to Vercel's components.build specification",
+  "health": {
+   "status": "degraded",
+   "score": 91.307
+  }
+ },
+ {
+  "name": "@aceternity",
+  "homepage": "https://ui.aceternity.com",
+  "url": "https://ui.aceternity.com/registry/{name}.json",
+  "description": "A modern component library built with Tailwind CSS and Motion for React, Aceternity UI contains unique and interactive components that can make your landing pages look 100x better.",
+  "health": {
+   "status": "degraded",
+   "score": 84.423
+  }
+ },
+ {
+  "name": "@aevr",
+  "homepage": "https://ui.aevr.online",
+  "url": "https://ui.aevr.online/r/{name}.json",
+  "description": "A small collection of focused, production‑ready components and primitives for React/Next.js projects—built on shadcn/ui and complementary libraries.",
+  "health": {
+   "status": "healthy",
+   "score": 98.352
+  }
+ },
+ {
+  "name": "@agentcn",
+  "homepage": "https://agentcn.vercel.app",
+  "url": "https://agentcn.vercel.app/r/{name}.json",
+  "description": "Production-ready agents, made simple. Ready to use, customizable AI agent recipes. Built on Eve and Flue.",
+  "health": {
+   "status": "healthy",
+   "score": 98.379
+  }
+ },
+ {
+  "name": "@agentfaces",
+  "homepage": "https://ajibadedapo.github.io/agentfaces/",
+  "url": "https://ajibadedapo.github.io/agentfaces/r/{name}.json",
+  "description": "Animated faces for AI agents that show thinking, working, needs you, done, listening and speaking, with voice lip sync.",
+  "health": {
+   "status": "healthy",
+   "score": 95.842
+  }
+ },
+ {
+  "name": "@agents-ui",
+  "homepage": "https://livekit.com/ui",
+  "url": "https://livekit.com/ui/r/{name}.json",
+  "description": "This is a shadcn/ui component registry that distributes copy-paste React components for building LiveKit AI Agent interfaces.",
+  "health": {
+   "status": "healthy",
+   "score": 98.352
+  }
+ },
+ {
+  "name": "@agentui",
+  "homepage": "https://www.agentui.pro",
+  "url": "https://www.agentui.pro/r/{name}.json",
+  "description": "Open-source React components for AI agent conversations, reasoning, tools, approvals, and streamed responses.",
+  "health": {
+   "status": "healthy",
+   "score": 98.335
+  }
+ },
+ {
+  "name": "@ai-blocks",
+  "homepage": "https://webllm.org/blocks",
+  "url": "https://webllm.org/r/{name}.json",
+  "description": "AI components for the web. No server. No API keys. Built on WebLLM.",
+  "health": {
+   "status": "unavailable",
+   "score": 50.741
+  }
+ },
+ {
+  "name": "@ai-elements",
+  "homepage": "https://ai-sdk.dev/elements",
+  "url": "https://ai-sdk.dev/elements/api/registry/{name}.json",
+  "description": "Pre-built components like conversations, messages and more to help you build AI-native applications faster.",
+  "health": {
+   "status": "degraded",
+   "score": 93.821
+  }
+ },
+ {
+  "name": "@aicanvas",
+  "homepage": "https://aicanvas.me",
+  "url": "https://aicanvas.me/r/{name}.json",
+  "description": "Animated React components with AI reproduction prompts, alongside full design systems and templates. Install via CLI or aicanvas MCP, compatible with Claude Code, Codex, and Cursor.",
+  "health": {
+   "status": "healthy",
+   "score": 98.855
+  }
+ },
+ {
+  "name": "@akoder",
+  "homepage": "https://akoder.xyz",
+  "url": "https://akoder.xyz/r/{name}.json",
+  "description": "Motion-rich React components and data visualizations — dotted world maps, GitHub activity maps, sliders, carousels, and terminal-style blocks built on Tailwind CSS v4 and Radix UI.",
+  "health": {
+   "status": "healthy",
+   "score": 97.986
+  }
+ },
+ {
+  "name": "@algolia",
+  "homepage": "https://sitesearch.algolia.com",
+  "url": "https://sitesearch.algolia.com/r/{name}.json",
+  "description": "Enterprises and developers use Algolia's AI search infrastructure to understand users and show them what they're looking for.",
+  "health": {
+   "status": "healthy",
+   "score": 98.352
+  }
+ },
+ {
+  "name": "@amap",
+  "homepage": "https://map.ling.pub",
+  "url": "https://map.ling.pub/r/{name}.json",
+  "description": "Beautiful map components with amap. 100% Free, Zero config, one command setup.",
+  "health": {
+   "status": "healthy",
+   "score": 98.131
+  }
+ },
+ {
+  "name": "@amarjay-ui",
+  "homepage": "https://ui.amarjay.com",
+  "url": "https://ui.amarjay.com/r/{name}.json",
+  "description": "Customizable UI components and interactive blocks built with React, Tailwind CSS, and shadcn/ui.",
+  "health": {
+   "status": "healthy",
+   "score": 98.335
+  }
+ },
+ {
+  "name": "@animateicons",
+  "homepage": "https://animateicons.in",
+  "url": "https://animateicons.in/r/{name}.json",
+  "description": "Animated Lucide and Huge style icons for React, built with motion/react. Each icon installs as a single editable file.",
+  "health": {
+   "status": "degraded",
+   "score": 83.795
+  }
+ },
+ {
+  "name": "@audiocn",
+  "homepage": "https://audiocn.dev",
+  "url": "https://www.audiocn.dev/r/{name}.json",
+  "description": "Audio components for React, built the shadcn way. Level meters, visualizers, faders, knobs, channel strips, a complete mixer, players and sound pads.",
+  "health": {
+   "status": "healthy",
+   "score": 97.479
+  }
+ },
+ {
+  "name": "@designali",
+  "homepage": "https://designali.com",
+  "url": "https://designali.com/r/{name}.json",
+  "description": "Where thoughtful design meets production-ready code. I design and build digital experiences that look great, feel intuitive, and work beautifully.",
+  "health": {
+   "status": "healthy",
+   "score": 93.759
+  }
+ },
+ {
+  "name": "@amicro",
+  "homepage": "https://amicro.vercel.app",
+  "url": "https://amicro.vercel.app/r/{name}.json",
+  "description": "Open-source React micro-interactions and UI component registry powered by Motion.",
+  "health": {
+   "status": "healthy",
+   "score": 95.251
+  }
+ },
+ {
+  "name": "@amplo",
+  "homepage": "https://amplo.ale.design",
+  "url": "https://amplo.ale.design/r/{name}.json",
+  "description": "OKLCH-native, Display-P3-aware composable fill picker with WCAG/APCA contrast metrics, gamut detection, and full keyboard accessibility.",
+  "health": {
+   "status": "healthy",
+   "score": 95.852
+  }
+ },
+ {
+  "name": "@animate-ui",
+  "homepage": "https://animate-ui.com",
+  "url": "https://animate-ui.com/r/{name}.json",
+  "description": "A fully animated, open-source React component distribution. Browse a list of animated primitives, components and icons you can install and use in your projects.",
+  "health": {
+   "status": "healthy",
+   "score": 96.433
+  }
+ },
+ {
+  "name": "@animbits",
+  "homepage": "https://animbits.dev",
+  "url": "https://animbits.dev/r/{name}.json",
+  "description": "AnimBits is a collection animated UI components for React that use Framer Motion. The components provided include buttons, cards, text, icons, lists, loaders, and page transitions, animation hooks all of which have general-purpose effects that are not flashy and easy on the eyes, making them easy to use.",
+  "health": {
+   "status": "healthy",
+   "score": 98.786
+  }
+ },
+ {
+  "name": "@approvals-ui",
+  "homepage": "https://approvals-ui.vercel.app",
+  "url": "https://approvals-ui.vercel.app/r/{name}.json",
+  "description": "Approval workflow components for React Flow: quorum gates, amount thresholds, a policy lint (segregation of duties, single approver on high value), and plain-language editing behind a human review gate.",
+  "health": {
+   "status": "healthy",
+   "score": 98.352
+  }
+ },
+ {
+  "name": "@arc",
+  "homepage": "https://witharc.co/components",
+  "url": "https://witharc.co/r/{name}.json",
+  "description": "Animated, accessible UI components built with React and Tailwind CSS.",
+  "health": {
+   "status": "unavailable",
+   "score": 65.575
+  }
+ },
+ {
+  "name": "@ark-cn",
+  "homepage": "https://ark-cn.vercel.app",
+  "url": "https://ark-cn.vercel.app/r/{name}.json",
+  "description": "Accessible shadcn/ui components built with React, TypeScript, and Tailwind CSS. Copy-paste ready, and customizable. Built by ARK UI.",
+  "health": {
+   "status": "healthy",
+   "score": 98.569
+  }
+ },
+ {
+  "name": "@asanshay",
+  "homepage": "https://ds.asanshay.com",
+  "url": "https://ds.asanshay.com/r/{name}.json",
+  "description": "Clean, beautiful, and simple UI primitives and AI elements.",
+  "health": {
+   "status": "healthy",
+   "score": 95.852
+  }
+ },
+ {
+  "name": "@assistant-ui",
+  "homepage": "https://www.assistant-ui.com",
+  "url": "https://r.assistant-ui.com/{name}.json",
+  "description": "Radix-style React primitives for AI chat with adapters for AI SDK, LangGraph, Mastra, and custom backends.",
+  "health": {
+   "status": "healthy",
+   "score": 98.64
+  }
+ },
+ {
+  "name": "@auth0",
+  "homepage": "https://auth0.com",
+  "url": "https://ui.auth0.com/r/{name}.json",
+  "description": "Official Auth0 Universal Components for Web. Accelerate development with pre-built, embeddable UI for enterprise SSO, MFA, and organization management",
+  "health": {
+   "status": "healthy",
+   "score": 95.231
+  }
+ },
+ {
+  "name": "@avertra-ui",
+  "homepage": "https://micomponents.micustomer.io",
+  "url": "https://micomponents.micustomer.io/r/{name}.json",
+  "description": "A collection of React components built with Tailwind CSS, designed to help you create beautiful and responsive user interfaces with ease.",
+  "health": {
+   "status": "healthy",
+   "score": 95.664
+  }
+ },
+ {
+  "name": "@awwwardedui",
+  "homepage": "https://awwwardedui.vercel.app",
+  "url": "https://awwwardedui.vercel.app/r/{name}.json",
+  "description": "A curated registry of production-ready creative components and motion effects for React.",
+  "health": {
+   "status": "healthy",
+   "score": 98.335
+  }
+ },
+ {
+  "name": "@axicharts",
+  "homepage": "https://axidify.github.io/axicharts/shadcn/registry",
+  "url": "https://axidify.github.io/axicharts/registry/{name}.json",
+  "description": "MIT React chart blocks for dashboards — composable ChartContainer + shadcn-compatible chartConfig, live uPlot canvas, and ECharts adapters. Six installable registry items.",
+  "health": {
+   "status": "healthy",
+   "score": 98.335
+  }
+ },
+ {
+  "name": "@balick",
+  "homepage": "https://ui.balick.me",
+  "url": "https://ui.balick.me/r/{name}.json",
+  "description": "Blocks for shadcn/ui designed to fit together: compose a page, then install it with one command.",
+  "health": {
+   "status": "healthy",
+   "score": 98.088
+  }
+ }
+]
