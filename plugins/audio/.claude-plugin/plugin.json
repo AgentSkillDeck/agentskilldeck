@@ -1,9 +1,18 @@
 {
   "name": "audio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Finished multi-voice audio, free and on your machine: narration, dialogue, audiobooks (ACX), lessons, podcasts, drama, ads and meditations, with delivery presets, licensed sound, a transcription QA gate, mastering and captions.",
-  "author": { "name": "agentatelier" },
+  "author": {
+    "name": "agentatelier"
+  },
   "repository": "https://github.com/JKL404/agentatelier",
   "license": "Apache-2.0",
-  "keywords": ["audio", "tts", "voice", "podcast", "audiobook", "sound"]
+  "keywords": [
+    "audio",
+    "tts",
+    "voice",
+    "podcast",
+    "audiobook",
+    "sound"
+  ]
 }

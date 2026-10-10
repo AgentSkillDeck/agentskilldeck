@@ -1,6 +1,6 @@
 ---
 name: atelier-mix
-description: Find licensed sound effects, ambience and music (CC0 and CC BY only, from Openverse and Wikimedia Commons, plus Freesound with a token and Internet Archive on request, with generated beds offline), place them as cues, and rebalance, remix or re-master an audio piece rendered by atelier-voice from its timeline.json, stems and qa.json. Use for "add rain behind this scene", "find a door creak", "the music is too loud", "duck the music under the voice", "make it ACX compliant", "fix the loudness", "give me stems for the video", "who do I need to credit" or "swap the intro music". Not for writing scripts (atelier-script) or first renders and voice choices (atelier-voice).
+description: Find licensed sound effects, ambience and music (CC0 and CC BY), place them as cues, and remix or re-master a piece atelier-voice rendered, from its timeline.json and stems. Use for "add rain behind this scene", "find a door creak", "duck the music under the voice", "make it ACX compliant", "give me stems" or "who do I credit". Not for writing scripts (atelier-script) or first renders and voices (atelier-voice).
 license: Apache-2.0
 ---
 

@@ -28,7 +28,7 @@
       "name": "audio",
       "source": "./plugins/audio",
       "description": "Finished multi-voice audio, free and on your machine: narration, dialogue, audiobooks (ACX), lessons, podcasts, drama, ads and meditations, with delivery presets, licensed sound, a transcription QA gate, mastering and captions.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "license": "Apache-2.0",
       "keywords": [
         "audio",

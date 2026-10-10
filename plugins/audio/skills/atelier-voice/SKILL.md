@@ -1,6 +1,6 @@
 ---
 name: atelier-voice
-description: Render finished multi-voice audio on-device from an *.audio.md script with Supertonic 3: cast and audition the ten voices, produce narration, dialogue, audiobooks, lessons, podcasts, audio drama, playbooks, ads, meditations, kids' stories and multilingual pieces, with delivery presets, spliced laughs and breaths, transcript QA and retakes, then mix, master, stems, captions and credits; also the user's own voice, as recorded lines or a free local clone, with their consent. Use for "read this aloud", "make an audiobook of this chapter", "voice this dialogue", "render the podcast", "which voice should the narrator be", "hear all the voices", "redo line 12", "the voice says the word laugh", "use my voice" or "I want to read this part myself". Not for writing the script (atelier-script) or choosing sounds and rebalancing a mix (atelier-mix).
+description: Render multi-voice audio on-device from an *.audio.md script with Supertonic 3: casting, emotion presets, laughs, transcript QA and retakes, mix, captions and credits; also the user's own voice, recorded or cloned locally with consent. Use for "read this aloud", "make an audiobook", "voice this dialogue", "which voice for the narrator", "redo line 12" or "use my voice". Not for writing scripts (atelier-script) or sound design (atelier-mix).
 license: Apache-2.0
 ---
 

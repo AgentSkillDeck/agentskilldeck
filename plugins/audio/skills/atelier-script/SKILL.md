@@ -1,6 +1,6 @@
 ---
 name: atelier-script
-description: Write or rewrite scripts meant to be heard, in the *.audio.md format that atelier-voice renders: narration, lessons and explainers, audiobook chapters, podcast episodes and cold opens, audio drama and animation dialogue, training playbooks and safety procedures, 15/30/60-second ads, meditations, kids' bedtime stories, language drills and video voiceovers. Use for requests like "write a podcast intro", "turn this article into narration", "make this sound less robotic", "add emotion to this dialogue", "script a 30-second ad" or "adapt this chapter for audio". Not for rendering audio; hand finished scripts to atelier-voice.
+description: Write scripts meant to be heard, in the *.audio.md format atelier-voice renders: narration, lessons, audiobooks, podcasts, audio drama, playbooks, ads, meditations, kids' stories and voiceovers. Use for "write a podcast intro", "turn this article into narration", "add emotion to this dialogue" or "script a 30-second ad". Not for rendering; hand the script to atelier-voice.
 license: Apache-2.0
 ---
 
