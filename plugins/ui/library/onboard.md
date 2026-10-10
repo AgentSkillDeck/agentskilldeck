@@ -33,7 +33,7 @@ Define success before designing: the one action that marks onboarding done (firs
 ### Welcome and setup
 
 - State what the product does for this user in one line, and how long setup takes when it is more than about a minute ("3 steps, about 2 minutes").
-- Show progress for multi-step setup ("Step 2 of 3"). Default: no more than 3–5 setup steps; more means the flow needs cutting.
+- Show progress for multi-step setup ("Step 2 of 3"). Default: at most 5 setup steps; aim for 3. More means the flow needs cutting.
 - Use smart defaults and prefill from what you already know (name from SSO, timezone and locale from the device).
 - Offer sign-in methods the audience uses (SSO for work tools); put social login above email when it is the common path.
 - Ask permission (notifications, location, contacts) at the moment it delivers value, with a one-line reason, not on first launch. Design the denied path.
@@ -67,7 +67,9 @@ Treat other empties differently: user cleared everything (light touch, easy recr
 - Every hint is dismissable, with a dismissal that sticks. At most one hint on screen at a time.
 - Announce new features once, with a way to try them immediately; never in a blocking modal on launch.
 - Unlock complexity gradually: show advanced options after the basic path has been used, or behind "More options".
+- Mark new or unused features with a small badge or dot that clears once the feature is opened.
 - Show keyboard shortcuts at the point of use (`⌘K` on the search field), and keep a full reference in help.
+- Provide one persistent help entry point (a `?` button or help menu) that reaches searchable help, the shortcut reference and replayable tours.
 
 ### Tours
 
@@ -78,7 +80,7 @@ Use a tour only for complex workflows, a significant redesign, or domain-heavy t
 - The rest of the UI stays usable; "Skip tour" is visible on every step; Escape closes it.
 - Replayable from the help menu.
 
-For a high-stakes or unfamiliar task, an interactive practice sandbox with sample data and a clear objective ("Build a chart of sales by region") beats a tour.
+For a high-stakes or unfamiliar task, an interactive practice sandbox with sample data and a clear objective ("Build a chart of sales by region") beats a tour. Check that each step was actually done before moving on, and end with a clear graduation moment that hands over to the real workspace.
 
 ### Implementation
 
@@ -97,7 +99,7 @@ Answer each with rendered evidence from a fresh account; a bare "yes" is not ver
 - The first-use empty state names what will appear and offers one clear action.
 - Dismissed hints stay dismissed after reload and on a second session.
 - A returning user and an invited teammate do not see first-run onboarding again.
-- Keyboard, screen-reader and 200% zoom paths complete the flow; tour steps do not trap focus.
+- Keyboard, screen-reader and 200% zoom paths complete the flow; non-modal tour steps do not trap focus.
 - Long names and translated strings fit every onboarding surface.
 
 Measure real outcomes only if the project has the data (completion rate, skip rate, time to first value, next-step action); do not report numbers you did not observe.

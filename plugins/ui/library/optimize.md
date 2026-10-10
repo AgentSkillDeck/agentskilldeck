@@ -27,13 +27,13 @@ Answer from the measurements:
 - **What causes it:** oversized images, render-blocking resources, a large bundle, expensive JavaScript, layout thrashing, excessive re-renders, a slow API, third-party scripts?
 - **Who is affected:** everyone, mobile only, slow networks, large accounts with many records?
 
-Targets (good thresholds at the 75th percentile; project budgets override these defaults):
+Targets ("good" bands are inclusive, measured at the 75th percentile; project budgets override these defaults):
 
 | Metric | Target | Usual causes when it fails |
 |---|---|---|
-| LCP | < 2.5 s | Large or late hero image, render-blocking CSS / fonts, slow server response, client-only rendering |
-| INP | < 200 ms | Long tasks on the main thread, heavy event handlers, large re-renders |
-| CLS | < 0.1 | Media without dimensions, injected banners, late fonts, content inserted above the viewport |
+| LCP | ≤ 2.5 s | Large or late hero image, render-blocking CSS / fonts, slow server response, client-only rendering |
+| INP | ≤ 200 ms | Long tasks on the main thread, heavy event handlers, large re-renders |
+| CLS | ≤ 0.1 | Media without dimensions, injected banners, late fonts, content inserted above the viewport |
 | Frame budget | 16.7 ms (60 fps) | Layout-property animation, unbounded paint, scroll handlers doing work |
 
 ## Apply
@@ -60,11 +60,13 @@ Fix the largest measured cost first. Each change gets its own before/after measu
 
 - Inline critical CSS for the first view only when measurement shows render-blocking CSS delays LCP; remove unused CSS.
 - `contain: content` or `content-visibility: auto` (with `contain-intrinsic-size`) for independent off-screen regions and long pages.
-- Font loading, subsetting and fallback metrics are covered in [typeset](typeset.md); apply them when fonts show up in the waterfall or as layout shift.
+- Subset fonts to the scripts in use (`unicode-range` per subset file, or a subsetting step in the build) and load only used weights.
+- Font loading and fallback metrics are covered in [typeset](typeset.md); apply them when fonts show up in the waterfall or as layout shift.
 
 ### Rendering and runtime
 
 - Batch DOM reads before writes; never read layout (`offsetHeight`, `getBoundingClientRect`) inside a loop that writes styles.
+- Keep the DOM small and shallow: remove wrapper elements that carry no layout or semantics; pages beyond about 1,500 nodes or 32 levels deep slow style and layout.
 - Virtualise lists beyond a few hundred rows; paginate API responses.
 - Prevent unnecessary re-renders where the profiler shows them: stable props, memoised expensive children, state kept close to where it is used. Do not wrap everything in `memo` by reflex; memoisation has a cost.
 - Debounce input-driven work (about 250–300 ms for search) and throttle scroll and resize handlers or use `requestAnimationFrame`, `IntersectionObserver` and `ResizeObserver` instead of polling.
@@ -79,7 +81,8 @@ Fix the largest measured cost first. Each change gets its own before/after measu
 
 ### Network and data
 
-- Cache static assets with long-lived immutable headers and hashed filenames; cache API responses where data allows.
+- Cache static assets with long-lived immutable headers and hashed filenames, served from a CDN; cache API responses where data allows.
+- Add a service worker for repeat-visit and offline caching only when the product needs it; version its cache so updates are not stuck behind stale assets.
 - Preload only the 1–3 resources the first view truly needs; prefetch the likely next route on hover or idle.
 - Request only the fields and rows the view displays; compress responses (brotli or gzip).
 - Show optimistic UI for fast-feeling actions, with rollback (see [harden](harden.md)).

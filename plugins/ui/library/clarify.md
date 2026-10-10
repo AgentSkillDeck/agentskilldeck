@@ -33,6 +33,13 @@ For each state decide, in order: the one fact the user needs now; the next avail
 - One word per concept across the product. If it is "Delete" in one place, it is not "Remove" in another for the same operation.
 - Sentence case for labels and headings unless the project style says otherwise.
 
+| Before | After |
+|---|---|
+| [Submit] (invoice form) | [Send invoice] |
+| "Click here" to get the PDF | [Download report] |
+| [Manage] (team page) | [Edit members] |
+| [OK] (after an export finishes) | [Open file] |
+
 ### Destructive actions and confirmations
 
 - Prefer undo over confirmation when recovery is safe.
@@ -47,6 +54,7 @@ For each state decide, in order: the one fact the user needs now; the next avail
 
 - Persistent visible labels. Placeholders show an example format, never the label.
 - State format, length and eligibility rules before input, next to the field.
+- Mark required and optional fields the same way on every form: mark whichever is the minority, and explain the mark once.
 - Validation says what needs attention and how to fix it, without blame.
 
 | Before | After |
@@ -62,7 +70,7 @@ An actionable error answers: what failed; why, when known and useful; how to rec
 | Before | After |
 |---|---|
 | "Error 500" | "We couldn't save your changes. Your edits are kept here. [Try again]" |
-| "Oops! Something went wrong!" (failed payment) | "Payment didn't go through. Your card wasn't charged. [Try another card]" |
+| "Oops! Something went wrong!" (failed payment) | "Payment didn't go through. [Try another card]" (add "Your card wasn't charged" only when the payment processor confirms it) |
 | "Forbidden" | "Only workspace admins can change billing. [Ask an admin]" |
 | "Too many requests" | "You've sent 5 invites in a minute. Try again in 30 seconds." |
 

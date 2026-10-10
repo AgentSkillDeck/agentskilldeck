@@ -116,11 +116,20 @@ t('items', { count }); // not `${count} item${count !== 1 ? 's' : ''}`
 - Validate on the client for speed and on the server always. Client checks are UX, not security.
 - State constraints before input (hint text tied with `aria-describedby`), mirror them in `maxlength`, `pattern`, `type` and `inputmode`, and validate on blur or submit, not on every keystroke.
 - Do not block submission on soft warnings.
+- On the server, validate and sanitise every input and use parameterised queries and output encoding against injection (SQL, HTML/XSS, command). Rate-limit write endpoints.
+
+### Browser support and degradation
+
+- Use feature detection (`@supports`, `'IntersectionObserver' in window`, `CSS.supports()`), never browser or user-agent sniffing.
+- Provide fallbacks for unsupported CSS and JS: a working static layout under `@supports not (…)`, a polyfill only where the project already ships them.
+- Progressive enhancement: the core task (read content, submit a form, follow a link) works without optional JavaScript where the stack allows (server-rendered HTML, real `<form>` and `<a>` elements). Images carry alt text.
+- Test in the project's target browsers (its `browserslist`, support matrix or brief), including at least one WebKit engine when Safari or iOS is supported.
 
 ### Accessibility under stress
 
 - Announce async results (saved, failed, N results) with a polite live region; announce blocking errors assertively.
 - Move focus to the first invalid field or the error summary on failed submit; return focus to the trigger when a dialog closes.
+- Tab order follows the visual order; long pages and repeated navigation get a skip link to the main content.
 - Every state stays keyboard-operable and survives Windows High Contrast / forced colours: do not carry state with colour or background images alone.
 
 ## Verify
@@ -134,6 +143,10 @@ Answer each with rendered or test evidence; a bare "yes" is not verification:
 - Submitting 10 times rapidly creates one record.
 - 0, 1 and 1,000+ items render; the list stays responsive.
 - Mid-drag interruptions (second pointer, scroll across, release outside, window switch) leave the control usable on the next attempt.
+- Keyboard only (no pointer) completes every state, including error recovery and dialogs.
+- A screen reader (VoiceOver, NVDA or TalkBack) announces async results and errors without moving the user.
+- With the core feature detection forced false (or in the oldest target browser), the fallback still completes the core task.
+- Automated accessibility checks (axe or similar) and visual-regression tests pass if the project has them.
 - The project's tests pass; add a regression test for each confirmed failure when its runner can drive the state.
 
 Say what produced each piece of evidence (emulated viewport, synthesized input, which browser engine, simulator, physical device) and name what stayed untested. Unreachable hardware is a reported gap, not a blocker.

@@ -23,6 +23,7 @@ Read the layout code, breakpoints, navigation components and platform targets. R
 - Single column; stack side-by-side regions in priority order.
 - Navigation: bottom bar for 3–5 top-level destinations in app-like products; a drawer for more; keep the same destinations as desktop.
 - Controls in thumb reach (lower half); primary action reachable without stretching.
+- Every touch control gives immediate visible feedback on press (`:active` state, highlight or ripple per platform) within about 100 ms.
 - Bottom sheets instead of dropdowns and popovers for choices longer than a few items.
 - Progressive disclosure for secondary content (tabs, `<details>`), but never hide a core capability. If it matters on desktop, make it work on phone.
 - Tables: keep a horizontally scrolling table with a sticky first column when comparison matters; convert rows to cards with `data-label` headers when each row is read alone.
@@ -37,12 +38,14 @@ Read the layout code, breakpoints, navigation components and platform targets. R
 ### Phone to desktop
 
 - Use the width: persistent side navigation, multiple panels, more data up front.
+- A large screen is not a powerful device: older laptops, low-power modes and assistive tech still need a light, fast page. Many desktops also have touch.
 - Cap reading and form widths (`max-width` in `ch` or a container token); do not stretch to 4K.
 - Add what desktop users expect: hover detail, keyboard shortcuts, context menus, multi-select with Shift / Cmd, drag and drop where it helps. Each one is an enhancement; the same task still works without it.
 
 ### Print
 
-- `@media print`: hide navigation, controls and decoration; show full URLs after links (`a::after { content: " (" attr(href) ")" }`) and expand collapsed sections.
+- `@media print`: hide navigation, controls and decoration; show full URLs after links (`a[href^="http"]::after { content: " (" attr(href) ")" }`) and expand collapsed sections.
+- Set page margins with `@page` (about 2cm; wider on the binding edge for bound documents), and add page numbers, the page title and print date where the medium supports them.
 - Break pages at logical points (`break-inside: avoid` on cards, figures, table rows); repeat table headers.
 - Ensure black-on-white legibility and print-friendly charts (patterns or labels, not colour alone).
 
@@ -62,8 +65,11 @@ Read the layout code, breakpoints, navigation components and platform targets. R
 
 ```css
 @media (pointer: coarse) { .control { min-block-size: 44px; } }
-@media (hover: hover) and (pointer: fine) { .row:hover .row-actions { opacity: 1; } }
-@media (hover: none) { .row-actions { opacity: 1; } } /* never hide actions behind hover on touch */
+.row-actions { opacity: 1; } /* visible by default: touch, keyboard, unknown input */
+@media (hover: hover) and (pointer: fine) {
+  .row-actions { opacity: 0; }
+  .row:hover .row-actions, .row:focus-within .row-actions { opacity: 1; }
+}
 ```
 
 - **Safe areas:** add `viewport-fit=cover` to the viewport meta, then pad edges with `max(1rem, env(safe-area-inset-bottom))` (and the other insets) on fixed bars and full-bleed regions.
@@ -124,6 +130,7 @@ Answer each with rendered or device evidence; a bare "yes" is not verification:
 - Fixed bars clear safe areas and the on-screen keyboard; focused inputs stay visible.
 - Native: each platform uses its own navigation, back behaviour and controls.
 - Throttled network on the narrowest target still delivers the primary content.
+- The project's target-browser matrix passes (its support list, or by default current Chrome, Safari, Firefox and Edge on the OSes shipped), including at least one WebKit engine when iOS is supported.
 
 **Custom controls** (sliders, drag surfaces, scrollable control strips) can pass every width check and still fail to drag on iOS. Exercise each one in scope:
 
