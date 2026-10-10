@@ -24,7 +24,7 @@ function fromFontsource(f) {
 function fromFontshare(f) {
   const weights = [...new Set((f.styles ?? []).map((s) => {
     const wt = s.weight;
-    return typeof wt === 'number' ? wt : (wt?.number ?? wt?.weight);
+    return typeof wt === 'number' ? wt : wt?.weight;
   }).filter(Boolean))].sort((a, b) => a - b);
   const w = weights.length ? weights.join(',') : '400,700';
   return {
