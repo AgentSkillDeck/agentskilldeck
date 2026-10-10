@@ -1,0 +1,8 @@
+{
+  "skills": {
+    "atelier-design": { "guides": [], "tools": true },
+    "atelier-review": { "guides": [], "tools": false },
+    "atelier-radar": { "guides": [], "tools": true },
+    "atelier-match": { "guides": [], "tools": true }
+  }
+}

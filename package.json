@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "engines": { "node": ">=18" },
   "scripts": {
-    "test": "node --test plugins/ui/tools/test/ scripts/test/",
+    "test": "node --test plugins/ui/tools/test/*.test.mjs scripts/test/*.test.mjs",
     "sync": "node scripts/sync-library.mjs",
     "check": "node scripts/sync-library.mjs --check && node scripts/lint-skills.mjs",
     "lint": "node scripts/lint-skills.mjs",
