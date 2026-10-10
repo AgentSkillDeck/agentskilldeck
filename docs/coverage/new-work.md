@@ -46,9 +46,9 @@ Source: uizze `skills/ui-design/reference/new-work.md` @ 146928e → `plugins/ui
 | Apply [craft](craft.md), and [operate](operate.md) or [iOS](ios.md) where relevant. | §4 Complete and verify › step 1 (adds android) |
 | Implement reachable loading, empty, error, disabled, success and recovery states, not a decorative collection of impossible states. | §4 › step 2 |
 | Make responsive choices structural: decide what stacks, collapses, scrolls, or remains fixed. | §4 › step 3 "Make responsive choices structural"; §2 contract › Responsive bullet |
-| Use the real copy, long values, and small screens. | §4 › step 3 "Test real copy, the longest realistic values and a 320–390 px width" |
+| Use the real copy, long values, and small screens. | §4 › step 3 "Test real copy, the longest realistic values and a 375 px width (320 px for the smallest phones)" |
 | Implement the actual primary interaction; a convincing screenshot with inert controls is unfinished. | §4 › step 3 last sentence; Common failures › "Inert controls" |
-| Render the built result at representative sizes. | §4 › step 4 "Render the build … (web: 390 px and 1440 px, plus the user's reported viewport)" |
+| Render the built result at representative sizes. | §4 › step 4 "Render the build … (web: 375, 768 and 1440 px, plus the user's reported viewport)" |
 | Inspect full context and detail crops, not only a thumbnail. | §4 › step 5 |
 | Compare the hierarchy, composition and interaction with the design contract and supplied reference. | §4 › step 5 sentence 2 |
 | Wait for fonts/images and capture settled states; broken captures are not design evidence. | §4 › step 4 "Wait for fonts and images, settle or disable entrance motion … Broken captures are not design evidence" |

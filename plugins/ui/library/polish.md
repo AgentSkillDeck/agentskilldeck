@@ -18,7 +18,7 @@ Ask only when a binding system principle cannot be inferred.
 
 ## 2. Inspect the real result
 
-Render or run the interface with the host's browser, simulator or emulator. For web, check at least 390 px and 1440 px wide; for native, the shipped device classes. Judge the rendered result, not the source alone. Use the feature yourself and note: whether the path is functionally complete, known constraints or deliberately unfinished work, and the content lengths, roles and input methods users will meet. If a previous critique or audit exists, use its high-priority findings as one input, then do your own pass.
+Render or run the interface with the host's browser, simulator or emulator. For web, check 375, 768 and 1440 px wide; for native, the shipped device classes. Judge the rendered result, not the source alone. Use the feature yourself and note: whether the path is functionally complete, known constraints or deliberately unfinished work, and the content lengths, roles and input methods users will meet. If a previous critique or audit exists, use its high-priority findings as one input, then do your own pass.
 
 ## 3. Triage
 
@@ -37,7 +37,7 @@ Do not perfect one corner while the rest of the path stays below the same bar.
 - **Flow:** match neighbouring terminology, disclosure, save behaviour and routing. Arrival, empty and recovery paths connect instead of behaving as isolated screens.
 - **Layout and type:** align to the project's grid and spacing scale, optically as well as mathematically; tight within groups, generous between them. Same-role text uses the same style. Test wrapping, 200% zoom, localisation expansion (+30% text length) and font loading.
 - **Colour, imagery, icons:** semantic tokens with stable meanings across themes; one icon family, stroke and size per context; images at correct aspect ratio with reserved dimensions (no layout shift) and useful alt text.
-- **Interaction:** every control has default, hover, focus, active, disabled, loading, error and success where they apply; logical tab order; touch targets ≥ 44×44 pt iOS, ≥ 48×48 dp Android, ≥ 24×24 CSS px web. Keep motion coherent and interruptible; never add animation just to make polish visible.
+- **Interaction:** every control has default, hover, focus, active, disabled, loading, error and success where they apply; logical tab order; touch targets ≥ 44×44 pt iOS, ≥ 48×48 dp Android, ≥ 24×24 CSS px web (≥ 44×44 for primary touch controls). Keep motion coherent and interruptible; never add animation just to make polish visible.
 - **Content:** consistent terminology, capitalisation and punctuation. Ask before changing factual claims.
 - **Code:** reuse existing tokens and components; remove debug output, dead code and polish-created duplication; promote a value to a token only when it is reused. Avoid speculative cleanup and leave areas that already work alone.
 

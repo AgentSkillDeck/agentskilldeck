@@ -7,7 +7,7 @@ Source: uizze `skills/ui-design/reference/polish.md` @ 146928e → `plugins/ui/l
 | Polish improves the interface that exists; it does not conceal a redesign. | Intro › "Polish improves the interface that exists; it never conceals a redesign."; Common failures › bullet 1 |
 | Preserve the product's visual language, content, behavior, and scope unless the user explicitly asks to change them. | Intro › sentence 2 |
 | Render or run the interface when possible. | §2 Inspect the real result › "Render or run the interface with the host's browser, simulator or emulator." |
-| Check representative desktop and mobile sizes for web work, or the relevant device class for native work. | §2 › "For web, check at least 390 px and 1440 px wide; for native, the shipped device classes." |
+| Check representative desktop and mobile sizes for web work, or the relevant device class for native work. | §2 › "For web, check 375, 768 and 1440 px wide; for native, the shipped device classes." |
 | Judge the rendered result rather than the source code alone. | §2 › "Judge the rendered result, not the source alone." |
 | Prioritize the largest observable problems: | §3 Triage › "Fix the largest observable problems first, in this order" |
 | - unclear hierarchy or competing primary actions; | §3 › item 3 |

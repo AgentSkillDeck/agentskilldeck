@@ -11,7 +11,7 @@ Each item is a check on the rendered result, not an intention. Run them together
 
 - **Hierarchy:** the primary task or message reads first; supporting information is visibly subordinate. Use scale, weight, alignment and grouping before adding containers.
 - **Typography:**
-  - Body measure 45–75 characters (65–75ch for long reading); body line height 1.4–1.6; headings 1.1–1.25.
+  - Body measure 45–75 characters (65–75ch for long reading); body line height 1.5–1.6; headings 1.1–1.25 (see [typeset](typeset.md)).
   - A coherent scale with visible steps in size and weight; deliberate weights, not every weight the family offers.
   - Display text at most 6rem; letter-spacing no tighter than −0.04em (−0.02 to −0.03em usually reads better).
   - Balanced heading wraps (`text-wrap: balance`); no clipped ascenders or descenders, no awkward heading wraps, no truncated essential labels. Run the real copy at every breakpoint and fix what overflows.
@@ -24,7 +24,7 @@ Each item is a check on the rendered result, not an intention. Run them together
 - **Browser surfaces:** text selection colour, caret colour, focus rings, link underline offset and scrollbar colours are themed from the palette, not left at browser defaults. Theme them; do not reinvent scrollbar behaviour.
 - **Controls:** labels name the action ("Save draft", not "Submit"); focus order and keyboard operation work; touch targets ≥ 44×44 pt iOS, ≥ 48×48 dp Android, ≥ 24×24 CSS px web (≥ 44×44 for primary touch controls). Standard controls stay recognisable. Loading and disabled states explain what is happening; errors name the problem and the recovery.
 - **States:** hover, focus, active, disabled, loading, error, empty and success wherever they can occur.
-- **Layout:** test the requested width, a narrow width (320–390 px or the smallest phone) and the principal desktop or native device class. Long names, empty lists, 200% text or the largest Dynamic Type size, the on-screen keyboard and overflowing menus must not break the task.
+- **Layout:** test the requested width, a narrow width (375 px, and 320 px for the smallest phones) and the principal desktop or native device class. Long names, empty lists, 200% text or the largest Dynamic Type size, the on-screen keyboard and overflowing menus must not break the task.
 - **Motion:** explains continuity, state or feedback. Content stays visible without animation; ease out from an already-visible default. Honour `prefers-reduced-motion`. Never block interaction behind an entrance sequence. Test interruption and reversal. One authored moment, not the same fade-up on every section.
 - **Content:** real product language and credible data. Label fixtures and illustrative values as such. Never invent customers, testimonials, capabilities or performance results; claims and configuration come from supplied facts.
 - **Coverage:** every requirement in the brief is present and findable within seconds.

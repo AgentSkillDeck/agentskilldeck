@@ -49,7 +49,7 @@ This changes how existing functionality feels, not what the product promises. Re
 - Clean up observers, animation loops, listeners and GPU resources when the view unmounts.
 - Avoid layout thrashing (batched reads before writes) and unbounded particle or DOM growth.
 - Do not add a dependency or external service without authority.
-- Target 60 fps on representative mid-range devices; measure frame pacing and input responsiveness rather than trusting the development machine. Below ~50 fps, delayed input, layout shift or battery-heavy continuous rendering means reduce complexity. A simpler implementation that stays responsive is the correct outcome.
+- Target 60 fps on representative mid-range devices; measure frame pacing and input responsiveness rather than trusting the development machine. Reduce complexity when frame rate drops below ~50 fps, input is delayed, layout shifts, or rendering runs continuously on battery. A simpler implementation that stays responsive is the correct outcome.
 - Spend the last pass on refinement: the easing curve, stagger offsets, secondary motion. The first version that works is rarely the one to ship.
 
 ## Verify the actual experience

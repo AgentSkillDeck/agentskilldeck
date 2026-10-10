@@ -19,7 +19,7 @@ Name the surface's main purpose; it shapes the composition, not the aesthetic:
 
 - **Persuade**: a purchase or sign-up page states a real offer and one action.
 - **Operate**: a working screen exposes tasks and state first. Also load [operate](operate.md).
-- **Read**: docs and long-form need structure, wayfinding and a 45–75 character measure.
+- **Read**: docs and long-form need structure, wayfinding and a 65–75ch measure for long-form; 45ch minimum only in narrow columns and cards.
 - **Experience**: a portfolio or showcase leads with the work itself.
 
 ## 2. Decide before building
@@ -30,9 +30,9 @@ For an open-ended whole surface or a new identity, propose 2–3 substantially d
 
 Commit colour and type deliberately:
 
-- Pick a colour strategy before colours: Restrained (tinted neutrals plus one accent; the usual floor for Operate and Read), Committed (one saturated colour carries 30–60% of the surface), Full palette (3–4 named roles), or Drenched (the surface is the colour). Persuade and Experience may take the bolder strategies when the brief allows.
+- Pick a colour strategy before colours: Restrained (neutrals, optionally tinted, plus one accent; the usual floor for Operate and Read), Committed (one saturated colour carries large regions of the surface), Full palette (3–4 named roles), or Drenched (the surface is the colour). The strategy follows the brief and the chosen direction, not a percentage rule; see [colorize](colorize.md). Persuade and Experience may take the bolder strategies when the brief allows.
 - Decide light or dark from one sentence of physical scene (who uses it, where, under what light), not from the category.
-- Operate and Read surfaces are well served by system stacks and workhorse UI faces. For Persuade and Experience, these faces mean you stopped looking: Fraunces, Playfair Display, Cormorant, Lora, Crimson, Newsreader, Syne, Space Grotesk, Space Mono, IBM Plex, Inter as display, DM Sans, DM Serif, Outfit, Plus Jakarta Sans, Instrument Sans. Use one only with a reason no other face satisfies; "books want a serif" or "tech wants mono" is not a reason. Search alternatives with `node scripts/materials.mjs font "<character you need>" --category <cat>`.
+- Operate and Read surfaces are well served by system stacks and workhorse UI faces; select and pair faces per [typeset](typeset.md). Persuade and Experience surfaces only: these faces mean you stopped looking: Fraunces, Playfair Display, Cormorant, Lora, Crimson, Newsreader, Syne, Space Grotesk, Space Mono, IBM Plex, Inter as display, DM Sans, DM Serif, Outfit, Plus Jakarta Sans, Instrument Sans. Use one only with a reason no other face satisfies; "books want a serif" or "tech wants mono" is not a reason. Search alternatives with `node scripts/materials.mjs font "<character you need>" --category <cat>`.
 - Self-check against the four looks generated UI defaults to when the brief leaves the aesthetic open: cream ground with high-contrast serif and terracotta accent; near-black with one neon accent and glowing edges; editorial hairlines, italic display serif and tracked mono labels; flat saturated ink with black boxes and hard offset shadows. If someone could guess your aesthetic from the category alone, rework it.
 
 Use references to answer a real structural question, and inspect what you find (see [reference-policy](reference-policy.md)): `node scripts/references.mjs "<pattern or state>" --platform <web|ios|android>`. Extract the transferable lesson, such as how a table exposes comparison, how a form recovers from errors, or how an onboarding step teaches the next action. A reference is evidence, not a licence to copy a brand.
@@ -64,8 +64,8 @@ If a line reads like a mood ("clean, modern, friendly"), the direction is not de
 
 1. Apply [craft](craft.md), plus [operate](operate.md), [ios](ios.md) or [android](android.md) where relevant.
 2. Implement every reachable state: loading, empty, error, disabled, success and recovery. Skip impossible states; do not build a gallery of decorative ones.
-3. Make responsive choices structural. Test real copy, the longest realistic values and a 320–390 px width. Implement the actual primary interaction; a convincing screenshot with inert controls is unfinished.
-4. Render the build with the host's browser or simulator at representative sizes (web: 390 px and 1440 px, plus the user's reported viewport). Wait for fonts and images, settle or disable entrance motion, and capture from the top of the page. Open every capture and confirm it shows what its name claims: no blank regions, no half-loaded state. Broken captures are not design evidence.
+3. Make responsive choices structural. Test real copy, the longest realistic values and a 375 px width (320 px for the smallest phones). Implement the actual primary interaction; a convincing screenshot with inert controls is unfinished.
+4. Render the build with the host's browser or simulator at representative sizes (web: 375, 768 and 1440 px, plus the user's reported viewport). Wait for fonts and images, settle or disable entrance motion, and capture from the top of the page. Open every capture and confirm it shows what its name claims: no blank regions, no half-loaded state. Broken captures are not design evidence.
 5. Inspect full context and detail crops, never only a thumbnail. Compare hierarchy, composition and interaction against the contract and any supplied reference.
 6. Fix material gaps in one batch, then inspect the changed result once more. Two inspection rounds is the ceiling; continue only while resolving named issues within scope. If a round makes no progress, report the limitation and the decision the user needs to make.
 7. For a whole new surface, get a fresh-eyes review: if the host can start a subagent with no conversation history, give it the request, contract, screenshot paths and [critique](critique.md); otherwise run a separate pass of that guide yourself and say so.
