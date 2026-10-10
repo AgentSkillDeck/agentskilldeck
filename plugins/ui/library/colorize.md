@@ -59,7 +59,7 @@ Decoration with no relationship to hierarchy, state, content or the visual world
 
 ## Contrast and perception
 
-Measure computed foreground/background pairs. Do not rely on eyesight.
+Measure computed foreground/background pairs. Do not rely on eyesight. Use the host browser tool's accessibility or contrast inspection, or read the computed `color` and `background-color` and compute the WCAG ratio.
 
 | Content | WCAG AA minimum |
 |---|---|
@@ -68,6 +68,7 @@ Measure computed foreground/background pairs. Do not rely on eyesight.
 | controls, icons, focus indicators | 3:1 |
 
 - Check hover, active, focus, selected, disabled, overlays, text on images, and both themes.
+- Disabled and inactive controls are exempt from these minimums (WCAG 1.4.3 and 1.4.11), but must stay clearly distinguishable from enabled ones.
 - Simulate common vision deficiencies (protanopia, deuteranopia, tritanopia) with the browser tool's rendering emulation where available.
 - Anything colour conveys must also be conveyed by text, shape, icon or position.
 - For OKLCH ramps, vary lightness and reduce chroma near white and black. Do not keep high chroma at extreme lightness to make the maths uniform.
@@ -83,7 +84,7 @@ Answer each with rendered or source evidence:
 - Light and dark themes are each composed, not inverted.
 - Contrast ratios and non-colour cues pass in every relevant state; list the measured lowest pair.
 - No raw colour literals remain outside the token files without a reason.
-- The result is recognisably this product, not a generic "colourful" treatment.
+- The result is recognisably this product, not a generic "colourful" treatment: swap in a neighbouring product's logo and the palette would no longer fit, and every hue traces to a brand token or a stated role.
 
 When the palette earns its place, continue with [polish](polish.md).
 

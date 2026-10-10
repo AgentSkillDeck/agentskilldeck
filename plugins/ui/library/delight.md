@@ -5,7 +5,7 @@ Use this guide when an interface works but feels anonymous, and the task asks fo
 
 Delight is product character shown through a useful interaction, a humane response or an unexpectedly considered detail. It is not a layer of generic whimsy, and it belongs only at moments that earn it.
 
-Context you need: the brand's emotional range (how playful, how serious). Infer it from the brief, design notes, existing copy and visuals before asking.
+Context you need: the brand's emotional range (how playful, how serious). Infer it from the brief, design notes, existing copy and visuals. Ask only when the emotional range or the stakes cannot be inferred.
 
 ## Non-negotiables
 
@@ -44,7 +44,7 @@ Write one sentence: what the user should feel, and why that feeling belongs to t
 
 Derive the treatment from how the product works and its visual world, not from a stock catalogue of confetti and mascots.
 
-When the idea needs an icon or animated icon, search before drawing: `node scripts/materials.mjs icon|animated-icon "<query>" --limit 3`. Check each result's `License:` line and use only assets whose licence fits the project. Treat `Install:` as a snippet to propose; add files or dependencies only with the task's authority. Exit 2 is a service error, not an empty library: say so and continue with existing assets or CSS/SVG geometry. Never use emoji or Unicode glyphs in place of an icon system.
+When the idea needs an icon or animated icon, search before drawing: `node scripts/materials.mjs icon "<query>" --limit 3` for static icons, or `node scripts/materials.mjs animated-icon "<query>" --limit 3` for animated ones. Check each result's `License:` line and use only assets whose licence fits the project. Treat `Install:` as a snippet to propose; add files or dependencies only with the task's authority. Exit 2 is a service error, not an empty library: say so and continue with existing assets or CSS/SVG geometry. Never use emoji or Unicode glyphs in place of an icon system.
 
 ## Build for the emotional moment
 
@@ -80,7 +80,7 @@ Answer each with rendered evidence:
 - You can act immediately during the moment; it can be skipped or interrupted.
 - Repeating the flow five times in a row does not turn charm into friction.
 - Muted, keyboard, touch, screen-reader, reduced-motion and localised paths work.
-- The result fits this product's world, not a generic "delight" treatment.
+- The result fits this product's world, not a generic "delight" treatment: the copy uses the product's own nouns and verbs, and the visual or motion detail comes from its existing palette, shapes or mechanism.
 
 When the personality feels earned, continue with [polish](polish.md).
 

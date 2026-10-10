@@ -97,9 +97,11 @@ Performance and robustness:
 
 ```css
 @media (prefers-reduced-motion: reduce) {
-  .panel { transition: opacity 150ms ease-out; transform: none; }
+  .panel { transition-property: opacity; transition-duration: 150ms; }
 }
 ```
+
+Keep the open and closed states; remove only the movement between them. Do not force `transform: none` globally: it parks transform-hidden panels on screen. If a closed state relies on transform to hide, pair it with `visibility: hidden` and `pointer-events: none` so it stays hidden and unclickable when motion is reduced.
 
 - No flashing more than three times per second.
 

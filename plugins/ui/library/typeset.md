@@ -73,7 +73,7 @@ Answer each with rendered or source evidence. A bare "yes" is not verification.
 - Primary, secondary, body and metadata roles are recognisable without reading the copy.
 - Real copy (longest heading, longest label) fits at every breakpoint with no overflow or clipping.
 - Long text stays comfortable across relevant widths and languages.
-- The typography belongs to this product and its established world.
+- The typography belongs to this product and its established world: every face and weight traces to a project token or a recorded decision, and the screen would not pass for a framework starter template if the logo were removed.
 - Font loading causes no invisible text and no visible reflow (throttle the network in the browser tool and reload).
 - 200% zoom, text scaling, focus states, contrast (4.5:1 body, 3:1 large text) and narrow viewports stay usable.
 - Re-run the value grep: every remaining off-scale value has a stated reason.
