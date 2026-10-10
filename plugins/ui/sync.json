@@ -1,8 +1,20 @@
 {
   "skills": {
-    "atelier-design": { "guides": [], "tools": true },
-    "atelier-review": { "guides": [], "tools": false },
-    "atelier-radar": { "guides": [], "tools": true },
-    "atelier-match": { "guides": [], "tools": true }
+    "atelier-design": {
+      "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
+      "tools": true
+    },
+    "atelier-review": {
+      "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
+      "tools": false
+    },
+    "atelier-radar": {
+      "guides": ["reference-policy"],
+      "tools": true
+    },
+    "atelier-match": {
+      "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
+      "tools": true
+    }
   }
 }
