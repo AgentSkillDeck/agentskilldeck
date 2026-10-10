@@ -2,6 +2,7 @@ export function toMarkdown({ kind, query, results, warnings }) {
   const lines = [];
   if (!results.length) {
     lines.push(`No match for ${kind} "${query}". Try a broader or different term (e.g. a category, a mood, or an object name).`);
+    if (kind === 'animated-icon') lines[0] += ' Try broader words like "loading", "loop", "arrow" or "weather".';
   } else {
     lines.push(`${results.length} ${kind} result${results.length > 1 ? 's' : ''} for "${query}":`, '');
     results.forEach((r, i) => {

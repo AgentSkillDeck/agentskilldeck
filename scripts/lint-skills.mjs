@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { readFile, readdir } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, realpathSync } from 'node:fs';
 import { join, dirname, resolve, basename, relative } from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 
 const FORBIDDEN = [/uizze/i, /npx impeccable/i, /impeccable context/i, /\{\{scripts_path\}\}/];
 const EXEMPT_FILES = new Set(['LICENSE', 'NOTICE', 'CHECKSUMS.sha256']);
@@ -66,7 +66,10 @@ export async function lintPlugin(pluginDir) {
   return problems;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+// Compare real paths so the script also runs when invoked through a symlink.
+const isMain = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
+
+if (isMain) {
   const pluginDir = resolve(process.argv[2] ?? 'plugins/ui');
   const problems = await lintPlugin(pluginDir);
   if (problems.length) { console.error(`Lint failed:\n  ${problems.join('\n  ')}`); process.exitCode = 1; }

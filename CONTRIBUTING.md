@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping. agentatelier has no runtime or test dependencies; you need Node 18 or later and nothing else.
+Thanks for helping. agentatelier has no runtime or test dependencies; you need Node 18 or later and nothing else. The npm scripts assume a POSIX shell (macOS, Linux or WSL on Windows).
 
 ## Where to edit
 
@@ -45,7 +45,7 @@ npm run linkcheck
 
 ## Adding a domain plugin
 
-A new domain (for example `backend`) is a new folder under `plugins/` with its own `.claude-plugin/plugin.json` and `skills/`, plus an entry in [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json). Open an issue first to agree on scope.
+A new domain (for example `backend`) is a new folder under `plugins/` with its own `.claude-plugin/plugin.json` and `skills/`, plus an entry in [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json). The `sync`, `check`, `lint` and `test` scripts in `package.json` are currently wired to `plugins/ui`, so a second domain plugin must extend them to cover its folder too. Open an issue first to agree on scope.
 
 ## Licence
 

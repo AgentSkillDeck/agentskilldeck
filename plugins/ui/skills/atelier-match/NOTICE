@@ -5,9 +5,11 @@ This product includes material adapted from the following works.
 
 -------------------------------------------------------------------------------
 Impeccable — https://github.com/pbakaus/impeccable
-Copyright Paul Bakaus. Licensed under the Apache License, Version 2.0.
-Design guides in plugins/ui/library marked "Adapted from Impeccable" are
-modified adaptations; see docs/ATTRIBUTION.md for source commits and changes.
+Copyright 2025 Paul Bakaus. Licensed under the Apache License, Version 2.0.
+Design guides in plugins/ui/library (copied into each skill's reference/
+folder) marked "Adapted from Impeccable" are modified adaptations; see
+docs/ATTRIBUTION.md for source commits and changes. This is an adaptation,
+not an endorsement by the original author.
 
 -------------------------------------------------------------------------------
 Uizze skills — https://github.com/uizze/uizze

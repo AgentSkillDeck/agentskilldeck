@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { readFile } from 'node:fs/promises';
-import { pathToFileURL } from 'node:url';
+import { realpathSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { parseCli, requireQuery, UsageError } from './lib/args.mjs';
 import { searchPatterns } from './lib/patterns.mjs';
 
@@ -27,6 +28,9 @@ export async function main(argv, { stdout = (s) => process.stdout.write(s), stde
   }
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+// Compare real paths so the script also runs when invoked through a symlink.
+const isMain = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
+
+if (isMain) {
   process.exitCode = await main(process.argv.slice(2));
 }

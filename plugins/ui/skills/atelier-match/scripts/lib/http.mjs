@@ -11,7 +11,8 @@ export class ServiceError extends Error {
   }
 }
 
-const DEFAULT_CACHE = join(tmpdir(), 'agentatelier-cache');
+// Per-user so a shared /tmp never mixes (or lets others tamper with) one user's cache.
+export const DEFAULT_CACHE = join(tmpdir(), `agentatelier-cache-${process.getuid?.() ?? 'user'}`);
 
 async function readCache(file, ttl) {
   try {
@@ -51,7 +52,7 @@ async function fetchWithCache(url, {
     let data;
     try { data = await parse(res); } catch { throw new ServiceError(source, invalidMessage); }
     if (cacheFile) {
-      try { await mkdir(cacheDir, { recursive: true }); await writeFile(cacheFile, JSON.stringify(data)); } catch { /* cache is best-effort */ }
+      try { await mkdir(cacheDir, { recursive: true, mode: 0o700 }); await writeFile(cacheFile, JSON.stringify(data)); } catch { /* cache is best-effort */ }
     }
     return data;
   }

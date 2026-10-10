@@ -70,3 +70,20 @@ test('--limit is clamped to 1..5', async () => {
   const lo = JSON.parse((await run(['icon', 'bell', '--json', '--limit', '0'])).out);
   assert.equal(lo.results.length, 1);
 });
+
+test('unexpected response shape is exit 2 without a stack trace', async () => {
+  const odd = async (url) => (url.includes('fontsource') ? new Response(JSON.stringify({ fonts: 'nope' })) : fetchImpl(url));
+  const { code, out, err } = await run(['font', 'inter'], odd);
+  assert.equal(code, 2);
+  assert.equal(out, '');
+  assert.match(err, /^font: unexpected response from service \(.+\)\n$/);
+  assert.doesNotMatch(err, /\n\s+at /);
+});
+
+test('animated-icon no match suggests broader words', async () => {
+  const empty = async (url) => (url.includes('/search') ? new Response(JSON.stringify({ icons: [] })) : fetchImpl(url));
+  const { code, out } = await run(['animated-icon', 'qqqqzzzz'], empty);
+  assert.equal(code, 0);
+  assert.match(out, /No match/);
+  assert.match(out, /Try broader words like "loading", "loop", "arrow" or "weather"\./);
+});

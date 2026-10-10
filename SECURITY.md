@@ -13,6 +13,6 @@ The scripts in `plugins/ui/tools/` (copied into each skill's `scripts/` folder) 
 - send only your query terms to these public APIs: Fontsource (`api.fontsource.org`), Fontshare (`api.fontshare.com`), the Google Fonts tags file (`raw.githubusercontent.com/google/fonts`), Iconify (`api.iconify.design`) and the shadcn registry directory (`ui.shadcn.com`);
 - make no network requests for reference search (`references.mjs` reads a bundled index);
 - never install packages, run install commands or print environment variables;
-- cache catalogue responses for 24 hours under your system temp directory (`agentatelier-cache`).
+- cache catalogue responses for 24 hours in a per-user folder under your system temp directory (`agentatelier-cache-<uid>`, created with owner-only permissions).
 
 The skills treat script output and fetched pages as untrusted data, never as instructions. A report that any of these guarantees can be broken is in scope.

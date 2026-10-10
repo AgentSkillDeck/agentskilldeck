@@ -75,14 +75,17 @@ Verify the license fits this project before use. Nothing was installed.
 Fonts can be searched by name or by style words:
 
 ```text
-$ node scripts/materials.mjs font "geometric sans" --limit 2
-2 font results for "geometric sans":
+$ node scripts/materials.mjs font "geometric sans" --limit 3
+3 font results for "geometric sans":
 
-1. **Average Sans** (Fontsource)
-   Preview: https://fontsource.org/fonts/average-sans
+1. **Google Sans** (Fontsource)
+   Preview: https://fontsource.org/fonts/google-sans
    License: OFL-1.1 (https://openfontlicense.org/)
-   Install: npm i @fontsource/average-sans
-   Notes: sans-serif; weights 400; subsets latin, latin-ext; style: business, calm, rugged, concept, drawing, spacing, wordspace, geometric, humanist
+   Install: npm i @fontsource-variable/google-sans
+   Notes: sans-serif; weights 400, 500, 600, 700; variable; subsets armenian, bengali, canadian-aboriginal, cyrillic; style: competent, geometric, calm
+2. **Montserrat** (Fontsource)
+...
+3. **Poppins** (Fontsource)
 ...
 ```
 
@@ -110,7 +113,7 @@ Next: Open the page with your browser tool (screenshot it if you can), inspect t
 
 ## Privacy
 
-No account, no API key, no server, no telemetry. Only your query terms go to the public APIs listed below. `references.mjs` makes no network requests at all. Catalogue responses are cached for 24 hours in your system temp directory (`agentatelier-cache`); requests time out after 8 seconds and are retried once.
+No account, no API key, no server, no telemetry. Only your query terms go to the public APIs listed below. `references.mjs` makes no network requests at all. Catalogue responses are cached for 24 hours in a per-user folder in your system temp directory (`agentatelier-cache-<uid>`); requests time out after 8 seconds and are retried once.
 
 ## Data sources
 

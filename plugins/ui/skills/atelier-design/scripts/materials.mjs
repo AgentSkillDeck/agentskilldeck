@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import { pathToFileURL } from 'node:url';
+import { realpathSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { parseCli, requireQuery, UsageError } from './lib/args.mjs';
 import { ServiceError } from './lib/http.mjs';
 import { searchFonts } from './lib/fonts.mjs';
@@ -11,9 +12,11 @@ const USAGE = 'Usage: node materials.mjs <font|icon|animated-icon|pack> "<query>
 const KINDS = ['font', 'icon', 'animated-icon', 'pack'];
 
 export async function main(argv, { fetchImpl, cacheDir, stdout = (s) => process.stdout.write(s), stderr = (s) => process.stderr.write(s) } = {}) {
+  let kind;
   try {
     const { values, positionals } = parseCli(argv, { usage: USAGE, options: { category: { type: 'string' } } });
-    const [kind, ...rest] = positionals;
+    let rest;
+    [kind, ...rest] = positionals;
     if (!KINDS.includes(kind)) throw new UsageError(`Unknown or missing kind "${kind ?? ''}".\n${USAGE}`);
     const query = requireQuery(rest.join(' '), USAGE);
     const deps = { limit: values.limit, fetchImpl, cacheDir };
@@ -26,10 +29,14 @@ export async function main(argv, { fetchImpl, cacheDir, stdout = (s) => process.
   } catch (e) {
     if (e instanceof UsageError) { stderr(e.message + '\n'); return 1; }
     if (e instanceof ServiceError) { stderr(`Service error: ${e.message}. This is not an empty library; retry later or continue without it.\n`); return 2; }
-    throw e;
+    stderr(`${kind ?? 'materials'}: unexpected response from service (${e?.message ?? e})\n`);
+    return 2;
   }
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+// Compare real paths so the script also runs when invoked through a symlink.
+const isMain = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
+
+if (isMain) {
   process.exitCode = await main(process.argv.slice(2));
 }

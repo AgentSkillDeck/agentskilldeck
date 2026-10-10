@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import { readFile, writeFile, readdir, mkdir, rm } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, realpathSync } from 'node:fs';
 import { join, relative, dirname, resolve } from 'node:path';
 import { createHash } from 'node:crypto';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 
 const MANAGED = ['reference', 'scripts'];
 
@@ -24,7 +24,10 @@ export async function buildExpected(pluginDir) {
   const license = await readFile(join(repoRoot, 'LICENSE'));
   const notice = await readFile(join(repoRoot, 'NOTICE'));
   const toolsDir = join(pluginDir, 'tools');
-  const toolFiles = (await walk(toolsDir)).filter((f) => !relative(toolsDir, f).startsWith('test'));
+  const toolFiles = (await walk(toolsDir)).filter((f) => {
+    const rel = relative(toolsDir, f).split('\\').join('/');
+    return !(rel === 'test' || rel.startsWith('test/'));
+  });
   const expected = new Map();
   for (const [skill, { guides = [], tools = false }] of Object.entries(cfg.skills)) {
     const base = `skills/${skill}`;
@@ -82,7 +85,10 @@ export async function apply(pluginDir) {
   return { written, removed };
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1] ?? '').href) {
+// Compare real paths so the script also runs when invoked through a symlink.
+const isMain = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
+
+if (isMain) {
   const args = process.argv.slice(2);
   const pluginDir = resolve(args.find((a) => !a.startsWith('--')) ?? 'plugins/ui');
   if (args.includes('--check')) {

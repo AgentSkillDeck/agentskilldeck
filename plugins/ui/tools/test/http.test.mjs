@@ -68,3 +68,8 @@ test('fetchText throws ServiceError naming the source after retries exhausted', 
   await assert.rejects(fetchText('https://x.test/h', { source: 'Google Fonts tags', fetchImpl }),
     (e) => e instanceof ServiceError && e.source === 'Google Fonts tags' && /HTTP 500/.test(e.message));
 });
+
+test('default cache dir is per-user', async () => {
+  const { DEFAULT_CACHE } = await import('../lib/http.mjs');
+  assert.equal(DEFAULT_CACHE, join(tmpdir(), `agentatelier-cache-${process.getuid?.() ?? 'user'}`));
+});
