@@ -1,7 +1,7 @@
 <!-- Adapted from Impeccable reference/shape.md @ d631a88 (Apache-2.0); modified by agentatelier -->
 # Shape
 
-Use this guide when the task is to decide what should be made and how it should work before building: it returns a confirmed design brief, never code.
+Use this guide when the task is to decide what should be made and how it should work before building: it returns the confirmed brief, never code.
 
 ## Before asking anything
 
@@ -66,6 +66,8 @@ Use three to five bullets when the task is settled; use the full structure only 
 Present the brief for explicit confirmation or one round of corrections, then stop. Shape never writes code or a direction contract.
 
 When no human or answer mechanism is available, mark every assumption plainly ("Assumed: ..."), return the brief and stop.
+
+Once the brief is confirmed, build it with [new-work](new-work.md) or the guide the task names.
 
 ## Common failures
 

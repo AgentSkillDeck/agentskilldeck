@@ -1,7 +1,7 @@
 <!-- Adapted from Impeccable reference/ios.md and reference/audit.native.md @ d631a88 (Apache-2.0) and uizze ui-design reference/ios.md @ 146928e (Apache-2.0); modified by agentatelier -->
 # Native iOS interfaces
 
-Use this guide alongside the task's main guide for any iOS or iPadOS app: SwiftUI, UIKit, React Native, Expo or Flutter on Apple hardware.
+Use this guide when building or reviewing any iOS or iPadOS app (SwiftUI, UIKit, React Native, Expo or Flutter on Apple hardware), alongside the task's main guide.
 
 Follow the product's existing iOS conventions first, then Apple's Human Interface Guidelines. A native interface should feel predictable before it feels distinctive. Brand expresses through the layers the platform leaves open: tint, type in display moments, motion, content. The test: would a fluent iPhone user trust this app, or pause at controls that feel ported from a website (reinvented navigation bars, custom back gestures, web-shaped buttons, hover-dependent affordances)? Look up the relevant HIG page with `node scripts/references.mjs "<component or pattern>" --platform ios`.
 
@@ -55,6 +55,8 @@ When a simulator or runnable build is available:
 If the environment cannot run the UI, say that visual and device verification remains incomplete. Do not require unavailable tooling, and do not claim a pass.
 
 For an explicit ambitious-interaction request, combine this guide with [overdrive](overdrive.md). Use native continuity and responsive feedback, not web-only effects or novelty that interferes with platform navigation. Respect Reduce Motion and keep an equally usable non-animated path.
+
+When the platform rules hold, continue with [polish](polish.md).
 
 ## Common failures
 

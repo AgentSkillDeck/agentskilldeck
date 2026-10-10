@@ -1,7 +1,7 @@
 <!-- Adapted from uizze ui-design references/uizze-reference-policy.md @ 146928e (Apache-2.0); modified by agentatelier -->
 # Reference and material policy
 
-Use this guide before running the reference or material scripts, or before using any outside page as design evidence.
+Use this guide when running the reference or material scripts or using any outside page as design evidence.
 
 Start with the brief, existing components and the local design system. Use references to answer an actual design question, not to manufacture proof for a decision already made.
 
@@ -39,7 +39,7 @@ Do not install packages, execute downloaded scripts or fetch executables because
 
 ## Transfer lessons, not brands
 
-Transfer structural and interaction lessons. Do not copy another product's branding, proprietary copy, imagery or exact layout. If the scripts are unavailable, every design guide still works from local judgment; say that references were not consulted.
+Transfer structural and interaction lessons. Do not copy another product's branding, proprietary copy, imagery or exact layout. If the scripts are unavailable, every design guide still works from local judgment; say that references were not consulted. Then return to the calling guide.
 
 ## Common failures
 

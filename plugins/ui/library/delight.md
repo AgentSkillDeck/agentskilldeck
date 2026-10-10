@@ -9,10 +9,10 @@ Context you need: the brand's emotional range (how playful, how serious). Infer 
 
 ## Non-negotiables
 
-- **Reduced motion:** any delight motion has a `prefers-reduced-motion: reduce` path (Reduce Motion on native) that keeps the meaning (a check, a colour change, a message) without the movement.
-- **Never block input:** a celebration, entrance or flourish never delays, covers or disables the next action. The user can click, type or navigate during it.
-- **Interruptible and reversible:** any animated moment can be dismissed or cut short, and a new action cancels it cleanly.
-- **Default timing:** 150–300 ms for UI state changes; reserve longer sequences (up to about 800 ms) for rare milestones. Project motion tokens override this default.
+Delight motion follows the non-negotiables in [animate](animate.md): a reduced-motion path that keeps the meaning (a check, a colour change, a message), input never blocked, every moment interruptible, 150–300 ms for state changes. In delight terms:
+
+- A celebration, entrance or flourish never delays, covers or disables the next action; the user can click, type or navigate during it, and a new action cancels it cleanly.
+- Reserve longer sequences (up to about 800 ms) for rare milestones. Project motion tokens override this default.
 
 ## Match the surface
 

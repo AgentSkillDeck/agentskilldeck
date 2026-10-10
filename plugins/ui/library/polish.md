@@ -7,7 +7,7 @@ Polish improves the interface that exists; it never conceals a redesign. Preserv
 
 ## 1. Establish the system
 
-Read DESIGN.md if present, the tokens, shared components and one or two neighbouring flows. Without a formal system, the coherent conventions in the code are the system. Classify each inconsistency before fixing it, and fix it at the narrowest correct level:
+Read the design notes (for example `DESIGN.md`) if present, the tokens, shared components and one or two neighbouring flows. Without a formal system, the coherent conventions in the code are the system. Classify each inconsistency before fixing it, and fix it at the narrowest correct level:
 
 - **Missing token:** the system needs a reusable value; add it once.
 - **One-off implementation:** an existing shared component should replace it.
@@ -44,6 +44,8 @@ Do not perfect one corner while the rest of the path stays below the same bar.
 ## 5. Verify and finish
 
 Confirm the changed surface once more after the fixes: walk the path with mouse, keyboard and touch where applicable; recheck the sizes from step 2 plus the loading, empty, error, long-content and missing-content states; check the console for errors. Run the project's tests and linters. Finish by reading your diff and removing accidental churn, orphaned code and temporary files. Report what was checked and what was not.
+
+For a technical pre-release check, continue with [audit](audit.md); for design judgement, [critique](critique.md).
 
 ## Common failures
 

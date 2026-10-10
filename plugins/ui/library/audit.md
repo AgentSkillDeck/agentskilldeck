@@ -35,10 +35,12 @@ Check each dimension and score it 0–4 (0 broken, 1 major gaps, 2 partial, 3 go
 
 Lead with the most important finding, and do not hide additional release-blocking defects behind it. Order findings by user impact and tag each:
 
-- **P0 Blocking:** prevents task completion.
-- **P1 Major:** significant difficulty, WCAG AA failure or platform-guideline violation; fix before release.
-- **P2 Minor:** annoyance with a workaround.
+- **P0 Blocking:** prevents task completion, loses data or locks out a required user group; fix immediately.
+- **P1 Major:** significant difficulty, a broken brief requirement, WCAG AA failure or platform-guideline violation; fix before release.
+- **P2 Minor:** annoyance with a workaround; fix in the next pass.
 - **P3 Polish:** no real user impact. Keep P3s few; noise hides what matters.
+
+Torn between two levels? Ask "would a user contact support about this?" If yes, it is at least P1.
 
 For each finding give: the observed screen or state, the location (file and line where known), the evidence (measurement, screenshot, failing step), the user impact, the standard it breaks if any (WCAG criterion, HIG, Material), and the smallest concrete correction. Mark each as **confirmed** or **suspected (could not verify)**; never report an unverified suspicion as a defect.
 

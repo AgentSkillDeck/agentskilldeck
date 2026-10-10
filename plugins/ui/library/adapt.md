@@ -13,7 +13,7 @@ Read the layout code, breakpoints, navigation components and platform targets. R
 
 - **Source assumptions:** what it was designed for (desktop web, portrait phone, one platform's idioms, a website) and what that assumed (large screen, mouse, hover, fast connection).
 - **Target context:** device class, input (touch, mouse, keyboard, stylus, remote), screen and orientation, connection, posture, platform expectations.
-- **What breaks:** content that does not fit; interactions that do not exist there (hover on touch, right-click on phone, edge-swipe on web); patterns that are wrong there (desktop modals on phone, phone sheets stretched on a tablet).
+- **What breaks:** content that does not fit; interactions that do not exist there (hover on touch, right-click on phone, edge-swipe on web); patterns that are wrong there (desktop-sized dialogs on phone, phone sheets stretched on a tablet).
 - **What works:** keep it.
 
 ## Web: plan by context
@@ -52,7 +52,7 @@ Read the layout code, breakpoints, navigation components and platform targets. R
 ### Email
 
 - 600px maximum width, single column, table-based layout with inline CSS; no external stylesheets, scripts or reliable hover.
-- Large button-style CTAs with bulletproof (table cell) fallbacks; deep-link into the app for anything interactive.
+- Large button-style primary actions with bulletproof (table cell) fallbacks; deep-link into the app for anything interactive.
 - Test light and dark client rendering; images may be blocked, so alt text carries the message.
 
 ## Web: implement
@@ -84,7 +84,7 @@ Work inside the platform conventions in [ios](ios.md) and [android](android.md).
 
 ### Phone to tablet and large screens
 
-- Restructure, do not stretch. Switch structure on size classes (iOS) or window size classes (Android: compact < 600dp, medium 600–840dp, expanded > 840dp).
+- Restructure, do not stretch. Switch structure on size classes (iOS) or window size classes (Android: compact < 600dp, medium 600–839dp, expanded 840dp and up; see [android](android.md)).
 - Navigation changes shape: iOS tab bar may become a sidebar on iPad; Android navigation bar becomes a rail at medium width and a rail or drawer at expanded width.
 - Use the width: split view / list-detail, multi-column grids, popovers where the phone used sheets.
 - Multitasking is a size, not an edge case: iPad Split View, Stage Manager and Android multi-window can give a phone-width window on a tablet. Size-class-driven layout handles it.

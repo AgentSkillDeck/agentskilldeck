@@ -58,7 +58,7 @@ Self-host or load the face properly. Using the nearest installed system font as 
 - Display type: at most 6rem. Negative tracking stops at -0.04em; -0.02em to -0.03em usually reads better. Use `text-wrap: balance` on headings and `text-wrap: pretty` on short paragraphs where supported.
 - Light text on dark surfaces: compensate on all three axes: slightly more line height (+0.05–0.1), a touch more tracking (+0.01em), and one weight step more when the face looks thin.
 - Keep repeated roles identical across screens and states.
-- Use OpenType features where content benefits: `font-variant-numeric: tabular-nums` for tables, prices and timers; real monospace for code; `small-caps` or uppercase with +0.04–0.08em tracking for short labels only.
+- Use OpenType features where content benefits: `font-variant-numeric: tabular-nums` for tables, prices and timers; real monospace for code; `small-caps` or uppercase with +0.04–0.08em tracking for short labels only, never as an eyebrow above a heading.
 - Load only used files and weights. Use `font-display: swap` (or `optional` for non-critical faces), preload the one or two critical files, and set fallback metrics (`size-adjust`, `ascent-override`) so the swap does not reflow the page.
 - Fluid display type (`clamp()`) suits marketing surfaces. Keep dense product and reading surfaces on fixed, predictable sizes.
 - Preserve browser zoom, user font settings, Dynamic Type and platform text scaling. Size text in `rem`, never lock it with `px` on `html`.
@@ -89,4 +89,4 @@ When the hierarchy holds, continue with [polish](polish.md).
 - Monospace used as a "technical" costume instead of for code, data or measurement.
 - A system face standing in as the display voice, or a third family with no distinct role.
 - Loading every weight of every family, causing invisible text or layout shift.
-- A kicker or eyebrow label above each heading in place of a heading that carries its own weight.
+- Any kicker or eyebrow label above a heading; [craft](craft.md) bans it outright. Let the heading carry its own weight.

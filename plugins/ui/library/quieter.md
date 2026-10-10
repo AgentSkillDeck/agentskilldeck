@@ -41,10 +41,9 @@ Decide before editing:
 ### Colour
 
 - Reduce saturation from full to about 70–85%. Project tokens override this default.
-- Use fewer colours more deliberately; let neutrals do most of the work and keep colour as an accent on roughly 10% of the surface.
+- Use fewer colours more deliberately; let neutrals do most of the work and keep colour for accents that have a job. Dosage follows the brief, not a percentage rule (see [colorize](colorize.md)).
 - Keep high contrast only where it matters most (primary action, key figures, critical states).
-- Neutrals carry most of the surface; tint them only when the brand hue gives real cohesion (see [colorize](colorize.md)). Plain neutral grey is valid.
-- Never put grey text on a coloured background; use a darker shade of that colour or transparency instead.
+- Neutral tinting and secondary text on coloured surfaces follow [colorize](colorize.md): plain neutral grey is valid, but never grey text on a coloured background.
 
 ### Visual weight
 

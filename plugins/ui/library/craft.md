@@ -1,7 +1,7 @@
 <!-- Adapted from Impeccable reference/craft-floor.md and reference/craft.md @ d631a88 (Apache-2.0) and uizze ui-design reference/craft.md @ 146928e (Apache-2.0); modified by agentatelier -->
 # Craft checks
 
-Use this guide while implementing and before handing off any interface, after the direction is chosen. It is a floor, not a substitute for a direction.
+Use this guide when implementing or handing off any interface, after the direction is chosen. It is a floor, not a substitute for a direction.
 
 Priority: the project's established system and the user's explicit choices override every default here; your own habits do not. Build to these checks silently; do not narrate the checklist to the user.
 
@@ -11,9 +11,8 @@ Each item is a check on the rendered result, not an intention. Run them together
 
 - **Hierarchy:** the primary task or message reads first; supporting information is visibly subordinate. Use scale, weight, alignment and grouping before adding containers.
 - **Typography:**
-  - Body measure 45–75 characters (65–75ch for long reading); body line height 1.5–1.6; headings 1.1–1.25 (see [typeset](typeset.md)).
+  - Measure, line height, display size and tracking meet [typeset](typeset.md) (default: body 45–75ch, line height 1.5–1.6, display ≤ 6rem, tracking no tighter than −0.04em).
   - A coherent scale with visible steps in size and weight; deliberate weights, not every weight the family offers.
-  - Display text at most 6rem; letter-spacing no tighter than −0.04em (−0.02 to −0.03em usually reads better).
   - Balanced heading wraps (`text-wrap: balance`); no clipped ascenders or descenders, no awkward heading wraps, no truncated essential labels. Run the real copy at every breakpoint and fix what overflows.
   - Tabular numerals for figures that are compared.
   - A system font is right for native and product UI. Choose a distinctive face only when the direction benefits and its licence and loading are handled (`node scripts/materials.mjs font "<query>"` reports licences).
@@ -63,6 +62,8 @@ Ask what the screen actually communicates and enables. "It compiles" and "nothin
 Batch material corrections, recapture the affected sizes and states, and inspect the new captures. Check actual controls (click, tab, type, resize), not just screenshots. Run the project's relevant tests.
 
 Report the scope of verification accurately. Never turn an unavailable browser, a failed service call, a skipped device or an unresolved finding into a pass. Do not create a novelty score or add effects merely to satisfy this checklist. With every check green, spend the remaining effort on the chosen direction; this floor never picks it.
+
+When the floor holds, review the result with [critique](critique.md) or [audit](audit.md).
 
 ## Common failures
 

@@ -9,8 +9,8 @@ Read before designing: the brief, 2–3 representative screens, shared component
 
 Classify the work; the class decides how much you invent:
 
-- **Addition to an established surface** (section, component, feature, state): inherit its identity and composition. Solve the new task, hierarchy, content, states and how it joins the surrounding screens. No direction round, no identity exercise, no DESIGN.md change unless the user approves a system change.
-- **New surface inside an established product**: keep the visual system fixed; the composition may differ. A coherent identity already in code counts as the system even when no DESIGN.md exists.
+- **Addition to an established surface** (section, component, feature, state): inherit its identity and composition. Solve the new task, hierarchy, content, states and how it joins the surrounding screens. No direction round, no identity exercise, no design-notes change unless the user approves a system change.
+- **New surface inside an established product**: keep the visual system fixed; the composition may differ. A coherent identity already in code counts as the system even when no design notes exist.
 - **Incomplete brand**: keep confirmed assets and recognisable traits; extend the rest with the user.
 - **Approved redesign**: replace the visual language, never the product's truth, working behaviour, content or explicit brand commitments. The old look is evidence of what the product is, not authority over what it becomes.
 - **New product with no visual authority**: choose a direction with the user. A default dashboard or landing-page template is not a direction.
@@ -70,6 +70,8 @@ If a line reads like a mood ("clean, modern, friendly"), the direction is not de
 6. Fix material gaps in one batch, then inspect the changed result once more. Two inspection rounds is the ceiling; continue only while resolving named issues within scope. If a round makes no progress, report the limitation and the decision the user needs to make.
 7. For a whole new surface, get a fresh-eyes review: if the host can start a subagent with no conversation history, give it the request, contract, screenshot paths and [critique](critique.md); otherwise run a separate pass of that guide yourself and say so.
 8. Report exactly what was rendered, which states and sizes were checked, and what was not. Never announce a complete visual pass when rendering, a required state or the requested target was not checked.
+
+When the build verifies, continue with [polish](polish.md).
 
 ## Common failures
 

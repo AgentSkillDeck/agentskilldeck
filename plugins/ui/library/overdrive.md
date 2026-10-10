@@ -70,6 +70,8 @@ Answer four final questions:
 
 If preview or device access is unavailable, keep the implementation bounded and report exactly what was and was not verified. Never fabricate frame-rate results, user reactions, performance gains or a visual pass. Stop when the chosen result works; propose extra scope separately.
 
+When the enhancement holds, continue with [polish](polish.md).
+
 ## Common failures
 
 - Building before the user chose a direction.

@@ -79,7 +79,7 @@ The states themselves (which failure shows what) are in [harden](harden.md).
 ### Loading, empty and success
 
 - Loading names the real operation ("Importing 240 contacts…") and shows determinate progress when known. Never invent progress.
-- Empty states say which kind of empty (first use, no results, filtered out, no access, failed to load) and give the next action. First-use patterns are in [onboard](onboard.md).
+- Empty states say which kind of empty (first use, cleared by the user, no results, filtered out, no access, failed to load) and give the next action. First-use patterns are in [onboard](onboard.md).
 
 | Before | After |
 |---|---|

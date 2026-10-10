@@ -86,7 +86,7 @@ t('items', { count }); // not `${count} item${count !== 1 ? 's' : ''}`
 ### Empty, loading and large data
 
 - Distinguish empty states: first use, user cleared everything, no search results, filtered to nothing, no permission, failed to load. Each needs its own message and next action. Patterns are in [onboard](onboard.md).
-- Loading: show a skeleton or placeholder shaped like the content for waits over about 300 ms; show nothing for faster loads to avoid flashes. Reserve space so content does not shift on arrival.
+- Loading: show a skeleton shaped like the content for waits over about 300 ms; show nothing for faster loads to avoid flashes. Reserve space so content does not shift on arrival.
 - Long operations (over about 10 s): show determinate progress when the system knows it, allow cancel, and let the user leave and come back.
 - Large datasets: paginate or virtualise beyond a few hundred rows; search and filter before 50+ options in a select.
 

@@ -7,8 +7,8 @@ A critique is evidence-backed judgment, not a redesign. It stays read-only unles
 
 ## Set up
 
-1. **Resolve the target** to concrete files and a way to render them: "the homepage" means the page component plus the running route; "the settings modal" means its component and the state that opens it. Prefer source paths over dev-server URLs, which drift.
-2. **Find the brief.** Read the task, any shape brief (see [shape](shape.md)), design notes (for example `DESIGN.md`), tokens and existing conventions. If no brief exists, write a one-line assumed job ("Lets a returning customer reorder in under a minute") and label it assumed. You judge pass/fail against that brief.
+1. **Resolve the target** to concrete files and a way to render them: "the homepage" means the page component plus the running route; "the settings dialog" means its component and the state that opens it. Prefer source paths over dev-server URLs, which drift.
+2. **Find the brief.** Read the task, the brief (from [shape](shape.md) when one exists), design notes (for example `DESIGN.md`), tokens and existing conventions. If no brief exists, write a one-line assumed job ("Lets a returning customer reorder in under a minute") and label it assumed. You judge pass/fail against that brief.
 3. **Honour settled decisions.** Drop findings that the brief or design notes explicitly accept; say so once.
 4. **Classify the surface:** persuasive, experiential, operational or reading. It decides which heuristics apply and which personas to use.
 
@@ -41,7 +41,7 @@ Reconcile: note where the passes agree, what Pass B caught that Pass A missed, a
 
 [craft](craft.md) applies these while building; critique judges them in the result.
 
-Repeated icon-title-text cards, decorative charts, nested panels, gradient headlines, glass backgrounds, indiscriminate pill shapes and identical section entrances are common defaults. They are not universal bans. Keep a treatment when it serves the chosen direction or the real task; flag it when it adds no information or conflicts with the product.
+Repeated icon-title-text cards, decorative charts, gradient headlines, glass backgrounds, indiscriminate pill shapes and identical section entrances are common defaults. They are not universal bans. Craft's "Never add" list (eyebrow or kicker labels, nested cards, glyph icons, faked subject masks, needless modals) is absolute: flag every instance. Keep a treatment when it serves the chosen direction or the real task; flag it when it adds no information or conflicts with the product.
 
 Ask what the screen actually communicates and enables. "It compiles" and "nothing overlaps" do not establish visual quality. Compare the rendered hierarchy and detail with the user's target, not only with a list of defects. Do not invent a novelty score, and do not recommend effects merely to satisfy a checklist.
 
@@ -51,7 +51,7 @@ Score each of Nielsen's ten heuristics 0–4: **0** absent or hostile, **1** rar
 
 1. **Visibility of system status:** loading indicators, confirmation of save/submit/delete, progress in multi-step flows, current location (active nav, breadcrumbs), inline validation. 0 = user guesses what happened; 4 = every action confirms and progress is always visible.
 2. **Match with the real world:** user vocabulary, no unexplained jargon, logical order, recognisable icons and metaphors. 0 = system jargon throughout; 4 = fluent in the user's language.
-3. **User control and freedom:** undo, cancel on forms and modals, a way back to safety, clearing filters and selections, an exit from long flows. 0 = users get trapped; 4 = undo, cancel, back and escape everywhere.
+3. **User control and freedom:** undo, cancel on forms and dialogs, a way back to safety, clearing filters and selections, an exit from long flows. 0 = users get trapped; 4 = undo, cancel, back and escape everywhere.
 4. **Consistency and standards:** same words, same results, platform conventions, consistent colour, type, spacing and components. 0 = feels like several products stitched together; 4 = a predictable system.
 5. **Error prevention:** confirmation before destructive actions, constrained inputs, smart defaults, clear labels, autosave and draft recovery. 0 = no guardrails; 4 = errors are nearly impossible to make.
 6. **Recognition over recall:** visible options, contextual hints, recent items, autocomplete, text labels on icons. 0 = users must memorise paths; 4 = everything is discoverable.
@@ -89,7 +89,7 @@ Name violations by pattern: wall of options, memory bridge (step 3 needs step 1'
 
 Pick 2–3 by surface and walk the primary task as each. Report what broke for them, naming the exact elements; never write generic persona descriptions.
 
-- **Power user (Alex):** skips onboarding, wants shortcuts and bulk actions. Can the core task be done in under 60 seconds? Does Esc close modals? Red flags: unskippable tours, no keyboard path, slow unskippable animation, one-at-a-time work where a batch is natural, confirmations on low-risk actions.
+- **Power user (Alex):** skips onboarding, wants shortcuts and bulk actions. Can the core task be done in under 60 seconds? Does Esc close dialogs? Red flags: unskippable tours, no keyboard path, slow unskippable animation, one-at-a-time work where a batch is natural, confirmations on low-risk actions.
 - **First-timer (Jordan):** reads literally, hesitates, looks for help. Is the first action clear within 5 seconds? Red flags: icon-only navigation, unexplained jargon, no visible help, an ambiguous next step, no confirmation of success.
 - **Accessibility-dependent (Sam):** screen reader, keyboard only, up to 200% zoom. Red flags: click-only interactions, invisible focus, meaning carried by colour alone, unlabelled fields or buttons, time limits without extension, custom widgets that break reading order, state changes the screen reader does not announce.
 - **Stress tester (Riley):** pushes the edges (0 and 1,000 items, very long strings, emoji, RTL text, a refresh mid-flow, two tabs). Red flags: silent failure, technical errors or a broken UI after an error, "No results" with no guidance, data lost on refresh or navigation.
@@ -107,12 +107,7 @@ Add 1–2 project-specific personas only when the brief or design notes describe
 
 ## Severity
 
-- **P0 blocking:** the task cannot be completed, data is lost, or a required user group is locked out. Fix immediately.
-- **P1 major:** significant difficulty, confusion, a broken brief requirement, or an accessibility (WCAG AA) or platform-guideline failure. Fix before release.
-- **P2 minor:** an annoyance with a workaround. Fix in the next pass.
-- **P3 polish:** no real user impact.
-
-If you are torn between two levels, ask "would a user contact support about this?" If yes, it is at least P1.
+Tag every finding P0 (blocking), P1 (major), P2 (minor) or P3 (polish) on the scale and tie-breaker defined in [audit](audit.md). Confusion that causes significant difficulty is P1.
 
 ## Report
 

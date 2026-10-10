@@ -15,7 +15,7 @@ Keep the established visual world. This guide changes structure inside it; repla
 
 ## Assess first
 
-Run the app and render representative states at about 375px, 768px and 1440px wide (or the platform's size classes) with the host's browser or simulator tool. Answer each question with rendered or source evidence:
+Run the app and render representative states at about 375px, 768px and 1440px wide, plus 320px for the smallest phones (or the platform's size classes) with the host's browser or simulator tool. Answer each question with rendered or source evidence:
 
 - **Reading order:** Squint at (or blur) the screenshot. Can you still name the primary element, the secondary element and the major groups, in order?
 - **Grouping:** Are related items close and distinct groups clearly separated, or are borders and cards compensating for weak proximity?
@@ -49,7 +49,7 @@ Choose the simplest structural model that expresses those relationships: flow fo
 - Make responsive behaviour structural: reorder, collapse, reflow or reveal based on what stays important, not only shrink.
 - Use container queries for components that appear in contexts of different widths.
 - Use `gap` for sibling rhythm instead of child margins when it states the relationship more directly.
-- Touch targets: at least 44×44pt (iOS) / 48×48dp (Android) / 24×24 CSS px minimum on web with 44px preferred, even when the visible mark is smaller.
+- Touch targets: at least 44×44pt (iOS) / 48×48dp (Android) / 24×24 CSS px minimum on web (44px for primary touch controls), even when the visible mark is smaller.
 - Use depth (shadow, layering) only when it clarifies state or hierarchy, and declare elevation once: border or shadow, not both.
 - Make optical corrections (icon nudges, hanging punctuation, visual centring) only after inspecting the render.
 
@@ -79,4 +79,4 @@ When the structure holds, continue with [polish](polish.md).
 - Visual order rearranged with CSS while DOM and focus order stay in the old sequence.
 - Fixed heights on text containers that clip long or translated copy.
 - Touch targets sized to the visible icon (16–20px) instead of the minimum hit area.
-- Section numbers (01 / 02 / 03) or eyebrow labels used as structure when the sequence carries no meaning.
+- Section numbers (01 / 02 / 03) used as structure when the sequence carries no meaning, or any eyebrow label above a heading (banned outright; see [craft](craft.md)).

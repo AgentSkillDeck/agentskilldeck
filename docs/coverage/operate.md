@@ -16,6 +16,6 @@ Source: uizze `skills/ui-design/reference/operate.md` @ 146928e → `plugins/ui/
 | - Prevent overlays and menus from being clipped by scroll or overflow containers. | States and behaviour › bullet "Overlays and menus escape their container" (`<dialog>`, popover, fixed, portal); Common failures › last bullet |
 | - Use quick motion only for state changes and feedback. Do not choreograph routine page loads. | States and behaviour › bullet "Motion only for state change … 150–300 ms for state changes; overlays and view transitions per animate. No choreographed page-load sequences"; Common failures › bullet 1 |
 | - Make responsive changes structural: collapse navigation, reflow groups, and preserve access to important actions. | States and behaviour › last bullet "Make responsive changes structural…" |
-| Use the interface at representative sizes. | Finish › step 1 (375, 768, 1440 px, realistic and empty data) |
-| Fix the few observable issues that obstruct the task or break consistency. | Finish › step 3 |
-| Do not redesign working areas outside the requested scope. | Finish › step 4 |
+| Use the interface at representative sizes. | Verify › step 1 (375, 768, 1440 px, realistic and empty data) |
+| Fix the few observable issues that obstruct the task or break consistency. | Verify › step 3 |
+| Do not redesign working areas outside the requested scope. | Verify › step 4 |

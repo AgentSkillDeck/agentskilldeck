@@ -74,10 +74,7 @@ Fix the largest measured cost first. Each change gets its own before/after measu
 
 ### Animation
 
-- Animate `transform` and `opacity` for movement. Blur, filters, masks and shadows are allowed when they carry meaning, but keep them in small, isolated regions.
-- Do not animate layout properties (`width`, `height`, `top`, `left`, margins) casually; use FLIP or transforms.
-- Apply `will-change` only during a known animation, then remove it; on everything it wastes memory.
-- Motion design rules are in [animate](animate.md).
+- Follow the runtime rules in [animate](animate.md): `transform` and `opacity` for movement, blur and shadows in small isolated regions, no casual layout-property animation, `will-change` only during a known animation (on everything it wastes memory).
 
 ### Network and data
 

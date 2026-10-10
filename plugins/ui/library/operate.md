@@ -1,7 +1,7 @@
 <!-- Adapted from Impeccable reference/operate.md and reference/mode-operate.md @ d631a88 (Apache-2.0) and uizze ui-design reference/operate.md @ 146928e (Apache-2.0); modified by agentatelier -->
 # Product and dashboard interfaces
 
-Use this guide for app screens, admin dashboards, settings, data tables, tools and any authenticated surface where the user is doing a task.
+Use this guide when building app screens, admin dashboards, settings, data tables, tools and any authenticated surface where the user is doing a task.
 
 Product UI should disappear into the task. Familiarity is a feature: a user fluent in this category should trust every control on sight instead of pausing at components that are subtly off. The failure mode is strangeness without purpose: over-decorated buttons, mismatched form controls, gratuitous motion, display fonts on labels, invented affordances for standard tasks.
 
@@ -44,19 +44,21 @@ The product's identity enters through four channels only: type, palette, density
 - A headline number that changes over time shows its recent history, with the moment of change marked.
 - Make responsive changes structural: collapse the sidebar to a drawer or rail, reflow groups, turn wide tables into scrollable or stacked rows, and keep important actions reachable at every width. Do not rely on fluid typography.
 
-## Finish
+## Verify
 
 1. Use the interface with the host's browser or simulator at representative sizes (web: 375, 768 and 1440 px wide), with realistic data, long names and an empty data set.
 2. Cover the product name: does it still read as a working product of its category, can the user do the task, and is it at least as clean as the category standard?
 3. Fix the few observable issues that obstruct the task or break consistency, in one batch, and recheck them.
 4. Do not redesign working areas outside the requested scope.
 
+When the task path holds, continue with [polish](polish.md).
+
 ## Common failures
 
 - Decorative motion, or a page-load animation the user has to watch.
 - The same action styled differently on two screens.
 - Display or monospace fonts used as costume on labels and data.
-- Reinvented standard affordances: custom scrollbars, unusual form controls, non-standard modals.
+- Reinvented standard affordances: custom scrollbars, unusual form controls, non-standard dialogs.
 - A modal as the first answer to every sub-task.
 - Spinners in place of content and empty states that say only "No data".
 - Dropdowns clipped by a scroll container.
