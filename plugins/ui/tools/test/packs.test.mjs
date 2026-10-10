@@ -20,8 +20,15 @@ test('matches registries by description and gives an add command', async () => {
   assert.equal(r.license.id, 'check registry');
 });
 
-test('unhealthy registries are excluded', async () => {
-  const bad = [{ name: '@broken', homepage: 'https://b.test', description: 'calendar components', health: { status: 'unhealthy', score: 3 } }];
+test('unavailable registries are excluded', async () => {
+  const bad = [{ name: '@broken', homepage: 'https://b.test', description: 'calendar components', health: { status: 'unavailable', score: 3 } }];
   const { results } = await searchPacks('calendar', { limit: 3, fetchImpl: async () => new Response(JSON.stringify(bad)), cacheDir: await fresh() });
   assert.deepEqual(results, []);
+});
+
+test('degraded registries are returned with degraded noted', async () => {
+  const shaky = [{ name: '@shaky', homepage: 'https://s.test', description: 'calendar components', health: { status: 'degraded', score: 55 } }];
+  const { results } = await searchPacks('calendar', { limit: 3, fetchImpl: async () => new Response(JSON.stringify(shaky)), cacheDir: await fresh() });
+  assert.equal(results.length, 1);
+  assert.match(results[0].notes, /degraded/);
 });

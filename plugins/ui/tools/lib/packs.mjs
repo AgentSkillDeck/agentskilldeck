@@ -5,7 +5,7 @@ const DAY = 24 * 60 * 60 * 1000;
 
 export async function searchPacks(query, { limit, fetchImpl, cacheDir }) {
   const list = await fetchJson('https://ui.shadcn.com/r/registries.json', { fetchImpl, cacheDir, cacheTtlMs: DAY, source: 'shadcn registry directory' });
-  const healthy = (Array.isArray(list) ? list : []).filter((r) => r?.name && r.health?.status !== 'unhealthy');
+  const healthy = (Array.isArray(list) ? list : []).filter((r) => r?.name && !['unhealthy', 'unavailable'].includes(r.health?.status));
   const results = rank(healthy, tokenize(query), (r) => [
     { text: r.name.replace(/^@/, ''), weight: 3 },
     { text: r.description ?? '', weight: 1 },
@@ -15,7 +15,7 @@ export async function searchPacks(query, { limit, fetchImpl, cacheDir }) {
     previewUrl: r.homepage ?? r.url,
     license: { id: 'check registry', url: r.homepage ?? r.url },
     install: `npx shadcn@latest add ${r.name}/<item>   (pick <item> from the registry homepage)`,
-    notes: `${r.description ?? ''}${r.health?.score ? ` · health ${Math.round(r.health.score)}/100` : ''}`.trim(),
+    notes: `${r.description ?? ''}${r.health?.score ? ` · health ${Math.round(r.health.score)}/100` : ''}${r.health?.status === 'degraded' ? ' · status degraded' : ''}`.trim(),
   }));
   return { results, warnings: [] };
 }
