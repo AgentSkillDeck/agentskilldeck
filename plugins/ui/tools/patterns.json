@@ -1,0 +1,2680 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "system": "Material 3",
+      "title": "Dialogs",
+      "url": "https://m3.material.io/components/dialogs/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog",
+        "confirmation",
+        "destructive"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Bottom sheets",
+      "url": "https://m3.material.io/components/bottom-sheets/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "sheet",
+        "modal",
+        "bottom-sheet"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Side sheets",
+      "url": "https://m3.material.io/components/side-sheets/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "sheet",
+        "drawer",
+        "side-panel"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Snackbar",
+      "url": "https://m3.material.io/components/snackbar/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "snackbar",
+        "notification",
+        "feedback"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Progress indicators",
+      "url": "https://m3.material.io/components/progress-indicators/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "progress",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Navigation bar",
+      "url": "https://m3.material.io/components/navigation-bar/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "bottom-nav",
+        "tab-bar"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Navigation drawer",
+      "url": "https://m3.material.io/components/navigation-drawer/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar",
+        "drawer"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Navigation rail",
+      "url": "https://m3.material.io/components/navigation-rail/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "rail",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Tabs",
+      "url": "https://m3.material.io/components/tabs/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Search",
+      "url": "https://m3.material.io/components/search/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "search",
+        "filter"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Date pickers",
+      "url": "https://m3.material.io/components/date-pickers/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form",
+        "calendar"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Menus",
+      "url": "https://m3.material.io/components/menus/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "command-palette",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Lists",
+      "url": "https://m3.material.io/components/lists/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "list",
+        "card",
+        "data-display"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Cards",
+      "url": "https://m3.material.io/components/cards/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "card",
+        "data-display"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Badges",
+      "url": "https://m3.material.io/components/badges/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "avatar",
+        "status"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Chips",
+      "url": "https://m3.material.io/components/chips/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "filter",
+        "chip",
+        "tag"
+      ]
+    },
+    {
+      "system": "Material 3",
+      "title": "Text fields",
+      "url": "https://m3.material.io/components/text-fields/overview",
+      "platform": [
+        "android",
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "input"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Sheets",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "sheet",
+        "modal",
+        "ios"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Alerts",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/alerts",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "alert",
+        "confirmation",
+        "destructive",
+        "modal"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Action sheets",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/action-sheets",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "menu",
+        "action-sheet",
+        "confirmation"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Context menus",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/context-menus",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "menu",
+        "command-palette",
+        "context-menu"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Popovers",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/popovers",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "popover",
+        "menu"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Lists and tables",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "data-table",
+        "list",
+        "card"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Progress indicators",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/progress-indicators",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "loading",
+        "progress",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Notifications",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/notifications",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "notification",
+        "toast",
+        "push"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Onboarding",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/onboarding",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "onboarding",
+        "first-run"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Settings",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/settings",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "settings",
+        "preferences"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Search fields",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/search-fields",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "search",
+        "filter"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Segmented controls",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/segmented-controls",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "filter",
+        "tabs",
+        "segmented"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Tab bars",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/tab-bars",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "navigation",
+        "tab-bar",
+        "bottom-nav"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Sidebars",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sidebars",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Pickers",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/pickers",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "date-picker",
+        "picker",
+        "form"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Modality",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/modality",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Feedback",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/feedback",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "feedback",
+        "error",
+        "validation"
+      ]
+    },
+    {
+      "system": "Apple HIG",
+      "title": "Privacy",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/privacy",
+      "platform": [
+        "ios"
+      ],
+      "tags": [
+        "permissions",
+        "privacy",
+        "access-request"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Data table",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/data-table",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Index table",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/index-table",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Empty state",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/empty-state",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "blank-slate",
+        "zero-state"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Empty search result",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/empty-search-result",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "search",
+        "no-results"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Filters",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/filters",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "filter",
+        "search"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Index filters",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/index-filters",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "filter",
+        "search",
+        "data-table"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Modal",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/modal",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Banner",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/banner",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "notification",
+        "alert"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Inline error",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/inline-error",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "error",
+        "validation",
+        "form"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Date picker",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/date-picker",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Drop zone",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/drop-zone",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file-upload",
+        "drag-and-drop"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Navigation",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/navigation",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Action menu",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/action-menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "command-palette"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Avatar",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/avatar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "badge"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Badge",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/badge",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Loading",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/loading",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Pagination",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/pagination",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "data-table"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Toast",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/toast",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Tabs",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/tabs",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Shopify Polaris",
+      "title": "Skeleton page",
+      "url": "https://shopify.dev/docs/apps/build/app-home/migrate-from-polaris-react/skeleton-page",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "skeleton"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Empty state",
+      "url": "https://atlassian.design/components/empty-state",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "blank-slate"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Inline message",
+      "url": "https://atlassian.design/components/inline-message",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "error",
+        "validation",
+        "notification"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Flag",
+      "url": "https://atlassian.design/components/flag",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification",
+        "flag"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Section message",
+      "url": "https://atlassian.design/components/section-message",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "notification",
+        "error"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Modal dialog",
+      "url": "https://atlassian.design/components/modal-dialog",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Dynamic table",
+      "url": "https://atlassian.design/components/dynamic-table",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Pagination",
+      "url": "https://atlassian.design/components/pagination",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "data-table"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Onboarding",
+      "url": "https://atlassian.design/components/onboarding",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "onboarding",
+        "first-run"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Progress tracker",
+      "url": "https://atlassian.design/components/progress-tracker",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "stepper",
+        "wizard",
+        "progress"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Progress indicator",
+      "url": "https://atlassian.design/components/progress-indicator",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "progress"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Skeleton",
+      "url": "https://atlassian.design/components/skeleton",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "skeleton"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Spinner",
+      "url": "https://atlassian.design/components/spinner",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Side navigation",
+      "url": "https://atlassian.design/components/side-navigation",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Atlassian navigation",
+      "url": "https://atlassian.design/components/atlassian-navigation",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "top-nav"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Breadcrumbs",
+      "url": "https://atlassian.design/components/breadcrumbs",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumbs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Datetime picker",
+      "url": "https://atlassian.design/components/datetime-picker",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Drawer",
+      "url": "https://atlassian.design/components/drawer",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sheet",
+        "drawer",
+        "modal"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Dropdown menu",
+      "url": "https://atlassian.design/components/dropdown-menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Lozenge",
+      "url": "https://atlassian.design/components/lozenge",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status"
+      ]
+    },
+    {
+      "system": "Atlassian Design System",
+      "title": "Form",
+      "url": "https://atlassian.design/components/form",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Data table",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Date picker",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/date-picker/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "File uploader",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/file-uploader/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file-upload",
+        "upload"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Modal",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/modal/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Notification",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/notification/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification",
+        "banner"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Pagination",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/pagination/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "data-table"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Search",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/search/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "filter"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Progress indicator",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/progress-indicator/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "stepper",
+        "progress"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Loading",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/loading/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Tag",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/tag/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag",
+        "status"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Tree view",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/tree-view/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "tree"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "UI shell left panel",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/ui-shell-left-panel/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Structured list",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/structured-list/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "list",
+        "data-display"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Menu",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/menu/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "IBM Carbon",
+      "title": "Dropdown",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/dropdown/guidelines",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "filter",
+        "select",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Blankslate",
+      "url": "https://primer.style/product/components/blankslate/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "blank-slate"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Confirmation dialog",
+      "url": "https://primer.style/product/components/confirmation-dialog/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "destructive",
+        "confirmation",
+        "modal"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Dialog",
+      "url": "https://primer.style/product/components/dialog/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Banner",
+      "url": "https://primer.style/product/components/banner/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "notification"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Inline message",
+      "url": "https://primer.style/product/components/inline-message/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "error",
+        "validation",
+        "notification"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Data table",
+      "url": "https://primer.style/product/components/data-table/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Skeleton box",
+      "url": "https://primer.style/product/components/skeleton-box/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "skeleton"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Spinner",
+      "url": "https://primer.style/product/components/spinner/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Tree view",
+      "url": "https://primer.style/product/components/tree-view/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "tree"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Underline nav",
+      "url": "https://primer.style/product/components/underline-nav/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Action menu",
+      "url": "https://primer.style/product/components/action-menu/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "command-palette"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Action list",
+      "url": "https://primer.style/product/components/action-list/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "list"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Avatar",
+      "url": "https://primer.style/product/components/avatar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "badge"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Label",
+      "url": "https://primer.style/product/components/label/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status",
+        "label"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Form control",
+      "url": "https://primer.style/product/components/form-control/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Autocomplete",
+      "url": "https://primer.style/product/components/autocomplete/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "autocomplete"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Empty states",
+      "url": "https://primer.style/product/ui-patterns/empty-states/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "blank-slate"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Feature onboarding",
+      "url": "https://primer.style/product/ui-patterns/feature-onboarding/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "onboarding",
+        "first-run"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Forms",
+      "url": "https://primer.style/product/ui-patterns/forms/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Loading",
+      "url": "https://primer.style/product/ui-patterns/loading/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Navigation",
+      "url": "https://primer.style/product/ui-patterns/navigation/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "menu"
+      ]
+    },
+    {
+      "system": "GitHub Primer",
+      "title": "Notification messaging",
+      "url": "https://primer.style/product/ui-patterns/notification-messaging/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "notification",
+        "toast"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Error summary",
+      "url": "https://design-system.service.gov.uk/components/error-summary/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "error",
+        "validation",
+        "form",
+        "accessibility"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Error message",
+      "url": "https://design-system.service.gov.uk/components/error-message/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "error",
+        "validation",
+        "form"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Notification banner",
+      "url": "https://design-system.service.gov.uk/components/notification-banner/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "notification"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "File upload",
+      "url": "https://design-system.service.gov.uk/components/file-upload/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file-upload",
+        "form"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Date input",
+      "url": "https://design-system.service.gov.uk/components/date-input/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Character count",
+      "url": "https://design-system.service.gov.uk/components/character-count/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "input"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Cookie banner",
+      "url": "https://design-system.service.gov.uk/components/cookie-banner/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "consent"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Warning text",
+      "url": "https://design-system.service.gov.uk/components/warning-text/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "destructive",
+        "warning",
+        "confirmation"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Tabs",
+      "url": "https://design-system.service.gov.uk/components/tabs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Tag",
+      "url": "https://design-system.service.gov.uk/components/tag/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Task list",
+      "url": "https://design-system.service.gov.uk/components/task-list/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "stepper",
+        "wizard",
+        "checklist"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Table",
+      "url": "https://design-system.service.gov.uk/components/table/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Pagination",
+      "url": "https://design-system.service.gov.uk/components/pagination/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "data-table"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Password input",
+      "url": "https://design-system.service.gov.uk/components/password-input/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "input"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Text input",
+      "url": "https://design-system.service.gov.uk/components/text-input/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "input"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Select",
+      "url": "https://design-system.service.gov.uk/components/select/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "dropdown",
+        "select"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Accordion",
+      "url": "https://design-system.service.gov.uk/components/accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-display",
+        "disclosure"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Breadcrumbs",
+      "url": "https://design-system.service.gov.uk/components/breadcrumbs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumbs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Validation",
+      "url": "https://design-system.service.gov.uk/patterns/validation/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "validation",
+        "error",
+        "form"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Confirmation pages",
+      "url": "https://design-system.service.gov.uk/patterns/confirmation-pages/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "confirmation",
+        "destructive"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Step by step navigation",
+      "url": "https://design-system.service.gov.uk/patterns/step-by-step-navigation/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "stepper",
+        "wizard",
+        "navigation"
+      ]
+    },
+    {
+      "system": "GOV.UK Design System",
+      "title": "Navigate a service",
+      "url": "https://design-system.service.gov.uk/patterns/navigate-a-service/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "wizard"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Dialog",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/dialog/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Drawer",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/drawer/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sheet",
+        "drawer"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Message bar",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/messagebar/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "notification",
+        "error"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Toast",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/toast/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Menu",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/menu/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "command-palette"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Nav",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/nav/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Tab list",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/tablist/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Breadcrumb",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/breadcrumb/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumbs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Skeleton",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/skeleton/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "skeleton"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Progress bar",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/progressbar/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "progress"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Spinner",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/spinner/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Search box",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/searchbox/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "filter"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Combobox",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/combobox/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "select",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Field",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/field/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Tree",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/tree/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "tree",
+        "data-display"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Persona",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/persona/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "badge"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Badge",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/badge/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status"
+      ]
+    },
+    {
+      "system": "Microsoft Fluent 2",
+      "title": "Tag",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/tag/usage",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Alert",
+      "url": "https://www.lightningdesignsystem.com/components/alert/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "notification",
+        "error"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Data tables",
+      "url": "https://www.lightningdesignsystem.com/components/data-tables/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "File selector",
+      "url": "https://www.lightningdesignsystem.com/components/file-selector/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file-upload",
+        "upload"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Menus",
+      "url": "https://www.lightningdesignsystem.com/components/menus/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Modals",
+      "url": "https://www.lightningdesignsystem.com/components/modals/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Notifications",
+      "url": "https://www.lightningdesignsystem.com/components/notifications/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Page headers",
+      "url": "https://www.lightningdesignsystem.com/components/page-headers/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "header"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Path",
+      "url": "https://www.lightningdesignsystem.com/components/path/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "stepper",
+        "wizard",
+        "progress"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Progress bar",
+      "url": "https://www.lightningdesignsystem.com/components/progress-bar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "progress"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Progress indicator",
+      "url": "https://www.lightningdesignsystem.com/components/progress-indicator/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "stepper",
+        "wizard"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Spinners",
+      "url": "https://www.lightningdesignsystem.com/components/spinners/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Tabs",
+      "url": "https://www.lightningdesignsystem.com/components/tabs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Toast",
+      "url": "https://www.lightningdesignsystem.com/components/toast/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Tooltips",
+      "url": "https://www.lightningdesignsystem.com/components/tooltips/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "help"
+      ]
+    },
+    {
+      "system": "Salesforce Lightning Design System",
+      "title": "Visual picker",
+      "url": "https://www.lightningdesignsystem.com/components/visual-picker/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "selection",
+        "picker"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Empty",
+      "url": "https://ant.design/components/empty",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "blank-slate",
+        "zero-state"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Result",
+      "url": "https://ant.design/components/result",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "error",
+        "success",
+        "feedback"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Alert",
+      "url": "https://ant.design/components/alert",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "error",
+        "validation",
+        "banner"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Message",
+      "url": "https://ant.design/components/message",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification",
+        "feedback"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Notification",
+      "url": "https://ant.design/components/notification",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification",
+        "banner"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Popconfirm",
+      "url": "https://ant.design/components/popconfirm",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "destructive",
+        "confirmation",
+        "popover"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Modal",
+      "url": "https://ant.design/components/modal",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Drawer",
+      "url": "https://ant.design/components/drawer",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sheet",
+        "drawer"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Table",
+      "url": "https://ant.design/components/table",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Pagination",
+      "url": "https://ant.design/components/pagination",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "data-table"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Tour",
+      "url": "https://ant.design/components/tour",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "onboarding",
+        "tour"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Steps",
+      "url": "https://ant.design/components/steps",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "stepper",
+        "wizard",
+        "progress"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Upload",
+      "url": "https://ant.design/components/upload",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file-upload",
+        "drag-and-drop"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Date picker",
+      "url": "https://ant.design/components/date-picker",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form",
+        "calendar"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Skeleton",
+      "url": "https://ant.design/components/skeleton",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "skeleton"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Spin",
+      "url": "https://ant.design/components/spin",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Progress",
+      "url": "https://ant.design/components/progress",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "progress"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Menu",
+      "url": "https://ant.design/components/menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Dropdown",
+      "url": "https://ant.design/components/dropdown",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Avatar",
+      "url": "https://ant.design/components/avatar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "badge"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Badge",
+      "url": "https://ant.design/components/badge",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Breadcrumb",
+      "url": "https://ant.design/components/breadcrumb",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumbs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "Card",
+      "url": "https://ant.design/components/card",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "data-display"
+      ]
+    },
+    {
+      "system": "Ant Design",
+      "title": "List",
+      "url": "https://ant.design/components/list",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "list",
+        "card",
+        "data-display"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Dialog",
+      "url": "https://ui.shadcn.com/docs/components/base/dialog",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Sheet",
+      "url": "https://ui.shadcn.com/docs/components/base/sheet",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sheet",
+        "drawer"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Data table",
+      "url": "https://ui.shadcn.com/docs/components/base/data-table",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "data-table",
+        "list"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Empty",
+      "url": "https://ui.shadcn.com/docs/components/base/empty",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "empty-state",
+        "blank-slate",
+        "zero-state"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Command",
+      "url": "https://ui.shadcn.com/docs/components/base/command",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "command-palette",
+        "search",
+        "menu"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Toast",
+      "url": "https://ui.shadcn.com/docs/components/base/toast",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Sidebar",
+      "url": "https://ui.shadcn.com/docs/components/base/sidebar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navigation",
+        "sidebar"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Skeleton",
+      "url": "https://ui.shadcn.com/docs/components/base/skeleton",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "skeleton"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Spinner",
+      "url": "https://ui.shadcn.com/docs/components/base/spinner",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "spinner"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Progress",
+      "url": "https://ui.shadcn.com/docs/components/base/progress",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loading",
+        "progress"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Pagination",
+      "url": "https://ui.shadcn.com/docs/components/base/pagination",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "data-table"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Date picker",
+      "url": "https://ui.shadcn.com/docs/components/base/date-picker",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date-picker",
+        "form",
+        "calendar"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Combobox",
+      "url": "https://ui.shadcn.com/docs/components/base/combobox",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "select",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Alert dialog",
+      "url": "https://ui.shadcn.com/docs/components/base/alert-dialog",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "destructive",
+        "confirmation",
+        "modal"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Context menu",
+      "url": "https://ui.shadcn.com/docs/components/base/context-menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "context-menu"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Dropdown menu",
+      "url": "https://ui.shadcn.com/docs/components/base/dropdown-menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Field",
+      "url": "https://ui.shadcn.com/docs/components/base/field",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Avatar",
+      "url": "https://ui.shadcn.com/docs/components/base/avatar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "badge"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Badge",
+      "url": "https://ui.shadcn.com/docs/components/base/badge",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "status"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Breadcrumb",
+      "url": "https://ui.shadcn.com/docs/components/base/breadcrumb",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumbs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Card",
+      "url": "https://ui.shadcn.com/docs/components/base/card",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "data-display"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Chart",
+      "url": "https://ui.shadcn.com/docs/components/base/chart",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "charts",
+        "data-viz",
+        "data-display"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Tabs",
+      "url": "https://ui.shadcn.com/docs/components/base/tabs",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation"
+      ]
+    },
+    {
+      "system": "shadcn/ui",
+      "title": "Tooltip",
+      "url": "https://ui.shadcn.com/docs/components/base/tooltip",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "help"
+      ]
+    }
+  ]
+}
