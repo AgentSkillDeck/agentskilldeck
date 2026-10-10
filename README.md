@@ -25,18 +25,50 @@ Eight pieces rendered by `produce.mjs` from the scripts in [plugins/audio/exampl
 
 <!-- showcase-table -->
 
-| Piece | Domain | Voices | Length | Listen |
+| Piece | Domain | Voices | Length | Files |
 |---|---|---|---|---|
-| [The Lighthouse](plugins/audio/examples/lighthouse/) | Audio drama with storm and sea | Narrator M5, Maya F2, Eli M1 | 1:09 | <a href="plugins/audio/examples/lighthouse/preview.mp4"><img src="plugins/audio/examples/lighthouse/poster.jpg" width="240" alt="The Lighthouse preview"></a><br>[▶ preview](plugins/audio/examples/lighthouse/preview.mp4) · [mp3](plugins/audio/examples/lighthouse/mix.mp3) |
-| [Pip and the Lantern Bug](plugins/audio/examples/bedtime/) | Bedtime story for kids | Narrator F3, Pip F2, Glow M1 | 1:10 | <a href="plugins/audio/examples/bedtime/preview.mp4"><img src="plugins/audio/examples/bedtime/poster.jpg" width="240" alt="Pip and the Lantern Bug preview"></a><br>[▶ preview](plugins/audio/examples/bedtime/preview.mp4) · [mp3](plugins/audio/examples/bedtime/mix.mp3) |
-| [How vaccines train your immune system](plugins/audio/examples/lesson/) | Health lesson in five chapters | Narrator F4, Student M4 | 0:55 | <a href="plugins/audio/examples/lesson/preview.mp4"><img src="plugins/audio/examples/lesson/poster.jpg" width="240" alt="How vaccines train your immune system preview"></a><br>[▶ preview](plugins/audio/examples/lesson/preview.mp4) · [mp3](plugins/audio/examples/lesson/mix.mp3) |
-| [Small Wonders, cold open](plugins/audio/examples/podcast/) | Podcast cold open into the theme | Nova F2, Rex M3 | 0:43 | <a href="plugins/audio/examples/podcast/preview.mp4"><img src="plugins/audio/examples/podcast/poster.jpg" width="240" alt="Small Wonders, cold open preview"></a><br>[▶ preview](plugins/audio/examples/podcast/preview.mp4) · [mp3](plugins/audio/examples/podcast/mix.mp3) |
-| [A Study in Scarlet, chapter one (excerpt)](plugins/audio/examples/audiobook/) | Audiobook, ACX-mastered | Narrator M5, Holmes M1, Stamford M4 | 1:29 | <a href="plugins/audio/examples/audiobook/preview.mp4"><img src="plugins/audio/examples/audiobook/poster.jpg" width="240" alt="A Study in Scarlet, chapter one (excerpt) preview"></a><br>[▶ preview](plugins/audio/examples/audiobook/preview.mp4) · [mp3](plugins/audio/examples/audiobook/mix.mp3) |
-| [One voice, six languages](plugins/audio/examples/languages/) | Languages: en, es, fr, hi, ja, ko | Voice F4 | 0:50 | <a href="plugins/audio/examples/languages/preview.mp4"><img src="plugins/audio/examples/languages/poster.jpg" width="240" alt="One voice, six languages preview"></a><br>[▶ preview](plugins/audio/examples/languages/preview.mp4) · [mp3](plugins/audio/examples/languages/mix.mp3) |
-| [Two-minute breathing break](plugins/audio/examples/meditation/) | Meditation, −20 LUFS | Guide F3 | 2:00 | <a href="plugins/audio/examples/meditation/preview.mp4"><img src="plugins/audio/examples/meditation/poster.jpg" width="240" alt="Two-minute breathing break preview"></a><br>[▶ preview](plugins/audio/examples/meditation/preview.mp4) · [mp3](plugins/audio/examples/meditation/mix.mp3) |
-| [Lockout, tagout in six steps](plugins/audio/examples/playbook/) | Safety playbook | Trainer F5 | 1:08 | <a href="plugins/audio/examples/playbook/preview.mp4"><img src="plugins/audio/examples/playbook/poster.jpg" width="240" alt="Lockout, tagout in six steps preview"></a><br>[▶ preview](plugins/audio/examples/playbook/preview.mp4) · [mp3](plugins/audio/examples/playbook/mix.mp3) |
+| [The Lighthouse](plugins/audio/examples/lighthouse/) | Audio drama with storm and sea | Narrator M5, Maya F2, Eli M1 | 1:09 | [mp3](plugins/audio/examples/lighthouse/mix.mp3) · [script](plugins/audio/examples/lighthouse/script.audio.md) |
+| [Pip and the Lantern Bug](plugins/audio/examples/bedtime/) | Bedtime story for kids | Narrator F3, Pip F2, Glow M1 | 1:10 | [mp3](plugins/audio/examples/bedtime/mix.mp3) · [script](plugins/audio/examples/bedtime/script.audio.md) |
+| [How vaccines train your immune system](plugins/audio/examples/lesson/) | Health lesson in five chapters | Narrator F4, Student M4 | 0:55 | [mp3](plugins/audio/examples/lesson/mix.mp3) · [script](plugins/audio/examples/lesson/script.audio.md) |
+| [Small Wonders, cold open](plugins/audio/examples/podcast/) | Podcast cold open into the theme | Nova F2, Rex M3 | 0:43 | [mp3](plugins/audio/examples/podcast/mix.mp3) · [script](plugins/audio/examples/podcast/script.audio.md) |
+| [A Study in Scarlet, chapter one (excerpt)](plugins/audio/examples/audiobook/) | Audiobook, ACX-mastered | Narrator M5, Holmes M1, Stamford M4 | 1:29 | [mp3](plugins/audio/examples/audiobook/mix.mp3) · [script](plugins/audio/examples/audiobook/script.audio.md) |
+| [One voice, six languages](plugins/audio/examples/languages/) | Languages: en, es, fr, hi, ja, ko | Voice F4 | 0:50 | [mp3](plugins/audio/examples/languages/mix.mp3) · [script](plugins/audio/examples/languages/script.audio.md) |
+| [Two-minute breathing break](plugins/audio/examples/meditation/) | Meditation, −20 LUFS | Guide F3 | 2:00 | [mp3](plugins/audio/examples/meditation/mix.mp3) · [script](plugins/audio/examples/meditation/script.audio.md) |
+| [Lockout, tagout in six steps](plugins/audio/examples/playbook/) | Safety playbook | Trainer F5 | 1:08 | [mp3](plugins/audio/examples/playbook/mix.mp3) · [script](plugins/audio/examples/playbook/script.audio.md) |
 
-Click a thumbnail to open its MP4 preview (waveform and burned-in speaker captions). GitHub only plays video inline when it is uploaded as a README attachment, so the previews open on their own page for now.
+Press play: each preview shows the waveform and burned-in speaker captions, with the full mix as its soundtrack.
+
+**The Lighthouse**: Audio drama with storm and sea (1:09)
+
+https://github.com/user-attachments/assets/eecf2328-5c15-4f39-9361-a09915585139
+
+**Pip and the Lantern Bug**: Bedtime story for kids (1:10)
+
+https://github.com/user-attachments/assets/916ddd09-349b-43e7-a6bd-ec53278d6f5f
+
+**How vaccines train your immune system**: Health lesson in five chapters (0:55)
+
+https://github.com/user-attachments/assets/d6d88841-4709-407e-95d1-dbffecf6b998
+
+**Small Wonders, cold open**: Podcast cold open into the theme (0:43)
+
+https://github.com/user-attachments/assets/5b45047e-990f-4b38-b764-2b8b702bb94d
+
+**A Study in Scarlet, chapter one (excerpt)**: Audiobook, ACX-mastered (1:29)
+
+https://github.com/user-attachments/assets/454b2244-46aa-4d05-ac07-f9713e051871
+
+**One voice, six languages**: Languages: en, es, fr, hi, ja, ko (0:50)
+
+https://github.com/user-attachments/assets/cffb3392-bedc-4a4c-9890-85f3f89b6114
+
+**Two-minute breathing break**: Meditation, −20 LUFS (2:00)
+
+https://github.com/user-attachments/assets/931e0715-f40a-4c74-a5e6-cfe4de0aa4ab
+
+**Lockout, tagout in six steps**: Safety playbook (1:08)
+
+https://github.com/user-attachments/assets/a6ba0e0f-641f-42e5-926c-ea1d6776bf25
 
 ### How it compares
 
