@@ -1,0 +1,174 @@
+[
+ {
+  "id": "dm-serif-display",
+  "family": "DM Serif Display",
+  "subsets": [
+   "latin",
+   "latin-ext"
+  ],
+  "weights": [
+   400
+  ],
+  "styles": [
+   "italic",
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": false,
+  "lastModified": "2025-09-11",
+  "category": "serif",
+  "license": "OFL-1.1",
+  "type": "google"
+ },
+ {
+  "id": "geist",
+  "family": "Geist",
+  "subsets": [
+   "cyrillic",
+   "cyrillic-ext",
+   "latin",
+   "latin-ext",
+   "vietnamese"
+  ],
+  "weights": [
+   100,
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "styles": [
+   "italic",
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": true,
+  "lastModified": "2026-05-13",
+  "category": "sans-serif",
+  "license": "OFL-1.1",
+  "type": "google"
+ },
+ {
+  "id": "inter",
+  "family": "Inter",
+  "subsets": [
+   "cyrillic",
+   "cyrillic-ext",
+   "greek",
+   "greek-ext",
+   "latin",
+   "latin-ext",
+   "vietnamese"
+  ],
+  "weights": [
+   100,
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "styles": [
+   "italic",
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": true,
+  "lastModified": "2025-09-10",
+  "category": "sans-serif",
+  "license": "OFL-1.1",
+  "type": "google"
+ },
+ {
+  "id": "jetbrains-mono",
+  "family": "JetBrains Mono",
+  "subsets": [
+   "cyrillic",
+   "cyrillic-ext",
+   "greek",
+   "latin",
+   "latin-ext",
+   "vietnamese"
+  ],
+  "weights": [
+   100,
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800
+  ],
+  "styles": [
+   "italic",
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": true,
+  "lastModified": "2025-09-11",
+  "category": "monospace",
+  "license": "OFL-1.1",
+  "type": "google"
+ },
+ {
+  "id": "playfair-display",
+  "family": "Playfair Display",
+  "subsets": [
+   "cyrillic",
+   "latin",
+   "latin-ext",
+   "vietnamese"
+  ],
+  "weights": [
+   400,
+   500,
+   600,
+   700,
+   800,
+   900
+  ],
+  "styles": [
+   "italic",
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": true,
+  "lastModified": "2025-09-11",
+  "category": "serif",
+  "license": "OFL-1.1",
+  "type": "google"
+ },
+ {
+  "id": "space-grotesk",
+  "family": "Space Grotesk",
+  "subsets": [
+   "latin",
+   "latin-ext",
+   "vietnamese"
+  ],
+  "weights": [
+   300,
+   400,
+   500,
+   600,
+   700
+  ],
+  "styles": [
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": true,
+  "lastModified": "2025-09-05",
+  "category": "sans-serif",
+  "license": "OFL-1.1",
+  "type": "google"
+ }
+]

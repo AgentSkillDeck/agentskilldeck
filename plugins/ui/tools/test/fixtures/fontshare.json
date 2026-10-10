@@ -1,0 +1,509 @@
+{
+ "count": 100,
+ "has_more": false,
+ "fonts": [
+  {
+   "name": "General Sans",
+   "slug": "general-sans",
+   "category": "Sans",
+   "license_type": "itf_ffl",
+   "font_tags": [
+    {
+     "name": "Branding"
+    },
+    {
+     "name": "Logos"
+    },
+    {
+     "name": "Poster"
+    },
+    {
+     "name": "Websites"
+    }
+   ],
+   "styles": [
+    {
+     "weight": {
+      "label": "Extralight",
+      "name": "Extralight",
+      "number": 200,
+      "weight": 200,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Extralight Italic",
+      "name": "ExtralightItalic",
+      "number": 201,
+      "weight": 200,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Light",
+      "name": "Light",
+      "number": 300,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Light Italic",
+      "name": "LightItalic",
+      "number": 301,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Regular",
+      "name": "Regular",
+      "number": 400,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Italic",
+      "name": "Italic",
+      "number": 401,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Medium",
+      "name": "Medium",
+      "number": 500,
+      "weight": 500,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Medium Italic",
+      "name": "MediumItalic",
+      "number": 501,
+      "weight": 500,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Semibold",
+      "name": "Semibold",
+      "number": 600,
+      "weight": 600,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Semibold Italic",
+      "name": "SemiboldItalic",
+      "number": 601,
+      "weight": 600,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold",
+      "name": "Bold",
+      "number": 700,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold Italic",
+      "name": "BoldItalic",
+      "number": 701,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable",
+      "name": "Variable",
+      "number": 1,
+      "weight": 0,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable Italic",
+      "name": "VariableItalic",
+      "number": 2,
+      "weight": 0,
+      "native_name": null
+     }
+    }
+   ]
+  },
+  {
+   "name": "Clash Display",
+   "slug": "clash-display",
+   "category": "Sans",
+   "license_type": "itf_ffl",
+   "font_tags": [
+    {
+     "name": "Banners"
+    },
+    {
+     "name": "Editorial"
+    },
+    {
+     "name": "Magazines"
+    }
+   ],
+   "styles": [
+    {
+     "weight": {
+      "label": "Extralight",
+      "name": "Extralight",
+      "number": 200,
+      "weight": 200,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Light",
+      "name": "Light",
+      "number": 300,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Regular",
+      "name": "Regular",
+      "number": 400,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Medium",
+      "name": "Medium",
+      "number": 500,
+      "weight": 500,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Semibold",
+      "name": "Semibold",
+      "number": 600,
+      "weight": 600,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold",
+      "name": "Bold",
+      "number": 700,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable",
+      "name": "Variable",
+      "number": 1,
+      "weight": 0,
+      "native_name": null
+     }
+    }
+   ]
+  },
+  {
+   "name": "Satoshi",
+   "slug": "satoshi",
+   "category": "Sans",
+   "license_type": "itf_ffl",
+   "font_tags": [
+    {
+     "name": "Logos"
+    },
+    {
+     "name": "Magazines"
+    },
+    {
+     "name": "Branding"
+    }
+   ],
+   "styles": [
+    {
+     "weight": {
+      "label": "Light",
+      "name": "Light",
+      "number": 300,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Light Italic",
+      "name": "LightItalic",
+      "number": 301,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Regular",
+      "name": "Regular",
+      "number": 400,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Italic",
+      "name": "Italic",
+      "number": 401,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Medium",
+      "name": "Medium",
+      "number": 500,
+      "weight": 500,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Medium Italic",
+      "name": "MediumItalic",
+      "number": 501,
+      "weight": 500,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold",
+      "name": "Bold",
+      "number": 700,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold Italic",
+      "name": "BoldItalic",
+      "number": 701,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Black",
+      "name": "Black",
+      "number": 900,
+      "weight": 900,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Black Italic",
+      "name": "BlackItalic",
+      "number": 901,
+      "weight": 900,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable",
+      "name": "Variable",
+      "number": 1,
+      "weight": 0,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable Italic",
+      "name": "VariableItalic",
+      "number": 2,
+      "weight": 0,
+      "native_name": null
+     }
+    }
+   ]
+  },
+  {
+   "name": "Zodiak",
+   "slug": "zodiak",
+   "category": "Serif",
+   "license_type": "itf_ffl",
+   "font_tags": [
+    {
+     "name": "Editorial"
+    },
+    {
+     "name": "Magazines"
+    },
+    {
+     "name": "Books"
+    }
+   ],
+   "styles": [
+    {
+     "weight": {
+      "label": "Thin",
+      "name": "Thin",
+      "number": 100,
+      "weight": 100,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Thin Italic",
+      "name": "ThinItalic",
+      "number": 101,
+      "weight": 100,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Light",
+      "name": "Light",
+      "number": 300,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Light Italic",
+      "name": "LightItalic",
+      "number": 301,
+      "weight": 300,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Regular",
+      "name": "Regular",
+      "number": 400,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Italic",
+      "name": "Italic",
+      "number": 401,
+      "weight": 400,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold",
+      "name": "Bold",
+      "number": 700,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Bold Italic",
+      "name": "BoldItalic",
+      "number": 701,
+      "weight": 700,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Extrabold         ",
+      "name": "Extrabold",
+      "number": 800,
+      "weight": 800,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Extrabold Italic",
+      "name": "ExtraboldItalic",
+      "number": 801,
+      "weight": 800,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Black",
+      "name": "Black",
+      "number": 900,
+      "weight": 900,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Black Italic",
+      "name": "BlackItalic",
+      "number": 901,
+      "weight": 900,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable",
+      "name": "Variable",
+      "number": 1,
+      "weight": 0,
+      "native_name": null
+     }
+    },
+    {
+     "weight": {
+      "label": "Variable Italic",
+      "name": "VariableItalic",
+      "number": 2,
+      "weight": 0,
+      "native_name": null
+     }
+    }
+   ]
+  }
+ ],
+ "count_total": 100
+}
