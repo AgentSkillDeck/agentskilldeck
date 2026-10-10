@@ -119,6 +119,38 @@
   "type": "google"
  },
  {
+  "id": "nunito",
+  "family": "Nunito",
+  "subsets": [
+   "cyrillic",
+   "cyrillic-ext",
+   "latin",
+   "latin-ext",
+   "vietnamese"
+  ],
+  "weights": [
+   200,
+   300,
+   400,
+   500,
+   600,
+   700,
+   800,
+   900,
+   1000
+  ],
+  "styles": [
+   "italic",
+   "normal"
+  ],
+  "defSubset": "latin",
+  "variable": true,
+  "lastModified": "2025-09-10",
+  "category": "sans-serif",
+  "license": "OFL-1.1",
+  "type": "google"
+ },
+ {
   "id": "playfair-display",
   "family": "Playfair Display",
   "subsets": [

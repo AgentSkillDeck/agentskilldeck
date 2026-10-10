@@ -6,12 +6,14 @@ import { join } from 'node:path';
 import { main } from '../materials.mjs';
 
 const fx = async (n) => JSON.parse(await readFile(new URL(`./fixtures/${n}.json`, import.meta.url)));
+const fxText = async (n) => readFile(new URL(`./fixtures/${n}`, import.meta.url), 'utf8');
 const fixtures = {
   fontsource: await fx('fontsource'), fontshare: await fx('fontshare'),
   search: await fx('iconify-search'), collections: await fx('iconify-collections'),
-  registries: await fx('shadcn-registries'),
+  registries: await fx('shadcn-registries'), tags: await fxText('font-tags.csv'),
 };
 const fetchImpl = async (url) => {
+  if (url.includes('families.csv')) return new Response(fixtures.tags);
   const body = url.includes('fontsource') ? fixtures.fontsource
     : url.includes('fontshare') ? fixtures.fontshare
     : url.includes('/collections') ? fixtures.collections

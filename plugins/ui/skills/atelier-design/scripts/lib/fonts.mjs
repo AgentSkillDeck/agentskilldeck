@@ -1,4 +1,5 @@
 import { fetchJson, ServiceError } from './http.mjs';
+import { loadFontTags } from './fonttags.mjs';
 import { tokenize, rank } from './rank.mjs';
 
 const DAY = 24 * 60 * 60 * 1000;
@@ -7,16 +8,33 @@ const LICENSE_URLS = {
   'Apache-2.0': 'https://www.apache.org/licenses/LICENSE-2.0',
 };
 
-function fromFontsource(f) {
+// Google Fonts tags have only a broad score, not a fixed meaning; weight 3
+// for a strong signal (score >= 70), 2 for a moderate one (40-69), and
+// ignore anything weaker so unrelated style words don't creep into ranking.
+function styleTags(family, tagsByFamily) {
+  const entries = tagsByFamily?.get(family.toLowerCase()) ?? [];
+  const fields = [];
+  const styleWords = [];
+  for (const { words, score } of entries) {
+    if (score < 40) continue;
+    fields.push({ text: words, weight: score >= 70 ? 3 : 2 });
+    const leaf = words[words.length - 1];
+    if (leaf && !styleWords.includes(leaf)) styleWords.push(leaf);
+  }
+  return { fields, styleWords };
+}
+
+function fromFontsource(f, tagsByFamily) {
   const pkg = f.variable ? `@fontsource-variable/${f.id}` : `@fontsource/${f.id}`;
+  const { fields: tagFields, styleWords } = styleTags(f.family, tagsByFamily);
   return {
     name: f.family,
     source: 'Fontsource',
     previewUrl: `https://fontsource.org/fonts/${f.id}`,
     license: { id: f.license, url: LICENSE_URLS[f.license] ?? `https://fontsource.org/fonts/${f.id}` },
     install: `npm i ${pkg}`,
-    notes: `${f.category}; weights ${f.weights.join(', ')}${f.variable ? '; variable' : ''}; subsets ${f.subsets.slice(0, 4).join(', ')}`,
-    _fields: [{ text: f.family, weight: 4 }, { text: f.category, weight: 2 }],
+    notes: `${f.category}; weights ${f.weights.join(', ')}${f.variable ? '; variable' : ''}; subsets ${f.subsets.slice(0, 4).join(', ')}${styleWords.length ? `; style: ${styleWords.join(', ')}` : ''}`,
+    _fields: [{ text: f.family, weight: 4 }, { text: f.category, weight: 2 }, ...tagFields],
     _category: f.category,
   };
 }
@@ -47,13 +65,15 @@ const strip = ({ _fields, _category, ...r }) => r;
 
 export async function searchFonts(query, { limit, category, fetchImpl, cacheDir }) {
   const common = { fetchImpl, cacheDir, cacheTtlMs: DAY };
-  const [fs, fsh] = await Promise.allSettled([
+  const [fs, fsh, tags] = await Promise.allSettled([
     fetchJson('https://api.fontsource.org/v1/fonts', { ...common, source: 'Fontsource' }),
     fetchJson('https://api.fontshare.com/v2/fonts?limit=200', { ...common, source: 'Fontshare' }),
+    loadFontTags(common),
   ]);
   const warnings = [];
   const pool = [];
-  if (fs.status === 'fulfilled') pool.push(...fs.value.map(fromFontsource));
+  const tagsByFamily = tags.status === 'fulfilled' ? tags.value : new Map();
+  if (fs.status === 'fulfilled') pool.push(...fs.value.map((f) => fromFontsource(f, tagsByFamily)));
   else {
     const msg = fs.reason.message.replace(/^[^:]*: /, '');
     warnings.push(`${fs.reason.source} unavailable (${msg})`);
@@ -62,6 +82,10 @@ export async function searchFonts(query, { limit, category, fetchImpl, cacheDir 
   else {
     const msg = fsh.reason.message.replace(/^[^:]*: /, '');
     warnings.push(`${fsh.reason.source} unavailable (${msg})`);
+  }
+  if (tags.status === 'rejected') {
+    const msg = tags.reason.message.replace(/^[^:]*: /, '');
+    warnings.push(`${tags.reason.source} unavailable (${msg})`);
   }
   if (!pool.length) throw new ServiceError('Fontsource+Fontshare', warnings.join('; '));
 

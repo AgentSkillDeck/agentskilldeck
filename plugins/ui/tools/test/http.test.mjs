@@ -3,9 +3,10 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, readdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { fetchJson, ServiceError } from '../lib/http.mjs';
+import { fetchJson, fetchText, ServiceError } from '../lib/http.mjs';
 
 const ok = (body) => new Response(JSON.stringify(body), { status: 200 });
+const okText = (body) => new Response(body, { status: 200 });
 
 test('returns parsed JSON', async () => {
   const data = await fetchJson('https://x.test/a', { source: 'X', fetchImpl: async () => ok({ a: 1 }) });
@@ -50,4 +51,20 @@ test('corrupt cache file is ignored and refetched', async () => {
   const [file] = await readdir(cacheDir);
   await writeFile(join(cacheDir, file), '{"truncat');
   assert.deepEqual(await fetchJson('https://x.test/f', opts), { fresh: true });
+});
+
+test('fetchText returns raw text and caches it like fetchJson', async () => {
+  const cacheDir = await mkdtemp(join(tmpdir(), 'aa-'));
+  let calls = 0;
+  const fetchImpl = async () => { calls++; return okText('a,b,c\n1,2,3\n'); };
+  const opts = { source: 'X', fetchImpl, cacheTtlMs: 60_000, cacheDir };
+  assert.equal(await fetchText('https://x.test/g', opts), 'a,b,c\n1,2,3\n');
+  assert.equal(await fetchText('https://x.test/g', opts), 'a,b,c\n1,2,3\n');
+  assert.equal(calls, 1);
+});
+
+test('fetchText throws ServiceError naming the source after retries exhausted', async () => {
+  const fetchImpl = async () => new Response('', { status: 500 });
+  await assert.rejects(fetchText('https://x.test/h', { source: 'Google Fonts tags', fetchImpl }),
+    (e) => e instanceof ServiceError && e.source === 'Google Fonts tags' && /HTTP 500/.test(e.message));
 });

@@ -36,9 +36,18 @@ When fixes are requested, apply them with the guide that owns the problem: [poli
 
 ## Materials and references
 
-This skill ships no scripts. Where a guide says `node scripts/...`, skip that step here and say references were not consulted; for real-world comparisons, use the atelier-radar skill. Inspect visual evidence only when it can change a finding. Use the host's real tools (file reads, search, a browser or simulator), never invented calls, and never claim a tool is connected or ran without an actual result. Missing tools never block the review: fall back to code reading and say so.
+Read [reference-policy](reference/reference-policy.md) before running either script. Run them from this skill's base directory (the folder containing this SKILL.md): `cd` into it first, or prefix `scripts/` with its absolute path. The agent's working directory is the user's project, not this folder.
 
-Distinguish an exact reference, a related example, no match, and a service error. Never claim an image was inspected or a state was found without evidence.
+```sh
+node scripts/references.mjs "<product job, object or state>" [--platform web|ios|android] [--limit 1-5] [--json]
+node scripts/materials.mjs <font|icon|animated-icon|pack> "<query>" [--limit 1-5] [--category <cat>] [--json]
+```
+
+- `references.mjs` reads a bundled index of design-system documentation; no network. Exit 0 = results or an explicit "No match"; exit 1 = usage error, fix the arguments.
+- `materials.mjs` searches font, icon, animated-icon and component-kit catalogues over the network. Exit 0 = results or an explicit "No match"; exit 1 = usage error; exit 2 = service error. On exit 2, retry once, then say the service failed and continue without it. It never means the library is empty.
+- Look things up only when the evidence could change a finding, for example checking a used font's licence or comparing a pattern against a design-system reference. Use the host's real tools, never invented calls or connections. Missing scripts, network or browser never block the review: fall back to code reading and say so.
+- Open a returned link in the host's browser tool before drawing a visual conclusion from it.
+- Report each lookup as an exact match, a related example, no match, or a service error. Never claim a page was inspected or a state was found without evidence.
 
 ## Finish
 

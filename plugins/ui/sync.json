@@ -6,7 +6,7 @@
     },
     "atelier-review": {
       "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
-      "tools": false
+      "tools": true
     },
     "atelier-radar": {
       "guides": ["reference-policy"],

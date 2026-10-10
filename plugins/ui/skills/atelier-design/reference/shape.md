@@ -7,7 +7,7 @@ Use this guide when the task is to decide what should be made and how it should 
 
 Read what already exists so questions cover only real unknowns: the task, the target files and neighbouring screens, design notes (for example `DESIGN.md`), tokens, shared components and real content or data. Run the app and look at the surfaces this work joins. Assert what you can infer and invite correction instead of asking.
 
-When real-world patterns would sharpen the discussion (how other products handle this flow or state), look them up: `node scripts/references.mjs "<query>" --platform web --limit 3` (use `ios` or `android` for native work), and follow [reference-policy](reference-policy.md) for how to use what comes back. Exit 2 is a service error, not an empty result: say so and continue without references.
+When real-world patterns would sharpen the discussion (how other products handle this flow or state), look them up: `node scripts/references.mjs "<query>" --platform web --limit 3` (use `ios` or `android` for native work), and follow [reference-policy](reference-policy.md) for how to use what comes back. It reads a bundled index, no network: exit 0 is results or an explicit "No match"; exit 1 is a usage error; it cannot return exit 2 (only `materials.mjs` can).
 
 ## Phase 1: discovery interview
 

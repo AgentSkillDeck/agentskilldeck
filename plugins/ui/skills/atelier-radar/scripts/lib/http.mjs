@@ -23,10 +23,10 @@ async function readCache(file, ttl) {
   }
 }
 
-export async function fetchJson(url, {
+async function fetchWithCache(url, {
   source, fetchImpl = globalThis.fetch, timeoutMs = 8000, retries = 1,
-  cacheTtlMs = 0, cacheDir = DEFAULT_CACHE,
-} = {}) {
+  cacheTtlMs = 0, cacheDir = DEFAULT_CACHE, accept, parse, invalidMessage,
+}) {
   const cacheFile = cacheTtlMs > 0
     ? join(cacheDir, createHash('sha256').update(url).digest('hex').slice(0, 32) + '.json')
     : undefined;
@@ -40,7 +40,7 @@ export async function fetchJson(url, {
     try {
       res = await fetchImpl(url, {
         signal: AbortSignal.timeout(timeoutMs),
-        headers: { 'user-agent': 'agentatelier', accept: 'application/json' },
+        headers: { 'user-agent': 'agentatelier', accept },
       });
     } catch (e) {
       lastError = e?.name === 'TimeoutError' ? `timed out after ${timeoutMs} ms` : (e?.message ?? String(e));
@@ -49,11 +49,19 @@ export async function fetchJson(url, {
     if (res.status === 429 || res.status >= 500) { lastError = `HTTP ${res.status}`; continue; }
     if (!res.ok) throw new ServiceError(source, `HTTP ${res.status}`);
     let data;
-    try { data = await res.json(); } catch { throw new ServiceError(source, 'invalid JSON response'); }
+    try { data = await parse(res); } catch { throw new ServiceError(source, invalidMessage); }
     if (cacheFile) {
       try { await mkdir(cacheDir, { recursive: true }); await writeFile(cacheFile, JSON.stringify(data)); } catch { /* cache is best-effort */ }
     }
     return data;
   }
   throw new ServiceError(source, lastError);
+}
+
+export async function fetchJson(url, opts = {}) {
+  return fetchWithCache(url, { ...opts, accept: 'application/json', parse: (res) => res.json(), invalidMessage: 'invalid JSON response' });
+}
+
+export async function fetchText(url, opts = {}) {
+  return fetchWithCache(url, { ...opts, accept: 'text/plain', parse: (res) => res.text(), invalidMessage: 'invalid text response' });
 }
