@@ -15,9 +15,9 @@ Read the theme setup (`MaterialTheme`, `colorScheme`, `Typography`, `Shapes`, or
 
 ## Layout and structure
 
-- **Navigation matched to window size.** Use window size classes: compact (under 600dp wide) gets a navigation bar with 3–5 destinations; medium (600–839dp) a navigation rail; expanded (840dp and up) a rail or a permanent drawer. Never ship the phone bottom bar untouched on a tablet or foldable.
-- **System Back always works.** Honour the Back gesture and button, including predictive back (opt in with `android:enableOnBackInvokedCallback="true"`; use `BackHandler`/`PredictiveBackHandler` in Compose, `PopScope` in Flutter, `BackHandler` in React Native). Back closes the top sheet, dialog or search first, then moves up the stack. Never trap the user or hijack the gesture.
-- **Edge-to-edge with window insets.** Call `enableEdgeToEdge()` (enforced when targeting SDK 35+) and apply status bar, navigation bar, display cutout and IME insets (`WindowInsets.safeDrawing`, `Modifier.imePadding()` in Compose; `react-native-safe-area-context`; `SafeArea` in Flutter). Content and the focused field never hide behind system bars or the keyboard.
+- **Navigation matched to window size.** Use window size classes: compact (under 600dp wide) gets a navigation bar with 3–5 destinations; medium (600–839dp) a navigation rail; expanded (840–1199dp) a rail or a permanent drawer; large (1200–1599dp) and extra-large (1600dp and up) a rail or permanent drawer with multi-pane layouts. Never ship the phone bottom bar untouched on a tablet or foldable.
+- **System Back always works.** Honour the Back gesture and button, including predictive back (opt in with `android:enableOnBackInvokedCallback="true"`; use `BackHandler`/`PredictiveBackHandler` in Compose, `OnBackPressedCallback` in Views (`OnBackAnimationCallback` for custom progress), `PopScope` in Flutter). React Native's `BackHandler` handles Back but does not drive predictive-back animations. Enable a back handler only while there is something to close (e.g. `BackHandler(enabled = sheetOpen)`); an always-enabled callback disables the system predictive back-to-home animation. Back closes the top sheet, dialog or search first, then moves up the stack. Never trap the user or hijack the gesture.
+- **Edge-to-edge with window insets.** Edge-to-edge is enforced when targeting SDK 35+ on Android 15+; call `enableEdgeToEdge()` for older versions and for system-bar styling. Apply status bar, navigation bar, display cutout and IME insets (`WindowInsets.safeDrawing`, `Modifier.imePadding()` in Compose; `react-native-safe-area-context`; `SafeArea` in Flutter). Content and the focused field never hide behind system bars or the keyboard.
 - **Top app bar for screen context**; pair it with a FAB only when the screen has a single primary action.
 
 ## Touch targets
@@ -56,7 +56,7 @@ Read the theme setup (`MaterialTheme`, `colorScheme`, `Typography`, `Shapes`, or
 
 - **Screenshots come from the emulator or a connected device, never a browser.** Build and install, then capture with `adb exec-out screencap -p > <path>` (choose a device with `adb -s <serial>` when several are attached). Capture every device class the app ships to: at least one phone and, when tablets or foldables are targets, one large screen.
 - **Dark theme and font scale belong in the pass.** `adb shell cmd uimode night yes` flips the theme (`no` restores it). `adb shell settings put system font_scale 1.3`, then `2.0`, catches clipped labels; restore `1.0` afterwards. With several devices attached, add `-s <serial>` to these commands too.
-- **Motion off:** `adb shell settings put global animator_duration_scale 0` (restore `1`) and check that every transition still completes and nothing waits on an animation.
+- **Motion off:** set `animator_duration_scale`, `transition_animation_scale` and `window_animation_scale` to 0 with `adb shell settings put global <name> 0` (restore all three to `1` afterwards) and check that every transition still completes and nothing waits on an animation.
 - **Back and insets:** press Back from every sheet, dialog and nested screen; open the keyboard on every form; rotate the device or resize the window.
 - **TalkBack:** walk the primary flow with TalkBack on; note unlabelled or out-of-order elements.
 - Run the project's UI and screenshot tests if they exist.

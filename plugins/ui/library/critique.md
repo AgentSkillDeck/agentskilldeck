@@ -3,13 +3,13 @@
 
 Use this guide when asked to review, critique or judge a built interface (a screen, flow or whole surface) against its brief before anyone changes it.
 
-A critique is evidence-backed judgment, not a defect list and not a redesign. It stays read-only unless the user asked for fixes: do not edit project files, and stop any server or simulator you started once you have finished (unless the user asks to keep it).
+A critique is evidence-backed judgment, not a redesign. It stays read-only unless the user asked for fixes: do not edit project files, and stop any server or simulator you started once you have finished (unless the user asks to keep it).
 
 ## Set up
 
 1. **Resolve the target** to concrete files and a way to render them: "the homepage" means the page component plus the running route; "the settings modal" means its component and the state that opens it. Prefer source paths over dev-server URLs, which drift.
 2. **Find the brief.** Read the task, any shape brief (see [shape](shape.md)), design notes (for example `DESIGN.md`), tokens and existing conventions. If no brief exists, write a one-line assumed job ("Lets a returning customer reorder in under a minute") and label it assumed. You judge pass/fail against that brief.
-3. **Honour settled decisions.** Drop findings that the brief or design notes explicitly accept, and say once that you dropped them.
+3. **Honour settled decisions.** Drop findings that the brief or design notes explicitly accept; say so once.
 4. **Classify the surface:** persuasive, experiential, operational or reading. It decides which heuristics apply and which personas to use.
 
 ## Two passes, in order
@@ -33,11 +33,13 @@ Render the target with the host's browser or simulator tool at the sizes it ship
 - Measure contrast for body text, labels, placeholders and focus rings (4.5:1 normal text, 3:1 large text and UI parts).
 - Grep the source for literal colours, off-scale spacing and type values, `outline: none`, missing `alt`/labels, and fixed heights on text containers.
 - Run the project's tests and linters if they cover the target; record what passed and what was not covered.
-- For native targets, follow the verification steps in [ios](ios.md) or [android](android.md).
+- For native targets, follow the verification steps in [ios](ios.md) or [android](android.md). For a full technical pass, run [audit](audit.md).
 
-Reconcile: note where the passes agree, what Pass B caught that Pass A missed, and which mechanical hits are false positives (with the reason).
+Reconcile: note where the passes agree, what Pass B caught that Pass A missed, and which mechanical hits are false positives, and why.
 
 ## Detect habitual design
+
+[craft](craft.md) applies these while building; critique judges them in the result.
 
 Repeated icon-title-text cards, decorative charts, nested panels, gradient headlines, glass backgrounds, indiscriminate pill shapes and identical section entrances are common defaults. They are not universal bans. Keep a treatment when it serves the chosen direction or the real task; flag it when it adds no information or conflicts with the product.
 
@@ -106,7 +108,7 @@ Add 1–2 project-specific personas only when the brief or design notes describe
 ## Severity
 
 - **P0 blocking:** the task cannot be completed, data is lost, or a required user group is locked out. Fix immediately.
-- **P1 major:** significant difficulty, confusion or a broken brief requirement. Fix before release.
+- **P1 major:** significant difficulty, confusion, a broken brief requirement, or an accessibility (WCAG AA) or platform-guideline failure. Fix before release.
 - **P2 minor:** an annoyance with a workaround. Fix in the next pass.
 - **P3 polish:** no real user impact.
 
@@ -116,7 +118,7 @@ If you are torn between two levels, ask "would a user contact support about this
 
 Write the whole report first; questions come last. Sections, in order:
 
-1. **Verdict:** `Pass` or `Fail` against the brief (or the labelled assumed job), with a one-line reason. Fail on any P0, any P1 that breaks an explicit brief requirement, or a brief-required check that you could not run. An unavailable browser, simulator or service is never a pass.
+1. **Verdict:** `Pass` or `Fail` against the brief (or the labelled assumed job), with a one-line reason. Fail on any P0, any P1 that breaks an explicit brief requirement, or a brief-required check that you could not run. An unavailable browser, simulator or service is never a pass. Add one line naming the single biggest opportunity.
 2. **Method:** what you rendered (sizes, devices, themes), which flows you exercised, what you grepped and which tests ran.
 3. **Design specificity:** your Pass A verdict, the habitual patterns found (with whether each earns its place) and missed chances for product character.
 4. **Heuristic table:** `# | Heuristic | Score | Key issue`, the total over the applicable maximum, and the band.
@@ -133,11 +135,11 @@ Write the whole report first; questions come last. Sections, in order:
 10. **Could not verify:** every check you could not run (state unreachable, no device, no real data, tests absent), with the reason and what would verify it. Never fold these into the findings as passes.
 11. **Questions:** 2–4 targeted questions, each with 2–3 concrete options tied to the findings: which problem area to tackle first, whether a tonal mismatch is intentional, the scope (top 3, all, P0–P1 only), and anything off-limits. With fewer than 3 findings you may skip them; write `Questions skipped: fewer than 3 findings`.
 
-Write directly. Say what is wrong, why it matters and what to do. Never write "consider exploring"; if everything is important, nothing is.
+Write directly: what is wrong, why it matters, what to do. If everything is important, nothing is.
 
 ## After the user answers
 
-List the actions in the user's priority order, then by impact. Map each finding to one guide: [typeset](typeset.md), [colorize](colorize.md), [layout](layout.md), [animate](animate.md), [clarify](clarify.md), [harden](harden.md), [adapt](adapt.md), [optimize](optimize.md), [distill](distill.md), [quieter](quieter.md), [bolder](bolder.md), [onboard](onboard.md), [delight](delight.md), [audit](audit.md) for a systematic accessibility and performance pass. Skip guides that address no finding, respect the scope and off-limits answers, and end with [polish](polish.md) when any fix is planned. After fixes, re-run this critique on the same target and sizes to compare scores.
+List the actions in the user's priority order, then by impact. Map each finding to one guide: [typeset](typeset.md), [colorize](colorize.md), [layout](layout.md), [animate](animate.md), [clarify](clarify.md), [harden](harden.md), [adapt](adapt.md), [optimize](optimize.md), [distill](distill.md), [quieter](quieter.md), [bolder](bolder.md), [onboard](onboard.md), [delight](delight.md), [audit](audit.md). Skip guides that address no finding, respect the scope and off-limits answers, and end with [polish](polish.md) when any fix is planned. After fixes, re-run this critique on the same target and sizes to compare scores.
 
 ## Common failures
 

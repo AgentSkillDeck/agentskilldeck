@@ -43,7 +43,7 @@ Decide before editing:
 - Reduce saturation from full to about 70–85%. Project tokens override this default.
 - Use fewer colours more deliberately; let neutrals do most of the work and keep colour as an accent on roughly 10% of the surface.
 - Keep high contrast only where it matters most (primary action, key figures, critical states).
-- Use warm or cool tinted greys instead of pure grey; they add depth without loudness. See [colorize](colorize.md).
+- Neutrals carry most of the surface; tint them only when the brand hue gives real cohesion (see [colorize](colorize.md)). Plain neutral grey is valid.
 - Never put grey text on a coloured background; use a darker shade of that colour or transparency instead.
 
 ### Visual weight

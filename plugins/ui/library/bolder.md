@@ -19,7 +19,7 @@ If the target is unclear, ask which section is the target and what must stay unt
 
 ## Assess: why it reads flat
 
-Render the target and its neighbours with the host's browser or simulator tool at about 375px and 1440px wide (or the platform's size classes). A section usually reads flat for reasons its neighbours have already solved. List what the rest of the page does that the target does not:
+Render the target and its neighbours with the host's browser or simulator tool at about 375px, 768px and 1440px wide (or the platform's size classes). A section usually reads flat for reasons its neighbours have already solved. List what the rest of the page does that the target does not:
 
 - display type at full strength (the top step of the existing scale, the heaviest weight in use);
 - structural devices that carry meaning (a grid break, a full-bleed band, an oversized number or image);
