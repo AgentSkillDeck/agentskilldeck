@@ -1,6 +1,7 @@
 import { fetchJson, ServiceError } from './http.mjs';
 import { loadFontTags } from './fonttags.mjs';
-import { tokenize, rank } from './rank.mjs';
+import { loadPopularity } from './popularity.mjs';
+import { tokenize, scoreItem } from './rank.mjs';
 
 const DAY = 24 * 60 * 60 * 1000;
 const LICENSE_URLS = {
@@ -25,6 +26,19 @@ const GENERIC_CATEGORY_WORDS = new Set(['sans', 'serif', 'slab', 'script', 'disp
 function styleName(name) {
   const kept = tokenize(name).filter((w) => !GENERIC_CATEGORY_WORDS.has(w));
   return kept.length ? kept.join(' ') : name;
+}
+
+// scoreItem's generic prefix fallback ("Geo" partially matching "geometric",
+// "Sansation" partially matching "sans") is a reasonable heuristic for
+// abbreviations, but on a font's own name it rewards coincidental letter
+// overlap with no bearing on the font's actual style. Score the family name
+// on exact token equality only; weight 4, matching scoreItem's exact-match
+// convention of score += weight * 2.
+function familyMatchScore(name, tokens) {
+  const words = new Set(tokenize(styleName(name)));
+  let score = 0;
+  for (const t of tokens) if (words.has(t)) score += 8;
+  return score;
 }
 
 // Tags have only a broad score, not a fixed meaning: weight 3 for a strong
@@ -60,8 +74,10 @@ function fromFontsource(f, tagsByFamily) {
     license: { id: f.license, url: LICENSE_URLS[f.license] ?? `https://fontsource.org/fonts/${f.id}` },
     install: `npm i ${pkg}`,
     notes: `${f.category}; weights ${f.weights.join(', ')}${f.variable ? '; variable' : ''}; subsets ${f.subsets.slice(0, 4).join(', ')}${styleWords.length ? `; style: ${styleWords.join(', ')}` : ''}`,
-    _fields: [{ text: styleName(f.family), weight: 4 }, { text: f.category, weight: 2 }, ...tagFields],
+    _familyName: f.family,
+    _restFields: [{ text: f.category, weight: 2 }, ...tagFields],
     _category: f.category,
+    _popularityKey: f.family.toLowerCase(),
   };
 }
 
@@ -78,27 +94,33 @@ function fromFontshare(f) {
     license: { id: 'ITF-FFL', url: 'https://www.fontshare.com/licenses/itf-ffl' },
     install: `<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=${f.slug}@${w}&display=swap">`,
     notes: `${String(f.category).toLowerCase()}; weights ${weights.join(', ') || 'see preview'}; free for commercial use (ITF FFL)`,
-    _fields: [
-      { text: styleName(f.name), weight: 4 },
+    _familyName: f.name,
+    _restFields: [
       { text: f.category, weight: 2 },
       { text: (f.font_tags ?? []).map((t) => t.name), weight: 1 },
     ],
     _category: String(f.category).toLowerCase(),
+    // Fontshare fonts aren't in Google's catalogue, so their popularity is
+    // always unknown; they sort after every font with a known popularity
+    // at the same score.
+    _popularityKey: f.name.toLowerCase(),
   };
 }
 
-const strip = ({ _fields, _category, ...r }) => r;
+const strip = ({ _familyName, _restFields, _category, _popularityKey, ...r }) => r;
 
 export async function searchFonts(query, { limit, category, fetchImpl, cacheDir }) {
   const common = { fetchImpl, cacheDir, cacheTtlMs: DAY };
-  const [fs, fsh, tags] = await Promise.allSettled([
+  const [fs, fsh, tags, popularity] = await Promise.allSettled([
     fetchJson('https://api.fontsource.org/v1/fonts', { ...common, source: 'Fontsource' }),
     fetchJson('https://api.fontshare.com/v2/fonts?limit=200', { ...common, source: 'Fontshare' }),
     loadFontTags(common),
+    loadPopularity(common),
   ]);
   const warnings = [];
   const pool = [];
   const tagsByFamily = tags.status === 'fulfilled' ? tags.value : new Map();
+  const popularityByFamily = popularity.status === 'fulfilled' ? popularity.value : new Map();
   if (fs.status === 'fulfilled') pool.push(...fs.value.map((f) => fromFontsource(f, tagsByFamily)));
   else {
     const msg = fs.reason.message.replace(/^[^:]*: /, '');
@@ -113,10 +135,29 @@ export async function searchFonts(query, { limit, category, fetchImpl, cacheDir 
     const msg = tags.reason.message.replace(/^[^:]*: /, '');
     warnings.push(`${tags.reason.source} unavailable (${msg})`);
   }
+  if (popularity.status === 'rejected') {
+    const msg = popularity.reason.message.replace(/^[^:]*: /, '');
+    warnings.push(`${popularity.reason.source} unavailable (${msg})`);
+  }
   if (!pool.length) throw new ServiceError('Fontsource+Fontshare', warnings.join('; '));
 
   const cat = category?.toLowerCase();
   const filtered = cat ? pool.filter((f) => f._category === cat) : pool;
-  const results = rank(filtered, tokenize(query), (f) => f._fields, limit).map(strip);
+  const tokens = tokenize(query);
+  // Rank by score desc, then popularity asc (more popular first; unknown
+  // popularity sorts last), then original catalogue order as a final,
+  // stable tie-break. Computed directly here (not via rank()) because
+  // rank() has no notion of a secondary sort key.
+  const results = filtered
+    .map((item, i) => ({
+      item,
+      i,
+      s: familyMatchScore(item._familyName, tokens) + scoreItem(tokens, item._restFields),
+      pop: popularityByFamily.get(item._popularityKey) ?? Infinity,
+    }))
+    .filter((x) => x.s > 0)
+    .sort((a, b) => b.s - a.s || a.pop - b.pop || a.i - b.i)
+    .slice(0, limit)
+    .map((x) => strip(x.item));
   return { results, warnings };
 }

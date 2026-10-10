@@ -10,10 +10,11 @@ const fxText = async (n) => readFile(new URL(`./fixtures/${n}`, import.meta.url)
 const fixtures = {
   fontsource: await fx('fontsource'), fontshare: await fx('fontshare'),
   search: await fx('iconify-search'), collections: await fx('iconify-collections'),
-  registries: await fx('shadcn-registries'), tags: await fxText('font-tags.csv'),
+  registries: await fx('shadcn-registries'), tags: await fxText('font-tags.csv'), popularity: await fxText('font-popularity.json'),
 };
 const fetchImpl = async (url) => {
   if (url.includes('families.csv')) return new Response(fixtures.tags);
+  if (url.includes('metadata/fonts')) return new Response(fixtures.popularity);
   const body = url.includes('fontsource') ? fixtures.fontsource
     : url.includes('fontshare') ? fixtures.fontshare
     : url.includes('/collections') ? fixtures.collections

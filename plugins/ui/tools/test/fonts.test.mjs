@@ -7,13 +7,17 @@ import { searchFonts } from '../lib/fonts.mjs';
 
 const fx = async (n) => JSON.parse(await readFile(new URL(`./fixtures/${n}.json`, import.meta.url)));
 const fxText = async (n) => readFile(new URL(`./fixtures/${n}`, import.meta.url), 'utf8');
-const routes = async () => ({ fontsource: await fx('fontsource'), fontshare: await fx('fontshare'), tags: await fxText('font-tags.csv') });
+const routes = async () => ({
+  fontsource: await fx('fontsource'), fontshare: await fx('fontshare'),
+  tags: await fxText('font-tags.csv'), popularity: await fxText('font-popularity.json'),
+});
 
-function fakeFetch(r, { failFontshare = false, failTags = false } = {}) {
+function fakeFetch(r, { failFontshare = false, failTags = false, failPopularity = false } = {}) {
   return async (url) => {
     if (url.includes('fontsource')) return new Response(JSON.stringify(r.fontsource));
     if (url.includes('fontshare')) return failFontshare ? new Response('', { status: 503 }) : new Response(JSON.stringify(r.fontshare));
     if (url.includes('families.csv')) return failTags ? new Response('', { status: 503 }) : new Response(r.tags);
+    if (url.includes('metadata/fonts')) return failPopularity ? new Response('', { status: 503 }) : new Response(r.popularity);
     throw new Error('unexpected ' + url);
   };
 }
@@ -114,4 +118,49 @@ test('Google Fonts tags fetch failure: results still returned, with a warning', 
   });
   assert.ok(results.some((r) => r.name === 'Inter'));
   assert.ok(warnings.some((w) => /Google Fonts tags unavailable/.test(w)));
+});
+
+test('family name field requires an exact token match: a "Geo"-named font gets no credit for "geometric"', async () => {
+  // Real-world regression: "Geo" and "Geom" are not tagged as geometric
+  // here (unlike the live catalogue's actual Geo/Geom), so with no tag
+  // match and no exact family-word match, "geometric" should find nothing
+  // via family-name prefix credit alone.
+  const bareFontsource = [{
+    id: 'geo-test', family: 'Geo', subsets: ['latin'], weights: [400], styles: ['normal'],
+    defSubset: 'latin', variable: false, lastModified: '2025-01-01', category: 'sans-serif', license: 'OFL-1.1', type: 'google',
+  }];
+  const fetchImpl = async (url) => {
+    if (url.includes('fontsource')) return new Response(JSON.stringify(bareFontsource));
+    if (url.includes('fontshare')) return new Response(JSON.stringify({ fonts: [] }));
+    if (url.includes('families.csv')) return new Response('');
+    if (url.includes('metadata/fonts')) return new Response(JSON.stringify({ familyMetadataList: [] }));
+    throw new Error('unexpected ' + url);
+  };
+  const { results } = await searchFonts('geometric', { limit: 5, fetchImpl, cacheDir: await fresh() });
+  assert.equal(results.length, 0);
+});
+
+test('"geometric sans" top 3 contains Poppins or Montserrat (popularity breaks the tie among equally-tagged fonts)', async () => {
+  const { results } = await searchFonts('geometric sans', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  const names = results.map((r) => r.name);
+  assert.ok(names.includes('Poppins') || names.includes('Montserrat'));
+});
+
+test('"humanist sans" top result is a popular humanist face', async () => {
+  const { results } = await searchFonts('humanist sans', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  assert.equal(results[0].name, 'Open Sans');
+});
+
+test('"rounded sans" top 3 contains Nunito or Quicksand', async () => {
+  const { results } = await searchFonts('rounded sans', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  const names = results.map((r) => r.name);
+  assert.ok(names.includes('Nunito') || names.includes('Quicksand'));
+});
+
+test('Google Fonts popularity fetch failure: results still returned, with a warning', async () => {
+  const { results, warnings } = await searchFonts('geometric sans', {
+    limit: 5, fetchImpl: fakeFetch(await routes(), { failPopularity: true }), cacheDir: await fresh(),
+  });
+  assert.ok(results.length > 0);
+  assert.ok(warnings.some((w) => /Google Fonts popularity unavailable/.test(w)));
 });
