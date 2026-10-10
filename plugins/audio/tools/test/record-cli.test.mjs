@@ -11,7 +11,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { main as record } from '../record.mjs';
 import { main as produceMain } from '../produce.mjs';
-import { hasFfmpeg, readWavInfo, run } from '../lib/ffmpeg.mjs';
+import { hasFfmpeg, probeDuration, readWavInfo, run } from '../lib/ffmpeg.mjs';
 
 const SKIP = (await hasFfmpeg()) ? false : 'ffmpeg not found';
 const FAKE = fileURLToPath(new URL('./fixtures/fake-engine.mjs', import.meta.url));
@@ -309,7 +309,12 @@ test('clone:<name> renders with the base voice, converts with the clone worker, 
   assert.equal(noEngine.code, 2);
   assert.match(noEngine.err, /setup\.mjs --install-clone/);
   // A draft needs no clone engine.
-  const draft = await call(produceMain, [script, '--out', join(work, 'draft'), '--offline', '--draft'], { engine: undefined, checkCloneSetup: async () => ({ ok: false }) });
+  // The system voice is stubbed with a tone so this runs on CI (no `say` or espeak-ng there).
+  const draftSynth = async (item, wav) => {
+    await run(['-f', 'lavfi', '-i', 'sine=f=300:d=1.2', '-ac', '1', '-ar', '44100', '-c:a', 'pcm_s16le', wav]);
+    return { id: item.id, path: wav, duration_s: await probeDuration(wav), draft: true };
+  };
+  const draft = await call(produceMain, [script, '--out', join(work, 'draft'), '--offline', '--draft'], { engine: undefined, checkCloneSetup: async () => ({ ok: false }), draftSynth });
   assert.equal(draft.code, 0, draft.err);
   assert.match(draft.out, /drafted with the system voice, not converted/);
 });
