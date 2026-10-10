@@ -22,7 +22,10 @@ function fromFontsource(f) {
 }
 
 function fromFontshare(f) {
-  const weights = [...new Set((f.styles ?? []).map((s) => s.weight).filter(Boolean))].sort((a, b) => a - b);
+  const weights = [...new Set((f.styles ?? []).map((s) => {
+    const wt = s.weight;
+    return typeof wt === 'number' ? wt : (wt?.number ?? wt?.weight);
+  }).filter(Boolean))].sort((a, b) => a - b);
   const w = weights.length ? weights.join(',') : '400,700';
   return {
     name: f.name,
@@ -51,9 +54,15 @@ export async function searchFonts(query, { limit, category, fetchImpl, cacheDir 
   const warnings = [];
   const pool = [];
   if (fs.status === 'fulfilled') pool.push(...fs.value.map(fromFontsource));
-  else warnings.push(`Fontsource unavailable (${fs.reason.message})`);
+  else {
+    const msg = fs.reason.message.replace(/^[^:]*: /, '');
+    warnings.push(`${fs.reason.source} unavailable (${msg})`);
+  }
   if (fsh.status === 'fulfilled') pool.push(...(fsh.value.fonts ?? []).map(fromFontshare));
-  else warnings.push(`Fontshare unavailable (${fsh.reason.message})`);
+  else {
+    const msg = fsh.reason.message.replace(/^[^:]*: /, '');
+    warnings.push(`${fsh.reason.source} unavailable (${msg})`);
+  }
   if (!pool.length) throw new ServiceError('Fontsource+Fontshare', warnings.join('; '));
 
   const cat = category?.toLowerCase();

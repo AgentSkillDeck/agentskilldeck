@@ -23,130 +23,340 @@
    ],
    "styles": [
     {
+     "default": false,
+     "id": "69b37f2d-2393-405f-acd6-ebada909d55d",
+     "file": "//cdn.fontshare.com/wf/FSGJYPLPXRLVZAZIVVF74LDN3Q3S2WUF/S5KG2IZFL42XIGI5UEGBWGDAYOGDCUXQ/XC3ORZWTJXPLYORAWMH6ZXES6GBV3W5L",
      "weight": {
       "label": "Extralight",
       "name": "Extralight",
       "number": 200,
       "weight": 200,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 523,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "5e809a1a-1fef-486a-8cf7-2fa7f515a2f5",
+     "file": "//cdn.fontshare.com/wf/SK6LO24VHSNCBK22HPNN754CZCVWE5MG/45SGHCAPKETU6PVYRSN24BZ6542XVEO7/2RR4C66MFQLZHNGTYR4MOLXHMBDI4GH5",
      "weight": {
       "label": "Extralight Italic",
       "name": "ExtralightItalic",
       "number": 201,
       "weight": 200,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 523,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "9a4a3e92-230a-4aee-aada-14e98faa270e",
+     "file": "//cdn.fontshare.com/wf/HFTXPYOBEE22ON2ZH2TDSTBQLGERA7LU/4AOH2PGTMHZO2YX5HMTOAV52ONC3WIXE/TW4KNQIPR4LNP4I6I6C6HKQ23B2EQAU5",
      "weight": {
       "label": "Light",
       "name": "Light",
       "number": 300,
       "weight": 300,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 524,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "9375ca23-7db7-417e-916d-b29509872c78",
+     "file": "//cdn.fontshare.com/wf/HP3OLGI4FZQOEKZSBKGAS2GNVBXMQFN6/62TU7CTLGHWAIYQX4HBC5OBID4ONBIT2/NCX5HIWY7RWQAAWGBX7MHE2SYGQLFBC6",
      "weight": {
       "label": "Light Italic",
       "name": "LightItalic",
       "number": 301,
       "weight": 300,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 524,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "1882923f-b220-4fbb-bcc2-985902e8f3c7",
+     "file": "//cdn.fontshare.com/wf/MFQT7HFGCR2L5ULQTW6YXYZXXHMPKLJ3/YWQ244D6TACUX5JBKATPOW5I5MGJ3G73/7YY3ZAAE3TRV2LANYOLXNHTPHLXVWTKH",
      "weight": {
       "label": "Regular",
       "name": "Regular",
       "number": 400,
       "weight": 400,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 527,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "630e1257-4664-4d16-ba28-5590ebbd5624",
+     "file": "//cdn.fontshare.com/wf/GQOITZI54NH6HDBP26XAMQYTXB4JQ3NQ/VY7SXNCPHYFLQTOFY72GM4OZTBH62U2D/AHPLTG2YASI4OYLGJV4CF3P25VBHPK5X",
      "weight": {
       "label": "Italic",
       "name": "Italic",
       "number": 401,
       "weight": 400,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 527,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "f6fe55e4-b53b-464b-9c37-8552efa33075",
+     "file": "//cdn.fontshare.com/wf/3RZHWSNONLLWJK3RLPEKUZOMM56GO4LJ/BPDRY7AHVI3MCDXXVXTQQ76H3UXA63S3/SB2OEB6IKZPRR6JT4GFJ2TFT6HBB6AZN",
      "weight": {
       "label": "Medium",
       "name": "Medium",
       "number": 500,
       "weight": 500,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 530,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "eda681d0-7f0e-440a-aa95-44ca15047590",
+     "file": "//cdn.fontshare.com/wf/ST6AL2GVQRSWVDOXZNSHY2SMWYYSVFEK/WJ26NN5JS6IPLBXEKX7WHB7HACXDTAKH/H7W54QQR2V6KL5KMDA2PD2KSQRCZHPRE",
      "weight": {
       "label": "Medium Italic",
       "name": "MediumItalic",
       "number": 501,
       "weight": 500,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 530,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "d133f198-5875-43e3-82cb-4e7598cb37eb",
+     "file": "//cdn.fontshare.com/wf/K46YRH762FH3QJ25IQM3VAXAKCHEXXW4/ISLWQPUZHZF33LRIOTBMFOJL57GBGQ4B/3ZLMEXZEQPLTEPMHTQDAUXP5ZZXCZAEN",
      "weight": {
       "label": "Semibold",
       "name": "Semibold",
       "number": 600,
       "weight": 600,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 534,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "e2a07307-e005-48f3-81d6-5b7193108ff0",
+     "file": "//cdn.fontshare.com/wf/T2VB54RK54AYH45QBSFO6FWJJBOGDZQS/WZUJLZL2KK72TQFDHQ6EV4KREZ7WEUL2/6FVUUVSLJPCCVHIJND4LQZIT4MFZBXYJ",
      "weight": {
       "label": "Semibold Italic",
       "name": "SemiboldItalic",
       "number": 601,
       "weight": 600,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 534,
+      "y_max": 1010,
+      "y_min": -241
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "0a2b0be7-3aab-4a32-a245-d3ae10149504",
+     "file": "//cdn.fontshare.com/wf/KWXO5X3YW4X7OLUMPO4X24HQJGJU7E2Q/VOWUQZS3YLP66ZHPTXAFSH6YACY4WJHT/NIQ54PVBBIWVK3PFSOIOUJSXIJ5WTNDP",
      "weight": {
       "label": "Bold",
       "name": "Bold",
       "number": 700,
       "weight": 700,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 538,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "3158a2d0-6cc9-4701-8279-43781c612ee4",
+     "file": "//cdn.fontshare.com/wf/IZAMKIKJNFHYAA4XTXOGUSQUJWNXQHPE/2S5HU7TKNAV6MHTRNU2NPZD7U4OT6VKE/HCZ5OQRTYQOAVSHRS6UOFWUZ5CGI6JRO",
      "weight": {
       "label": "Bold Italic",
       "name": "BoldItalic",
       "number": 701,
       "weight": 700,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 538,
+      "y_max": 1010,
+      "y_min": -253
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": true,
+     "id": "562ef971-7491-4d21-852e-4751b3f85b2e",
+     "file": "//cdn.fontshare.com/wf/LHQJ5KSAL7VGAEIDSTEXCCOIUKFLT2I6/GW57XUEG4ZBVMLZZTQZTGYPROITRRQ5W/JA3IZUEMJ2J6WWT2OQVJOAWDXO3YL4YG",
      "weight": {
       "label": "Variable",
       "name": "Variable",
       "number": 1,
       "weight": 0,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1739,
+      "x_height": 538,
+      "y_max": 1010,
+      "y_min": -244
+     },
+     "is_variable": true,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "f2b49980-639b-4b84-b77a-acdc0a302c7d",
+     "file": "//cdn.fontshare.com/wf/RRO6TYZXO7WQBHSH4BZYSTI7E7T2HKLF/55LXPUDQQQTSLB3M2T377FIN2EKQQWJY/3HUYMY6WP3BZQYPOVGG6IZQAM476CQDC",
      "weight": {
       "label": "Variable Italic",
       "name": "VariableItalic",
       "number": 2,
       "weight": 0,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 718,
+      "descending_leading": -193,
+      "max_char_width": 1819,
+      "x_height": 538,
+      "y_max": 1010,
+      "y_min": -261
+     },
+     "is_variable": true,
+     "is_italic": true
     }
    ]
   },
@@ -168,194 +378,172 @@
    ],
    "styles": [
     {
+     "default": false,
+     "id": "4f2ca3b1-1ce7-40b8-b117-f3528581ad41",
+     "file": "//cdn.fontshare.com/wf/5HPV3UJUTRGUMHDLLTJKWGVPFGAKYJX3/FFBQJ5XURUJWMMBB7NX6DBDELXZR7T4I/NULWCMFPHMNO5EOBFBRF7EKVXV5JVMFB",
      "weight": {
       "label": "Extralight",
       "name": "Extralight",
       "number": 200,
       "weight": 200,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1739,
+      "x_height": 490,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "e408f4e4-291b-411d-aa64-d9f1ff22d548",
+     "file": "//cdn.fontshare.com/wf/2QNEFGROUS53RDOVAHQH4CNZZUWGOWOY/XHI55XFKRZLKG77T3N3QTH2YVHMLJQ5U/KVT4BC5ZH7LF4OBHM2Q7KOOZRRZZY5ZK",
      "weight": {
       "label": "Light",
       "name": "Light",
       "number": 300,
       "weight": 300,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1730,
+      "x_height": 491,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "a46ee282-9a3f-4261-8fab-6a7f9b685890",
+     "file": "//cdn.fontshare.com/wf/VFMK2COV3DN37JR7JQ4CAOJPZ7KWKNY7/ODD5YJNDLHZZB2MIT3DPVH4EIHAMZ34D/BSY64LPTT3OPLVKAZKL3AHKRWZ3D74AC",
      "weight": {
       "label": "Regular",
       "name": "Regular",
       "number": 400,
       "weight": 400,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1713,
+      "x_height": 494,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "3c1e0311-1e73-4019-b0ae-f400de9f2b1a",
+     "file": "//cdn.fontshare.com/wf/2GQIT54GKQY3JRFTSHS4ARTRNRQISSAA/3CIP5EBHRRHE5FVQU3VFROPUERNDSTDF/JTSL5QESUXATU47LCPUNHZQBDDIWDOSW",
      "weight": {
       "label": "Medium",
       "name": "Medium",
       "number": 500,
       "weight": 500,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1690,
+      "x_height": 497,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "7b2d66b5-04be-47cd-a6c4-92afb32b36f9",
+     "file": "//cdn.fontshare.com/wf/FPDAZ2S6SW4QMSRIIKNNGTPM6VIXYMKO/5HNPQ453FRLIQWV2FNOBUU3FKTDZQVSG/Z3MGHFHX6DCTLQ55LJYRJ5MDCZPMFZU6",
      "weight": {
       "label": "Semibold",
       "name": "Semibold",
       "number": 600,
       "weight": 600,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1663,
+      "x_height": 501,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "847e9e4f-ed4a-40c3-b1a4-b9cb1735ae63",
+     "file": "//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7",
      "weight": {
       "label": "Bold",
       "name": "Bold",
       "number": 700,
       "weight": 700,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1639,
+      "x_height": 504,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": true,
+     "id": "ce0c6870-7290-4e12-b234-4228a5ae40a8",
+     "file": "//cdn.fontshare.com/wf/DK2FOA46SRWJ5HXWWU5TK4N4CMHYD236/FPEAXZZSH5L2K5MTJFRIWD2MC32IJMN3/THOOS4VOCKT7H2XEB27NQDYM2NYS4AAR",
      "weight": {
       "label": "Variable",
       "name": "Variable",
       "number": 1,
       "weight": 0,
       "native_name": null
-     }
-    }
-   ]
-  },
-  {
-   "name": "Satoshi",
-   "slug": "satoshi",
-   "category": "Sans",
-   "license_type": "itf_ffl",
-   "font_tags": [
-    {
-     "name": "Logos"
-    },
-    {
-     "name": "Magazines"
-    },
-    {
-     "name": "Branding"
-    }
-   ],
-   "styles": [
-    {
-     "weight": {
-      "label": "Light",
-      "name": "Light",
-      "number": 300,
-      "weight": 300,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Light Italic",
-      "name": "LightItalic",
-      "number": 301,
-      "weight": 300,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Regular",
-      "name": "Regular",
-      "number": 400,
-      "weight": 400,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Italic",
-      "name": "Italic",
-      "number": 401,
-      "weight": 400,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Medium",
-      "name": "Medium",
-      "number": 500,
-      "weight": 500,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Medium Italic",
-      "name": "MediumItalic",
-      "number": 501,
-      "weight": 500,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Bold",
-      "name": "Bold",
-      "number": 700,
-      "weight": 700,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Bold Italic",
-      "name": "BoldItalic",
-      "number": 701,
-      "weight": 700,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Black",
-      "name": "Black",
-      "number": 900,
-      "weight": 900,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Black Italic",
-      "name": "BlackItalic",
-      "number": 901,
-      "weight": 900,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Variable",
-      "name": "Variable",
-      "number": 1,
-      "weight": 0,
-      "native_name": null
-     }
-    },
-    {
-     "weight": {
-      "label": "Variable Italic",
-      "name": "VariableItalic",
-      "number": 2,
-      "weight": 0,
-      "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 890,
+      "body_height": null,
+      "cap_height": 670,
+      "descending_leading": -170,
+      "max_char_width": 1639,
+      "x_height": 504,
+      "y_max": 890,
+      "y_min": -250
+     },
+     "is_variable": true,
+     "is_italic": false
     }
    ]
   },
@@ -377,130 +565,647 @@
    ],
    "styles": [
     {
+     "default": false,
+     "id": "58588385-4ec2-4c2a-9c75-bccbc28aa440",
+     "file": "//cdn.fontshare.com/wf/TO52MINGLTSYMQYMNWEPPJOYXFXV6GU7/OK23ITC6O5JIDJIVGWRPYNND5ALUMFMO/WFUCMBYRQ2M6KKR2J6JHCB7OU2677MV4",
      "weight": {
       "label": "Thin",
       "name": "Thin",
       "number": 100,
       "weight": 100,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1739,
+      "x_height": 490,
+      "y_max": 990,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "33e5202d-5375-4895-986a-e344982d9f37",
+     "file": "//cdn.fontshare.com/wf/YHHXSOJF3FMUNYFASBKJQYDXMEIUHENN/X4KG7BQSMV2XYTHYWVAWRAJUH5KZL2UU/PT75L7AUYY6HMWFUPPNRJCD2VYH4CVAF",
      "weight": {
       "label": "Thin Italic",
       "name": "ThinItalic",
       "number": 101,
       "weight": 100,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1739,
+      "x_height": 490,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "fff0d1e1-5767-467b-8faa-e231f03c99f1",
+     "file": "//cdn.fontshare.com/wf/IF5ZIT3FMSFNWCWOG7ZASDFHEMLSIUEE/OMOWAZNE73OKOHTUSHA6P7FH44MIVQTO/UREX64UV4XADQWU6EF6JRA5XVIEJPRP4",
      "weight": {
       "label": "Light",
       "name": "Light",
       "number": 300,
       "weight": 300,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1730,
+      "x_height": 493,
+      "y_max": 990,
+      "y_min": -250
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "ba72ac6d-7a19-42a0-957a-0bef177bed98",
+     "file": "//cdn.fontshare.com/wf/DLIOQN7BAIDF52NEOLWMG25TF2G4E5BG/2SBXS5PNCQ52C2STGTCLTGD7FAKWZYER/ZRX2TEYEJEWBO7BARVINFDFGSQVQCGX6",
      "weight": {
       "label": "Light Italic",
       "name": "LightItalic",
       "number": 301,
       "weight": 300,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1730,
+      "x_height": 493,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "3c721cfa-9ccf-4c8f-94e1-0a2393d2256a",
+     "file": "//cdn.fontshare.com/wf/ECUEQQ5BLZLFJS3PPLWOEEVS7SQONQMH/WNTXEMDDVWUVWDURRKDXCJC6G7TMP277/TBWKTFSYABV4KN4GNIJMAOQUOTYBUWB3",
      "weight": {
       "label": "Regular",
       "name": "Regular",
       "number": 400,
       "weight": 400,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1713,
+      "x_height": 498,
+      "y_max": 990,
+      "y_min": -260
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "f8e451a9-14e4-443e-85d9-38ed3378c7b3",
+     "file": "//cdn.fontshare.com/wf/YFLZBMMI3DYRSZHBNXVNB72OCINBINIT/AJUISU4RPSUOUSQPHGNMFKZ4M6TTQGWF/HUKQ64PZXOIVT5LHOHNUDCYHXBK5OR45",
      "weight": {
       "label": "Italic",
       "name": "Italic",
       "number": 401,
       "weight": 400,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1713,
+      "x_height": 498,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "ffefd1c7-f0e2-496f-93d5-0d9fc1b28c7e",
+     "file": "//cdn.fontshare.com/wf/63K42MQSJZ57SBX4XJ4J7L4M5IM6V2HQ/DTT4Y5AJV6DYRVZQST5O4K2E6SESQNV3/VGG36BIEB6ODAX4ZN7UV43FK742PFGDV",
      "weight": {
       "label": "Bold",
       "name": "Bold",
       "number": 700,
       "weight": 700,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1690,
+      "x_height": 505,
+      "y_max": 990,
+      "y_min": -260
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "0ac4b82b-fef9-4e43-85f9-8ec4da43d500",
+     "file": "//cdn.fontshare.com/wf/LYCAXAEFF2XH57BNLQZEKQC4MOD7UNNI/L4ENA7JL46CELJ6KARPZZ4FALWTYIGC5/I66MZ5NEPLHIFZ6EU4QHKXGSX5OCCJX3",
      "weight": {
       "label": "Bold Italic",
       "name": "BoldItalic",
       "number": 701,
       "weight": 700,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1690,
+      "x_height": 505,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "79eded2b-d1b3-40f8-923f-6538e65f0043",
+     "file": "//cdn.fontshare.com/wf/A6U4G5UNFS3UVTXKRHBP6I4WIG25I5P6/S43VVGQNPWABEEINYIB3HOT5WBP7JDFU/7BCVT6EXVT32KF7LTFPU7KBYLR463OET",
      "weight": {
       "label": "Extrabold         ",
       "name": "Extrabold",
       "number": 800,
       "weight": 800,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1664,
+      "x_height": 513,
+      "y_max": 990,
+      "y_min": -270
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "0d17f1e4-cfe4-462d-923a-e565909dc938",
+     "file": "//cdn.fontshare.com/wf/2ST4EG2GFKZI7EVNHFBLH7ZDJNXSTUSF/CPAS242DK764QSMEO2TZKJHV7OYWXDUF/42EL3W5NZRHAXXEMTM2RUXW4X6ZMOWP4",
      "weight": {
       "label": "Extrabold Italic",
       "name": "ExtraboldItalic",
       "number": 801,
       "weight": 800,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1664,
+      "x_height": 513,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": false,
+     "id": "7a351828-6c05-4554-9886-77f378ab4ae8",
+     "file": "//cdn.fontshare.com/wf/M7LM45Y7I7SGBX7VDIU2OOS2B25Z6SHP/EPCQVGBI6ODRRDJYRA7KPCH5OTK5TJVX/DXMDRQ75ZJD6EXQHKMOW3LYNEVM3GYH6",
      "weight": {
       "label": "Black",
       "name": "Black",
       "number": 900,
       "weight": 900,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1639,
+      "x_height": 520,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "8039d5cf-0ab5-425e-bbdc-e57d02daa544",
+     "file": "//cdn.fontshare.com/wf/DTTBVN23AMKABLCDL7CXYGVNQBPQ6OOF/GXBUZF6O75G4MI6U6TMQ65QRZMA7RPHO/QWFNMGHDMRUFLDMKWK4D5HWXAO25R6UY",
      "weight": {
       "label": "Black Italic",
       "name": "BlackItalic",
       "number": 901,
       "weight": 900,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1639,
+      "x_height": 520,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": false,
+     "is_italic": true
     },
     {
+     "default": true,
+     "id": "156ca2ba-1004-4792-b160-6e822c1d7ca9",
+     "file": "//cdn.fontshare.com/wf/UDGW4K5KDO2WNP2256GU5CP7HQDVADLQ/LML445TYWQT7TRPDYZPCIVB3BJWX7NTD/2O5TXCJMYUDHI5FO6N4PXN6WNROSBHNU",
      "weight": {
       "label": "Variable",
       "name": "Variable",
       "number": 1,
       "weight": 0,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1639,
+      "x_height": 520,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": true,
+     "is_italic": false
     },
     {
+     "default": false,
+     "id": "0f67e897-1579-4e6b-877e-ad0a4f868367",
+     "file": "//cdn.fontshare.com/wf/LLJK6BA3SBYYKFUWUFGCSXX4U6FAVOZG/EI6KLD2HJRQIOCHFM4UO3UOS4HQJVMD6/MPUGY4TY2OAWTBKRTKSL7ZAFNDFL5WEU",
      "weight": {
       "label": "Variable Italic",
       "name": "VariableItalic",
       "number": 2,
       "weight": 0,
       "native_name": null
-     }
+     },
+     "properties": {
+      "ascending_leading": 990,
+      "body_height": null,
+      "cap_height": 700,
+      "descending_leading": -200,
+      "max_char_width": 1639,
+      "x_height": 520,
+      "y_max": 990,
+      "y_min": -280
+     },
+     "is_variable": true,
+     "is_italic": true
+    }
+   ]
+  },
+  {
+   "name": "Satoshi",
+   "slug": "satoshi",
+   "category": "Sans",
+   "license_type": "itf_ffl",
+   "font_tags": [
+    {
+     "name": "Logos"
+    },
+    {
+     "name": "Magazines"
+    },
+    {
+     "name": "Branding"
+    }
+   ],
+   "styles": [
+    {
+     "default": false,
+     "id": "74ea4f7a-0afa-47d6-bcc8-57a3a6d9cee6",
+     "file": "//cdn.fontshare.com/wf/D7WD5OXZFWQ5T76HSPWAC7MNKAJXE2YG/LUGNSPO5YC34ABNB2O6K7AFDSOJZT56V/WNDVG7O66ENLOD43GS7FBUCC4KMT5OM2",
+     "weight": {
+      "label": "Light",
+      "name": "Light",
+      "number": 300,
+      "weight": 300,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 710,
+      "descending_leading": -203,
+      "max_char_width": 1739,
+      "x_height": 480,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
+    },
+    {
+     "default": false,
+     "id": "5cd80048-d120-4367-be51-e1ed207eaa62",
+     "file": "//cdn.fontshare.com/wf/BRQAKSEW34X5RMZXKNWSVNXMNXSLSG6X/DOBF42XRXCZ2WDWJNNFFNBHBHYFWLRQD/MVBFGLEMN2LQF4RKXAFO4YZFKXTEZ7FQ",
+     "weight": {
+      "label": "Light Italic",
+      "name": "LightItalic",
+      "number": 301,
+      "weight": 300,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 710,
+      "descending_leading": -202,
+      "max_char_width": 1811,
+      "x_height": 480,
+      "y_max": 1010,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
+    },
+    {
+     "default": false,
+     "id": "f76802dd-00eb-4073-b8bd-95c3827a1b55",
+     "file": "//cdn.fontshare.com/wf/TTX2Z3BF3P6Y5BQT3IV2VNOK6FL22KUT/7QYRJOI3JIMYHGY6CH7SOIFRQLZOLNJ6/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY",
+     "weight": {
+      "label": "Regular",
+      "name": "Regular",
+      "number": 400,
+      "weight": 400,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 716,
+      "descending_leading": -211,
+      "max_char_width": 1739,
+      "x_height": 484,
+      "y_max": 1026,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
+    },
+    {
+     "default": false,
+     "id": "fc9c23a3-8fb2-4224-b63b-12c6c4bd1ce8",
+     "file": "//cdn.fontshare.com/wf/MPIFA4B3XXRNY2MJDGP6GOOOAF6EOCLO/W5E4ZFYPJ3V6JKMBGHB6YMITK6EWS2XA/QOMBWPST76ICDYF6WOBS7SQ7RBT67QW2",
+     "weight": {
+      "label": "Italic",
+      "name": "Italic",
+      "number": 401,
+      "weight": 400,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 716,
+      "descending_leading": -210,
+      "max_char_width": 1811,
+      "x_height": 484,
+      "y_max": 1024,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
+    },
+    {
+     "default": false,
+     "id": "10188d82-ea8b-456a-99ac-f55e161f756b",
+     "file": "//cdn.fontshare.com/wf/P2LQKHE6KA6ZP4AAGN72KDWMHH6ZH3TA/ZC32TK2P7FPS5GFTL46EU6KQJA24ZYDB/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP",
+     "weight": {
+      "label": "Medium",
+      "name": "Medium",
+      "number": 500,
+      "weight": 500,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 723,
+      "descending_leading": -219,
+      "max_char_width": 1739,
+      "x_height": 489,
+      "y_max": 1056,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": false
+    },
+    {
+     "default": false,
+     "id": "1312f9dd-909c-4fe1-aa36-15597e626dda",
+     "file": "//cdn.fontshare.com/wf/NID3I7RITWZSKXRCJGOCMP5NOADJK6IG/2HLHGD7OBTWCOHW64YXOE5KFXHU4KJHM/ZHME2QIRFR7UPJ47NLY27RCAFY44CKZJ",
+     "weight": {
+      "label": "Medium Italic",
+      "name": "MediumItalic",
+      "number": 501,
+      "weight": 500,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 723,
+      "descending_leading": -219,
+      "max_char_width": 1811,
+      "x_height": 489,
+      "y_max": 1054,
+      "y_min": -240
+     },
+     "is_variable": false,
+     "is_italic": true
+    },
+    {
+     "default": false,
+     "id": "aae8dfdf-9162-42fc-95d4-7c6f94480dcf",
+     "file": "//cdn.fontshare.com/wf/LAFFD4SDUCDVQEXFPDC7C53EQ4ZELWQI/PXCT3G6LO6ICM5I3NTYENYPWJAECAWDD/GHM6WVH6MILNYOOCXHXB5GTSGNTMGXZR",
+     "weight": {
+      "label": "Bold",
+      "name": "Bold",
+      "number": 700,
+      "weight": 700,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 731,
+      "descending_leading": -229,
+      "max_char_width": 1739,
+      "x_height": 494,
+      "y_max": 1090,
+      "y_min": -244
+     },
+     "is_variable": false,
+     "is_italic": false
+    },
+    {
+     "default": false,
+     "id": "9a1eb8cf-2f58-4c34-b5e0-1a5012a06b5f",
+     "file": "//cdn.fontshare.com/wf/CDEBEFT2R7XKNGXSBBLZGMY4MMHZG75P/HEVKDGQCYDZ7Z6CDVR2ZQGBCTUD6ZARH/BKWEE3VKGTFABE37K2DTH625VUSN2N35",
+     "weight": {
+      "label": "Bold Italic",
+      "name": "BoldItalic",
+      "number": 701,
+      "weight": 700,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 731,
+      "descending_leading": -229,
+      "max_char_width": 1810,
+      "x_height": 494,
+      "y_max": 1087,
+      "y_min": -242
+     },
+     "is_variable": false,
+     "is_italic": true
+    },
+    {
+     "default": false,
+     "id": "cd4cc90d-c45d-455e-b1b0-dc9fb3cc7ed5",
+     "file": "//cdn.fontshare.com/wf/NHPGVFYUXYXE33DZ75OIT4JFGHITX5PE/PSUTMASCDJTVPERDYJZPN23BVUFUCQIF/J64QX5IPOHK56I2KYUNBQ5M2XWZEYKYX",
+     "weight": {
+      "label": "Black",
+      "name": "Black",
+      "number": 900,
+      "weight": 900,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 740,
+      "descending_leading": -240,
+      "max_char_width": 1739,
+      "x_height": 500,
+      "y_max": 1129,
+      "y_min": -256
+     },
+     "is_variable": false,
+     "is_italic": false
+    },
+    {
+     "default": false,
+     "id": "48867a4a-cc27-4968-a8ed-82b5a4212acd",
+     "file": "//cdn.fontshare.com/wf/5ICO57VJIN252OT5L2KLEIPW754DTLAO/ZU64SLR2IEO66N27IVY5Z6JJJRTJECJK/TCTRLNEXANFIGSFCZTGQL7PZ5362GYK6",
+     "weight": {
+      "label": "Black Italic",
+      "name": "BlackItalic",
+      "number": 901,
+      "weight": 900,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 740,
+      "descending_leading": -240,
+      "max_char_width": 1810,
+      "x_height": 500,
+      "y_max": 1126,
+      "y_min": -256
+     },
+     "is_variable": false,
+     "is_italic": true
+    },
+    {
+     "default": true,
+     "id": "472d820c-e6fb-4042-b165-5fef5b961ab1",
+     "file": "//cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF",
+     "weight": {
+      "label": "Variable",
+      "name": "Variable",
+      "number": 1,
+      "weight": 0,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 740,
+      "descending_leading": -240,
+      "max_char_width": 1739,
+      "x_height": 500,
+      "y_max": 1129,
+      "y_min": -256
+     },
+     "is_variable": true,
+     "is_italic": false
+    },
+    {
+     "default": false,
+     "id": "407a7207-b387-4f66-98dd-3c051035df6a",
+     "file": "//cdn.fontshare.com/wf/3JZIFUW7KLFSPLVCIUI2DLGNIER6IFCX/MMP4RUF5LYGUAZS3DCJC3GJ6F6SAGKSN/E3NEPGEAHYCHR37DSBXHV33XCYYRE2CY",
+     "weight": {
+      "label": "Variable Italic",
+      "name": "VariableItalic",
+      "number": 2,
+      "weight": 0,
+      "native_name": null
+     },
+     "properties": {
+      "ascending_leading": 1010,
+      "body_height": null,
+      "cap_height": 740,
+      "descending_leading": -240,
+      "max_char_width": 1810,
+      "x_height": 500,
+      "y_max": 1126,
+      "y_min": -256
+     },
+     "is_variable": true,
+     "is_italic": true
     }
    ]
   }

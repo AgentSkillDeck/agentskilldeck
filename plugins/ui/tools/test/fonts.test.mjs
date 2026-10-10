@@ -33,7 +33,10 @@ test('finds a Fontshare font with ITF license and CSS link install', async () =>
   assert.ok(s);
   assert.equal(s.license.id, 'ITF-FFL');
   assert.equal(s.license.url, 'https://www.fontshare.com/licenses/itf-ffl');
-  assert.match(s.install, /api\.fontshare\.com\/v2\/css\?f\[\]=satoshi@/);
+  assert.match(s.install, /f\[\]=satoshi@\d+(,\d+)*&display=swap/);
+  assert.match(s.notes, /weights \d+/);
+  assert.ok(!s.install.includes('[object'), 'install should not contain [object');
+  assert.ok(!s.notes.includes('[object'), 'notes should not contain [object');
 });
 
 test('category filter restricts results', async () => {
