@@ -1,6 +1,6 @@
 ---
 name: atelier-design
-description: Design, build, redesign or polish web, iOS and Android interfaces that look like the product, not a template. Use for new screens and pages, redesigns, dashboards, landing pages, forms, settings, onboarding, empty states, design systems, responsive layouts, typography, colour, motion, visual polish, and requests like "make this UI better", "make it bolder", "tone it down" or "simplify this screen".
+description: Design, build, redesign or polish web, iOS and Android interfaces that look like the product, not a template. Use for new screens and pages, redesigns, dashboards, landing pages, forms, settings, onboarding, empty states, design systems, responsive layouts, typography, colour, motion, choosing fonts or icons, visual polish, and requests like "make this UI better", "pick a font for our landing page", "make it bolder", "tone it down" or "simplify this screen". Not for judging an existing UI without changing it; use atelier-review for that.
 license: Apache-2.0
 ---
 
@@ -25,6 +25,8 @@ Load the playbook for the requested action, then the platform and craft guides n
 |---|---|
 | Decide what to build before building; returns a confirmed brief, no code | [shape](reference/shape.md) |
 | New screen, page, flow or product, or an approved redesign | [new-work](reference/new-work.md) |
+| Landing or marketing page | [new-work](reference/new-work.md) |
+| Tokens or design-system setup | [new-work](reference/new-work.md) + [craft](reference/craft.md) |
 | App screens, dashboards, settings, tables, admin and tools | [operate](reference/operate.md) |
 | Refine, tidy or finish something that exists | [polish](reference/polish.md) |
 | Cluttered or busy; the user wants it simpler | [distill](reference/distill.md) |
@@ -37,7 +39,8 @@ Load the playbook for the requested action, then the platform and craft guides n
 | Works but feels anonymous; personality and memorable moments | [delight](reference/delight.md) |
 | Real data: errors, empty, long or translated text, offline, permissions | [harden](reference/harden.md) |
 | Labels, errors, confirmations and empty-state copy | [clarify](reference/clarify.md) |
-| First run, setup, feature discovery, tours | [onboard](reference/onboard.md) |
+| Forms and validation | [clarify](reference/clarify.md) + [harden](reference/harden.md) |
+| First run, setup, first-use empty states, feature discovery, tours | [onboard](reference/onboard.md) |
 | Another screen size, input, device, platform, print or email | [adapt](reference/adapt.md) |
 | Slow load, layout shift, laggy input, dropped frames | [optimize](reference/optimize.md) |
 | Native iOS or iPadOS, alongside the action's guide | [ios](reference/ios.md) |
@@ -52,7 +55,7 @@ Overdrive is opt-in, never the default for ordinary UI work, and needs a chosen 
 
 ## Materials and references
 
-Read [reference-policy](reference/reference-policy.md) before running either script. Run them from this skill's base directory (the folder containing this SKILL.md): `cd` into it first, or prefix `scripts/` with its absolute path. The agent's working directory is the user's project, not this folder.
+Read [reference-policy](reference/reference-policy.md) before running either script. Run them from this skill's base directory (the folder containing this SKILL.md): `cd` into it first, or prefix the command path with the skill folder's absolute path. The agent's working directory is the user's project, not this folder.
 
 ```sh
 node scripts/references.mjs "<product job, object or state>" [--platform web|ios|android] [--limit 1-5] [--json]

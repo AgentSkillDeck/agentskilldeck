@@ -12,6 +12,9 @@ modified adaptations; see docs/ATTRIBUTION.md for source commits and changes.
 -------------------------------------------------------------------------------
 Uizze skills — https://github.com/uizze/uizze
 Copyright (c) 2026 UIZZE.
+The SKILL.md files of atelier-design, atelier-review, atelier-radar and
+atelier-match adapt the uizze ui-design, anti-ui-slop, ui-radar and image-to-ui
+skills respectively.
 The ui-design and anti-ui-slop playbooks are licensed under the Apache License,
 Version 2.0 (themselves adapted from Impeccable). The ui-radar and image-to-ui
 skills are licensed under the MIT License:

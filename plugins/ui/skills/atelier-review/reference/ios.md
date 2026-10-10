@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/ios.md and reference/audit.native.md @ d631a88 (Apache-2.0) and uizze ui-design reference/ios.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/ios.md and reference/audit.native.md @ d631a88 (Apache-2.0), itself distilled from ehmo/platform-design-skills (MIT, https://github.com/ehmo/platform-design-skills), and uizze ui-design reference/ios.md @ 146928e (Apache-2.0); modified by agentatelier -->
 # Native iOS interfaces
 
 Use this guide when building or reviewing any iOS or iPadOS app (SwiftUI, UIKit, React Native, Expo or Flutter on Apple hardware), alongside the task's main guide.

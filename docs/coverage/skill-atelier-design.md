@@ -6,7 +6,7 @@ Source: uizze `skills/ui-design/SKILL.md` @ 146928e (46 lines, 30 non-blank incl
 |---|---|
 | `name: ui-design` | frontmatter `name: atelier-design` |
 | description: "Design, build, or improve web and mobile interfaces using real product examples from UIZZE’s 800,000+ web and iOS screens." | frontmatter description, sentence 1 (branding and screen count dropped; evidence comes from the bundled index and materials scripts) |
-| description: "Use for UI design, UX design, frontend or web design, mobile app UI, responsive layouts, design systems, redesigns, visual polish, interface critique, and requests like “make this UI better.”" | frontmatter description, sentence 2 (keeps every trigger; adds iOS/Android, bolder/quieter/simplify phrases). "interface critique" moved to the atelier-review description so the two skills trigger distinctly; atelier-design still routes to [critique] |
+| description: "Use for UI design, UX design, frontend or web design, mobile app UI, responsive layouts, design systems, redesigns, visual polish, interface critique, and requests like “make this UI better.”" | frontmatter description, sentence 2 (keeps every trigger; adds iOS/Android, choosing fonts or icons, "pick a font for our landing page", bolder/quieter/simplify phrases; ends "Not for judging an existing UI without changing it; use atelier-review"). "interface critique" moved to the atelier-review description so the two skills trigger distinctly; atelier-design still routes to [critique] |
 | `license: Apache-2.0` | frontmatter `license: Apache-2.0` |
 | `metadata: uizze-version / design-stack-version` | dropped (vendor version metadata) |
 | `# Uizze UI Design` | `# Atelier design` (branding dropped) |

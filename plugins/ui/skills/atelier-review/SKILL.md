@@ -1,6 +1,6 @@
 ---
 name: atelier-review
-description: Critique, audit or gate a built web, iOS or Android interface against its brief before it ships, and catch generic template UI. Read-only unless fixes are requested. Use for "review this UI", "critique this screen", "audit accessibility", "is this ready to ship", "run the UI finish gate", "does this look generic", "stop UI slop", and pre-merge design checks.
+description: Critique, audit or gate a built web, iOS or Android interface against its brief before it ships, and catch generic template UI. Read-only unless fixes are requested. Use for "review this UI", "critique this screen", "audit accessibility", "is this ready to ship", "run the UI finish gate", "does this look generic", "is this dashboard generic", "stop UI slop", and pre-merge design checks.
 license: Apache-2.0
 ---
 
@@ -36,7 +36,7 @@ When fixes are requested, apply them with the guide that owns the problem: [poli
 
 ## Materials and references
 
-Read [reference-policy](reference/reference-policy.md) before running either script. Run them from this skill's base directory (the folder containing this SKILL.md): `cd` into it first, or prefix `scripts/` with its absolute path. The agent's working directory is the user's project, not this folder.
+Read [reference-policy](reference/reference-policy.md) before running either script. Run them from this skill's base directory (the folder containing this SKILL.md): `cd` into it first, or prefix the command path with the skill folder's absolute path. The agent's working directory is the user's project, not this folder.
 
 ```sh
 node scripts/references.mjs "<product job, object or state>" [--platform web|ios|android] [--limit 1-5] [--json]
@@ -47,7 +47,7 @@ node scripts/materials.mjs <font|icon|animated-icon|pack> "<query>" [--limit 1-5
 - `materials.mjs` searches font, icon, animated-icon and component-kit catalogues over the network. Exit 0 = results or an explicit "No match"; exit 1 = usage error; exit 2 = service error. On exit 2, retry once, then say the service failed and continue without it. It never means the library is empty.
 - Look things up only when the evidence could change a finding, for example checking a used font's licence or comparing a pattern against a design-system reference. Use the host's real tools, never invented calls or connections. Missing scripts, network or browser never block the review: fall back to code reading and say so.
 - Open a returned link in the host's browser tool before drawing a visual conclusion from it.
-- Report each lookup as an exact match, a related example, no match, or a service error. Never claim a page was inspected or a state was found without evidence.
+- Report each lookup as an exact match, a related example, no match, or a service error. Never claim a page was inspected or a state was found without evidence. Briefly disclose any limitation that affected the result, and never claim a tool is connected or ran without an actual result.
 
 ## Finish
 
