@@ -2,8 +2,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
-import { lintPlugin } from '../lint-skills.mjs';
+import { join, relative } from 'node:path';
+import { lintPlugin, discoverPluginDirs } from '../lint-skills.mjs';
 
 async function plugin(skillMd, extra = {}) {
   const root = await mkdtemp(join(tmpdir(), 'lint-'));
@@ -37,4 +37,23 @@ test('provenance comment line is allowed', async () => {
 test('overlong SKILL.md is reported', async () => {
   const { p, root } = await plugin(good + 'line\n'.repeat(130), { 'skills/atelier-x/reference/craft.md': '# C' });
   assert.match((await lintPlugin(p, { repoRoot: root })).join('\n'), /exceeds 120 lines/);
+});
+
+test('a plugin with zero skills lints clean', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'lint-empty-'));
+  const p = join(root, 'plugins', 'audio');
+  await mkdir(join(p, 'library'), { recursive: true });
+  await writeFile(join(p, 'sync.json'), JSON.stringify({ skills: {} }));
+  assert.deepEqual(await lintPlugin(p), []);
+});
+
+test('discoverPluginDirs finds every plugin with a sync.json', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'lint-multi-'));
+  await mkdir(join(root, 'plugins', 'p1'), { recursive: true });
+  await mkdir(join(root, 'plugins', 'p2'), { recursive: true });
+  await mkdir(join(root, 'plugins', 'p3'), { recursive: true }); // no sync.json: must be skipped
+  await writeFile(join(root, 'plugins', 'p1', 'sync.json'), '{"skills":{}}');
+  await writeFile(join(root, 'plugins', 'p2', 'sync.json'), '{"skills":{}}');
+  const dirs = (await discoverPluginDirs(root)).map((d) => relative(root, d).split('\\').join('/'));
+  assert.deepEqual(dirs.sort(), ['plugins/p1', 'plugins/p2']);
 });

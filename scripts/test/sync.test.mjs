@@ -2,8 +2,18 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { mkdtemp, mkdir, writeFile, readFile, readdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
-import { apply, check } from '../sync-library.mjs';
+import { join, relative } from 'node:path';
+import { apply, check, discoverPluginDirs } from '../sync-library.mjs';
+
+async function walkAll(dir) {
+  const out = [];
+  for (const e of await readdir(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) out.push(...(await walkAll(p)));
+    else out.push(p);
+  }
+  return out;
+}
 
 async function fixture() {
   const root = await mkdtemp(join(tmpdir(), 'sync-'));
@@ -59,4 +69,56 @@ test('unknown guide name fails loudly', async () => {
   const p = await fixture();
   await writeFile(join(p, 'sync.json'), JSON.stringify({ skills: { s1: { guides: ['nope'], tools: false } } }));
   await assert.rejects(apply(p), /nope/);
+});
+
+test('apply excludes __pycache__, .pyc files and .DS_Store from tool copies', async () => {
+  const p = await fixture();
+  await mkdir(join(p, 'tools', '__pycache__'), { recursive: true });
+  await writeFile(join(p, 'tools', '__pycache__', 'x.pyc'), 'bin');
+  await writeFile(join(p, 'tools', 'y.pyc'), 'bin');
+  await writeFile(join(p, 'tools', '.DS_Store'), 'ds');
+  await apply(p);
+  const files = (await walkAll(join(p, 'skills', 's1', 'scripts'))).map((f) => relative(p, f).split('\\').join('/'));
+  assert.ok(!files.some((f) => f.includes('__pycache__')), files.join(','));
+  assert.ok(!files.some((f) => f.endsWith('.pyc')), files.join(','));
+  assert.ok(!files.some((f) => f.endsWith('.DS_Store')), files.join(','));
+  assert.deepEqual(await check(p), []);
+});
+
+test('discoverPluginDirs finds every plugin with a sync.json', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'sync-multi-'));
+  await mkdir(join(root, 'plugins', 'p1'), { recursive: true });
+  await mkdir(join(root, 'plugins', 'p2'), { recursive: true });
+  await mkdir(join(root, 'plugins', 'p3'), { recursive: true }); // no sync.json: must be skipped
+  await writeFile(join(root, 'plugins', 'p1', 'sync.json'), '{"skills":{}}');
+  await writeFile(join(root, 'plugins', 'p2', 'sync.json'), '{"skills":{}}');
+  const dirs = (await discoverPluginDirs(root)).map((d) => relative(root, d).split('\\').join('/'));
+  assert.deepEqual(dirs.sort(), ['plugins/p1', 'plugins/p2']);
+});
+
+test('syncing two plugins syncs both, and --check reports drift in either', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'sync-multi-'));
+  await writeFile(join(root, 'LICENSE'), 'L');
+  await writeFile(join(root, 'NOTICE'), 'N');
+  async function makePlugin(name) {
+    const plugin = join(root, 'plugins', name);
+    await mkdir(join(plugin, 'library'), { recursive: true });
+    await mkdir(join(plugin, 'skills', 's1'), { recursive: true });
+    await writeFile(join(plugin, 'library', 'a.md'), `# ${name}`);
+    await writeFile(join(plugin, 'skills', 's1', 'SKILL.md'), 'skill');
+    await writeFile(join(plugin, 'sync.json'), JSON.stringify({ skills: { s1: { guides: ['a'], tools: false } } }));
+    return plugin;
+  }
+  const p1 = await makePlugin('p1');
+  const p2 = await makePlugin('p2');
+  const dirs = await discoverPluginDirs(root);
+  assert.equal(dirs.length, 2);
+  for (const dir of dirs) await apply(dir);
+  assert.equal(await readFile(join(p1, 'skills', 's1', 'reference', 'a.md'), 'utf8'), '# p1');
+  assert.equal(await readFile(join(p2, 'skills', 's1', 'reference', 'a.md'), 'utf8'), '# p2');
+  assert.deepEqual(await check(p1), []);
+  assert.deepEqual(await check(p2), []);
+  await writeFile(join(p2, 'skills', 's1', 'reference', 'a.md'), '# edited');
+  assert.deepEqual(await check(p1), []);
+  assert.match((await check(p2)).join('\n'), /differs skills\/s1\/reference\/a\.md/);
 });

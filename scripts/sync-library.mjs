@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFile, writeFile, readdir, mkdir, rm } from 'node:fs/promises';
 import { existsSync, realpathSync } from 'node:fs';
-import { join, relative, dirname, resolve } from 'node:path';
+import { join, relative, dirname, resolve, basename } from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
@@ -26,7 +26,11 @@ export async function buildExpected(pluginDir) {
   const toolsDir = join(pluginDir, 'tools');
   const toolFiles = (await walk(toolsDir)).filter((f) => {
     const rel = relative(toolsDir, f).split('\\').join('/');
-    return !(rel === 'test' || rel.startsWith('test/'));
+    if (rel === 'test' || rel.startsWith('test/')) return false;
+    if (rel.split('/').includes('__pycache__')) return false;
+    if (rel.endsWith('.pyc')) return false;
+    if (basename(f) === '.DS_Store') return false;
+    return true;
   });
   const expected = new Map();
   for (const [skill, { guides = [], tools = false }] of Object.entries(cfg.skills)) {
@@ -85,18 +89,38 @@ export async function apply(pluginDir) {
   return { written, removed };
 }
 
+// Every plugins/<name> directory that has a sync.json is a sync target.
+export async function discoverPluginDirs(repoRoot) {
+  const pluginsRoot = join(repoRoot, 'plugins');
+  if (!existsSync(pluginsRoot)) return [];
+  const dirs = [];
+  for (const e of await readdir(pluginsRoot, { withFileTypes: true })) {
+    if (e.isDirectory() && existsSync(join(pluginsRoot, e.name, 'sync.json'))) dirs.push(join(pluginsRoot, e.name));
+  }
+  return dirs.sort();
+}
+
 // Compare real paths so the script also runs when invoked through a symlink.
 const isMain = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
 
 if (isMain) {
   const args = process.argv.slice(2);
-  const pluginDir = resolve(args.find((a) => !a.startsWith('--')) ?? 'plugins/ui');
+  const pathArg = args.find((a) => !a.startsWith('--'));
+  const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
+  const pluginDirs = pathArg ? [resolve(pathArg)] : await discoverPluginDirs(repoRoot);
   if (args.includes('--check')) {
-    const problems = await check(pluginDir);
+    const problems = [];
+    for (const pluginDir of pluginDirs) {
+      for (const p of await check(pluginDir)) problems.push(`${relative(repoRoot, pluginDir)}: ${p}`);
+    }
     if (problems.length) { console.error(`Skill copies are out of sync (run npm run sync):\n  ${problems.join('\n  ')}`); process.exitCode = 1; }
     else console.log('Skills in sync.');
   } else {
-    const { written, removed } = await apply(pluginDir);
-    console.log(`Synced: ${written.length} written, ${removed.length} removed.`);
+    let written = 0, removed = 0;
+    for (const pluginDir of pluginDirs) {
+      const r = await apply(pluginDir);
+      written += r.written.length; removed += r.removed.length;
+    }
+    console.log(`Synced: ${written} written, ${removed} removed.`);
   }
 }

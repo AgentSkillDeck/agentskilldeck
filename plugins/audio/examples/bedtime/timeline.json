@@ -1,0 +1,912 @@
+{
+  "version": 1,
+  "title": "Pip and the Lantern Bug",
+  "duration_s": 69.74778,
+  "scenes": [
+    {
+      "name": "The old oak tree, bedtime",
+      "start": 0.5
+    }
+  ],
+  "lines": [
+    {
+      "id": "L13-0",
+      "n": 13,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "High in the old oak tree, a little owl called Pip could not sleep.",
+      "start": 0.7,
+      "end": 6.6907,
+      "words": [
+        {
+          "w": "High",
+          "start": 0.7,
+          "end": 1.44
+        },
+        {
+          "w": "in",
+          "start": 1.44,
+          "end": 1.72
+        },
+        {
+          "w": "the",
+          "start": 1.72,
+          "end": 1.82
+        },
+        {
+          "w": "old",
+          "start": 1.82,
+          "end": 2.04
+        },
+        {
+          "w": "oak",
+          "start": 2.04,
+          "end": 2.34
+        },
+        {
+          "w": "tree,",
+          "start": 2.34,
+          "end": 2.8
+        },
+        {
+          "w": "a",
+          "start": 3.28,
+          "end": 3.42
+        },
+        {
+          "w": "little",
+          "start": 3.42,
+          "end": 3.66
+        },
+        {
+          "w": "owl",
+          "start": 3.66,
+          "end": 3.94
+        },
+        {
+          "w": "called",
+          "start": 3.94,
+          "end": 4.4
+        },
+        {
+          "w": "Pip",
+          "start": 4.4,
+          "end": 4.7
+        },
+        {
+          "w": "could",
+          "start": 4.7,
+          "end": 5.14
+        },
+        {
+          "w": "not",
+          "start": 5.14,
+          "end": 5.42
+        },
+        {
+          "w": "sleep.",
+          "start": 5.42,
+          "end": 5.88
+        }
+      ]
+    },
+    {
+      "id": "L14-0",
+      "n": 14,
+      "kind": "speech",
+      "speaker": "PIP",
+      "voice": "F2",
+      "emotion": "nervous",
+      "text": "Mama says owls love the dark. But I don't. Not even a little bit.",
+      "start": 7.5407,
+      "end": 12.4169,
+      "words": [
+        {
+          "w": "Mama",
+          "start": 7.541,
+          "end": 8.241
+        },
+        {
+          "w": "says",
+          "start": 8.241,
+          "end": 8.521
+        },
+        {
+          "w": "owls",
+          "start": 8.521,
+          "end": 8.881
+        },
+        {
+          "w": "love",
+          "start": 8.881,
+          "end": 9.061
+        },
+        {
+          "w": "the",
+          "start": 9.061,
+          "end": 9.241
+        },
+        {
+          "w": "dark.",
+          "start": 9.241,
+          "end": 9.441
+        },
+        {
+          "w": "But",
+          "start": 9.921,
+          "end": 10.041
+        },
+        {
+          "w": "I",
+          "start": 10.041,
+          "end": 10.141
+        },
+        {
+          "w": "don't.",
+          "start": 10.141,
+          "end": 10.541
+        },
+        {
+          "w": "Not",
+          "start": 10.721,
+          "end": 10.921
+        },
+        {
+          "w": "even",
+          "start": 10.921,
+          "end": 11.081
+        },
+        {
+          "w": "a",
+          "start": 11.081,
+          "end": 11.181
+        },
+        {
+          "w": "little",
+          "start": 11.181,
+          "end": 11.301
+        },
+        {
+          "w": "bit.",
+          "start": 11.301,
+          "end": 11.481
+        }
+      ]
+    },
+    {
+      "id": "L15-0",
+      "n": 15,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F3",
+      "emotion": null,
+      "text": "Then, just past the end of her beak, something tiny began to glow.",
+      "start": 13.1169,
+      "end": 18.2021,
+      "words": [
+        {
+          "w": "Then,",
+          "start": 13.117,
+          "end": 13.777
+        },
+        {
+          "w": "just",
+          "start": 14.137,
+          "end": 14.337
+        },
+        {
+          "w": "past",
+          "start": 14.337,
+          "end": 14.617
+        },
+        {
+          "w": "the",
+          "start": 14.617,
+          "end": 14.857
+        },
+        {
+          "w": "end",
+          "start": 14.857,
+          "end": 15.037
+        },
+        {
+          "w": "of",
+          "start": 15.037,
+          "end": 15.177
+        },
+        {
+          "w": "her",
+          "start": 15.177,
+          "end": 15.297
+        },
+        {
+          "w": "beak,",
+          "start": 15.297,
+          "end": 15.737
+        },
+        {
+          "w": "something",
+          "start": 15.897,
+          "end": 16.137
+        },
+        {
+          "w": "tiny",
+          "start": 16.137,
+          "end": 16.437
+        },
+        {
+          "w": "began",
+          "start": 16.437,
+          "end": 16.817
+        },
+        {
+          "w": "to",
+          "start": 16.817,
+          "end": 17.037
+        },
+        {
+          "w": "glow.",
+          "start": 17.037,
+          "end": 17.257
+        }
+      ]
+    },
+    {
+      "id": "L17-0",
+      "n": 17,
+      "kind": "speech",
+      "speaker": "GLOW",
+      "voice": "M1",
+      "emotion": "happy",
+      "text": "Hello! I'm Glow. I light up when I'm happy. Watch!",
+      "inline_nv": [
+        "laugh"
+      ],
+      "start": 18.8521,
+      "end": 24.7732,
+      "words": [
+        {
+          "w": "Hello!",
+          "start": 20.032,
+          "end": 20.472
+        },
+        {
+          "w": "I'm",
+          "start": 21.192,
+          "end": 21.572
+        },
+        {
+          "w": "Glow.",
+          "start": 21.572,
+          "end": 21.752
+        },
+        {
+          "w": "I",
+          "start": 22.292,
+          "end": 22.352
+        },
+        {
+          "w": "light",
+          "start": 22.352,
+          "end": 22.492
+        },
+        {
+          "w": "up",
+          "start": 22.492,
+          "end": 22.672
+        },
+        {
+          "w": "when",
+          "start": 22.672,
+          "end": 22.832
+        },
+        {
+          "w": "I'm",
+          "start": 22.832,
+          "end": 22.952
+        },
+        {
+          "w": "happy.",
+          "start": 22.952,
+          "end": 23.172
+        },
+        {
+          "w": "Watch!",
+          "start": 23.752,
+          "end": 23.752
+        }
+      ]
+    },
+    {
+      "id": "L18-0",
+      "n": 18,
+      "kind": "speech",
+      "speaker": "PIP",
+      "voice": "F2",
+      "emotion": "surprised",
+      "text": "You're a star? A tiny, flying star?",
+      "start": 25.4232,
+      "end": 28.0703,
+      "words": [
+        {
+          "w": "You're",
+          "start": 25.4232,
+          "end": 25.983
+        },
+        {
+          "w": "a",
+          "start": 25.983,
+          "end": 26.043
+        },
+        {
+          "w": "star?",
+          "start": 26.043,
+          "end": 26.283
+        },
+        {
+          "w": "A",
+          "start": 26.283,
+          "end": 26.443
+        },
+        {
+          "w": "tiny,",
+          "start": 26.443,
+          "end": 26.643
+        },
+        {
+          "w": "flying",
+          "start": 26.643,
+          "end": 26.923
+        },
+        {
+          "w": "star?",
+          "start": 26.923,
+          "end": 27.243
+        }
+      ]
+    },
+    {
+      "id": "L19-0",
+      "n": 19,
+      "kind": "speech",
+      "speaker": "GLOW",
+      "voice": "M1",
+      "emotion": "excited",
+      "text": "Even better. I'm a firefly! And the dark is my favourite place to shine.",
+      "start": 28.7203,
+      "end": 34.2931,
+      "words": [
+        {
+          "w": "Even",
+          "start": 28.7203,
+          "end": 29.44
+        },
+        {
+          "w": "better.",
+          "start": 29.44,
+          "end": 29.74
+        },
+        {
+          "w": "I'm",
+          "start": 30.26,
+          "end": 30.46
+        },
+        {
+          "w": "a",
+          "start": 30.46,
+          "end": 30.48
+        },
+        {
+          "w": "firefly!",
+          "start": 30.48,
+          "end": 30.7
+        },
+        {
+          "w": "And",
+          "start": 31.34,
+          "end": 31.62
+        },
+        {
+          "w": "the",
+          "start": 31.62,
+          "end": 31.72
+        },
+        {
+          "w": "dark",
+          "start": 31.72,
+          "end": 31.9
+        },
+        {
+          "w": "is",
+          "start": 31.9,
+          "end": 32.1
+        },
+        {
+          "w": "my",
+          "start": 32.1,
+          "end": 32.26
+        },
+        {
+          "w": "favourite",
+          "start": 32.26,
+          "end": 32.62
+        },
+        {
+          "w": "place",
+          "start": 32.62,
+          "end": 33
+        },
+        {
+          "w": "to",
+          "start": 33,
+          "end": 33.2
+        },
+        {
+          "w": "shine.",
+          "start": 33.2,
+          "end": 33.42
+        }
+      ]
+    },
+    {
+      "id": "L20-0",
+      "n": 20,
+      "kind": "speech",
+      "speaker": "PIP",
+      "voice": "F2",
+      "emotion": "scared",
+      "text": "But what if something's out there?",
+      "start": 34.9931,
+      "end": 36.9436,
+      "words": [
+        {
+          "w": "But",
+          "start": 34.9931,
+          "end": 35.393
+        },
+        {
+          "w": "what",
+          "start": 35.393,
+          "end": 35.513
+        },
+        {
+          "w": "if",
+          "start": 35.513,
+          "end": 35.613
+        },
+        {
+          "w": "something's",
+          "start": 35.613,
+          "end": 36.033
+        },
+        {
+          "w": "out",
+          "start": 36.033,
+          "end": 36.133
+        },
+        {
+          "w": "there?",
+          "start": 36.133,
+          "end": 36.333
+        }
+      ]
+    },
+    {
+      "id": "L21-0",
+      "n": 21,
+      "kind": "speech",
+      "speaker": "GLOW",
+      "voice": "M1",
+      "emotion": "tender",
+      "text": "Then we'll look at it together. Look up.",
+      "start": 37.7436,
+      "end": 41.5749,
+      "words": [
+        {
+          "w": "Then",
+          "start": 37.744,
+          "end": 38.504
+        },
+        {
+          "w": "we'll",
+          "start": 38.504,
+          "end": 38.764
+        },
+        {
+          "w": "look",
+          "start": 38.764,
+          "end": 38.964
+        },
+        {
+          "w": "at",
+          "start": 38.964,
+          "end": 39.144
+        },
+        {
+          "w": "it",
+          "start": 39.144,
+          "end": 39.244
+        },
+        {
+          "w": "together.",
+          "start": 39.244,
+          "end": 39.564
+        },
+        {
+          "w": "Look",
+          "start": 40.244,
+          "end": 40.384
+        },
+        {
+          "w": "up.",
+          "start": 40.384,
+          "end": 40.664
+        }
+      ]
+    },
+    {
+      "id": "L22-0",
+      "n": 22,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "Pip looked up. And there, above the branches, a thousand little lights were blinking hello.",
+      "start": 42.5749,
+      "end": 51.6307,
+      "words": [
+        {
+          "w": "Pip",
+          "start": 42.575,
+          "end": 42.995
+        },
+        {
+          "w": "looked",
+          "start": 42.995,
+          "end": 43.255
+        },
+        {
+          "w": "up.",
+          "start": 43.255,
+          "end": 43.575
+        },
+        {
+          "w": "And",
+          "start": 44.315,
+          "end": 44.835
+        },
+        {
+          "w": "there,",
+          "start": 44.835,
+          "end": 45.195
+        },
+        {
+          "w": "above",
+          "start": 45.735,
+          "end": 46.075
+        },
+        {
+          "w": "the",
+          "start": 46.075,
+          "end": 46.455
+        },
+        {
+          "w": "branches,",
+          "start": 46.455,
+          "end": 46.875
+        },
+        {
+          "w": "a",
+          "start": 47.755,
+          "end": 47.855
+        },
+        {
+          "w": "thousand",
+          "start": 47.855,
+          "end": 48.335
+        },
+        {
+          "w": "little",
+          "start": 48.335,
+          "end": 48.795
+        },
+        {
+          "w": "lights",
+          "start": 48.795,
+          "end": 49.155
+        },
+        {
+          "w": "were",
+          "start": 49.155,
+          "end": 49.635
+        },
+        {
+          "w": "blinking",
+          "start": 49.635,
+          "end": 49.955
+        },
+        {
+          "w": "hello.",
+          "start": 49.955,
+          "end": 50.555
+        }
+      ]
+    },
+    {
+      "id": "L23-0",
+      "n": 23,
+      "kind": "speech",
+      "speaker": "PIP",
+      "voice": "F2",
+      "emotion": "happy",
+      "text": "Oh. The dark is full of friends.",
+      "start": 52.4807,
+      "end": 55.5457,
+      "words": [
+        {
+          "w": "Oh.",
+          "start": 52.481,
+          "end": 53.241
+        },
+        {
+          "w": "The",
+          "start": 53.541,
+          "end": 53.681
+        },
+        {
+          "w": "dark",
+          "start": 53.681,
+          "end": 53.861
+        },
+        {
+          "w": "is",
+          "start": 53.861,
+          "end": 54.061
+        },
+        {
+          "w": "full",
+          "start": 54.061,
+          "end": 54.241
+        },
+        {
+          "w": "of",
+          "start": 54.241,
+          "end": 54.361
+        },
+        {
+          "w": "friends.",
+          "start": 54.361,
+          "end": 54.601
+        }
+      ]
+    },
+    {
+      "id": "L25-0",
+      "n": 25,
+      "kind": "nv",
+      "speaker": "PIP",
+      "voice": "F2",
+      "emotion": "tired",
+      "text": "",
+      "tag": "sigh",
+      "start": 56.3457,
+      "end": 57.83468,
+      "words": []
+    },
+    {
+      "id": "L25-1",
+      "n": 25,
+      "kind": "speech",
+      "speaker": "PIP",
+      "voice": "F2",
+      "emotion": "tired",
+      "text": "Goodnight, Glow.",
+      "start": 57.83468,
+      "end": 60.34248,
+      "words": [
+        {
+          "w": "Goodnight,",
+          "start": 58.535,
+          "end": 58.755
+        },
+        {
+          "w": "Glow.",
+          "start": 59.115,
+          "end": 59.295
+        }
+      ]
+    },
+    {
+      "id": "L26-0",
+      "n": 26,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "And with Glow beside her, Pip closed her eyes. Goodnight, little owl.",
+      "start": 61.34248,
+      "end": 68.44778,
+      "words": [
+        {
+          "w": "And",
+          "start": 61.34248,
+          "end": 61.982
+        },
+        {
+          "w": "with",
+          "start": 61.982,
+          "end": 62.162
+        },
+        {
+          "w": "Glow",
+          "start": 62.162,
+          "end": 62.542
+        },
+        {
+          "w": "beside",
+          "start": 62.542,
+          "end": 63.282
+        },
+        {
+          "w": "her,",
+          "start": 63.282,
+          "end": 63.602
+        },
+        {
+          "w": "Pip",
+          "start": 64.042,
+          "end": 64.122
+        },
+        {
+          "w": "closed",
+          "start": 64.122,
+          "end": 64.522
+        },
+        {
+          "w": "her",
+          "start": 64.522,
+          "end": 64.902
+        },
+        {
+          "w": "eyes.",
+          "start": 64.902,
+          "end": 65.262
+        },
+        {
+          "w": "Goodnight,",
+          "start": 66.042,
+          "end": 66.402
+        },
+        {
+          "w": "little",
+          "start": 66.882,
+          "end": 67.042
+        },
+        {
+          "w": "owl.",
+          "start": 67.042,
+          "end": 67.362
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "type": "music",
+      "id": "L12-0",
+      "label": "start",
+      "start": 0.5,
+      "gain_db": -16,
+      "loop": true,
+      "fade_in": 1,
+      "end": 69.74778,
+      "fade_out": 3,
+      "path": "../sounds/music-box.mp3"
+    },
+    {
+      "type": "ambience",
+      "id": "L11-1",
+      "label": "./sounds/crickets.mp3",
+      "start": 0.5,
+      "gain_db": -26,
+      "loop": true,
+      "fade_in": 1,
+      "fade_out": 1,
+      "end": 69.74778,
+      "path": "../sounds/crickets.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L16-0",
+      "label": "./sounds/twinkle.mp3",
+      "start": 18.3021,
+      "gain_db": -12,
+      "end": 21.101919,
+      "path": "../sounds/twinkle.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L24-0",
+      "label": "./sounds/owl.mp3",
+      "start": 55.6457,
+      "gain_db": -12,
+      "end": 62.702072,
+      "path": "../sounds/owl.mp3"
+    }
+  ],
+  "assets": [
+    {
+      "ids": [
+        "L11-1"
+      ],
+      "type": "ambience",
+      "path": "../sounds/crickets.mp3",
+      "source": "local",
+      "title": "Crickets Night 2",
+      "creator": "PhilllChabbb",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/PhilllChabbb/sounds/245834",
+      "attribution": "\"Crickets Night 2\" by PhilllChabbb (https://freesound.org/people/PhilllChabbb/sounds/245834), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "L16-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/twinkle.mp3",
+      "source": "local",
+      "title": "Sparkling Star 01",
+      "creator": "MATRIXXX_",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/MATRIXXX_/sounds/462095",
+      "attribution": "\"Sparkling Star 01\" by MATRIXXX_ (https://freesound.org/people/MATRIXXX_/sounds/462095), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "L24-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/owl.mp3",
+      "source": "local",
+      "title": "Owl hoot",
+      "creator": "freemaster2",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_url": "https://freesound.org/people/freemaster2/sounds/385097",
+      "attribution": "\"Owl hoot\" by freemaster2 (https://freesound.org/people/freemaster2/sounds/385097), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) (faded)"
+    },
+    {
+      "ids": [
+        "L25-0"
+      ],
+      "type": "nv",
+      "path": "assets/nonverbal/female-sigh-1.mp3",
+      "source": "bundled",
+      "title": "Sigh_4_Female",
+      "creator": "Drkvixn91",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/Drkvixn91/sounds/318085",
+      "attribution": "\"Sigh_4_Female\" by Drkvixn91 (https://freesound.org/people/Drkvixn91/sounds/318085), CC0 1.0 (public domain dedication, no attribution required)"
+    },
+    {
+      "ids": [
+        "bed"
+      ],
+      "type": "music",
+      "path": "../sounds/music-box.mp3",
+      "source": "local",
+      "title": "Music box lullaby",
+      "creator": "csnmedia",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/csnmedia/sounds/381973",
+      "attribution": "\"Music box lullaby\" by csnmedia (https://freesound.org/people/csnmedia/sounds/381973), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    }
+  ],
+  "warnings": []
+}

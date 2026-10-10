@@ -1,0 +1,820 @@
+{
+  "version": 1,
+  "title": "Lockout, tagout in six steps",
+  "duration_s": 68.136107,
+  "scenes": [
+    {
+      "name": "Before you start",
+      "start": 0.5
+    },
+    {
+      "name": "Step one, prepare",
+      "start": 6.7407
+    },
+    {
+      "name": "Step two, shut down",
+      "start": 21.5727
+    },
+    {
+      "name": "Step three, isolate",
+      "start": 26.6523
+    },
+    {
+      "name": "Step four, lock and tag",
+      "start": 33.961
+    },
+    {
+      "name": "Step five, release stored energy",
+      "start": 42.791607
+    },
+    {
+      "name": "Step six, verify",
+      "start": 53.374307
+    }
+  ],
+  "lines": [
+    {
+      "id": "L9-0",
+      "n": 9,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": "authoritative",
+      "text": "Lock out, and tag out. Six steps, every time, before you service a machine.",
+      "start": 0.6,
+      "end": 6.5907,
+      "words": [
+        {
+          "w": "Lock",
+          "start": 0.6,
+          "end": 1.26
+        },
+        {
+          "w": "out,",
+          "start": 1.26,
+          "end": 1.52
+        },
+        {
+          "w": "and",
+          "start": 1.52,
+          "end": 1.92
+        },
+        {
+          "w": "tag",
+          "start": 1.92,
+          "end": 2.14
+        },
+        {
+          "w": "out.",
+          "start": 2.14,
+          "end": 2.42
+        },
+        {
+          "w": "Six",
+          "start": 2.42,
+          "end": 3.06
+        },
+        {
+          "w": "steps,",
+          "start": 3.06,
+          "end": 3.48
+        },
+        {
+          "w": "every",
+          "start": 3.48,
+          "end": 3.98
+        },
+        {
+          "w": "time,",
+          "start": 3.98,
+          "end": 4.32
+        },
+        {
+          "w": "before",
+          "start": 4.32,
+          "end": 4.68
+        },
+        {
+          "w": "you",
+          "start": 4.68,
+          "end": 4.88
+        },
+        {
+          "w": "service",
+          "start": 4.88,
+          "end": 5.16
+        },
+        {
+          "w": "a",
+          "start": 5.16,
+          "end": 5.4
+        },
+        {
+          "w": "machine.",
+          "start": 5.4,
+          "end": 5.7
+        }
+      ]
+    },
+    {
+      "id": "L11-0",
+      "n": 11,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": null,
+      "text": "Step one. Prepare. Know every energy source on this machine: electrical, hydraulic, air, and anything stored in springs or raised parts. Tell everyone nearby that it is going down.",
+      "start": 7.5407,
+      "end": 21.4727,
+      "words": [
+        {
+          "w": "Step",
+          "start": 7.541,
+          "end": 8.181
+        },
+        {
+          "w": "one.",
+          "start": 8.181,
+          "end": 8.501
+        },
+        {
+          "w": "Prepare.",
+          "start": 9.021,
+          "end": 9.161
+        },
+        {
+          "w": "Know",
+          "start": 10.161,
+          "end": 10.161
+        },
+        {
+          "w": "every",
+          "start": 10.161,
+          "end": 10.541
+        },
+        {
+          "w": "energy",
+          "start": 10.541,
+          "end": 11.021
+        },
+        {
+          "w": "source",
+          "start": 11.021,
+          "end": 11.421
+        },
+        {
+          "w": "on",
+          "start": 11.421,
+          "end": 11.661
+        },
+        {
+          "w": "this",
+          "start": 11.661,
+          "end": 11.821
+        },
+        {
+          "w": "machine:",
+          "start": 11.821,
+          "end": 12.221
+        },
+        {
+          "w": "electrical,",
+          "start": 12.821,
+          "end": 13.181
+        },
+        {
+          "w": "hydraulic,",
+          "start": 13.181,
+          "end": 13.881
+        },
+        {
+          "w": "air,",
+          "start": 13.881,
+          "end": 14.261
+        },
+        {
+          "w": "and",
+          "start": 14.781,
+          "end": 14.821
+        },
+        {
+          "w": "anything",
+          "start": 14.821,
+          "end": 15.061
+        },
+        {
+          "w": "stored",
+          "start": 15.061,
+          "end": 15.441
+        },
+        {
+          "w": "in",
+          "start": 15.441,
+          "end": 15.781
+        },
+        {
+          "w": "springs",
+          "start": 15.781,
+          "end": 16.061
+        },
+        {
+          "w": "or",
+          "start": 16.061,
+          "end": 16.521
+        },
+        {
+          "w": "raised",
+          "start": 16.521,
+          "end": 16.841
+        },
+        {
+          "w": "parts.",
+          "start": 16.841,
+          "end": 17.301
+        },
+        {
+          "w": "Tell",
+          "start": 18.141,
+          "end": 18.241
+        },
+        {
+          "w": "everyone",
+          "start": 18.241,
+          "end": 18.601
+        },
+        {
+          "w": "nearby",
+          "start": 18.601,
+          "end": 19.041
+        },
+        {
+          "w": "that",
+          "start": 19.041,
+          "end": 19.701
+        },
+        {
+          "w": "it",
+          "start": 19.701,
+          "end": 19.981
+        },
+        {
+          "w": "is",
+          "start": 19.981,
+          "end": 20.121
+        },
+        {
+          "w": "going",
+          "start": 20.121,
+          "end": 20.361
+        },
+        {
+          "w": "down.",
+          "start": 20.361,
+          "end": 20.801
+        }
+      ]
+    },
+    {
+      "id": "L13-0",
+      "n": 13,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": null,
+      "text": "Step two. Shut it down with the normal stop control.",
+      "start": 22.3727,
+      "end": 26.5523,
+      "words": [
+        {
+          "w": "Step",
+          "start": 22.373,
+          "end": 23.053
+        },
+        {
+          "w": "two.",
+          "start": 23.053,
+          "end": 23.413
+        },
+        {
+          "w": "Shut",
+          "start": 23.953,
+          "end": 24.073
+        },
+        {
+          "w": "it",
+          "start": 24.073,
+          "end": 24.213
+        },
+        {
+          "w": "down",
+          "start": 24.213,
+          "end": 24.413
+        },
+        {
+          "w": "with",
+          "start": 24.413,
+          "end": 24.593
+        },
+        {
+          "w": "the",
+          "start": 24.593,
+          "end": 24.713
+        },
+        {
+          "w": "normal",
+          "start": 24.713,
+          "end": 24.953
+        },
+        {
+          "w": "stop",
+          "start": 24.953,
+          "end": 25.293
+        },
+        {
+          "w": "control.",
+          "start": 25.293,
+          "end": 25.653
+        }
+      ]
+    },
+    {
+      "id": "L15-0",
+      "n": 15,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": null,
+      "text": "Step three. Isolate it. Open the main disconnect, and close the supply valves.",
+      "start": 27.4523,
+      "end": 33.861,
+      "words": [
+        {
+          "w": "Step",
+          "start": 27.4523,
+          "end": 28.012
+        },
+        {
+          "w": "three.",
+          "start": 28.012,
+          "end": 28.412
+        },
+        {
+          "w": "Isolate",
+          "start": 29.072,
+          "end": 29.252
+        },
+        {
+          "w": "it.",
+          "start": 29.252,
+          "end": 29.552
+        },
+        {
+          "w": "Open",
+          "start": 30.312,
+          "end": 30.312
+        },
+        {
+          "w": "the",
+          "start": 30.312,
+          "end": 30.432
+        },
+        {
+          "w": "main",
+          "start": 30.432,
+          "end": 30.572
+        },
+        {
+          "w": "disconnect,",
+          "start": 30.572,
+          "end": 30.972
+        },
+        {
+          "w": "and",
+          "start": 30.972,
+          "end": 31.612
+        },
+        {
+          "w": "close",
+          "start": 31.612,
+          "end": 31.852
+        },
+        {
+          "w": "the",
+          "start": 31.852,
+          "end": 32.172
+        },
+        {
+          "w": "supply",
+          "start": 32.172,
+          "end": 32.392
+        },
+        {
+          "w": "valves.",
+          "start": 32.392,
+          "end": 32.892
+        }
+      ]
+    },
+    {
+      "id": "L17-0",
+      "n": 17,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": null,
+      "text": "Step four. Lock and tag every isolation point. Your lock, your tag, your key. Nobody else's.",
+      "start": 34.761,
+      "end": 42.2146,
+      "words": [
+        {
+          "w": "Step",
+          "start": 34.761,
+          "end": 35.341
+        },
+        {
+          "w": "four.",
+          "start": 35.341,
+          "end": 35.761
+        },
+        {
+          "w": "Lock",
+          "start": 36.341,
+          "end": 36.441
+        },
+        {
+          "w": "and",
+          "start": 36.441,
+          "end": 36.601
+        },
+        {
+          "w": "tag",
+          "start": 36.601,
+          "end": 36.801
+        },
+        {
+          "w": "every",
+          "start": 36.801,
+          "end": 37.141
+        },
+        {
+          "w": "isolation",
+          "start": 37.141,
+          "end": 37.481
+        },
+        {
+          "w": "point.",
+          "start": 37.481,
+          "end": 38.001
+        },
+        {
+          "w": "Your",
+          "start": 38.721,
+          "end": 38.781
+        },
+        {
+          "w": "lock,",
+          "start": 38.781,
+          "end": 39.021
+        },
+        {
+          "w": "your",
+          "start": 39.341,
+          "end": 39.401
+        },
+        {
+          "w": "tag,",
+          "start": 39.401,
+          "end": 39.701
+        },
+        {
+          "w": "your",
+          "start": 39.801,
+          "end": 39.961
+        },
+        {
+          "w": "key.",
+          "start": 39.961,
+          "end": 40.161
+        },
+        {
+          "w": "Nobody",
+          "start": 40.681,
+          "end": 40.761
+        },
+        {
+          "w": "else's.",
+          "start": 40.761,
+          "end": 41.401
+        }
+      ]
+    },
+    {
+      "id": "L20-0",
+      "n": 20,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": null,
+      "text": "Step five. Release stored energy. Bleed off pressure in the lines, block or lower raised parts, and let capacitors discharge.",
+      "start": 43.591607,
+      "end": 53.274307,
+      "words": [
+        {
+          "w": "Step",
+          "start": 43.592,
+          "end": 44.272
+        },
+        {
+          "w": "five.",
+          "start": 44.272,
+          "end": 44.752
+        },
+        {
+          "w": "Release",
+          "start": 45.572,
+          "end": 45.572
+        },
+        {
+          "w": "stored",
+          "start": 45.572,
+          "end": 45.932
+        },
+        {
+          "w": "energy.",
+          "start": 45.932,
+          "end": 46.332
+        },
+        {
+          "w": "Bleed",
+          "start": 47.232,
+          "end": 47.232
+        },
+        {
+          "w": "off",
+          "start": 47.232,
+          "end": 47.452
+        },
+        {
+          "w": "pressure",
+          "start": 47.452,
+          "end": 47.772
+        },
+        {
+          "w": "in",
+          "start": 47.772,
+          "end": 48.092
+        },
+        {
+          "w": "the",
+          "start": 48.092,
+          "end": 48.212
+        },
+        {
+          "w": "lines,",
+          "start": 48.212,
+          "end": 48.552
+        },
+        {
+          "w": "block",
+          "start": 48.872,
+          "end": 48.992
+        },
+        {
+          "w": "or",
+          "start": 48.992,
+          "end": 49.232
+        },
+        {
+          "w": "lower",
+          "start": 49.232,
+          "end": 49.432
+        },
+        {
+          "w": "raised",
+          "start": 49.432,
+          "end": 49.812
+        },
+        {
+          "w": "parts,",
+          "start": 49.812,
+          "end": 50.152
+        },
+        {
+          "w": "and",
+          "start": 50.572,
+          "end": 50.792
+        },
+        {
+          "w": "let",
+          "start": 50.792,
+          "end": 50.952
+        },
+        {
+          "w": "capacitors",
+          "start": 50.952,
+          "end": 51.652
+        },
+        {
+          "w": "discharge.",
+          "start": 51.652,
+          "end": 52.172
+        }
+      ]
+    },
+    {
+      "id": "L22-0",
+      "n": 22,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": null,
+      "text": "Step six. Verify. Press start. Nothing should move. Then return the control to off.",
+      "start": 54.174307,
+      "end": 61.279607,
+      "words": [
+        {
+          "w": "Step",
+          "start": 54.174307,
+          "end": 54.634
+        },
+        {
+          "w": "six.",
+          "start": 54.634,
+          "end": 54.954
+        },
+        {
+          "w": "Verify.",
+          "start": 55.894,
+          "end": 55.894
+        },
+        {
+          "w": "Press",
+          "start": 56.754,
+          "end": 56.814
+        },
+        {
+          "w": "start.",
+          "start": 56.814,
+          "end": 57.094
+        },
+        {
+          "w": "Nothing",
+          "start": 57.934,
+          "end": 57.934
+        },
+        {
+          "w": "should",
+          "start": 57.934,
+          "end": 58.154
+        },
+        {
+          "w": "move.",
+          "start": 58.154,
+          "end": 58.474
+        },
+        {
+          "w": "Then",
+          "start": 59.114,
+          "end": 59.114
+        },
+        {
+          "w": "return",
+          "start": 59.114,
+          "end": 59.434
+        },
+        {
+          "w": "the",
+          "start": 59.434,
+          "end": 59.734
+        },
+        {
+          "w": "control",
+          "start": 59.734,
+          "end": 60.074
+        },
+        {
+          "w": "to",
+          "start": 60.074,
+          "end": 60.314
+        },
+        {
+          "w": "off.",
+          "start": 60.314,
+          "end": 60.514
+        }
+      ]
+    },
+    {
+      "id": "L23-0",
+      "n": 23,
+      "kind": "speech",
+      "speaker": "TRAINER",
+      "voice": "F5",
+      "emotion": "authoritative",
+      "text": "If anything moves, stop. Step away, and report it.",
+      "start": 62.179607,
+      "end": 66.986107,
+      "words": [
+        {
+          "w": "If",
+          "start": 62.18,
+          "end": 62.64
+        },
+        {
+          "w": "anything",
+          "start": 62.64,
+          "end": 62.96
+        },
+        {
+          "w": "moves,",
+          "start": 62.96,
+          "end": 63.36
+        },
+        {
+          "w": "stop.",
+          "start": 63.68,
+          "end": 63.86
+        },
+        {
+          "w": "Step",
+          "start": 64.46,
+          "end": 64.7
+        },
+        {
+          "w": "away,",
+          "start": 64.7,
+          "end": 65.06
+        },
+        {
+          "w": "and",
+          "start": 65.06,
+          "end": 65.6
+        },
+        {
+          "w": "report",
+          "start": 65.6,
+          "end": 65.86
+        },
+        {
+          "w": "it.",
+          "start": 65.86,
+          "end": 66.2
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "type": "ambience",
+      "id": "L8-1",
+      "label": "./sounds/factory.mp3",
+      "start": 0.5,
+      "gain_db": -30,
+      "loop": true,
+      "fade_in": 1,
+      "fade_out": 1,
+      "end": 6.7407,
+      "path": "../sounds/factory.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L18-0",
+      "label": "./sounds/padlock.mp3",
+      "start": 42.3146,
+      "gain_db": -6,
+      "end": 42.791607,
+      "path": "../sounds/padlock.mp3"
+    }
+  ],
+  "assets": [
+    {
+      "ids": [
+        "L8-1"
+      ],
+      "type": "ambience",
+      "path": "../sounds/factory.mp3",
+      "source": "local",
+      "title": "factory ambience machines humming different pitches1",
+      "creator": "kyles",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/kyles/sounds/635535",
+      "attribution": "\"factory ambience machines humming different pitches1\" by kyles (https://freesound.org/people/kyles/sounds/635535), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "L18-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/padlock.mp3",
+      "source": "local",
+      "title": "jp_tinypadlock01",
+      "creator": "JPolito",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/JPolito/sounds/391704",
+      "attribution": "\"jp_tinypadlock01\" by JPolito (https://freesound.org/people/JPolito/sounds/391704), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    }
+  ],
+  "warnings": []
+}

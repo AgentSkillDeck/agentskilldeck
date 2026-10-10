@@ -1,0 +1,380 @@
+{
+  "_meta": {
+    "about": "Test fixture: laugh, cough, yawn and hmm native for every voice; breath, sigh and groan measured as spoken. Tests that need per-voice rows build their own table."
+  },
+  "F1": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "F2": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "F3": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "F4": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "F5": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "M1": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "M2": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "M3": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "M4": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "M5": {
+    "laugh": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "cough": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "yawn": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "hmm": {
+      "pass": 8,
+      "total": 8,
+      "ok": true
+    },
+    "breath": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "sigh": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    },
+    "groan": {
+      "pass": 5,
+      "total": 8,
+      "ok": false
+    }
+  },
+  "owner_overrides": {
+    "*": {
+      "sigh": false
+    }
+  }
+}

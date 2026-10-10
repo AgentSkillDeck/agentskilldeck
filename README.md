@@ -1,8 +1,61 @@
 # agentatelier
 
-Open plugins for coding agents. The first plugin, `ui`, gives Claude Code (and any agent that reads Agent Skills) four design skills, a library of 24 Markdown design guides, and two small Node scripts that search fonts, icons, component registries and design-system documentation. The skills work from your product: your brief, your existing screens, components and tokens come first, and the guides supply concrete defaults (type scales, contrast thresholds, touch targets, motion durations, state coverage) so the agent builds something that looks like your product instead of a template. Everything is plain Markdown and dependency-free Node: no installer, no engine, no account.
+Open plugins for coding agents: `audio` makes finished, multi-voice audio on your own machine, and `ui` designs and reviews interfaces.
 
-## Install
+## Audio: finished, multi-voice audio, free and on your machine
+
+Give the agent a script, or ask it to write one, and it renders a finished piece: a cast of up to ten voices with per-line delivery (happy, scared, hushed and eleven more), licensed sound effects, ambience and music, mixed, ducked and mastered to the loudness your domain needs.
+Every line is transcribed and checked before the mix, so a voice that mumbles, skips a word or reads a tag aloud is re-rendered automatically.
+Out come `mix.mp3`/`mix.wav`, per-speaker stems, `timeline.json` with word timings, speaker-labelled captions, `audio_meta.json` for HyperFrames video, and a `CREDITS.md` for every sound used.
+
+```text
+/plugin marketplace add JKL404/agentatelier
+/plugin install audio@agentatelier
+```
+
+On first use the agent runs `setup.mjs --check` and, if anything is missing, asks you once before installing: a Python environment at `~/.agentatelier/venv` with Supertonic 3 and faster-whisper (about 550 MB of models, downloaded once, then everything runs offline), and it tells you the one command to install ffmpeg if you do not have it (the tools never run a package manager themselves). It asks once before installing; when you say yes, the install records it in `~/.agentatelier/config.json` and later sessions see the check pass. A no is not stored: the agent renders timing drafts with the system voice for that conversation. Requires Node 18 or later and Python 3.10 or later.
+
+### Your own voice
+
+You can voice a character yourself. Cast it `voice: record` and read its lines, either straight into the microphone (the agent asks first; one line at a time, or all in one take that is split by the transcript's word times) or from a recording you already have (wav, mp3, m4a, aac, flac or ogg). Or clone your voice locally: record a 10–60 s reference once, cast `voice: clone:<name>`, and every line is rendered by Supertonic and converted to your timbre by Chatterbox voice conversion (MIT), with transcript QA as usual. Cloning is an optional install of about 2.6 GB, asked once. Both need a typed consent statement ("This is my own voice" or "I have the speaker's consent: <name>"), stored with the audio as your attestation; converted lines carry Resemble AI's imperceptible PerTh watermark. See [your-voice](plugins/audio/library/your-voice.md).
+
+### Listen
+
+Eight pieces rendered by `produce.mjs` from the scripts in [plugins/audio/examples](plugins/audio/examples/), unedited, every one through the QA gate. Each folder has the script, the mix, captions, the timeline and the credits.
+
+<!-- showcase-table -->
+
+| Piece | Domain | Voices | Length | Listen |
+|---|---|---|---|---|
+| [The Lighthouse](plugins/audio/examples/lighthouse/) | Audio drama with storm and sea | Narrator M5, Maya F2, Eli M1 | 1:09 | [mp3](plugins/audio/examples/lighthouse/mix.mp3) · [preview](plugins/audio/examples/lighthouse/preview.mp4) |
+| [Pip and the Lantern Bug](plugins/audio/examples/bedtime/) | Bedtime story for kids | Narrator F3, Pip F2, Glow M1 | 1:10 | [mp3](plugins/audio/examples/bedtime/mix.mp3) · [preview](plugins/audio/examples/bedtime/preview.mp4) |
+| [How vaccines train your immune system](plugins/audio/examples/lesson/) | Health lesson in five chapters | Narrator F4, Student M4 | 0:55 | [mp3](plugins/audio/examples/lesson/mix.mp3) · [preview](plugins/audio/examples/lesson/preview.mp4) |
+| [Small Wonders, cold open](plugins/audio/examples/podcast/) | Podcast cold open into the theme | Nova F2, Rex M3 | 0:43 | [mp3](plugins/audio/examples/podcast/mix.mp3) · [preview](plugins/audio/examples/podcast/preview.mp4) |
+| [A Study in Scarlet, chapter one (excerpt)](plugins/audio/examples/audiobook/) | Audiobook, ACX-mastered | Narrator M5, Holmes M1, Stamford M4 | 1:29 | [mp3](plugins/audio/examples/audiobook/mix.mp3) · [preview](plugins/audio/examples/audiobook/preview.mp4) |
+| [One voice, six languages](plugins/audio/examples/languages/) | Languages: en, es, fr, hi, ja, ko | Voice F4 | 0:50 | [mp3](plugins/audio/examples/languages/mix.mp3) · [preview](plugins/audio/examples/languages/preview.mp4) |
+| [Two-minute breathing break](plugins/audio/examples/meditation/) | Meditation, −20 LUFS | Guide F3 | 2:00 | [mp3](plugins/audio/examples/meditation/mix.mp3) · [preview](plugins/audio/examples/meditation/preview.mp4) |
+| [Lockout, tagout in six steps](plugins/audio/examples/playbook/) | Safety playbook | Trainer F5 | 1:08 | [mp3](plugins/audio/examples/playbook/mix.mp3) · [preview](plugins/audio/examples/playbook/preview.mp4) |
+
+The MP4 previews (waveform and burned-in speaker captions) play inline on GitHub once they are uploaded as README attachments when the repository is published; until then, follow the links.
+
+### How it compares
+
+- **Free and local.** No account, no API key, no per-character bill. Voices (Supertonic 3) and QA (faster-whisper) run on your CPU after a one-time download. ElevenLabs-based skills, Noiz and inference.sh are paid cloud services.
+- **A real cast.** Ten voices, measured for pitch and pace so the casting guide can pair contrasting voices in a scene; any number of speakers per script. Dia-based tools stop at two speakers; the other Supertonic skill speaks with one voice.
+- **Delivery presets, honestly named.** Supertonic has no emotion control. Each of the 14 presets is a recipe of phrasing, speed, gain, EQ and pauses, with speeds tuned by measurement ([delivery-tuning](docs/coverage/delivery-tuning.md)); the script guide teaches the phrasing half, which carries most of the emotion.
+- **Licensed sound, credited.** Effects, ambience and music come from Openverse, Wikimedia Commons and (with your free token) Freesound, filtered to CC0 and CC BY, each download saved with a license sidecar and credited in `CREDITS.md`. Offline, it falls back to a bundled CC0 pack and generated beds.
+- **A QA gate.** Every line is transcribed and scored; failures are re-rendered with new seeds. The master must hit its loudness target (−16 LUFS, −14 for ads and video, −20 for meditation, ACX for audiobooks, including the −60 dB noise floor) or the run exits 3 with the numbers.
+- **HyperFrames-ready.** `audio_meta.json`, per-speaker stems and word-timed `timeline.json` are what a video tool needs for captions, lip-sync and cuts.
+
+### The Supertonic tag bug, and our fix
+
+Supertonic's preprocessor turns `[ ] ( ) | / # _` into spaces, so `[laugh]` and `(sigh)` are read aloud as the words "laugh" and "sigh", and unknown tags such as `<gasp>` or `<clear-throat>` are spoken too. Even its documented tags are unreliable alone: we measured `<breath>` spoken as a word in 11 of 12 takes at the start of a line, and a single `<laugh>` is inaudible. Our pipeline normalises every way a writer marks a nonverbal (`[laughs]`, `(sighs heavily)`, `*laughing*`, `<laugh/>`), sends the engine only the one tag it performs reliably, a laugh, as a joined stack of two to four `<laugh>` tags (we tested six tags in five positions and three spacings: the laugh was clean 28 of 28 times, the next best 18 of 28), splices CC0 recordings matched to the voice for every other nonverbal, refuses any other markup before it reaches the engine, and then transcribes every line: if a tag word is heard, or any word appears where a tag sat (whisper writes a spoken breath as "Reth" and a sigh as "aside"), the line is re-rendered, and if it keeps happening the tag is swapped for a recording. The measurements are in [nonverbal.md](plugins/audio/library/nonverbal.md).
+
+## UI: design, review and references
+
+The `ui` plugin gives Claude Code (and any agent that reads Agent Skills) four design skills, a library of 24 Markdown design guides, and two small Node scripts that search fonts, icons, component registries and design-system documentation. The skills work from your product: your brief, your existing screens, components and tokens come first, and the guides supply concrete defaults (type scales, contrast thresholds, touch targets, motion durations, state coverage) so the agent builds something that looks like your product instead of a template. Everything is plain Markdown and dependency-free Node: no installer, no engine, no account.
+
+### Install
 
 As a Claude Code plugin (all four skills):
 

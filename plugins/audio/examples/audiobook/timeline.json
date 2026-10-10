@@ -1,0 +1,1107 @@
+{
+  "version": 1,
+  "title": "A Study in Scarlet, chapter one (excerpt)",
+  "duration_s": 89.363,
+  "scenes": [
+    {
+      "name": "Chapter One, Mr. Sherlock Holmes",
+      "start": 0.75
+    }
+  ],
+  "lines": [
+    {
+      "id": "L11-0",
+      "n": 11,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "This was a lofty chamber, lined and littered with countless bottles. Broad, low tables were scattered about, which bristled with retorts, test-tubes, and little Bunsen lamps, with their blue flickering flames.",
+      "start": 0.85,
+      "end": 15.7572,
+      "words": [
+        {
+          "w": "This",
+          "start": 0.85,
+          "end": 1.41
+        },
+        {
+          "w": "was",
+          "start": 1.41,
+          "end": 1.59
+        },
+        {
+          "w": "a",
+          "start": 1.59,
+          "end": 1.75
+        },
+        {
+          "w": "lofty",
+          "start": 1.75,
+          "end": 1.95
+        },
+        {
+          "w": "chamber,",
+          "start": 1.95,
+          "end": 2.55
+        },
+        {
+          "w": "lined",
+          "start": 3.13,
+          "end": 3.47
+        },
+        {
+          "w": "and",
+          "start": 3.47,
+          "end": 3.79
+        },
+        {
+          "w": "littered",
+          "start": 3.79,
+          "end": 4.07
+        },
+        {
+          "w": "with",
+          "start": 4.07,
+          "end": 4.41
+        },
+        {
+          "w": "countless",
+          "start": 4.41,
+          "end": 4.77
+        },
+        {
+          "w": "bottles.",
+          "start": 4.77,
+          "end": 5.35
+        },
+        {
+          "w": "Broad,",
+          "start": 6.39,
+          "end": 6.39
+        },
+        {
+          "w": "low",
+          "start": 6.39,
+          "end": 6.63
+        },
+        {
+          "w": "tables",
+          "start": 6.63,
+          "end": 7.11
+        },
+        {
+          "w": "were",
+          "start": 7.11,
+          "end": 7.47
+        },
+        {
+          "w": "scattered",
+          "start": 7.47,
+          "end": 7.79
+        },
+        {
+          "w": "about,",
+          "start": 7.79,
+          "end": 8.17
+        },
+        {
+          "w": "which",
+          "start": 8.81,
+          "end": 8.91
+        },
+        {
+          "w": "bristled",
+          "start": 8.91,
+          "end": 9.45
+        },
+        {
+          "w": "with",
+          "start": 9.45,
+          "end": 9.65
+        },
+        {
+          "w": "retorts,",
+          "start": 9.65,
+          "end": 10.15
+        },
+        {
+          "w": "test-tubes,",
+          "start": 11.05,
+          "end": 11.49
+        },
+        {
+          "w": "and",
+          "start": 11.49,
+          "end": 11.79
+        },
+        {
+          "w": "little",
+          "start": 11.79,
+          "end": 11.95
+        },
+        {
+          "w": "Bunsen",
+          "start": 11.95,
+          "end": 12.41
+        },
+        {
+          "w": "lamps,",
+          "start": 12.41,
+          "end": 12.69
+        },
+        {
+          "w": "with",
+          "start": 12.69,
+          "end": 13.55
+        },
+        {
+          "w": "their",
+          "start": 13.55,
+          "end": 13.73
+        },
+        {
+          "w": "blue",
+          "start": 13.73,
+          "end": 13.97
+        },
+        {
+          "w": "flickering",
+          "start": 13.97,
+          "end": 14.51
+        },
+        {
+          "w": "flames.",
+          "start": 14.51,
+          "end": 14.93
+        }
+      ]
+    },
+    {
+      "id": "L12-0",
+      "n": 12,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "There was only one student in the room, who was bending over a distant table absorbed in his work. At the sound of our steps he glanced round and sprang to his feet with a cry of pleasure.",
+      "start": 16.5572,
+      "end": 29.9319,
+      "words": [
+        {
+          "w": "There",
+          "start": 16.5572,
+          "end": 16.997
+        },
+        {
+          "w": "was",
+          "start": 16.997,
+          "end": 17.117
+        },
+        {
+          "w": "only",
+          "start": 17.117,
+          "end": 17.517
+        },
+        {
+          "w": "one",
+          "start": 17.517,
+          "end": 17.777
+        },
+        {
+          "w": "student",
+          "start": 17.777,
+          "end": 18.197
+        },
+        {
+          "w": "in",
+          "start": 18.197,
+          "end": 18.617
+        },
+        {
+          "w": "the",
+          "start": 18.617,
+          "end": 18.717
+        },
+        {
+          "w": "room,",
+          "start": 18.717,
+          "end": 18.997
+        },
+        {
+          "w": "who",
+          "start": 18.997,
+          "end": 19.617
+        },
+        {
+          "w": "was",
+          "start": 19.617,
+          "end": 19.757
+        },
+        {
+          "w": "bending",
+          "start": 19.757,
+          "end": 19.997
+        },
+        {
+          "w": "over",
+          "start": 19.997,
+          "end": 20.477
+        },
+        {
+          "w": "a",
+          "start": 20.477,
+          "end": 20.617
+        },
+        {
+          "w": "distant",
+          "start": 20.617,
+          "end": 20.937
+        },
+        {
+          "w": "table",
+          "start": 20.937,
+          "end": 21.417
+        },
+        {
+          "w": "absorbed",
+          "start": 21.417,
+          "end": 21.757
+        },
+        {
+          "w": "in",
+          "start": 22.337,
+          "end": 22.657
+        },
+        {
+          "w": "his",
+          "start": 22.657,
+          "end": 22.837
+        },
+        {
+          "w": "work.",
+          "start": 22.837,
+          "end": 23.157
+        },
+        {
+          "w": "At",
+          "start": 23.777,
+          "end": 23.857
+        },
+        {
+          "w": "the",
+          "start": 23.857,
+          "end": 23.997
+        },
+        {
+          "w": "sound",
+          "start": 23.997,
+          "end": 24.317
+        },
+        {
+          "w": "of",
+          "start": 24.317,
+          "end": 24.537
+        },
+        {
+          "w": "our",
+          "start": 24.537,
+          "end": 24.677
+        },
+        {
+          "w": "steps",
+          "start": 24.677,
+          "end": 24.977
+        },
+        {
+          "w": "he",
+          "start": 24.977,
+          "end": 25.317
+        },
+        {
+          "w": "glanced",
+          "start": 25.317,
+          "end": 25.497
+        },
+        {
+          "w": "round",
+          "start": 25.497,
+          "end": 25.977
+        },
+        {
+          "w": "and",
+          "start": 25.977,
+          "end": 26.697
+        },
+        {
+          "w": "sprang",
+          "start": 26.697,
+          "end": 26.977
+        },
+        {
+          "w": "to",
+          "start": 26.977,
+          "end": 27.337
+        },
+        {
+          "w": "his",
+          "start": 27.337,
+          "end": 27.457
+        },
+        {
+          "w": "feet",
+          "start": 27.457,
+          "end": 27.737
+        },
+        {
+          "w": "with",
+          "start": 27.737,
+          "end": 28.137
+        },
+        {
+          "w": "a",
+          "start": 28.137,
+          "end": 28.237
+        },
+        {
+          "w": "cry",
+          "start": 28.237,
+          "end": 28.457
+        },
+        {
+          "w": "of",
+          "start": 28.457,
+          "end": 28.837
+        },
+        {
+          "w": "pleasure.",
+          "start": 28.837,
+          "end": 29.197
+        }
+      ]
+    },
+    {
+      "id": "L13-0",
+      "n": 13,
+      "kind": "speech",
+      "speaker": "HOLMES",
+      "voice": "M1",
+      "emotion": "excited",
+      "text": "I've found it! I've found it!",
+      "start": 30.6819,
+      "end": 32.911,
+      "words": [
+        {
+          "w": "I've",
+          "start": 30.682,
+          "end": 31.182
+        },
+        {
+          "w": "found",
+          "start": 31.182,
+          "end": 31.402
+        },
+        {
+          "w": "it!",
+          "start": 31.402,
+          "end": 31.562
+        },
+        {
+          "w": "I've",
+          "start": 31.682,
+          "end": 31.742
+        },
+        {
+          "w": "found",
+          "start": 31.742,
+          "end": 31.962
+        },
+        {
+          "w": "it!",
+          "start": 31.962,
+          "end": 32.142
+        }
+      ]
+    },
+    {
+      "id": "L14-0",
+      "n": 14,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "he shouted to my companion, running towards us with a test-tube in his hand.",
+      "start": 33.711,
+      "end": 39.5624,
+      "words": [
+        {
+          "w": "he",
+          "start": 33.711,
+          "end": 34.251
+        },
+        {
+          "w": "shouted",
+          "start": 34.251,
+          "end": 34.511
+        },
+        {
+          "w": "to",
+          "start": 34.511,
+          "end": 34.831
+        },
+        {
+          "w": "my",
+          "start": 34.831,
+          "end": 34.971
+        },
+        {
+          "w": "companion,",
+          "start": 34.971,
+          "end": 35.511
+        },
+        {
+          "w": "running",
+          "start": 36.171,
+          "end": 36.391
+        },
+        {
+          "w": "towards",
+          "start": 36.391,
+          "end": 36.811
+        },
+        {
+          "w": "us",
+          "start": 36.811,
+          "end": 37.111
+        },
+        {
+          "w": "with",
+          "start": 37.111,
+          "end": 37.391
+        },
+        {
+          "w": "a",
+          "start": 37.391,
+          "end": 37.511
+        },
+        {
+          "w": "test-tube",
+          "start": 37.711,
+          "end": 38.091
+        },
+        {
+          "w": "in",
+          "start": 38.091,
+          "end": 38.311
+        },
+        {
+          "w": "his",
+          "start": 38.311,
+          "end": 38.491
+        },
+        {
+          "w": "hand.",
+          "start": 38.491,
+          "end": 38.791
+        }
+      ]
+    },
+    {
+      "id": "L15-0",
+      "n": 15,
+      "kind": "speech",
+      "speaker": "HOLMES",
+      "voice": "M1",
+      "emotion": "excited",
+      "text": "I have found a re-agent which is precipitated by haemoglobin, and by nothing else.",
+      "start": 40.3124,
+      "end": 45.5369,
+      "words": [
+        {
+          "w": "I",
+          "start": 40.3124,
+          "end": 40.872
+        },
+        {
+          "w": "have",
+          "start": 40.872,
+          "end": 40.992
+        },
+        {
+          "w": "found",
+          "start": 40.992,
+          "end": 41.192
+        },
+        {
+          "w": "a",
+          "start": 41.192,
+          "end": 41.312
+        },
+        {
+          "w": "re-agent",
+          "start": 41.312,
+          "end": 41.672
+        },
+        {
+          "w": "which",
+          "start": 41.672,
+          "end": 41.932
+        },
+        {
+          "w": "is",
+          "start": 41.932,
+          "end": 42.052
+        },
+        {
+          "w": "precipitated",
+          "start": 42.052,
+          "end": 42.672
+        },
+        {
+          "w": "by",
+          "start": 42.672,
+          "end": 42.872
+        },
+        {
+          "w": "haemoglobin,",
+          "start": 42.872,
+          "end": 43.612
+        },
+        {
+          "w": "and",
+          "start": 43.612,
+          "end": 43.952
+        },
+        {
+          "w": "by",
+          "start": 43.952,
+          "end": 44.092
+        },
+        {
+          "w": "nothing",
+          "start": 44.092,
+          "end": 44.332
+        },
+        {
+          "w": "else.",
+          "start": 44.332,
+          "end": 44.572
+        }
+      ]
+    },
+    {
+      "id": "L16-0",
+      "n": 16,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "Had he discovered a gold mine, greater delight could not have shone upon his features.",
+      "start": 46.3369,
+      "end": 52.6063,
+      "words": [
+        {
+          "w": "Had",
+          "start": 46.337,
+          "end": 46.877
+        },
+        {
+          "w": "he",
+          "start": 46.877,
+          "end": 47.037
+        },
+        {
+          "w": "discovered",
+          "start": 47.037,
+          "end": 47.397
+        },
+        {
+          "w": "a",
+          "start": 47.397,
+          "end": 47.697
+        },
+        {
+          "w": "gold",
+          "start": 47.697,
+          "end": 47.917
+        },
+        {
+          "w": "mine,",
+          "start": 47.917,
+          "end": 48.357
+        },
+        {
+          "w": "greater",
+          "start": 48.777,
+          "end": 49.077
+        },
+        {
+          "w": "delight",
+          "start": 49.077,
+          "end": 49.497
+        },
+        {
+          "w": "could",
+          "start": 49.497,
+          "end": 49.897
+        },
+        {
+          "w": "not",
+          "start": 49.897,
+          "end": 50.177
+        },
+        {
+          "w": "have",
+          "start": 50.177,
+          "end": 50.437
+        },
+        {
+          "w": "shone",
+          "start": 50.437,
+          "end": 50.717
+        },
+        {
+          "w": "upon",
+          "start": 50.717,
+          "end": 51.057
+        },
+        {
+          "w": "his",
+          "start": 51.057,
+          "end": 51.297
+        },
+        {
+          "w": "features.",
+          "start": 51.297,
+          "end": 51.657
+        }
+      ]
+    },
+    {
+      "id": "L17-0",
+      "n": 17,
+      "kind": "speech",
+      "speaker": "STAMFORD",
+      "voice": "M4",
+      "emotion": null,
+      "text": "Doctor Watson, Mister Sherlock Holmes,",
+      "start": 53.4063,
+      "end": 56.6107,
+      "words": [
+        {
+          "w": "Doctor",
+          "start": 53.4063,
+          "end": 54.006
+        },
+        {
+          "w": "Watson,",
+          "start": 54.246,
+          "end": 54.406
+        },
+        {
+          "w": "Mister",
+          "start": 54.686,
+          "end": 54.806
+        },
+        {
+          "w": "Sherlock",
+          "start": 55.266,
+          "end": 55.266
+        },
+        {
+          "w": "Holmes,",
+          "start": 55.266,
+          "end": 55.686
+        }
+      ]
+    },
+    {
+      "id": "L18-0",
+      "n": 18,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "said Stamford, introducing us.",
+      "start": 57.4107,
+      "end": 60.1274,
+      "words": [
+        {
+          "w": "said",
+          "start": 57.411,
+          "end": 57.971
+        },
+        {
+          "w": "Stamford,",
+          "start": 57.971,
+          "end": 58.511
+        },
+        {
+          "w": "introducing",
+          "start": 58.511,
+          "end": 58.991
+        },
+        {
+          "w": "us.",
+          "start": 58.991,
+          "end": 59.411
+        }
+      ]
+    },
+    {
+      "id": "L19-0",
+      "n": 19,
+      "kind": "speech",
+      "speaker": "HOLMES",
+      "voice": "M1",
+      "emotion": "happy",
+      "text": "How are you?",
+      "start": 60.8774,
+      "end": 62.2706,
+      "words": [
+        {
+          "w": "How",
+          "start": 60.8774,
+          "end": 61.357
+        },
+        {
+          "w": "are",
+          "start": 61.357,
+          "end": 61.457
+        },
+        {
+          "w": "you?",
+          "start": 61.457,
+          "end": 61.717
+        }
+      ]
+    },
+    {
+      "id": "L20-0",
+      "n": 20,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "he said cordially, gripping my hand with a strength for which I should hardly have given him credit.",
+      "start": 63.0706,
+      "end": 70.3849,
+      "words": [
+        {
+          "w": "he",
+          "start": 63.071,
+          "end": 63.651
+        },
+        {
+          "w": "said",
+          "start": 63.651,
+          "end": 63.891
+        },
+        {
+          "w": "cordially,",
+          "start": 63.891,
+          "end": 64.511
+        },
+        {
+          "w": "gripping",
+          "start": 64.971,
+          "end": 65.191
+        },
+        {
+          "w": "my",
+          "start": 65.191,
+          "end": 65.511
+        },
+        {
+          "w": "hand",
+          "start": 65.511,
+          "end": 65.831
+        },
+        {
+          "w": "with",
+          "start": 65.831,
+          "end": 66.111
+        },
+        {
+          "w": "a",
+          "start": 66.111,
+          "end": 66.211
+        },
+        {
+          "w": "strength",
+          "start": 66.211,
+          "end": 66.511
+        },
+        {
+          "w": "for",
+          "start": 67.191,
+          "end": 67.371
+        },
+        {
+          "w": "which",
+          "start": 67.371,
+          "end": 67.551
+        },
+        {
+          "w": "I",
+          "start": 67.551,
+          "end": 67.771
+        },
+        {
+          "w": "should",
+          "start": 67.771,
+          "end": 67.951
+        },
+        {
+          "w": "hardly",
+          "start": 67.951,
+          "end": 68.311
+        },
+        {
+          "w": "have",
+          "start": 68.311,
+          "end": 68.651
+        },
+        {
+          "w": "given",
+          "start": 68.651,
+          "end": 68.911
+        },
+        {
+          "w": "him",
+          "start": 68.911,
+          "end": 69.151
+        },
+        {
+          "w": "credit.",
+          "start": 69.151,
+          "end": 69.511
+        }
+      ]
+    },
+    {
+      "id": "L21-0",
+      "n": 21,
+      "kind": "speech",
+      "speaker": "HOLMES",
+      "voice": "M1",
+      "emotion": "calm",
+      "text": "You have been in Afghanistan, I perceive.",
+      "start": 71.2849,
+      "end": 75.1162,
+      "words": [
+        {
+          "w": "You",
+          "start": 71.285,
+          "end": 71.945
+        },
+        {
+          "w": "have",
+          "start": 71.945,
+          "end": 72.105
+        },
+        {
+          "w": "been",
+          "start": 72.105,
+          "end": 72.325
+        },
+        {
+          "w": "in",
+          "start": 72.325,
+          "end": 72.445
+        },
+        {
+          "w": "Afghanistan,",
+          "start": 72.445,
+          "end": 72.865
+        },
+        {
+          "w": "I",
+          "start": 73.625,
+          "end": 73.725
+        },
+        {
+          "w": "perceive.",
+          "start": 73.725,
+          "end": 74.005
+        }
+      ]
+    },
+    {
+      "id": "L22-0",
+      "n": 22,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": "surprised",
+      "text": "How on earth did you know that?",
+      "start": 76.0662,
+      "end": 78.156,
+      "words": [
+        {
+          "w": "How",
+          "start": 76.0662,
+          "end": 76.466
+        },
+        {
+          "w": "on",
+          "start": 76.466,
+          "end": 76.626
+        },
+        {
+          "w": "earth",
+          "start": 76.626,
+          "end": 76.826
+        },
+        {
+          "w": "did",
+          "start": 76.826,
+          "end": 77.086
+        },
+        {
+          "w": "you",
+          "start": 77.086,
+          "end": 77.226
+        },
+        {
+          "w": "know",
+          "start": 77.226,
+          "end": 77.386
+        },
+        {
+          "w": "that?",
+          "start": 77.386,
+          "end": 77.606
+        }
+      ]
+    },
+    {
+      "id": "L23-0",
+      "n": 23,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "I asked in astonishment.",
+      "start": 78.956,
+      "end": 81.1851,
+      "words": [
+        {
+          "w": "I",
+          "start": 78.956,
+          "end": 79.456
+        },
+        {
+          "w": "asked",
+          "start": 79.456,
+          "end": 79.676
+        },
+        {
+          "w": "in",
+          "start": 79.676,
+          "end": 79.876
+        },
+        {
+          "w": "astonishment.",
+          "start": 79.876,
+          "end": 80.436
+        }
+      ]
+    },
+    {
+      "id": "L24-0",
+      "n": 24,
+      "kind": "speech",
+      "speaker": "HOLMES",
+      "voice": "M1",
+      "emotion": "happy",
+      "text": "Never mind,",
+      "inline_nv": [
+        "laugh"
+      ],
+      "start": 81.9351,
+      "end": 84.0249,
+      "words": [
+        {
+          "w": "Never",
+          "start": 81.9351,
+          "end": 82.935
+        },
+        {
+          "w": "mind,",
+          "start": 82.935,
+          "end": 83.215
+        }
+      ]
+    },
+    {
+      "id": "L25-0",
+      "n": 25,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "said he, chuckling to himself.",
+      "start": 84.8249,
+      "end": 87.263,
+      "words": [
+        {
+          "w": "said",
+          "start": 84.825,
+          "end": 85.425
+        },
+        {
+          "w": "he,",
+          "start": 85.425,
+          "end": 85.565
+        },
+        {
+          "w": "chuckling",
+          "start": 85.565,
+          "end": 85.985
+        },
+        {
+          "w": "to",
+          "start": 85.985,
+          "end": 86.165
+        },
+        {
+          "w": "himself.",
+          "start": 86.165,
+          "end": 86.365
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "type": "ambience",
+      "id": "L0-0",
+      "label": "room tone",
+      "start": 0,
+      "gain_db": -28,
+      "loop": true,
+      "room_tone": true,
+      "end": 89.363,
+      "path": "assets/generated-room-tone-92s.wav"
+    }
+  ],
+  "assets": [
+    {
+      "ids": [
+        "L0-0",
+        "L26-0"
+      ],
+      "type": "ambience",
+      "path": "assets/generated-room-tone-92s.wav",
+      "source": "generated",
+      "title": "Generated room-tone",
+      "creator": "agentatelier (ffmpeg generator)",
+      "license": "generated",
+      "license_url": "",
+      "source_url": "",
+      "attribution": "Generated room-tone: generated with ffmpeg, no attribution required"
+    }
+  ],
+  "warnings": []
+}

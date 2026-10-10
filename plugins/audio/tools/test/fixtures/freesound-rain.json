@@ -1,0 +1,11 @@
+{
+ "_note": "Shape per the Freesound APIv2 text-search docs (fields=id,name,username,license,url,previews,duration). Hand-written: no token was available to capture a live response.",
+ "count": 3,
+ "next": null,
+ "previous": null,
+ "results": [
+  {"id": 531947, "name": "Rain on window.wav", "username": "Example_Recordist", "license": "http://creativecommons.org/publicdomain/zero/1.0/", "url": "https://freesound.org/people/Example_Recordist/sounds/531947/", "duration": 42.5, "previews": {"preview-hq-mp3": "https://cdn.freesound.org/previews/531/531947_1-hq.mp3", "preview-lq-mp3": "https://cdn.freesound.org/previews/531/531947_1-lq.mp3"}},
+  {"id": 401275, "name": "Rain, Moderate, C.wav", "username": "InspectorJ", "license": "https://creativecommons.org/licenses/by/4.0/", "url": "https://freesound.org/people/InspectorJ/sounds/401275/", "duration": 60.1, "previews": {"preview-hq-mp3": "https://cdn.freesound.org/previews/401/401275_5121236-hq.mp3"}},
+  {"id": 99999, "name": "Rain sampler", "username": "nc_user", "license": "http://creativecommons.org/licenses/by-nc/4.0/", "url": "https://freesound.org/people/nc_user/sounds/99999/", "duration": 10, "previews": {"preview-hq-mp3": "https://cdn.freesound.org/previews/99/99999-hq.mp3"}}
+ ]
+}

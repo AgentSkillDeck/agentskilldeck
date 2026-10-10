@@ -45,7 +45,7 @@ npm run linkcheck
 
 ## Adding a domain plugin
 
-A new domain (for example `backend`) is a new folder under `plugins/` with its own `.claude-plugin/plugin.json` and `skills/`, plus an entry in [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json). The `sync`, `check`, `lint` and `test` scripts in `package.json` are currently wired to `plugins/ui`, so a second domain plugin must extend them to cover its folder too. Open an issue first to agree on scope.
+A new domain (for example `backend`) is a new folder under `plugins/` with its own `.claude-plugin/plugin.json`, `sync.json` (`{ "skills": {} }` to start) and `skills/`, plus an entry in [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json). The `sync`, `check` and `lint` scripts already loop over every `plugins/<name>` directory that has a `sync.json`, and `test` globs `plugins/*/tools/test/*.test.mjs`, so a new plugin is picked up automatically once those files exist — no changes to `package.json` or the scripts are needed. Pass a path (for example `node scripts/sync-library.mjs plugins/ui`) to restrict a run to one plugin. Open an issue first to agree on scope.
 
 ## Licence
 

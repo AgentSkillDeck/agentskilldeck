@@ -1,0 +1,1057 @@
+{
+  "version": 1,
+  "title": "The Lighthouse",
+  "duration_s": 68.806287,
+  "scenes": [
+    {
+      "name": "The lamp room, the last night",
+      "start": 0.5
+    }
+  ],
+  "lines": [
+    {
+      "id": "L13-0",
+      "n": 13,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "For forty years, the lamp on Gull Rock never missed a night.",
+      "start": 0.6,
+      "end": 4.9886,
+      "words": [
+        {
+          "w": "For",
+          "start": 0.6,
+          "end": 1.08
+        },
+        {
+          "w": "forty",
+          "start": 1.08,
+          "end": 1.38
+        },
+        {
+          "w": "years,",
+          "start": 1.38,
+          "end": 1.78
+        },
+        {
+          "w": "the",
+          "start": 2.08,
+          "end": 2.18
+        },
+        {
+          "w": "lamp",
+          "start": 2.18,
+          "end": 2.38
+        },
+        {
+          "w": "on",
+          "start": 2.38,
+          "end": 2.6
+        },
+        {
+          "w": "Gull",
+          "start": 2.6,
+          "end": 2.84
+        },
+        {
+          "w": "Rock",
+          "start": 2.84,
+          "end": 3.18
+        },
+        {
+          "w": "never",
+          "start": 3.18,
+          "end": 3.5
+        },
+        {
+          "w": "missed",
+          "start": 3.5,
+          "end": 3.8
+        },
+        {
+          "w": "a",
+          "start": 3.8,
+          "end": 3.96
+        },
+        {
+          "w": "night.",
+          "start": 3.96,
+          "end": 4.18
+        }
+      ]
+    },
+    {
+      "id": "L14-0",
+      "n": 14,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "Tomorrow, a machine would take over.",
+      "start": 5.4386,
+      "end": 8.2947,
+      "words": [
+        {
+          "w": "Tomorrow,",
+          "start": 5.439,
+          "end": 6.099
+        },
+        {
+          "w": "a",
+          "start": 6.219,
+          "end": 6.459
+        },
+        {
+          "w": "machine",
+          "start": 6.459,
+          "end": 6.719
+        },
+        {
+          "w": "would",
+          "start": 6.719,
+          "end": 7.019
+        },
+        {
+          "w": "take",
+          "start": 7.019,
+          "end": 7.239
+        },
+        {
+          "w": "over.",
+          "start": 7.239,
+          "end": 7.599
+        }
+      ]
+    },
+    {
+      "id": "L15-0",
+      "n": 15,
+      "kind": "nv",
+      "speaker": "MAYA",
+      "voice": "F2",
+      "emotion": "tired",
+      "text": "",
+      "tag": "sigh",
+      "start": 8.8447,
+      "end": 10.33368,
+      "words": []
+    },
+    {
+      "id": "L15-1",
+      "n": 15,
+      "kind": "speech",
+      "speaker": "MAYA",
+      "voice": "F2",
+      "emotion": "tired",
+      "text": "Last entry in the log, Eli. Wind from the west. Sea, rough.",
+      "start": 10.33368,
+      "end": 16.39408,
+      "words": [
+        {
+          "w": "Last",
+          "start": 10.334,
+          "end": 11.074
+        },
+        {
+          "w": "entry",
+          "start": 11.074,
+          "end": 11.414
+        },
+        {
+          "w": "in",
+          "start": 11.414,
+          "end": 11.754
+        },
+        {
+          "w": "the",
+          "start": 11.754,
+          "end": 11.874
+        },
+        {
+          "w": "log,",
+          "start": 11.874,
+          "end": 12.154
+        },
+        {
+          "w": "Eli.",
+          "start": 12.394,
+          "end": 12.454
+        },
+        {
+          "w": "Wind",
+          "start": 13.394,
+          "end": 13.414
+        },
+        {
+          "w": "from",
+          "start": 13.414,
+          "end": 13.754
+        },
+        {
+          "w": "the",
+          "start": 13.754,
+          "end": 13.894
+        },
+        {
+          "w": "west.",
+          "start": 13.894,
+          "end": 14.094
+        },
+        {
+          "w": "Sea,",
+          "start": 14.854,
+          "end": 14.894
+        },
+        {
+          "w": "rough.",
+          "start": 15.354,
+          "end": 15.414
+        }
+      ]
+    },
+    {
+      "id": "L16-0",
+      "n": 16,
+      "kind": "speech",
+      "speaker": "ELI",
+      "voice": "M1",
+      "emotion": "happy",
+      "text": "Write that the keeper's daughter refused to go to bed.",
+      "inline_nv": [
+        "laugh"
+      ],
+      "start": 16.99408,
+      "end": 20.96468,
+      "words": [
+        {
+          "w": "Write",
+          "start": 17.874,
+          "end": 18.294
+        },
+        {
+          "w": "that",
+          "start": 18.414,
+          "end": 18.494
+        },
+        {
+          "w": "the",
+          "start": 18.494,
+          "end": 18.594
+        },
+        {
+          "w": "keeper's",
+          "start": 18.594,
+          "end": 18.934
+        },
+        {
+          "w": "daughter",
+          "start": 18.934,
+          "end": 19.174
+        },
+        {
+          "w": "refused",
+          "start": 19.174,
+          "end": 19.514
+        },
+        {
+          "w": "to",
+          "start": 19.514,
+          "end": 19.814
+        },
+        {
+          "w": "go",
+          "start": 19.814,
+          "end": 19.934
+        },
+        {
+          "w": "to",
+          "start": 19.934,
+          "end": 20.014
+        },
+        {
+          "w": "bed.",
+          "start": 20.014,
+          "end": 20.194
+        }
+      ]
+    },
+    {
+      "id": "L17-0",
+      "n": 17,
+      "kind": "speech",
+      "speaker": "MAYA",
+      "voice": "F2",
+      "emotion": "tender",
+      "text": "You were seven the first time you said that.",
+      "start": 21.51468,
+      "end": 24.64938,
+      "words": [
+        {
+          "w": "You",
+          "start": 21.515,
+          "end": 22.215
+        },
+        {
+          "w": "were",
+          "start": 22.215,
+          "end": 22.335
+        },
+        {
+          "w": "seven",
+          "start": 22.335,
+          "end": 22.575
+        },
+        {
+          "w": "the",
+          "start": 22.575,
+          "end": 22.775
+        },
+        {
+          "w": "first",
+          "start": 22.775,
+          "end": 22.955
+        },
+        {
+          "w": "time",
+          "start": 22.955,
+          "end": 23.235
+        },
+        {
+          "w": "you",
+          "start": 23.235,
+          "end": 23.415
+        },
+        {
+          "w": "said",
+          "start": 23.415,
+          "end": 23.635
+        },
+        {
+          "w": "that.",
+          "start": 23.635,
+          "end": 23.855
+        }
+      ]
+    },
+    {
+      "id": "L20-0",
+      "n": 20,
+      "kind": "nv",
+      "speaker": "ELI",
+      "voice": "M1",
+      "emotion": "scared",
+      "text": "",
+      "tag": "breath",
+      "start": 27.37718,
+      "end": 28.86616,
+      "words": []
+    },
+    {
+      "id": "L20-1",
+      "n": 20,
+      "kind": "speech",
+      "speaker": "ELI",
+      "voice": "M1",
+      "emotion": "scared",
+      "text": "Maya. Nobody comes out here in a storm.",
+      "start": 28.86616,
+      "end": 31.72226,
+      "words": [
+        {
+          "w": "Maya.",
+          "start": 28.86616,
+          "end": 29.386
+        },
+        {
+          "w": "Nobody",
+          "start": 29.746,
+          "end": 29.866
+        },
+        {
+          "w": "comes",
+          "start": 29.866,
+          "end": 30.126
+        },
+        {
+          "w": "out",
+          "start": 30.126,
+          "end": 30.306
+        },
+        {
+          "w": "here",
+          "start": 30.306,
+          "end": 30.466
+        },
+        {
+          "w": "in",
+          "start": 30.466,
+          "end": 30.586
+        },
+        {
+          "w": "a",
+          "start": 30.586,
+          "end": 30.646
+        },
+        {
+          "w": "storm.",
+          "start": 30.646,
+          "end": 30.906
+        }
+      ]
+    },
+    {
+      "id": "L21-0",
+      "n": 21,
+      "kind": "speech",
+      "speaker": "MAYA",
+      "voice": "F2",
+      "emotion": "hushed",
+      "text": "Stay behind me.",
+      "start": 32.27226,
+      "end": 33.80476,
+      "words": [
+        {
+          "w": "Stay",
+          "start": 32.27226,
+          "end": 32.732
+        },
+        {
+          "w": "behind",
+          "start": 32.732,
+          "end": 32.972
+        },
+        {
+          "w": "me.",
+          "start": 32.972,
+          "end": 33.212
+        }
+      ]
+    },
+    {
+      "id": "L23-0",
+      "n": 23,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "On the step stood an old man, soaked to the bone, with a lantern in his hand.",
+      "start": 37.738887,
+      "end": 43.172387,
+      "words": [
+        {
+          "w": "On",
+          "start": 37.739,
+          "end": 38.219
+        },
+        {
+          "w": "the",
+          "start": 38.219,
+          "end": 38.339
+        },
+        {
+          "w": "step",
+          "start": 38.339,
+          "end": 38.559
+        },
+        {
+          "w": "stood",
+          "start": 38.559,
+          "end": 38.859
+        },
+        {
+          "w": "an",
+          "start": 38.859,
+          "end": 39.039
+        },
+        {
+          "w": "old",
+          "start": 39.039,
+          "end": 39.159
+        },
+        {
+          "w": "man,",
+          "start": 39.159,
+          "end": 39.499
+        },
+        {
+          "w": "soaked",
+          "start": 39.499,
+          "end": 40.139
+        },
+        {
+          "w": "to",
+          "start": 40.139,
+          "end": 40.439
+        },
+        {
+          "w": "the",
+          "start": 40.439,
+          "end": 40.539
+        },
+        {
+          "w": "bone,",
+          "start": 40.539,
+          "end": 40.779
+        },
+        {
+          "w": "with",
+          "start": 40.779,
+          "end": 41.199
+        },
+        {
+          "w": "a",
+          "start": 41.199,
+          "end": 41.299
+        },
+        {
+          "w": "lantern",
+          "start": 41.299,
+          "end": 41.539
+        },
+        {
+          "w": "in",
+          "start": 41.539,
+          "end": 41.839
+        },
+        {
+          "w": "his",
+          "start": 41.839,
+          "end": 42.019
+        },
+        {
+          "w": "hand.",
+          "start": 42.019,
+          "end": 42.299
+        }
+      ]
+    },
+    {
+      "id": "L24-0",
+      "n": 24,
+      "kind": "speech",
+      "speaker": "MAYA",
+      "voice": "F2",
+      "emotion": "surprised",
+      "text": "Dad? You rowed out here? In this?",
+      "start": 43.572387,
+      "end": 46.010487,
+      "words": [
+        {
+          "w": "Dad?",
+          "start": 43.912,
+          "end": 44.192
+        },
+        {
+          "w": "You",
+          "start": 44.332,
+          "end": 44.372
+        },
+        {
+          "w": "rowed",
+          "start": 44.372,
+          "end": 44.512
+        },
+        {
+          "w": "out",
+          "start": 44.512,
+          "end": 44.692
+        },
+        {
+          "w": "here?",
+          "start": 44.692,
+          "end": 44.832
+        },
+        {
+          "w": "In",
+          "start": 44.832,
+          "end": 44.952
+        },
+        {
+          "w": "this?",
+          "start": 44.952,
+          "end": 45.072
+        }
+      ]
+    },
+    {
+      "id": "L25-0",
+      "n": 25,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "He didn't answer. He climbed the stairs, and laid his hand on the glass.",
+      "start": 46.460487,
+      "end": 51.684987,
+      "words": [
+        {
+          "w": "He",
+          "start": 46.460487,
+          "end": 47.02
+        },
+        {
+          "w": "didn't",
+          "start": 47.02,
+          "end": 47.28
+        },
+        {
+          "w": "answer.",
+          "start": 47.28,
+          "end": 47.6
+        },
+        {
+          "w": "He",
+          "start": 48.22,
+          "end": 48.26
+        },
+        {
+          "w": "climbed",
+          "start": 48.26,
+          "end": 48.46
+        },
+        {
+          "w": "the",
+          "start": 48.46,
+          "end": 48.66
+        },
+        {
+          "w": "stairs,",
+          "start": 48.66,
+          "end": 48.98
+        },
+        {
+          "w": "and",
+          "start": 48.98,
+          "end": 49.56
+        },
+        {
+          "w": "laid",
+          "start": 49.56,
+          "end": 49.76
+        },
+        {
+          "w": "his",
+          "start": 49.76,
+          "end": 49.96
+        },
+        {
+          "w": "hand",
+          "start": 49.96,
+          "end": 50.26
+        },
+        {
+          "w": "on",
+          "start": 50.26,
+          "end": 50.48
+        },
+        {
+          "w": "the",
+          "start": 50.48,
+          "end": 50.64
+        },
+        {
+          "w": "glass.",
+          "start": 50.64,
+          "end": 50.94
+        }
+      ]
+    },
+    {
+      "id": "L26-0",
+      "n": 26,
+      "kind": "speech",
+      "speaker": "ELI",
+      "voice": "M1",
+      "emotion": "sad",
+      "text": "He kept it burning for thirty of those years.",
+      "start": 52.234987,
+      "end": 56.205587,
+      "words": [
+        {
+          "w": "He",
+          "start": 52.235,
+          "end": 52.915
+        },
+        {
+          "w": "kept",
+          "start": 52.915,
+          "end": 53.115
+        },
+        {
+          "w": "it",
+          "start": 53.115,
+          "end": 53.315
+        },
+        {
+          "w": "burning",
+          "start": 53.315,
+          "end": 53.595
+        },
+        {
+          "w": "for",
+          "start": 53.595,
+          "end": 53.975
+        },
+        {
+          "w": "thirty",
+          "start": 53.975,
+          "end": 54.315
+        },
+        {
+          "w": "of",
+          "start": 54.315,
+          "end": 54.615
+        },
+        {
+          "w": "those",
+          "start": 54.615,
+          "end": 54.795
+        },
+        {
+          "w": "years.",
+          "start": 54.795,
+          "end": 55.155
+        }
+      ]
+    },
+    {
+      "id": "L27-0",
+      "n": 27,
+      "kind": "speech",
+      "speaker": "MAYA",
+      "voice": "F2",
+      "emotion": "tender",
+      "text": "Then he should be the one to put it out.",
+      "start": 56.955587,
+      "end": 59.881287,
+      "words": [
+        {
+          "w": "Then",
+          "start": 57.276,
+          "end": 57.596
+        },
+        {
+          "w": "he",
+          "start": 57.596,
+          "end": 57.756
+        },
+        {
+          "w": "should",
+          "start": 57.756,
+          "end": 57.936
+        },
+        {
+          "w": "be",
+          "start": 57.936,
+          "end": 58.096
+        },
+        {
+          "w": "the",
+          "start": 58.096,
+          "end": 58.216
+        },
+        {
+          "w": "one",
+          "start": 58.216,
+          "end": 58.356
+        },
+        {
+          "w": "to",
+          "start": 58.356,
+          "end": 58.496
+        },
+        {
+          "w": "put",
+          "start": 58.496,
+          "end": 58.636
+        },
+        {
+          "w": "it",
+          "start": 58.636,
+          "end": 58.756
+        },
+        {
+          "w": "out.",
+          "start": 58.756,
+          "end": 58.936
+        }
+      ]
+    },
+    {
+      "id": "L29-0",
+      "n": 29,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "M5",
+      "emotion": null,
+      "text": "At dawn, the old keeper turned the key. And for the first time in forty years, Gull Rock went dark.",
+      "start": 60.531287,
+      "end": 67.706287,
+      "words": [
+        {
+          "w": "At",
+          "start": 60.531287,
+          "end": 61.111
+        },
+        {
+          "w": "dawn,",
+          "start": 61.111,
+          "end": 61.371
+        },
+        {
+          "w": "the",
+          "start": 61.891,
+          "end": 62.011
+        },
+        {
+          "w": "old",
+          "start": 62.011,
+          "end": 62.171
+        },
+        {
+          "w": "keeper",
+          "start": 62.171,
+          "end": 62.431
+        },
+        {
+          "w": "turned",
+          "start": 62.431,
+          "end": 62.871
+        },
+        {
+          "w": "the",
+          "start": 62.871,
+          "end": 63.051
+        },
+        {
+          "w": "key.",
+          "start": 63.051,
+          "end": 63.231
+        },
+        {
+          "w": "And",
+          "start": 63.891,
+          "end": 63.931
+        },
+        {
+          "w": "for",
+          "start": 63.931,
+          "end": 64.071
+        },
+        {
+          "w": "the",
+          "start": 64.071,
+          "end": 64.171
+        },
+        {
+          "w": "first",
+          "start": 64.171,
+          "end": 64.411
+        },
+        {
+          "w": "time",
+          "start": 64.411,
+          "end": 64.711
+        },
+        {
+          "w": "in",
+          "start": 64.711,
+          "end": 64.871
+        },
+        {
+          "w": "forty",
+          "start": 64.871,
+          "end": 65.111
+        },
+        {
+          "w": "years,",
+          "start": 65.111,
+          "end": 65.611
+        },
+        {
+          "w": "Gull",
+          "start": 66.091,
+          "end": 66.151
+        },
+        {
+          "w": "Rock",
+          "start": 66.151,
+          "end": 66.411
+        },
+        {
+          "w": "went",
+          "start": 66.411,
+          "end": 66.651
+        },
+        {
+          "w": "dark.",
+          "start": 66.651,
+          "end": 67.011
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "type": "music",
+      "id": "L12-0",
+      "label": "start",
+      "start": 0.5,
+      "gain_db": -12,
+      "loop": true,
+      "fade_in": 1,
+      "end": 68.806287,
+      "fade_out": 3,
+      "path": "../sounds/piano.mp3",
+      "windows": [
+        {
+          "start": 60.181287,
+          "end": 64.181287,
+          "gain_db": 6
+        }
+      ]
+    },
+    {
+      "type": "ambience",
+      "id": "L11-1",
+      "label": "./sounds/wind-sea.mp3",
+      "start": 0.5,
+      "gain_db": -20,
+      "loop": true,
+      "fade_in": 1,
+      "fade_out": 1,
+      "end": 68.806287,
+      "path": "../sounds/wind-sea.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L18-0",
+      "label": "./sounds/thunder.mp3",
+      "start": 24.94938,
+      "gain_db": -12,
+      "end": 31.94938,
+      "path": "../sounds/thunder.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L19-0",
+      "label": "./sounds/knocks.mp3",
+      "start": 24.94938,
+      "gain_db": -6,
+      "end": 27.02718,
+      "path": "../sounds/knocks.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L22-0",
+      "label": "./sounds/door-creak.mp3",
+      "start": 34.00476,
+      "gain_db": -6,
+      "end": 37.388887,
+      "path": "../sounds/door-creak.mp3"
+    }
+  ],
+  "assets": [
+    {
+      "ids": [
+        "L11-1"
+      ],
+      "type": "ambience",
+      "path": "../sounds/wind-sea.mp3",
+      "source": "local",
+      "title": "Wind-sea 04-091007",
+      "creator": "ra_gun",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/ra_gun/sounds/82271",
+      "attribution": "\"Wind-sea 04-091007\" by ra_gun (https://freesound.org/people/ra_gun/sounds/82271), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "L15-0"
+      ],
+      "type": "nv",
+      "path": "assets/nonverbal/female-sigh-1.mp3",
+      "source": "bundled",
+      "title": "Sigh_4_Female",
+      "creator": "Drkvixn91",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/Drkvixn91/sounds/318085",
+      "attribution": "\"Sigh_4_Female\" by Drkvixn91 (https://freesound.org/people/Drkvixn91/sounds/318085), CC0 1.0 (public domain dedication, no attribution required)"
+    },
+    {
+      "ids": [
+        "L18-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/thunder.mp3",
+      "source": "local",
+      "title": "Binaural Thunder A - Short",
+      "creator": "digifishmusic",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_url": "https://freesound.org/people/digifishmusic/sounds/34777",
+      "attribution": "\"Binaural Thunder A - Short\" by digifishmusic (https://freesound.org/people/digifishmusic/sounds/34777), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) (trimmed (0s +7), faded)"
+    },
+    {
+      "ids": [
+        "L19-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/knocks.mp3",
+      "source": "local",
+      "title": "door_knock",
+      "creator": "wjtaylor",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/wjtaylor/sounds/268500",
+      "attribution": "\"door_knock\" by wjtaylor (https://freesound.org/people/wjtaylor/sounds/268500), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "L20-0"
+      ],
+      "type": "nv",
+      "path": "assets/nonverbal/male-breath-1.mp3",
+      "source": "bundled",
+      "title": "Male breathing",
+      "creator": "zogmachine",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/zogmachine/sounds/202606",
+      "attribution": "\"Male breathing\" by zogmachine (https://freesound.org/people/zogmachine/sounds/202606), CC0 1.0 (public domain dedication, no attribution required)"
+    },
+    {
+      "ids": [
+        "L22-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/door-creak.mp3",
+      "source": "local",
+      "title": "Wooden door creaking",
+      "creator": "TheBuilder15",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/TheBuilder15/sounds/367052",
+      "attribution": "\"Wooden door creaking\" by TheBuilder15 (https://freesound.org/people/TheBuilder15/sounds/367052), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "bed"
+      ],
+      "type": "music",
+      "path": "../sounds/piano.mp3",
+      "source": "local",
+      "title": "Melancholic piano music",
+      "creator": "ZHRØ",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/ZHR%C3%98/sounds/623426",
+      "attribution": "\"Melancholic piano music\" by ZHRØ (https://freesound.org/people/ZHR%C3%98/sounds/623426), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    }
+  ],
+  "warnings": []
+}

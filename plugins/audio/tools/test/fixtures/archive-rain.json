@@ -1,0 +1,140 @@
+{
+ "responseHeader": {
+  "status": 0,
+  "QTime": 38,
+  "params": {
+   "query": "title:rain AND mediatype:audio AND collection:opensource_audio AND licenseurl:[* TO *]",
+   "qin": "title:(rain) AND mediatype:audio AND collection:opensource_audio AND licenseurl:[* TO *]",
+   "fields": "identifier,title,creator,licenseurl",
+   "wt": "json",
+   "rows": 20,
+   "start": 0
+  }
+ },
+ "response": {
+  "numFound": 758,
+  "start": 0,
+  "docs": [
+   {
+    "creator": [
+     "Prince",
+     "The Revolution"
+    ],
+    "identifier": "tidal-75206892",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Purple Rain (Expanded Edition)"
+   },
+   {
+    "identifier": "JanBrandtRickiNSteveDesertRainTypeStuff",
+    "licenseurl": "http://creativecommons.org/licenses/publicdomain/",
+    "title": "jan brandt ricki n steve desert rain type stuff"
+   },
+   {
+    "creator": "Between The Rain",
+    "identifier": "BetweenTheRain-Who",
+    "licenseurl": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "title": "Between The Rain - Who?"
+   },
+   {
+    "creator": "Till Bovermann",
+    "identifier": "HelsinkiKatajanokkaHarbourAfterRain",
+    "licenseurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "title": "Helsinki Katajanokka Harbour After Rain"
+   },
+   {
+    "creator": "dj charles tiger",
+    "identifier": "HereComesTheRain",
+    "licenseurl": "http://creativecommons.org/licenses/by/3.0/",
+    "title": "Here Comes the Rain"
+   },
+   {
+    "identifier": "HereComesTheRainAgainByBambooAndYengConstantino",
+    "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "title": "Here Comes the Rain Again by Bamboo and Yeng Constantino"
+   },
+   {
+    "creator": "DNA",
+    "identifier": "FireworksInTheRaindemoMay14th2010",
+    "licenseurl": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "title": "Fireworks in the Rain (DEMO) \u00e2\u0080\u0094 May 14th, 2010"
+   },
+   {
+    "creator": "Owen James",
+    "identifier": "Rain-Sounds-Cars-In-Background",
+    "licenseurl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "title": "Rain Sounds W/ Cars In the Background"
+   },
+   {
+    "creator": "DJ Internet",
+    "identifier": "RainByDjInternet",
+    "licenseurl": "http://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "title": "rain by dj internet"
+   },
+   {
+    "creator": "Varun Venugopal",
+    "identifier": "rain-droplets-on-surface",
+    "licenseurl": "http://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "Rain Droplets On Surface"
+   },
+   {
+    "creator": "leo gonz",
+    "identifier": "rain-sounds-for-sleep-4",
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "title": "RAIN SOUNDS FOR SLEEP 4"
+   },
+   {
+    "creator": "Dave Howes",
+    "identifier": "rain-stops-shopping",
+    "licenseurl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "title": "Rain Stops Shopping"
+   },
+   {
+    "creator": "Sounds of Dissent radio",
+    "identifier": "BrazilAssassinationsOfActivistsMiningBigAgCorpsCorruptionOnWzbc20170325",
+    "licenseurl": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "title": "Brazil protests, Activists Assassinated, Protesting Mining, Big Agriculture and Dams Devastating the Amazon Rain Forest (WZBC-FM Boston 2017-03-25)"
+   },
+   {
+    "identifier": "AnUglyEffectOfFossilFuels-AcidRain_16",
+    "licenseurl": "http://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "title": "An Ugly Effect Of Fossil Fuels - Acid Rain"
+   },
+   {
+    "creator": "Matthew C. Wright",
+    "identifier": "matthew-c-wright-83-floating-in-space-with-distant-rain",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Floating in Space (with Distant Rain)"
+   },
+   {
+    "creator": "Matthew C. Wright",
+    "identifier": "matthew-c-wright-133-the-comforts-of-home-with-gentle-rain",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "The Comforts of Home (with Gentle Rain)"
+   },
+   {
+    "creator": "Matthew C. Wright",
+    "identifier": "matthew-c-wright-208-destination-dreamland-with-distant-rain",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Destination Dreamland (with Distant Rain)"
+   },
+   {
+    "creator": "Matthew C. Wright",
+    "identifier": "matthew-c-wright-225-nighttime-routine-with-gentle-rain",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Nighttime Routine (with Gentle Rain)"
+   },
+   {
+    "creator": "Matthew C. Wright",
+    "identifier": "matthew-c-wright-333-beckoned-by-the-breeze-with-distant-rain",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Beckoned by the Breeze (with Distant Rain)"
+   },
+   {
+    "creator": "Matthew C. Wright",
+    "identifier": "matthew-c-wright-447-dewdrops-with-thunder-and-rain",
+    "licenseurl": "https://creativecommons.org/licenses/by/4.0/",
+    "title": "Dewdrops (with Thunder and Rain)"
+   }
+  ]
+ }
+}

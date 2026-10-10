@@ -1,0 +1,58 @@
+{
+  "skills": {
+    "atelier-script": {
+      "guides": [
+        "captions",
+        "casting",
+        "delivery",
+        "domains",
+        "ethics-licensing",
+        "mastering",
+        "mixing",
+        "nonverbal",
+        "script-format",
+        "setup",
+        "sound-sourcing",
+        "writing-for-the-ear",
+        "your-voice"
+      ],
+      "tools": true
+    },
+    "atelier-voice": {
+      "guides": [
+        "captions",
+        "casting",
+        "delivery",
+        "domains",
+        "ethics-licensing",
+        "mastering",
+        "mixing",
+        "nonverbal",
+        "script-format",
+        "setup",
+        "sound-sourcing",
+        "writing-for-the-ear",
+        "your-voice"
+      ],
+      "tools": true
+    },
+    "atelier-mix": {
+      "guides": [
+        "captions",
+        "casting",
+        "delivery",
+        "domains",
+        "ethics-licensing",
+        "mastering",
+        "mixing",
+        "nonverbal",
+        "script-format",
+        "setup",
+        "sound-sourcing",
+        "writing-for-the-ear",
+        "your-voice"
+      ],
+      "tools": true
+    }
+  }
+}

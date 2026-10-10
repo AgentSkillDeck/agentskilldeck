@@ -1,0 +1,845 @@
+{
+ "pack": "agentatelier audio: bundled nonverbal clips",
+ "built_on": "2026-10-10",
+ "license_policy": "Only CC0 1.0 or Public Domain Mark clips, or clips generated with ffmpeg (breath and sigh only, when no CC0 recording exists). No attribution is legally required, but every source is credited here.",
+ "selection": "Two clips per tag per gender from Openverse searches '<gender> <tag>' (license=cc0; plus 'man crying' and 'man laughing'), chosen by title, tags and duration. Each item's license was re-checked on the Openverse detail endpoint and on the Freesound landing page (an item whose page did not show CC0 was skipped).",
+ "processing": "ffmpeg: decode to mono 44.1 kHz, highpass 100 Hz, trim to the loudest window of at most 1.45 s (whole clip if shorter, leading/trailing silence below -45 dBFS removed), gain to -20 dBFS RMS with peaks kept under -1 dBFS (alimiter), 30 ms fades, libmp3lame mono 64 kbps, metadata stripped. Rejected if the source window was quieter than -38 dBFS RMS, the output RMS was below -40 dBFS, its zero-crossing rate was below 150 Hz (rumble), it ran over 1.5 s or exceeded 40 KB.",
+ "fields": "file, tag, gender, title, creator, license, license_url, source_url, attribution, openverse_id, provider, license_checked, trim (seconds in the source preview), and output measures (rms_db, peak_db, zcr_hz, duration_s, bytes).",
+ "gaps_note": "No gaps: every tag had CC0 recordings for both genders, so the generated breath/sigh fallback was not needed.",
+ "files": [
+  {
+   "file": "female/laugh-1.mp3",
+   "tag": "laugh",
+   "gender": "female",
+   "title": "Female laugh",
+   "creator": "OwlStorm",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/OwlStorm/sounds/151223",
+   "openverse_id": "6468ee16-2266-4f70-a97f-2d20b1be997b",
+   "provider": "freesound",
+   "attribution": "\"Female laugh\" by OwlStorm (https://freesound.org/people/OwlStorm/sounds/151223), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.055,
+    "length_s": 1.052,
+    "source_duration_s": 1.166
+   },
+   "zcr_hz": 1518,
+   "rms_db": -22.5,
+   "peak_db": -1.3,
+   "duration_s": 1.097,
+   "bytes": 8777
+  },
+  {
+   "file": "female/laugh-2.mp3",
+   "tag": "laugh",
+   "gender": "female",
+   "title": "Female laugh (short)",
+   "creator": "thedialogueproject",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/thedialogueproject/sounds/565973",
+   "openverse_id": "141aa433-a2bc-4b99-b393-e92d436143b7",
+   "provider": "freesound",
+   "attribution": "\"Female laugh (short)\" by thedialogueproject (https://freesound.org/people/thedialogueproject/sounds/565973), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.022,
+    "length_s": 1.016,
+    "source_duration_s": 1.049
+   },
+   "zcr_hz": 1788,
+   "rms_db": -20.6,
+   "peak_db": -2.2,
+   "duration_s": 1.045,
+   "bytes": 8359
+  },
+  {
+   "file": "female/breath-1.mp3",
+   "tag": "breath",
+   "gender": "female",
+   "title": "female deep breathing",
+   "creator": "Walter_Odington",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Walter_Odington/sounds/18631",
+   "openverse_id": "84373cd2-2dd1-430a-93f3-87a69b713f8a",
+   "provider": "freesound",
+   "attribution": "\"female deep breathing\" by Walter_Odington (https://freesound.org/people/Walter_Odington/sounds/18631), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 7.13,
+    "length_s": 1.45,
+    "source_duration_s": 10
+   },
+   "zcr_hz": 740,
+   "rms_db": -20.6,
+   "peak_db": -4.9,
+   "duration_s": 1.489,
+   "bytes": 11911,
+   "review": {
+    "kept_in": "T10",
+    "evidence": "7% voiced frames (an unvoiced breath, no syllables); whisper small.en heard nothing (no-speech 1.00) on the 0.5 s-padded clip. The earlier \"Whoop, whoop\" was a base.en hallucination on the unpadded clip."
+   }
+  },
+  {
+   "file": "female/breath-2.mp3",
+   "tag": "breath",
+   "gender": "female",
+   "title": "Female Breathing heavily",
+   "creator": "OwlStorm",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/OwlStorm/sounds/151206",
+   "openverse_id": "24643419-5d96-425d-aea9-9c560a6f3fa3",
+   "provider": "freesound",
+   "attribution": "\"Female Breathing heavily\" by OwlStorm (https://freesound.org/people/OwlStorm/sounds/151206), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.928,
+    "length_s": 1.45,
+    "source_duration_s": 16.117
+   },
+   "zcr_hz": 2572,
+   "rms_db": -21.2,
+   "peak_db": -3.1,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "female/sigh-1.mp3",
+   "tag": "sigh",
+   "gender": "female",
+   "title": "Sigh_4_Female",
+   "creator": "Drkvixn91",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Drkvixn91/sounds/318085",
+   "openverse_id": "e5ba2799-5982-4966-9ee2-1cc19ded0f49",
+   "provider": "freesound",
+   "attribution": "\"Sigh_4_Female\" by Drkvixn91 (https://freesound.org/people/Drkvixn91/sounds/318085), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.17,
+    "length_s": 1.45,
+    "source_duration_s": 1.621
+   },
+   "zcr_hz": 2915,
+   "rms_db": -20.6,
+   "peak_db": -6.6,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "female/sigh-2.mp3",
+   "tag": "sigh",
+   "gender": "female",
+   "title": "long sigh",
+   "creator": "Reitanna",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Reitanna/sounds/242690",
+   "openverse_id": "1c64b788-2147-4096-b20d-63b5c90c53a0",
+   "provider": "freesound",
+   "attribution": "\"long sigh\" by Reitanna (https://freesound.org/people/Reitanna/sounds/242690), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.058,
+    "length_s": 1.229,
+    "source_duration_s": 1.323
+   },
+   "zcr_hz": 952,
+   "rms_db": -20.6,
+   "peak_db": -7.8,
+   "duration_s": 1.28,
+   "bytes": 10240
+  },
+  {
+   "file": "female/gasp-1.mp3",
+   "tag": "gasp",
+   "gender": "female",
+   "title": "close call gasp",
+   "creator": "Reitanna",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Reitanna/sounds/253773",
+   "openverse_id": "cd14e5e7-b5f8-429f-a80d-baa0f23009f8",
+   "provider": "freesound",
+   "attribution": "\"close call gasp\" by Reitanna (https://freesound.org/people/Reitanna/sounds/253773), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.002,
+    "length_s": 0.557,
+    "source_duration_s": 0.603
+   },
+   "zcr_hz": 1407,
+   "rms_db": -20.8,
+   "peak_db": -6,
+   "duration_s": 0.601,
+   "bytes": 4806
+  },
+  {
+   "file": "female/gasp-2.mp3",
+   "tag": "gasp",
+   "gender": "female",
+   "title": "gasp HOH!",
+   "creator": "Reitanna",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Reitanna/sounds/242606",
+   "openverse_id": "ebbb850b-dec0-432f-a363-3e431311b4ab",
+   "provider": "freesound",
+   "attribution": "\"gasp HOH!\" by Reitanna (https://freesound.org/people/Reitanna/sounds/242606), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.016,
+    "length_s": 0.774,
+    "source_duration_s": 0.789
+   },
+   "zcr_hz": 1822,
+   "rms_db": -20.6,
+   "peak_db": -5.2,
+   "duration_s": 0.81,
+   "bytes": 6478
+  },
+  {
+   "file": "female/sob-1.mp3",
+   "tag": "sob",
+   "gender": "female",
+   "title": "Woman Crying",
+   "creator": "purplereptar",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/purplereptar/sounds/449439",
+   "openverse_id": "9609e0a3-fff5-41cf-95f5-bbfb925c4589",
+   "provider": "freesound",
+   "attribution": "\"Woman Crying\" by purplereptar (https://freesound.org/people/purplereptar/sounds/449439), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 16.808,
+    "length_s": 1.45,
+    "source_duration_s": 18.426
+   },
+   "zcr_hz": 654,
+   "rms_db": -20.7,
+   "peak_db": -12.6,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "female/sob-2.mp3",
+   "tag": "sob",
+   "gender": "female",
+   "title": "R15-43-Woman Sobbing",
+   "creator": "craigsmith",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/craigsmith/sounds/482806",
+   "openverse_id": "50978da9-9574-4c17-9677-e69d66b27b31",
+   "provider": "freesound",
+   "attribution": "\"R15-43-Woman Sobbing\" by craigsmith (https://freesound.org/people/craigsmith/sounds/482806), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10",
+    "replaced_in": "T10"
+   },
+   "trim": {
+    "start_s": 38.458,
+    "length_s": 1.45,
+    "source_duration_s": 70.459
+   },
+   "zcr_hz": 1959,
+   "rms_db": -20.6,
+   "peak_db": -5.8,
+   "duration_s": 1.489,
+   "bytes": 11911,
+   "review": {
+    "replaced_in": "T10",
+    "replaces": {
+     "title": "Female_Fake_Crying",
+     "creator": "Amaiguri",
+     "source_url": "https://freesound.org/people/Amaiguri/sounds/518993"
+    },
+    "why": "the \"fake crying\" clip was fully unvoiced and whisper small.en heard laughter (\"Heh, heh, heh.\")",
+    "evidence": "58% voiced at a 292 Hz median, irregular rhythm (no 4-7 Hz laughter pulse); small.en heard \"Oh\""
+   }
+  },
+  {
+   "file": "female/cough-1.mp3",
+   "tag": "cough",
+   "gender": "female",
+   "title": "Cough Female",
+   "creator": "OwlStorm",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/OwlStorm/sounds/151213",
+   "openverse_id": "7332514d-a42d-4cb5-b42d-48757e13c6e3",
+   "provider": "freesound",
+   "attribution": "\"Cough Female\" by OwlStorm (https://freesound.org/people/OwlStorm/sounds/151213), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.093,
+    "length_s": 0.921,
+    "source_duration_s": 1.114
+   },
+   "zcr_hz": 1964,
+   "rms_db": -21.9,
+   "peak_db": -1.2,
+   "duration_s": 0.967,
+   "bytes": 7732
+  },
+  {
+   "file": "female/cough-2.mp3",
+   "tag": "cough",
+   "gender": "female",
+   "title": "Cough cough",
+   "creator": "1980supra",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/1980supra/sounds/326096",
+   "openverse_id": "2dd5b15c-dc64-441b-94db-4ff6175e17fd",
+   "provider": "freesound",
+   "attribution": "\"Cough cough\" by 1980supra (https://freesound.org/people/1980supra/sounds/326096), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.05,
+    "length_s": 0.811,
+    "source_duration_s": 1.056
+   },
+   "zcr_hz": 3333,
+   "rms_db": -22.4,
+   "peak_db": -1.5,
+   "duration_s": 0.862,
+   "bytes": 6896
+  },
+  {
+   "file": "female/scream-1.mp3",
+   "tag": "scream",
+   "gender": "female",
+   "title": "Female scream 02",
+   "creator": "missozzy",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/missozzy/sounds/169811",
+   "openverse_id": "347087ae-2b66-4c66-a969-1b226fa12925",
+   "provider": "freesound",
+   "attribution": "\"Female scream 02\" by missozzy (https://freesound.org/people/missozzy/sounds/169811), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.314,
+    "length_s": 1.398,
+    "source_duration_s": 1.97
+   },
+   "zcr_hz": 1843,
+   "rms_db": -20.5,
+   "peak_db": -12.1,
+   "duration_s": 1.437,
+   "bytes": 11493
+  },
+  {
+   "file": "female/scream-2.mp3",
+   "tag": "scream",
+   "gender": "female",
+   "title": "Female Scream",
+   "creator": "DigestContent",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/DigestContent/sounds/449702",
+   "openverse_id": "f25d8b4a-3d37-439c-a179-f93b71740169",
+   "provider": "freesound",
+   "attribution": "\"Female Scream\" by DigestContent (https://freesound.org/people/DigestContent/sounds/449702), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0,
+    "length_s": 1.45,
+    "source_duration_s": 1.486
+   },
+   "zcr_hz": 3149,
+   "rms_db": -20.5,
+   "peak_db": -10.3,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "male/laugh-1.mp3",
+   "tag": "laugh",
+   "gender": "male",
+   "title": "man laughing",
+   "creator": "NatalieTre",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/NatalieTre/sounds/425908",
+   "openverse_id": "ebe99fe0-9d20-4676-a4e6-e376aa9c1895",
+   "provider": "freesound",
+   "attribution": "\"man laughing\" by NatalieTre (https://freesound.org/people/NatalieTre/sounds/425908), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0,
+    "length_s": 1.026,
+    "source_duration_s": 1.025
+   },
+   "zcr_hz": 1288,
+   "rms_db": -23.3,
+   "peak_db": -1.6,
+   "duration_s": 1.071,
+   "bytes": 8568
+  },
+  {
+   "file": "male/laugh-2.mp3",
+   "tag": "laugh",
+   "gender": "male",
+   "title": "Male Laughter",
+   "creator": "Eneasz",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Eneasz/sounds/119459",
+   "openverse_id": "b10c352c-9645-4400-9b56-519c8c5192b7",
+   "provider": "freesound",
+   "attribution": "\"Male Laughter\" by Eneasz (https://freesound.org/people/Eneasz/sounds/119459), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.342,
+    "length_s": 1.45,
+    "source_duration_s": 5.543
+   },
+   "zcr_hz": 1559,
+   "rms_db": -20.7,
+   "peak_db": -8.9,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "male/breath-1.mp3",
+   "tag": "breath",
+   "gender": "male",
+   "title": "Male breathing",
+   "creator": "zogmachine",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/zogmachine/sounds/202606",
+   "openverse_id": "42e6e510-bc26-4058-a33d-02ba1fddbaec",
+   "provider": "freesound",
+   "attribution": "\"Male breathing\" by zogmachine (https://freesound.org/people/zogmachine/sounds/202606), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.526,
+    "length_s": 1.45,
+    "source_duration_s": 6.031
+   },
+   "zcr_hz": 2178,
+   "rms_db": -20.5,
+   "peak_db": -6.4,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "male/breath-2.mp3",
+   "tag": "breath",
+   "gender": "male",
+   "title": "Heavy Breathing",
+   "creator": "Shinplaster",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Shinplaster/sounds/240867",
+   "openverse_id": "3ecf58f0-9ada-48bc-82f2-62db0d18bdbf",
+   "provider": "freesound",
+   "attribution": "\"Heavy Breathing\" by Shinplaster (https://freesound.org/people/Shinplaster/sounds/240867), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 4.96,
+    "length_s": 1.45,
+    "source_duration_s": 11.389
+   },
+   "zcr_hz": 252,
+   "rms_db": -20.5,
+   "peak_db": -7.1,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "male/sigh-1.mp3",
+   "tag": "sigh",
+   "gender": "male",
+   "title": "male sigh",
+   "creator": "Reitanna",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Reitanna/sounds/215380",
+   "openverse_id": "af1334f6-3782-43e3-9598-6f5539ea7e24",
+   "provider": "freesound",
+   "attribution": "\"male sigh\" by Reitanna (https://freesound.org/people/Reitanna/sounds/215380), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0,
+    "length_s": 1.45,
+    "source_duration_s": 1.822
+   },
+   "zcr_hz": 3249,
+   "rms_db": -20.6,
+   "peak_db": -3.6,
+   "duration_s": 1.489,
+   "bytes": 11911
+  },
+  {
+   "file": "male/sigh-2.mp3",
+   "tag": "sigh",
+   "gender": "male",
+   "title": "Sigh_5_Male",
+   "creator": "Drkvixn91",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Drkvixn91/sounds/318091",
+   "openverse_id": "8a028845-2d93-4c93-97f1-164bca42f191",
+   "provider": "freesound",
+   "attribution": "\"Sigh_5_Male\" by Drkvixn91 (https://freesound.org/people/Drkvixn91/sounds/318091), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10",
+    "replaced_in": "T10"
+   },
+   "trim": {
+    "start_s": 0.724,
+    "length_s": 1.45,
+    "source_duration_s": 3.129
+   },
+   "zcr_hz": 2352,
+   "rms_db": -20.8,
+   "peak_db": -1.2,
+   "duration_s": 1.489,
+   "bytes": 11911,
+   "review": {
+    "replaced_in": "T10",
+    "replaces": {
+     "title": "sigh",
+     "creator": "davidnagel",
+     "source_url": "https://freesound.org/people/davidnagel/sounds/673671"
+    },
+    "why": "a short voiced burst that whisper heard as \"Ha!\"",
+    "evidence": "unvoiced exhale (0% voiced frames); small.en transcribed it as \"Sigh\""
+   }
+  },
+  {
+   "file": "male/gasp-1.mp3",
+   "tag": "gasp",
+   "gender": "male",
+   "title": "Male Gasp 1",
+   "creator": "jawbutch",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/jawbutch/sounds/344407",
+   "openverse_id": "0cd06fc5-da44-441b-b7b9-a5e06ec60462",
+   "provider": "freesound",
+   "attribution": "\"Male Gasp 1\" by jawbutch (https://freesound.org/people/jawbutch/sounds/344407), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.139,
+    "length_s": 0.484,
+    "source_duration_s": 0.666
+   },
+   "zcr_hz": 1203,
+   "rms_db": -20.8,
+   "peak_db": -7.7,
+   "duration_s": 0.522,
+   "bytes": 4179
+  },
+  {
+   "file": "male/gasp-2.mp3",
+   "tag": "gasp",
+   "gender": "male",
+   "title": "Man gasp of breath",
+   "creator": "ckvoiceover",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/ckvoiceover/sounds/401333",
+   "openverse_id": "b542a97b-905a-40c0-b0f7-b93385c30f63",
+   "provider": "freesound",
+   "attribution": "\"Man gasp of breath\" by ckvoiceover (https://freesound.org/people/ckvoiceover/sounds/401333), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.22,
+    "length_s": 0.658,
+    "source_duration_s": 1.172
+   },
+   "zcr_hz": 1952,
+   "rms_db": -20.6,
+   "peak_db": -5.2,
+   "duration_s": 0.705,
+   "bytes": 5642
+  },
+  {
+   "file": "male/sob-1.mp3",
+   "tag": "sob",
+   "gender": "male",
+   "title": "Crying Man",
+   "creator": "scottemoil",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/scottemoil/sounds/263776",
+   "openverse_id": "1283cd8b-5740-4894-a58c-70fbfd5c561f",
+   "provider": "freesound",
+   "attribution": "\"Crying Man\" by scottemoil (https://freesound.org/people/scottemoil/sounds/263776), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10",
+    "replaced_in": "T10"
+   },
+   "trim": {
+    "start_s": 47.26,
+    "length_s": 1.45,
+    "source_duration_s": 69.432
+   },
+   "zcr_hz": 1540,
+   "rms_db": -21.1,
+   "peak_db": -4.9,
+   "duration_s": 1.489,
+   "bytes": 11911,
+   "review": {
+    "replaced_in": "T10",
+    "replaces": {
+     "title": "Man sobbing, crying, or whimpering",
+     "creator": "SnowFightStudios",
+     "source_url": "https://freesound.org/people/SnowFightStudios/sounds/643669"
+    },
+    "why": "a regular 6.7 Hz voiced pulse (laughter-like) that whisper heard as \"hahahaha\"",
+    "evidence": "87% voiced wail, no regular pulse; small.en heard \"Ahhhh!\""
+   }
+  },
+  {
+   "file": "male/sob-2.mp3",
+   "tag": "sob",
+   "gender": "male",
+   "title": "Man Sniffling",
+   "creator": "SteveOShore",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/SteveOShore/sounds/157163",
+   "openverse_id": "766514bc-c8a7-43a3-aeb2-aef833e5a14d",
+   "provider": "freesound",
+   "attribution": "\"Man Sniffling\" by SteveOShore (https://freesound.org/people/SteveOShore/sounds/157163), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10",
+    "replaced_in": "T10"
+   },
+   "trim": {
+    "start_s": 2.739,
+    "length_s": 1.45,
+    "source_duration_s": 8.869
+   },
+   "zcr_hz": 2643,
+   "rms_db": -23.2,
+   "peak_db": -2.1,
+   "duration_s": 1.489,
+   "bytes": 11911,
+   "review": {
+    "replaced_in": "T10",
+    "replaces": {
+     "title": "Crying man 2",
+     "creator": "Ranner",
+     "source_url": "https://freesound.org/people/Ranner/sounds/494746"
+    },
+    "why": "a 316 Hz falsetto clip that both whisper models heard as \"Heh heh heh\"",
+    "evidence": "a sniffle (sob aliases include sniff and cry): unvoiced, small.en heard nothing"
+   }
+  },
+  {
+   "file": "male/cough-1.mp3",
+   "tag": "cough",
+   "gender": "male",
+   "title": "Male cough",
+   "creator": "aldenroth2",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/aldenroth2/sounds/272029",
+   "openverse_id": "6d01bf60-1bde-4ff1-9dce-b94ebf9e6e8f",
+   "provider": "freesound",
+   "attribution": "\"Male cough\" by aldenroth2 (https://freesound.org/people/aldenroth2/sounds/272029), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.036,
+    "length_s": 0.739,
+    "source_duration_s": 0.875
+   },
+   "zcr_hz": 2392,
+   "rms_db": -20.7,
+   "peak_db": -3.8,
+   "duration_s": 0.784,
+   "bytes": 6269
+  },
+  {
+   "file": "male/cough-2.mp3",
+   "tag": "cough",
+   "gender": "male",
+   "title": "Male cough",
+   "creator": "dastudiospr",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/dastudiospr/sounds/537150",
+   "openverse_id": "31208e92-7bf0-4581-aebf-51c485e9b573",
+   "provider": "freesound",
+   "attribution": "\"Male cough\" by dastudiospr (https://freesound.org/people/dastudiospr/sounds/537150), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.085,
+    "length_s": 0.56,
+    "source_duration_s": 1.214
+   },
+   "zcr_hz": 1321,
+   "rms_db": -21.9,
+   "peak_db": -1.4,
+   "duration_s": 0.601,
+   "bytes": 4806
+  },
+  {
+   "file": "male/scream-1.mp3",
+   "tag": "scream",
+   "gender": "male",
+   "title": "Male Scream",
+   "creator": "aldenroth2",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/aldenroth2/sounds/272023",
+   "openverse_id": "6f45fd43-b435-44d6-ac1f-7d9dd77f67ac",
+   "provider": "freesound",
+   "attribution": "\"Male Scream\" by aldenroth2 (https://freesound.org/people/aldenroth2/sounds/272023), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0.019,
+    "length_s": 0.541,
+    "source_duration_s": 0.625
+   },
+   "zcr_hz": 1550,
+   "rms_db": -20.8,
+   "peak_db": -7.7,
+   "duration_s": 0.575,
+   "bytes": 4597
+  },
+  {
+   "file": "male/scream-2.mp3",
+   "tag": "scream",
+   "gender": "male",
+   "title": "Male Scream",
+   "creator": "Guy110",
+   "license": "CC0 1.0",
+   "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "source_url": "https://freesound.org/people/Guy110/sounds/353189",
+   "openverse_id": "5f8d8d7a-6675-404a-8d73-284887dbbe83",
+   "provider": "freesound",
+   "attribution": "\"Male Scream\" by Guy110 (https://freesound.org/people/Guy110/sounds/353189), CC0 1.0 (public domain dedication, no attribution required)",
+   "license_checked": {
+    "openverse": "cc0 1.0",
+    "landing_page": "cc0",
+    "checked_on": "2026-10-10"
+   },
+   "trim": {
+    "start_s": 0,
+    "length_s": 0.647,
+    "source_duration_s": 1.013
+   },
+   "zcr_hz": 1648,
+   "rms_db": -20.5,
+   "peak_db": -8.8,
+   "duration_s": 0.679,
+   "bytes": 5433
+  }
+ ],
+ "gaps": [],
+ "review_T10": "T10 re-checked the five clips the controller's ASR pass flagged (female/breath-1, male/sigh-2, male/sob-1, male/sob-2, female/sob-2): whisper base.en and small.en on clips padded with 0.5 s of silence, plus a voicing and rhythm measure (voiced-frame fraction, median f0, peak of the envelope modulation spectrum). Laughter shows as a regular 4-7 Hz voiced pulse; breaths and sighs are mostly unvoiced. One clip was kept with that evidence and four were replaced from the same CC0 Openverse/Freesound candidate pool, with the same processing and license checks. A candidate in which whisper heard words ('R21-33-Man Sobs': 'Dead quiet, please.') was rejected."
+}

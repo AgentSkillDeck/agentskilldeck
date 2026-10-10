@@ -1,0 +1,929 @@
+{
+  "version": 1,
+  "title": "How vaccines train your immune system",
+  "duration_s": 54.5653,
+  "scenes": [
+    {
+      "name": "1. The problem",
+      "start": 0.5
+    },
+    {
+      "name": "2. The rehearsal",
+      "start": 11.7097
+    },
+    {
+      "name": "3. The memory",
+      "start": 20.9082
+    },
+    {
+      "name": "4. The real thing",
+      "start": 27.8079
+    },
+    {
+      "name": "5. Everyone else",
+      "start": 44.8544
+    }
+  ],
+  "lines": [
+    {
+      "id": "L12-0",
+      "n": 12,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": null,
+      "text": "Your immune system is brilliant. But the first time it meets a new germ, it's slow.",
+      "start": 0.6,
+      "end": 5.6852,
+      "words": [
+        {
+          "w": "Your",
+          "start": 0.6,
+          "end": 1.08
+        },
+        {
+          "w": "immune",
+          "start": 1.08,
+          "end": 1.28
+        },
+        {
+          "w": "system",
+          "start": 1.28,
+          "end": 1.74
+        },
+        {
+          "w": "is",
+          "start": 1.74,
+          "end": 1.96
+        },
+        {
+          "w": "brilliant.",
+          "start": 1.96,
+          "end": 2.24
+        },
+        {
+          "w": "But",
+          "start": 2.26,
+          "end": 3
+        },
+        {
+          "w": "the",
+          "start": 3,
+          "end": 3.1
+        },
+        {
+          "w": "first",
+          "start": 3.1,
+          "end": 3.28
+        },
+        {
+          "w": "time",
+          "start": 3.28,
+          "end": 3.5
+        },
+        {
+          "w": "it",
+          "start": 3.5,
+          "end": 3.62
+        },
+        {
+          "w": "meets",
+          "start": 3.62,
+          "end": 3.76
+        },
+        {
+          "w": "a",
+          "start": 3.76,
+          "end": 3.9
+        },
+        {
+          "w": "new",
+          "start": 3.9,
+          "end": 4.02
+        },
+        {
+          "w": "germ,",
+          "start": 4.02,
+          "end": 4.24
+        },
+        {
+          "w": "it's",
+          "start": 4.48,
+          "end": 4.6
+        },
+        {
+          "w": "slow.",
+          "start": 4.6,
+          "end": 4.86
+        }
+      ]
+    },
+    {
+      "id": "L13-0",
+      "n": 13,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": null,
+      "text": "Building the right defence can take a week or more. And a week is a long time to be sick.",
+      "start": 6.3852,
+      "end": 11.6097,
+      "words": [
+        {
+          "w": "Building",
+          "start": 6.3852,
+          "end": 6.965
+        },
+        {
+          "w": "the",
+          "start": 6.965,
+          "end": 7.165
+        },
+        {
+          "w": "right",
+          "start": 7.165,
+          "end": 7.305
+        },
+        {
+          "w": "defence",
+          "start": 7.305,
+          "end": 7.605
+        },
+        {
+          "w": "can",
+          "start": 7.605,
+          "end": 7.925
+        },
+        {
+          "w": "take",
+          "start": 7.925,
+          "end": 8.165
+        },
+        {
+          "w": "a",
+          "start": 8.165,
+          "end": 8.285
+        },
+        {
+          "w": "week",
+          "start": 8.285,
+          "end": 8.465
+        },
+        {
+          "w": "or",
+          "start": 8.465,
+          "end": 8.645
+        },
+        {
+          "w": "more.",
+          "start": 8.645,
+          "end": 8.865
+        },
+        {
+          "w": "And",
+          "start": 9.305,
+          "end": 9.465
+        },
+        {
+          "w": "a",
+          "start": 9.465,
+          "end": 9.565
+        },
+        {
+          "w": "week",
+          "start": 9.565,
+          "end": 9.725
+        },
+        {
+          "w": "is",
+          "start": 9.725,
+          "end": 9.905
+        },
+        {
+          "w": "a",
+          "start": 9.905,
+          "end": 9.985
+        },
+        {
+          "w": "long",
+          "start": 9.985,
+          "end": 10.165
+        },
+        {
+          "w": "time",
+          "start": 10.165,
+          "end": 10.425
+        },
+        {
+          "w": "to",
+          "start": 10.425,
+          "end": 10.605
+        },
+        {
+          "w": "be",
+          "start": 10.605,
+          "end": 10.705
+        },
+        {
+          "w": "sick.",
+          "start": 10.705,
+          "end": 10.985
+        }
+      ]
+    },
+    {
+      "id": "L15-0",
+      "n": 15,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": null,
+      "text": "A vaccine is a rehearsal. It shows your body a harmless piece of the germ, or instructions to make one, so it can practise without the danger.",
+      "start": 12.3097,
+      "end": 20.8082,
+      "words": [
+        {
+          "w": "A",
+          "start": 12.31,
+          "end": 12.83
+        },
+        {
+          "w": "vaccine",
+          "start": 12.83,
+          "end": 13.17
+        },
+        {
+          "w": "is",
+          "start": 13.17,
+          "end": 13.51
+        },
+        {
+          "w": "a",
+          "start": 13.51,
+          "end": 13.57
+        },
+        {
+          "w": "rehearsal.",
+          "start": 13.57,
+          "end": 13.93
+        },
+        {
+          "w": "It",
+          "start": 14.71,
+          "end": 14.75
+        },
+        {
+          "w": "shows",
+          "start": 14.75,
+          "end": 14.91
+        },
+        {
+          "w": "your",
+          "start": 14.91,
+          "end": 15.11
+        },
+        {
+          "w": "body",
+          "start": 15.11,
+          "end": 15.37
+        },
+        {
+          "w": "a",
+          "start": 15.37,
+          "end": 15.51
+        },
+        {
+          "w": "harmless",
+          "start": 15.51,
+          "end": 15.77
+        },
+        {
+          "w": "piece",
+          "start": 15.77,
+          "end": 16.11
+        },
+        {
+          "w": "of",
+          "start": 16.11,
+          "end": 16.27
+        },
+        {
+          "w": "the",
+          "start": 16.27,
+          "end": 16.39
+        },
+        {
+          "w": "germ,",
+          "start": 16.39,
+          "end": 16.55
+        },
+        {
+          "w": "or",
+          "start": 16.55,
+          "end": 16.87
+        },
+        {
+          "w": "instructions",
+          "start": 16.87,
+          "end": 17.15
+        },
+        {
+          "w": "to",
+          "start": 17.15,
+          "end": 17.63
+        },
+        {
+          "w": "make",
+          "start": 17.63,
+          "end": 17.75
+        },
+        {
+          "w": "one,",
+          "start": 17.75,
+          "end": 18.01
+        },
+        {
+          "w": "so",
+          "start": 18.01,
+          "end": 18.47
+        },
+        {
+          "w": "it",
+          "start": 18.47,
+          "end": 18.61
+        },
+        {
+          "w": "can",
+          "start": 18.61,
+          "end": 18.71
+        },
+        {
+          "w": "practise",
+          "start": 18.71,
+          "end": 19.09
+        },
+        {
+          "w": "without",
+          "start": 19.09,
+          "end": 19.49
+        },
+        {
+          "w": "the",
+          "start": 19.49,
+          "end": 19.75
+        },
+        {
+          "w": "danger.",
+          "start": 19.75,
+          "end": 20.05
+        }
+      ]
+    },
+    {
+      "id": "L17-0",
+      "n": 17,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": null,
+      "text": "Your body answers with antibodies, and with memory cells that keep the germ's shape on file, often for years.",
+      "start": 21.5082,
+      "end": 27.7079,
+      "words": [
+        {
+          "w": "Your",
+          "start": 21.5082,
+          "end": 21.888
+        },
+        {
+          "w": "body",
+          "start": 21.888,
+          "end": 22.148
+        },
+        {
+          "w": "answers",
+          "start": 22.148,
+          "end": 22.488
+        },
+        {
+          "w": "with",
+          "start": 22.488,
+          "end": 22.788
+        },
+        {
+          "w": "antibodies,",
+          "start": 22.788,
+          "end": 23.208
+        },
+        {
+          "w": "and",
+          "start": 23.208,
+          "end": 23.808
+        },
+        {
+          "w": "with",
+          "start": 23.808,
+          "end": 23.928
+        },
+        {
+          "w": "memory",
+          "start": 23.928,
+          "end": 24.228
+        },
+        {
+          "w": "cells",
+          "start": 24.228,
+          "end": 24.528
+        },
+        {
+          "w": "that",
+          "start": 24.528,
+          "end": 24.788
+        },
+        {
+          "w": "keep",
+          "start": 24.788,
+          "end": 24.948
+        },
+        {
+          "w": "the",
+          "start": 24.948,
+          "end": 25.128
+        },
+        {
+          "w": "germ's",
+          "start": 25.128,
+          "end": 25.408
+        },
+        {
+          "w": "shape",
+          "start": 25.408,
+          "end": 25.568
+        },
+        {
+          "w": "on",
+          "start": 25.568,
+          "end": 25.768
+        },
+        {
+          "w": "file,",
+          "start": 25.768,
+          "end": 25.988
+        },
+        {
+          "w": "often",
+          "start": 25.988,
+          "end": 26.368
+        },
+        {
+          "w": "for",
+          "start": 26.368,
+          "end": 26.628
+        },
+        {
+          "w": "years.",
+          "start": 26.628,
+          "end": 26.848
+        }
+      ]
+    },
+    {
+      "id": "L19-0",
+      "n": 19,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": null,
+      "text": "So when the real germ arrives, those memory cells know it at once. A defence that once took a week now starts within days, often before you feel ill at all.",
+      "start": 28.4079,
+      "end": 37.394,
+      "words": [
+        {
+          "w": "So",
+          "start": 28.408,
+          "end": 28.908
+        },
+        {
+          "w": "when",
+          "start": 28.908,
+          "end": 29.048
+        },
+        {
+          "w": "the",
+          "start": 29.048,
+          "end": 29.168
+        },
+        {
+          "w": "real",
+          "start": 29.168,
+          "end": 29.328
+        },
+        {
+          "w": "germ",
+          "start": 29.328,
+          "end": 29.588
+        },
+        {
+          "w": "arrives,",
+          "start": 29.588,
+          "end": 30.008
+        },
+        {
+          "w": "those",
+          "start": 30.008,
+          "end": 30.328
+        },
+        {
+          "w": "memory",
+          "start": 30.328,
+          "end": 30.688
+        },
+        {
+          "w": "cells",
+          "start": 30.688,
+          "end": 30.948
+        },
+        {
+          "w": "know",
+          "start": 30.948,
+          "end": 31.288
+        },
+        {
+          "w": "it",
+          "start": 31.288,
+          "end": 31.428
+        },
+        {
+          "w": "at",
+          "start": 31.428,
+          "end": 31.508
+        },
+        {
+          "w": "once.",
+          "start": 31.508,
+          "end": 31.708
+        },
+        {
+          "w": "A",
+          "start": 32.408,
+          "end": 32.428
+        },
+        {
+          "w": "defence",
+          "start": 32.428,
+          "end": 32.648
+        },
+        {
+          "w": "that",
+          "start": 32.648,
+          "end": 32.968
+        },
+        {
+          "w": "once",
+          "start": 32.968,
+          "end": 33.148
+        },
+        {
+          "w": "took",
+          "start": 33.148,
+          "end": 33.388
+        },
+        {
+          "w": "a",
+          "start": 33.388,
+          "end": 33.468
+        },
+        {
+          "w": "week",
+          "start": 33.468,
+          "end": 33.608
+        },
+        {
+          "w": "now",
+          "start": 33.608,
+          "end": 33.868
+        },
+        {
+          "w": "starts",
+          "start": 33.868,
+          "end": 34.208
+        },
+        {
+          "w": "within",
+          "start": 34.208,
+          "end": 34.448
+        },
+        {
+          "w": "days,",
+          "start": 34.448,
+          "end": 34.888
+        },
+        {
+          "w": "often",
+          "start": 34.888,
+          "end": 35.408
+        },
+        {
+          "w": "before",
+          "start": 35.408,
+          "end": 35.708
+        },
+        {
+          "w": "you",
+          "start": 35.708,
+          "end": 35.908
+        },
+        {
+          "w": "feel",
+          "start": 35.908,
+          "end": 36.088
+        },
+        {
+          "w": "ill",
+          "start": 36.088,
+          "end": 36.288
+        },
+        {
+          "w": "at",
+          "start": 36.288,
+          "end": 36.468
+        },
+        {
+          "w": "all.",
+          "start": 36.468,
+          "end": 36.628
+        }
+      ]
+    },
+    {
+      "id": "L20-0",
+      "n": 20,
+      "kind": "speech",
+      "speaker": "STUDENT",
+      "voice": "M4",
+      "emotion": "surprised",
+      "text": "Wait. So the vaccine doesn't fight the germ itself?",
+      "start": 38.044,
+      "end": 41.1787,
+      "words": [
+        {
+          "w": "Wait.",
+          "start": 38.044,
+          "end": 38.584
+        },
+        {
+          "w": "So",
+          "start": 38.724,
+          "end": 38.844
+        },
+        {
+          "w": "the",
+          "start": 38.844,
+          "end": 38.944
+        },
+        {
+          "w": "vaccine",
+          "start": 38.944,
+          "end": 39.204
+        },
+        {
+          "w": "doesn't",
+          "start": 39.204,
+          "end": 39.584
+        },
+        {
+          "w": "fight",
+          "start": 39.584,
+          "end": 39.724
+        },
+        {
+          "w": "the",
+          "start": 39.724,
+          "end": 39.904
+        },
+        {
+          "w": "germ",
+          "start": 39.904,
+          "end": 40.064
+        },
+        {
+          "w": "itself?",
+          "start": 40.064,
+          "end": 40.344
+        }
+      ]
+    },
+    {
+      "id": "L21-0",
+      "n": 21,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": "happy",
+      "text": "Exactly. It trains the team that does.",
+      "start": 41.8287,
+      "end": 44.7544,
+      "words": [
+        {
+          "w": "Exactly.",
+          "start": 41.829,
+          "end": 42.429
+        },
+        {
+          "w": "It",
+          "start": 42.809,
+          "end": 42.869
+        },
+        {
+          "w": "trains",
+          "start": 42.869,
+          "end": 43.069
+        },
+        {
+          "w": "the",
+          "start": 43.069,
+          "end": 43.349
+        },
+        {
+          "w": "team",
+          "start": 43.349,
+          "end": 43.549
+        },
+        {
+          "w": "that",
+          "start": 43.549,
+          "end": 43.709
+        },
+        {
+          "w": "does.",
+          "start": 43.709,
+          "end": 43.949
+        }
+      ]
+    },
+    {
+      "id": "L23-0",
+      "n": 23,
+      "kind": "speech",
+      "speaker": "NARRATOR",
+      "voice": "F4",
+      "emotion": null,
+      "text": "And when enough people are protected, a germ struggles to spread at all. That shields the people who can't be vaccinated, like newborn babies.",
+      "start": 45.4544,
+      "end": 53.4653,
+      "words": [
+        {
+          "w": "And",
+          "start": 45.4544,
+          "end": 45.994
+        },
+        {
+          "w": "when",
+          "start": 45.994,
+          "end": 46.094
+        },
+        {
+          "w": "enough",
+          "start": 46.094,
+          "end": 46.254
+        },
+        {
+          "w": "people",
+          "start": 46.254,
+          "end": 46.634
+        },
+        {
+          "w": "are",
+          "start": 46.634,
+          "end": 46.774
+        },
+        {
+          "w": "protected,",
+          "start": 46.774,
+          "end": 47.214
+        },
+        {
+          "w": "a",
+          "start": 47.574,
+          "end": 47.574
+        },
+        {
+          "w": "germ",
+          "start": 47.574,
+          "end": 47.754
+        },
+        {
+          "w": "struggles",
+          "start": 47.754,
+          "end": 48.234
+        },
+        {
+          "w": "to",
+          "start": 48.234,
+          "end": 48.474
+        },
+        {
+          "w": "spread",
+          "start": 48.474,
+          "end": 48.674
+        },
+        {
+          "w": "at",
+          "start": 48.674,
+          "end": 48.814
+        },
+        {
+          "w": "all.",
+          "start": 48.814,
+          "end": 49.014
+        },
+        {
+          "w": "That",
+          "start": 49.654,
+          "end": 49.674
+        },
+        {
+          "w": "shields",
+          "start": 49.674,
+          "end": 49.874
+        },
+        {
+          "w": "the",
+          "start": 49.874,
+          "end": 50.154
+        },
+        {
+          "w": "people",
+          "start": 50.154,
+          "end": 50.414
+        },
+        {
+          "w": "who",
+          "start": 50.414,
+          "end": 50.574
+        },
+        {
+          "w": "can't",
+          "start": 50.574,
+          "end": 50.814
+        },
+        {
+          "w": "be",
+          "start": 50.814,
+          "end": 50.894
+        },
+        {
+          "w": "vaccinated,",
+          "start": 50.894,
+          "end": 51.374
+        },
+        {
+          "w": "like",
+          "start": 51.374,
+          "end": 51.774
+        },
+        {
+          "w": "newborn",
+          "start": 51.774,
+          "end": 51.994
+        },
+        {
+          "w": "babies.",
+          "start": 51.994,
+          "end": 52.554
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "type": "music",
+      "id": "L11-0",
+      "label": "start",
+      "start": 0.5,
+      "gain_db": -24,
+      "loop": true,
+      "fade_in": 1,
+      "end": 54.5653,
+      "fade_out": 3,
+      "path": "../sounds/bed.mp3"
+    }
+  ],
+  "assets": [
+    {
+      "ids": [
+        "bed"
+      ],
+      "type": "music",
+      "path": "../sounds/bed.mp3",
+      "source": "local",
+      "title": "Soft Corporate by MusicLFiles",
+      "creator": "MusicLFiles",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "source_url": "https://commons.wikimedia.org/w/index.php?curid=123925096",
+      "attribution": "\"Soft Corporate by MusicLFiles\" by MusicLFiles (https://commons.wikimedia.org/w/index.php?curid=123925096), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/) (faded)"
+    }
+  ],
+  "warnings": []
+}

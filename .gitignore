@@ -3,3 +3,5 @@ node_modules/
 *.log
 .claude/
 .superpowers/
+__pycache__/
+*.pyc

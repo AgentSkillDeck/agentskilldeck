@@ -1,0 +1,88 @@
+{
+ "metadata": {
+  "identifier": "MountainAfterTheRainGorgesDuVerdon",
+  "title": "Mountain After The Rain, Gorges Du Verdon",
+  "licenseurl": "http://creativecommons.org/publicdomain/zero/1.0/",
+  "collection": [
+   "opensource_audio",
+   "community"
+  ]
+ },
+ "files": [
+  {
+   "name": "FRANCE_0046.flac",
+   "format": "Flac",
+   "length": "32.05",
+   "size": "2586435",
+   "source": "derivative"
+  },
+  {
+   "name": "FRANCE_0046.mp3",
+   "format": "VBR MP3",
+   "length": "00:32",
+   "size": "724480",
+   "source": "derivative"
+  },
+  {
+   "name": "FRANCE_0046.ogg",
+   "format": "Ogg Vorbis",
+   "length": "32.05",
+   "size": "385498",
+   "source": "derivative"
+  },
+  {
+   "name": "FRANCE_0046.png",
+   "format": "PNG",
+   "size": "7110",
+   "source": "derivative"
+  },
+  {
+   "name": "FRANCE_0046.wav",
+   "format": "WAVE",
+   "length": "32.05",
+   "size": "5654704",
+   "source": "original"
+  },
+  {
+   "name": "FRANCE_0046_spectrogram.png",
+   "format": "Spectrogram",
+   "size": "278919",
+   "source": "derivative"
+  },
+  {
+   "name": "MountainAfterTheRainGorgesDuVerdon.ffp",
+   "format": "Flac FingerPrint",
+   "size": "50",
+   "source": "derivative"
+  },
+  {
+   "name": "MountainAfterTheRainGorgesDuVerdon.md5",
+   "format": "Checksums",
+   "size": "51",
+   "source": "derivative"
+  },
+  {
+   "name": "MountainAfterTheRainGorgesDuVerdon_archive.torrent",
+   "format": "Archive BitTorrent",
+   "size": "3386",
+   "source": "metadata"
+  },
+  {
+   "name": "MountainAfterTheRainGorgesDuVerdon_files.xml",
+   "format": "Metadata",
+   "source": "metadata"
+  },
+  {
+   "name": "MountainAfterTheRainGorgesDuVerdon_meta.xml",
+   "format": "Metadata",
+   "size": "851",
+   "source": "metadata"
+  },
+  {
+   "name": "__ia_thumb.jpg",
+   "format": "Item Tile",
+   "size": "2356",
+   "source": "original"
+  }
+ ]
+}

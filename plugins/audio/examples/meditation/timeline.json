@@ -1,0 +1,813 @@
+{
+  "version": 1,
+  "title": "Two-minute breathing break",
+  "duration_s": 120.1185,
+  "scenes": [
+    {
+      "name": "Arrive",
+      "start": 1
+    },
+    {
+      "name": "Breathe",
+      "start": 20.8534
+    },
+    {
+      "name": "Return",
+      "start": 101.346
+    }
+  ],
+  "lines": [
+    {
+      "id": "L13-0",
+      "n": 13,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "Welcome. For the next two minutes, there is nothing you need to do.",
+      "start": 3.2,
+      "end": 10.0267,
+      "words": [
+        {
+          "w": "Welcome.",
+          "start": 3.2,
+          "end": 4.16
+        },
+        {
+          "w": "For",
+          "start": 4.78,
+          "end": 4.94
+        },
+        {
+          "w": "the",
+          "start": 4.94,
+          "end": 5.08
+        },
+        {
+          "w": "next",
+          "start": 5.08,
+          "end": 5.38
+        },
+        {
+          "w": "two",
+          "start": 5.38,
+          "end": 5.84
+        },
+        {
+          "w": "minutes,",
+          "start": 5.84,
+          "end": 6.24
+        },
+        {
+          "w": "there",
+          "start": 6.94,
+          "end": 7.14
+        },
+        {
+          "w": "is",
+          "start": 7.14,
+          "end": 7.34
+        },
+        {
+          "w": "nothing",
+          "start": 7.34,
+          "end": 7.82
+        },
+        {
+          "w": "you",
+          "start": 7.82,
+          "end": 8.16
+        },
+        {
+          "w": "need",
+          "start": 8.16,
+          "end": 8.44
+        },
+        {
+          "w": "to",
+          "start": 8.44,
+          "end": 8.76
+        },
+        {
+          "w": "do.",
+          "start": 8.76,
+          "end": 9.02
+        }
+      ]
+    },
+    {
+      "id": "L14-0",
+      "n": 14,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "Let your shoulders soften. Let your hands rest, wherever they are.",
+      "start": 11.7267,
+      "end": 18.5534,
+      "words": [
+        {
+          "w": "Let",
+          "start": 11.727,
+          "end": 12.487
+        },
+        {
+          "w": "your",
+          "start": 12.487,
+          "end": 12.687
+        },
+        {
+          "w": "shoulders",
+          "start": 12.687,
+          "end": 13.227
+        },
+        {
+          "w": "soften.",
+          "start": 13.227,
+          "end": 13.747
+        },
+        {
+          "w": "Let",
+          "start": 14.487,
+          "end": 14.747
+        },
+        {
+          "w": "your",
+          "start": 14.747,
+          "end": 15.007
+        },
+        {
+          "w": "hands",
+          "start": 15.007,
+          "end": 15.427
+        },
+        {
+          "w": "rest,",
+          "start": 15.427,
+          "end": 15.927
+        },
+        {
+          "w": "wherever",
+          "start": 15.927,
+          "end": 16.687
+        },
+        {
+          "w": "they",
+          "start": 16.687,
+          "end": 17.327
+        },
+        {
+          "w": "are.",
+          "start": 17.327,
+          "end": 17.707
+        }
+      ]
+    },
+    {
+      "id": "L17-0",
+      "n": 17,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": null,
+      "text": "We'll breathe together. In through the nose, for four. Then out, slowly, for six.",
+      "start": 20.9534,
+      "end": 28.5463,
+      "words": [
+        {
+          "w": "We'll",
+          "start": 20.9534,
+          "end": 21.613
+        },
+        {
+          "w": "breathe",
+          "start": 21.613,
+          "end": 21.873
+        },
+        {
+          "w": "together.",
+          "start": 21.873,
+          "end": 22.493
+        },
+        {
+          "w": "In",
+          "start": 23.173,
+          "end": 23.213
+        },
+        {
+          "w": "through",
+          "start": 23.213,
+          "end": 23.413
+        },
+        {
+          "w": "the",
+          "start": 23.413,
+          "end": 23.613
+        },
+        {
+          "w": "nose,",
+          "start": 23.613,
+          "end": 23.993
+        },
+        {
+          "w": "for",
+          "start": 23.993,
+          "end": 24.473
+        },
+        {
+          "w": "four.",
+          "start": 24.473,
+          "end": 24.713
+        },
+        {
+          "w": "Then",
+          "start": 25.513,
+          "end": 25.613
+        },
+        {
+          "w": "out,",
+          "start": 25.613,
+          "end": 25.873
+        },
+        {
+          "w": "slowly,",
+          "start": 25.873,
+          "end": 26.513
+        },
+        {
+          "w": "for",
+          "start": 26.513,
+          "end": 27.213
+        },
+        {
+          "w": "six.",
+          "start": 27.213,
+          "end": 27.533
+        }
+      ]
+    },
+    {
+      "id": "L19-0",
+      "n": 19,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "Breathe in.",
+      "start": 30.3463,
+      "end": 32.4361,
+      "words": [
+        {
+          "w": "Breathe",
+          "start": 30.3463,
+          "end": 31.266
+        },
+        {
+          "w": "in.",
+          "start": 31.266,
+          "end": 31.486
+        }
+      ]
+    },
+    {
+      "id": "L21-0",
+      "n": 21,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "And let it go. Slowly.",
+      "start": 36.9361,
+      "end": 40.2101,
+      "words": [
+        {
+          "w": "And",
+          "start": 36.9361,
+          "end": 37.696
+        },
+        {
+          "w": "let",
+          "start": 37.696,
+          "end": 37.876
+        },
+        {
+          "w": "it",
+          "start": 37.876,
+          "end": 38.016
+        },
+        {
+          "w": "go.",
+          "start": 38.016,
+          "end": 38.296
+        },
+        {
+          "w": "Slowly.",
+          "start": 38.296,
+          "end": 39.096
+        }
+      ]
+    },
+    {
+      "id": "L23-0",
+      "n": 23,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "Again. Breathe in.",
+      "start": 45.7101,
+      "end": 48.7751,
+      "words": [
+        {
+          "w": "Again.",
+          "start": 45.7101,
+          "end": 46.49
+        },
+        {
+          "w": "Breathe",
+          "start": 46.91,
+          "end": 47.43
+        },
+        {
+          "w": "in.",
+          "start": 47.43,
+          "end": 47.85
+        }
+      ]
+    },
+    {
+      "id": "L25-0",
+      "n": 25,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "And out.",
+      "start": 53.2751,
+      "end": 55.2952,
+      "words": [
+        {
+          "w": "And",
+          "start": 53.2751,
+          "end": 53.975
+        },
+        {
+          "w": "out.",
+          "start": 53.975,
+          "end": 54.275
+        }
+      ]
+    },
+    {
+      "id": "L27-0",
+      "n": 27,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "If a thought arrives, that's fine. Notice it, and let it float past, like a leaf on the water.",
+      "start": 60.7952,
+      "end": 69.9206,
+      "words": [
+        {
+          "w": "If",
+          "start": 60.7952,
+          "end": 61.495
+        },
+        {
+          "w": "a",
+          "start": 61.495,
+          "end": 61.595
+        },
+        {
+          "w": "thought",
+          "start": 61.595,
+          "end": 61.915
+        },
+        {
+          "w": "arrives,",
+          "start": 61.915,
+          "end": 62.235
+        },
+        {
+          "w": "that's",
+          "start": 63.015,
+          "end": 63.335
+        },
+        {
+          "w": "fine.",
+          "start": 63.335,
+          "end": 63.655
+        },
+        {
+          "w": "Notice",
+          "start": 64.635,
+          "end": 64.635
+        },
+        {
+          "w": "it,",
+          "start": 64.635,
+          "end": 65.035
+        },
+        {
+          "w": "and",
+          "start": 65.495,
+          "end": 65.755
+        },
+        {
+          "w": "let",
+          "start": 65.755,
+          "end": 65.975
+        },
+        {
+          "w": "it",
+          "start": 65.975,
+          "end": 66.115
+        },
+        {
+          "w": "float",
+          "start": 66.115,
+          "end": 66.395
+        },
+        {
+          "w": "past,",
+          "start": 66.395,
+          "end": 66.955
+        },
+        {
+          "w": "like",
+          "start": 67.495,
+          "end": 67.695
+        },
+        {
+          "w": "a",
+          "start": 67.695,
+          "end": 67.835
+        },
+        {
+          "w": "leaf",
+          "start": 67.835,
+          "end": 68.095
+        },
+        {
+          "w": "on",
+          "start": 68.095,
+          "end": 68.515
+        },
+        {
+          "w": "the",
+          "start": 68.515,
+          "end": 68.695
+        },
+        {
+          "w": "water.",
+          "start": 68.695,
+          "end": 69.075
+        }
+      ]
+    },
+    {
+      "id": "L29-0",
+      "n": 29,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "Breathe in.",
+      "start": 72.4206,
+      "end": 74.5104,
+      "words": [
+        {
+          "w": "Breathe",
+          "start": 72.421,
+          "end": 73.341
+        },
+        {
+          "w": "in.",
+          "start": 73.341,
+          "end": 73.561
+        }
+      ]
+    },
+    {
+      "id": "L31-0",
+      "n": 31,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "And out.",
+      "start": 79.0104,
+      "end": 81.0305,
+      "words": [
+        {
+          "w": "And",
+          "start": 79.0104,
+          "end": 79.71
+        },
+        {
+          "w": "out.",
+          "start": 79.71,
+          "end": 80.01
+        }
+      ]
+    },
+    {
+      "id": "L33-0",
+      "n": 33,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "One more. In.",
+      "start": 86.5305,
+      "end": 88.8293,
+      "words": [
+        {
+          "w": "One",
+          "start": 86.531,
+          "end": 87.151
+        },
+        {
+          "w": "more.",
+          "start": 87.151,
+          "end": 87.451
+        },
+        {
+          "w": "In.",
+          "start": 87.451,
+          "end": 88.011
+        }
+      ]
+    },
+    {
+      "id": "L35-0",
+      "n": 35,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "calm",
+      "text": "And all the way out.",
+      "start": 93.3293,
+      "end": 96.046,
+      "words": [
+        {
+          "w": "And",
+          "start": 93.3293,
+          "end": 94.049
+        },
+        {
+          "w": "all",
+          "start": 94.049,
+          "end": 94.329
+        },
+        {
+          "w": "the",
+          "start": 94.329,
+          "end": 94.549
+        },
+        {
+          "w": "way",
+          "start": 94.549,
+          "end": 94.709
+        },
+        {
+          "w": "out.",
+          "start": 94.709,
+          "end": 95.089
+        }
+      ]
+    },
+    {
+      "id": "L38-0",
+      "n": 38,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "Feel the weight of your body, and the ground holding you up.",
+      "start": 101.546,
+      "end": 107.4671,
+      "words": [
+        {
+          "w": "Feel",
+          "start": 101.546,
+          "end": 102.446
+        },
+        {
+          "w": "the",
+          "start": 102.446,
+          "end": 102.726
+        },
+        {
+          "w": "weight",
+          "start": 102.726,
+          "end": 103.006
+        },
+        {
+          "w": "of",
+          "start": 103.006,
+          "end": 103.246
+        },
+        {
+          "w": "your",
+          "start": 103.246,
+          "end": 103.426
+        },
+        {
+          "w": "body,",
+          "start": 103.426,
+          "end": 103.886
+        },
+        {
+          "w": "and",
+          "start": 103.886,
+          "end": 104.586
+        },
+        {
+          "w": "the",
+          "start": 104.586,
+          "end": 104.766
+        },
+        {
+          "w": "ground",
+          "start": 104.766,
+          "end": 105.146
+        },
+        {
+          "w": "holding",
+          "start": 105.146,
+          "end": 105.946
+        },
+        {
+          "w": "you",
+          "start": 105.946,
+          "end": 106.366
+        },
+        {
+          "w": "up.",
+          "start": 106.366,
+          "end": 106.666
+        }
+      ]
+    },
+    {
+      "id": "L40-0",
+      "n": 40,
+      "kind": "speech",
+      "speaker": "GUIDE",
+      "voice": "F3",
+      "emotion": "tender",
+      "text": "When you're ready, take one easy breath, and open your eyes.",
+      "start": 110.9671,
+      "end": 116.8185,
+      "words": [
+        {
+          "w": "When",
+          "start": 110.9671,
+          "end": 111.687
+        },
+        {
+          "w": "you're",
+          "start": 111.687,
+          "end": 111.927
+        },
+        {
+          "w": "ready,",
+          "start": 111.927,
+          "end": 112.287
+        },
+        {
+          "w": "take",
+          "start": 112.787,
+          "end": 113.007
+        },
+        {
+          "w": "one",
+          "start": 113.007,
+          "end": 113.287
+        },
+        {
+          "w": "easy",
+          "start": 113.287,
+          "end": 113.707
+        },
+        {
+          "w": "breath,",
+          "start": 113.707,
+          "end": 114.147
+        },
+        {
+          "w": "and",
+          "start": 114.687,
+          "end": 114.807
+        },
+        {
+          "w": "open",
+          "start": 114.807,
+          "end": 115.067
+        },
+        {
+          "w": "your",
+          "start": 115.067,
+          "end": 115.387
+        },
+        {
+          "w": "eyes.",
+          "start": 115.387,
+          "end": 115.747
+        }
+      ]
+    }
+  ],
+  "cues": [
+    {
+      "type": "sfx",
+      "id": "L11-0",
+      "label": "./sounds/bowl.mp3",
+      "start": 1,
+      "gain_db": -14,
+      "end": 13.333016,
+      "path": "../sounds/bowl.mp3"
+    },
+    {
+      "type": "ambience",
+      "id": "L9-1",
+      "label": "./sounds/stream.mp3",
+      "start": 1,
+      "gain_db": -26,
+      "loop": true,
+      "fade_in": 1,
+      "fade_out": 1,
+      "end": 20.8534,
+      "path": "../sounds/stream.mp3"
+    },
+    {
+      "type": "music",
+      "id": "L10-0",
+      "label": "start",
+      "start": 1,
+      "gain_db": -14,
+      "loop": true,
+      "fade_in": 1,
+      "end": 120.1185,
+      "fade_out": 3,
+      "path": "../sounds/pad.mp3"
+    },
+    {
+      "type": "sfx",
+      "id": "L42-0",
+      "label": "./sounds/bowl.mp3",
+      "start": 118.1185,
+      "gain_db": -14,
+      "end": 120.1185,
+      "path": "../sounds/bowl.mp3"
+    }
+  ],
+  "assets": [
+    {
+      "ids": [
+        "L9-1"
+      ],
+      "type": "ambience",
+      "path": "../sounds/stream.mp3",
+      "source": "local",
+      "title": "Gentle Stream",
+      "creator": "EvilDavo",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/EvilDavo/sounds/507155",
+      "attribution": "\"Gentle Stream\" by EvilDavo (https://freesound.org/people/EvilDavo/sounds/507155), CC0 1.0 (public domain dedication, no attribution required) (looped three times with crossfades)"
+    },
+    {
+      "ids": [
+        "L11-0",
+        "L42-0"
+      ],
+      "type": "sfx",
+      "path": "../sounds/bowl.mp3",
+      "source": "local",
+      "title": "NEPTUN-Solo-07 Tibetan Singing Bowl",
+      "creator": "the_very_Real_Horst",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/the_very_Real_Horst/sounds/240934",
+      "attribution": "\"NEPTUN-Solo-07 Tibetan Singing Bowl\" by the_very_Real_Horst (https://freesound.org/people/the_very_Real_Horst/sounds/240934), CC0 1.0 (public domain dedication, no attribution required) (faded)"
+    },
+    {
+      "ids": [
+        "bed"
+      ],
+      "type": "music",
+      "path": "../sounds/pad.mp3",
+      "source": "local",
+      "title": "Long Ambient Pad",
+      "creator": "indigo.cloud",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://freesound.org/people/indigo.cloud/sounds/254856",
+      "attribution": "\"Long Ambient Pad\" by indigo.cloud (https://freesound.org/people/indigo.cloud/sounds/254856), CC0 1.0 (public domain dedication, no attribution required) (looped three times with crossfades)"
+    }
+  ],
+  "warnings": []
+}

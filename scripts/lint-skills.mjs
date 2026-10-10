@@ -4,6 +4,17 @@ import { existsSync, realpathSync } from 'node:fs';
 import { join, dirname, resolve, basename, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+// Every plugins/<name> directory that has a sync.json is a lint target.
+export async function discoverPluginDirs(repoRoot) {
+  const pluginsRoot = join(repoRoot, 'plugins');
+  if (!existsSync(pluginsRoot)) return [];
+  const dirs = [];
+  for (const e of await readdir(pluginsRoot, { withFileTypes: true })) {
+    if (e.isDirectory() && existsSync(join(pluginsRoot, e.name, 'sync.json'))) dirs.push(join(pluginsRoot, e.name));
+  }
+  return dirs.sort();
+}
+
 const FORBIDDEN = [/uizze/i, /npx impeccable/i, /impeccable context/i, /\{\{scripts_path\}\}/];
 const EXEMPT_FILES = new Set(['LICENSE', 'NOTICE', 'CHECKSUMS.sha256']);
 
@@ -70,8 +81,13 @@ export async function lintPlugin(pluginDir) {
 const isMain = (() => { try { return realpathSync(process.argv[1]) === fileURLToPath(import.meta.url); } catch { return false; } })();
 
 if (isMain) {
-  const pluginDir = resolve(process.argv[2] ?? 'plugins/ui');
-  const problems = await lintPlugin(pluginDir);
+  const pathArg = process.argv[2];
+  const repoRoot = dirname(dirname(fileURLToPath(import.meta.url)));
+  const pluginDirs = pathArg ? [resolve(pathArg)] : await discoverPluginDirs(repoRoot);
+  const problems = [];
+  for (const pluginDir of pluginDirs) {
+    for (const p of await lintPlugin(pluginDir)) problems.push(`${relative(repoRoot, pluginDir)}/${p}`);
+  }
   if (problems.length) { console.error(`Lint failed:\n  ${problems.join('\n  ')}`); process.exitCode = 1; }
   else console.log('Lint clean.');
 }
