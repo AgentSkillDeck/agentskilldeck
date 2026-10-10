@@ -171,3 +171,159 @@ Space Grotesk,,/Quality/Wordspace,90
 Space Grotesk,,/Sans/Grotesque,80
 Space Grotesk,,/Sans/Neo Grotesque,100
 Space Grotesk,,/Theme/Techno,100
+Poppins,,/Expressive/Business,60
+Poppins,,/Expressive/Calm,85
+Poppins,,/Expressive/Competent,40
+Poppins,,/Expressive/Loud,1
+Poppins,,/Expressive/Rugged,50
+Poppins,,/Expressive/Sincere,50
+Poppins,,/Expressive/Vintage,20
+Poppins,,/Quality/Concept,75
+Poppins,,/Quality/Drawing,70
+Poppins,,/Quality/Spacing,80
+Poppins,,/Quality/Wordspace,100
+Poppins,,/Sans/Geometric,100
+Montserrat,wght@100,/Expressive/Awkward,5
+Montserrat,wght@400,/Expressive/Awkward,5
+Montserrat,wght@900,/Expressive/Awkward,5
+Montserrat,wght@100,/Expressive/Business,30
+Montserrat,wght@400,/Expressive/Business,70
+Montserrat,wght@900,/Expressive/Business,50
+Montserrat,wght@100,/Expressive/Calm,87
+Montserrat,wght@900,/Expressive/Calm,84
+Montserrat,wght@100,/Expressive/Childlike,9
+Montserrat,wght@900,/Expressive/Childlike,7
+Montserrat,wght@100,/Expressive/Competent,95
+Montserrat,wght@900,/Expressive/Competent,95
+Montserrat,wght@100,/Expressive/Futuristic,12
+Montserrat,wght@400,/Expressive/Futuristic,20
+Montserrat,wght@900,/Expressive/Futuristic,21
+Montserrat,wght@600,/Expressive/Loud,36
+Montserrat,wght@900,/Expressive/Loud,85
+Montserrat,wght@100,/Expressive/Playful,1
+Montserrat,wght@900,/Expressive/Playful,1
+Montserrat,wght@100,/Expressive/Rugged,8
+Montserrat,wght@900,/Expressive/Rugged,60
+Montserrat,,/Expressive/Vintage,5
+Montserrat,,/Quality/Concept,80
+Montserrat,,/Quality/Drawing,75
+Montserrat,,/Quality/Spacing,90
+Montserrat,,/Quality/Wordspace,90
+Montserrat,,/Sans/Geometric,100
+Quicksand,wght@300,/Expressive/Awkward,8
+Quicksand,wght@400,/Expressive/Awkward,8
+Quicksand,wght@700,/Expressive/Awkward,8
+Quicksand,wght@300,/Expressive/Business,30
+Quicksand,wght@400,/Expressive/Business,60
+Quicksand,wght@700,/Expressive/Business,45
+Quicksand,wght@300,/Expressive/Calm,72
+Quicksand,wght@700,/Expressive/Calm,69
+Quicksand,wght@300,/Expressive/Childlike,20
+Quicksand,wght@700,/Expressive/Childlike,23
+Quicksand,wght@300,/Expressive/Competent,58
+Quicksand,wght@700,/Expressive/Competent,58
+Quicksand,wght@300,/Expressive/Happy,52
+Quicksand,wght@700,/Expressive/Happy,58
+Quicksand,,/Expressive/Playful,20
+Quicksand,,/Expressive/Rugged,40
+Quicksand,wght@300,/Expressive/Sincere,40
+Quicksand,wght@700,/Expressive/Sincere,39
+Quicksand,,/Expressive/Stiff,5
+Quicksand,,/Expressive/Vintage,35
+Quicksand,,/Quality/Concept,60
+Quicksand,,/Quality/Drawing,65
+Quicksand,,/Quality/Spacing,80
+Quicksand,,/Quality/Wordspace,80
+Quicksand,,/Sans/Geometric,100
+Quicksand,,/Sans/Rounded,100
+DM Sans,wght@100,/Expressive/Awkward,11
+DM Sans,wght@400,/Expressive/Awkward,5
+DM Sans,wght@1000,/Expressive/Awkward,14
+DM Sans,wght@100,/Expressive/Business,60
+DM Sans,wght@400,/Expressive/Business,77
+DM Sans,wght@1000,/Expressive/Business,70
+DM Sans,,/Expressive/Calm,83
+DM Sans,,/Expressive/Competent,14
+DM Sans,wght@600,/Expressive/Loud,55
+DM Sans,wght@900,/Expressive/Loud,81
+DM Sans,wght@100,/Expressive/Playful,5
+DM Sans,wght@1000,/Expressive/Playful,25
+DM Sans,wght@100,/Expressive/Rugged,1
+DM Sans,wght@1000,/Expressive/Rugged,12
+DM Sans,,/Expressive/Vintage,30
+DM Sans,,/Quality/Concept,80
+DM Sans,,/Quality/Drawing,70
+DM Sans,,/Quality/Spacing,80
+DM Sans,,/Quality/Wordspace,100
+DM Sans,,/Sans/Geometric,100
+DM Sans,,/Sans/Neo Grotesque,10
+Average Sans,,/Expressive/Business,52
+Average Sans,,/Expressive/Calm,94
+Average Sans,,/Expressive/Loud,1
+Average Sans,,/Expressive/Rugged,55
+Average Sans,,/Expressive/Sincere,20
+Average Sans,,/Expressive/Stiff,5
+Average Sans,,/Expressive/Vintage,30
+Average Sans,,/Quality/Concept,70
+Average Sans,,/Quality/Drawing,65
+Average Sans,,/Quality/Spacing,70
+Average Sans,,/Quality/Wordspace,70
+Average Sans,,/Sans/Geometric,50
+Average Sans,,/Sans/Humanist,50
+Cal Sans,,/Expressive/Business,55
+Cal Sans,,/Expressive/Calm,75
+Cal Sans,,/Expressive/Excited,10
+Cal Sans,,/Expressive/Loud,24
+Cal Sans,,/Expressive/Rugged,50
+Cal Sans,,/Expressive/Sincere,20
+Cal Sans,,/Expressive/Stiff,9
+Cal Sans,,/Expressive/Vintage,20
+Cal Sans,,/Quality/Concept,75
+Cal Sans,,/Quality/Drawing,70
+Cal Sans,,/Quality/Spacing,90
+Cal Sans,,/Quality/Wordspace,100
+Cal Sans,,/Sans/Geometric,100
+Open Sans,"wdth,wght@75,300",/Expressive/Active,20
+Open Sans,"wdth,wght@75,800",/Expressive/Active,22
+Open Sans,"wdth,wght@100,300",/Expressive/Active,22
+Open Sans,"wdth,wght@100,800",/Expressive/Active,24
+Open Sans,"wdth,wght@75,300",/Expressive/Artistic,10
+Open Sans,"wdth,wght@75,800",/Expressive/Artistic,10
+Open Sans,"wdth,wght@100,300",/Expressive/Artistic,10
+Open Sans,"wdth,wght@100,800",/Expressive/Artistic,10
+Open Sans,"wdth,wght@75,300",/Expressive/Awkward,5
+Open Sans,"wdth,wght@75,800",/Expressive/Awkward,5
+Open Sans,"wdth,wght@100,300",/Expressive/Awkward,5
+Open Sans,"wdth,wght@100,800",/Expressive/Awkward,5
+Open Sans,"wdth,wght@75,300",/Expressive/Business,88
+Open Sans,"wdth,wght@75,800",/Expressive/Business,84
+Open Sans,"wdth,wght@100,300",/Expressive/Business,90
+Open Sans,"wdth,wght@100,800",/Expressive/Business,86
+Open Sans,"wdth,wght@75,300",/Expressive/Calm,90
+Open Sans,"wdth,wght@75,800",/Expressive/Calm,90
+Open Sans,"wdth,wght@100,300",/Expressive/Calm,94
+Open Sans,"wdth,wght@100,800",/Expressive/Calm,94
+Open Sans,"wdth,wght@75,300",/Expressive/Competent,88
+Open Sans,"wdth,wght@75,800",/Expressive/Competent,87
+Open Sans,"wdth,wght@100,300",/Expressive/Competent,90
+Open Sans,"wdth,wght@100,800",/Expressive/Competent,90
+Open Sans,"wdth,wght@75,300",/Expressive/Cute,5
+Open Sans,"wdth,wght@75,800",/Expressive/Cute,5
+Open Sans,"wdth,wght@100,300",/Expressive/Cute,5
+Open Sans,"wdth,wght@100,800",/Expressive/Cute,5
+Open Sans,"wdth,wght@75,300",/Expressive/Loud,12
+Open Sans,"wdth,wght@75,800",/Expressive/Loud,74
+Open Sans,"wdth,wght@100,300",/Expressive/Loud,16
+Open Sans,"wdth,wght@100,800",/Expressive/Loud,75
+Open Sans,"wdth,wght@75,300",/Expressive/Sincere,24
+Open Sans,"wdth,wght@75,800",/Expressive/Sincere,12
+Open Sans,"wdth,wght@100,300",/Expressive/Sincere,45
+Open Sans,"wdth,wght@100,800",/Expressive/Sincere,14
+Open Sans,,/Expressive/Stiff,10
+Open Sans,,/Quality/Concept,70
+Open Sans,,/Quality/Drawing,70
+Open Sans,,/Quality/Spacing,80
+Open Sans,,/Quality/Wordspace,90
+Open Sans,,/Sans/Humanist,80
+Open Sans,,/Sans/Neo Grotesque,20
+Open Sans,,/Seasonal/Kwanzaa,73

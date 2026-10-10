@@ -43,7 +43,11 @@ test('finds a Fontshare font with ITF license and CSS link install', async () =>
 });
 
 test('category filter restricts results', async () => {
-  const { results } = await searchFonts('display', { limit: 5, category: 'serif', fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  // "transitional" (a real /Serif/Transitional tag), not "display": "display" is
+  // a generic category word now stripped from family-name scoring (see the
+  // "merely sans-named" tests below), so it would no longer match "DM Serif
+  // Display" by family name alone.
+  const { results } = await searchFonts('transitional', { limit: 5, category: 'serif', fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
   assert.ok(results.length > 0);
   assert.ok(results.every((r) => /serif/i.test(r.notes)));
 });
@@ -60,19 +64,48 @@ test('all sources down throws ServiceError', async () => {
   await assert.rejects(searchFonts('inter', { limit: 3, fetchImpl, cacheDir: await fresh() }), { name: 'ServiceError' });
 });
 
-test('"geometric" ranks a geometric-tagged font first', async () => {
-  const { results } = await searchFonts('geometric', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+test('"geometric mono" ranks the geometric-tagged monospace font first', async () => {
+  // "mono" disambiguates from the other geometric-tagged sans fixtures
+  // (Poppins, Montserrat, Cal Sans, DM Sans, Quicksand) added below, via a
+  // partial match against JetBrains Mono's own "monospace" category.
+  const { results } = await searchFonts('geometric mono', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
   assert.ok(results.length > 0);
   assert.equal(results[0].name, 'JetBrains Mono');
   assert.match(results[0].notes, /geometric/);
 });
 
-test('"rounded" vs "geometric" give different top results', async () => {
-  const rounded = await searchFonts('rounded', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
-  const geometric = await searchFonts('geometric', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
-  assert.equal(rounded.results[0].name, 'Nunito');
-  assert.equal(geometric.results[0].name, 'JetBrains Mono');
-  assert.notEqual(rounded.results[0].name, geometric.results[0].name);
+test('"geometric sans" ranks canonical geometric fonts ahead of a merely sans-named font', async () => {
+  // Average Sans only carries /Sans/Geometric at score 50 (moderate, weight
+  // 2); Poppins, Montserrat, Cal Sans, DM Sans and Quicksand carry it at
+  // score 100 (strong, weight 3). Before the fix, "Sans" baked into the
+  // family name and into every /Sans/* tag's group word both matched the
+  // query's "sans" token redundantly, letting Average Sans (and other
+  // generically "X Sans"-named fonts) out-rank the real geometric faces.
+  const { results } = await searchFonts('geometric sans', { limit: 10, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  const names = results.map((r) => r.name);
+  const indexOf = (n) => names.indexOf(n);
+  assert.ok(indexOf('Poppins') !== -1, 'Poppins should be in the results');
+  assert.ok(indexOf('Montserrat') !== -1, 'Montserrat should be in the results');
+  const averageSansIndex = indexOf('Average Sans');
+  assert.ok(averageSansIndex === -1 || indexOf('Poppins') < averageSansIndex, 'Poppins should outrank Average Sans');
+  assert.ok(averageSansIndex === -1 || indexOf('Montserrat') < averageSansIndex, 'Montserrat should outrank Average Sans');
+});
+
+test('"rounded sans" puts an actually-rounded font first, not a merely sans-named one', async () => {
+  const { results } = await searchFonts('rounded sans', { limit: 5, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  assert.ok(['Nunito', 'Quicksand'].includes(results[0].name));
+});
+
+test('"humanist sans" puts the /Sans/Humanist-tagged font first', async () => {
+  const { results } = await searchFonts('humanist sans', { limit: 5, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  assert.equal(results[0].name, 'Open Sans');
+  assert.match(results[0].notes, /humanist/);
+});
+
+test('"geometric sans" and "rounded sans" give different top results', async () => {
+  const geometric = await searchFonts('geometric sans', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  const rounded = await searchFonts('rounded sans', { limit: 3, fetchImpl: fakeFetch(await routes()), cacheDir: await fresh() });
+  assert.notEqual(geometric.results[0].name, rounded.results[0].name);
 });
 
 test('Google Fonts tags fetch failure: results still returned, with a warning', async () => {

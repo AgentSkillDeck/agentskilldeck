@@ -8,18 +8,44 @@ const LICENSE_URLS = {
   'Apache-2.0': 'https://www.apache.org/licenses/LICENSE-2.0',
 };
 
-// Google Fonts tags have only a broad score, not a fixed meaning; weight 3
-// for a strong signal (score >= 70), 2 for a moderate one (40-69), and
-// ignore anything weaker so unrelated style words don't creep into ranking.
+// Google's tag vocabulary files every style tag under a broad group prefix
+// (/Sans/Geometric, /Serif/Didone, /Sans/Humanist, ...). That group word
+// duplicates what the category field already contributes: scoring it again
+// per tag row let a font with several /Sans/* tags rack up a "sans" match
+// once per row, on top of its one legitimate category match. Score only
+// each tag's leaf (the part after the group), e.g. "/Sans/Geometric" -> the
+// field text ["geometric"], "/Sans/Neo Grotesque" -> ["neo", "grotesque"].
+const GENERIC_CATEGORY_WORDS = new Set(['sans', 'serif', 'slab', 'script', 'display', 'mono', 'monospace', 'handwriting']);
+
+// A font literally named "Average Sans" or "DM Serif Display" shouldn't
+// outrank a canonical style match on a query like "geometric sans" just
+// because its own family name happens to restate the generic category word
+// the category field already covers. Fall back to the untouched name if
+// stripping would leave nothing to score against.
+function styleName(name) {
+  const kept = tokenize(name).filter((w) => !GENERIC_CATEGORY_WORDS.has(w));
+  return kept.length ? kept.join(' ') : name;
+}
+
+// Tags have only a broad score, not a fixed meaning: weight 3 for a strong
+// signal (score >= 70), 2 for a moderate one (40-69), ignore anything
+// weaker so unrelated style words don't creep into ranking. Notes show at
+// most the 3 highest-scoring, most recognisable style words, skipping the
+// /Quality/* bookkeeping tags (concept/drawing/spacing/wordspace aren't
+// style words a user would search for).
 function styleTags(family, tagsByFamily) {
-  const entries = tagsByFamily?.get(family.toLowerCase()) ?? [];
-  const fields = [];
+  const entries = (tagsByFamily?.get(family.toLowerCase()) ?? []).filter(({ score }) => score >= 40);
+  const fields = entries.map(({ words, score }) => ({
+    text: words[words.length - 1].split(/\s+/),
+    weight: score >= 70 ? 3 : 2,
+  }));
   const styleWords = [];
-  for (const { words, score } of entries) {
-    if (score < 40) continue;
-    fields.push({ text: words, weight: score >= 70 ? 3 : 2 });
+  for (const { words, score } of [...entries].sort((a, b) => b.score - a.score)) {
+    if (words[0] === 'quality') continue;
     const leaf = words[words.length - 1];
-    if (leaf && !styleWords.includes(leaf)) styleWords.push(leaf);
+    if (styleWords.includes(leaf)) continue;
+    styleWords.push(leaf);
+    if (styleWords.length === 3) break;
   }
   return { fields, styleWords };
 }
@@ -34,7 +60,7 @@ function fromFontsource(f, tagsByFamily) {
     license: { id: f.license, url: LICENSE_URLS[f.license] ?? `https://fontsource.org/fonts/${f.id}` },
     install: `npm i ${pkg}`,
     notes: `${f.category}; weights ${f.weights.join(', ')}${f.variable ? '; variable' : ''}; subsets ${f.subsets.slice(0, 4).join(', ')}${styleWords.length ? `; style: ${styleWords.join(', ')}` : ''}`,
-    _fields: [{ text: f.family, weight: 4 }, { text: f.category, weight: 2 }, ...tagFields],
+    _fields: [{ text: styleName(f.family), weight: 4 }, { text: f.category, weight: 2 }, ...tagFields],
     _category: f.category,
   };
 }
@@ -53,7 +79,7 @@ function fromFontshare(f) {
     install: `<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=${f.slug}@${w}&display=swap">`,
     notes: `${String(f.category).toLowerCase()}; weights ${weights.join(', ') || 'see preview'}; free for commercial use (ITF FFL)`,
     _fields: [
-      { text: f.name, weight: 4 },
+      { text: styleName(f.name), weight: 4 },
       { text: f.category, weight: 2 },
       { text: (f.font_tags ?? []).map((t) => t.name), weight: 1 },
     ],

@@ -33,6 +33,9 @@ function splitCsvLine(line) {
  * malformed lines are skipped.
  */
 export function parseFontTags(csvText) {
+  // Lines are split before quote-aware parsing, so a quoted field containing
+  // an embedded newline is not supported (not needed for this export: family
+  // names and tags don't contain newlines).
   const map = new Map();
   for (const line of String(csvText ?? '').split(/\r?\n/)) {
     if (!line.trim()) continue;
