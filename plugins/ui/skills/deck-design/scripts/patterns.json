@@ -2675,6 +2675,4903 @@
         "tooltip",
         "help"
       ]
+    },
+    {
+      "system": "Boosted",
+      "title": "Accordion",
+      "url": "https://boosted.orange.com/docs/components/accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Alerts",
+      "url": "https://boosted.orange.com/docs/components/alerts/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alerts",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Back to top",
+      "url": "https://boosted.orange.com/docs/components/back-to-top/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "back to top",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Badge",
+      "url": "https://boosted.orange.com/docs/components/badge/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag",
+        "status",
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Breadcrumb",
+      "url": "https://boosted.orange.com/docs/components/breadcrumb/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Buttons",
+      "url": "https://boosted.orange.com/docs/components/buttons/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "buttons",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Button group",
+      "url": "https://boosted.orange.com/docs/components/button-group/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button group",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Card",
+      "url": "https://boosted.orange.com/docs/components/card/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "tile",
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Carousel",
+      "url": "https://boosted.orange.com/docs/components/carousel/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "carousel",
+        "slider",
+        "gallery",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Checkbox",
+      "url": "https://boosted.orange.com/docs/forms/checks-radios/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Close button",
+      "url": "https://boosted.orange.com/docs/components/close-button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "close button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Collapse",
+      "url": "https://boosted.orange.com/docs/components/collapse/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "collapse",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Dropdowns",
+      "url": "https://boosted.orange.com/docs/components/dropdowns/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dropdowns",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "File input",
+      "url": "https://boosted.orange.com/docs/forms/form-control/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file input",
+        "upload",
+        "form",
+        "text field",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Footer",
+      "url": "https://boosted.orange.com/docs/components/footer/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "footer",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Img",
+      "url": "https://boosted.orange.com/docs/content/images/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "img",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "List group",
+      "url": "https://boosted.orange.com/docs/components/list-group/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "list group",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Modal",
+      "url": "https://boosted.orange.com/docs/components/modal/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog",
+        "popup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Navbar",
+      "url": "https://boosted.orange.com/docs/components/navbar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navbar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Navs & tabs",
+      "url": "https://boosted.orange.com/docs/components/navs-tabs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navs tabs",
+        "navigation",
+        "tablist",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Offcanvas",
+      "url": "https://boosted.orange.com/docs/components/offcanvas/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "offcanvas",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Orange navbar",
+      "url": "https://boosted.orange.com/docs/components/orange-navbar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "orange navbar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Pagination",
+      "url": "https://boosted.orange.com/docs/components/pagination/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "navigation",
+        "paging",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Placeholders",
+      "url": "https://boosted.orange.com/docs/components/placeholders/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "placeholders",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Popovers",
+      "url": "https://boosted.orange.com/docs/components/popovers/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "popovers",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Progress",
+      "url": "https://boosted.orange.com/docs/components/progress/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "progress",
+        "loading",
+        "progress bar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Quantity selector",
+      "url": "https://boosted.orange.com/docs/forms/quantity-selector/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "quantity selector",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Range",
+      "url": "https://boosted.orange.com/docs/forms/range/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "range",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Scrollspy",
+      "url": "https://boosted.orange.com/docs/components/scrollspy/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "scrollspy",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Select",
+      "url": "https://boosted.orange.com/docs/forms/select/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Dropdown",
+      "url": "https://system.design.orange.com/0c1af118d/p/910b9b-dropdown/b/04c480",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dropdown",
+        "menu",
+        "select",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Spinners",
+      "url": "https://boosted.orange.com/docs/components/spinners/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "spinners",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Stepped process",
+      "url": "https://boosted.orange.com/docs/components/stepped-process/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "stepped process",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Sticker",
+      "url": "https://boosted.orange.com/docs/components/sticker/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sticker",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Tables",
+      "url": "https://boosted.orange.com/docs/content/tables/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tables",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Tags",
+      "url": "https://boosted.orange.com/docs/components/tags/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tags",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Title bars",
+      "url": "https://boosted.orange.com/docs/components/title-bars/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "title bars",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Toasts",
+      "url": "https://boosted.orange.com/docs/components/toasts/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toasts",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Boosted",
+      "title": "Tooltips",
+      "url": "https://boosted.orange.com/docs/components/tooltips/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltips",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Accordion",
+      "url": "https://getbootstrap.com/docs/5.3/components/accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Alert",
+      "url": "https://getbootstrap.com/docs/5.3/components/alerts/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Badge",
+      "url": "https://getbootstrap.com/docs/5.3/components/badge/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag",
+        "status",
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Breadcrumb",
+      "url": "https://getbootstrap.com/docs/5.3/components/breadcrumb/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Buttons",
+      "url": "https://getbootstrap.com/docs/5.3/components/buttons/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "buttons",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Button group",
+      "url": "https://getbootstrap.com/docs/5.3/components/button-group/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button group",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Card",
+      "url": "https://getbootstrap.com/docs/5.3/components/card/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "tile",
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Carousel",
+      "url": "https://getbootstrap.com/docs/5.3/components/carousel/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "carousel",
+        "slider",
+        "gallery",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Checkbox",
+      "url": "https://getbootstrap.com/docs/5.3/forms/checks-radios/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Collapse",
+      "url": "https://getbootstrap.com/docs/5.3/components/collapse/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "collapse",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Dropdown",
+      "url": "https://getbootstrap.com/docs/5.3/components/dropdowns/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dropdown",
+        "menu",
+        "select",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Flex",
+      "url": "https://getbootstrap.com/docs/5.3/utilities/flex/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "flex",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Forms",
+      "url": "https://getbootstrap.com/docs/5.3/forms/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "forms",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "InputGroup",
+      "url": "https://getbootstrap.com/docs/5.3/forms/input-group/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputgroup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "FormControl",
+      "url": "https://getbootstrap.com/docs/5.3/forms/form-control/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "formcontrol",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "List",
+      "url": "https://getbootstrap.com/docs/5.3/components/list-group/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Modal",
+      "url": "https://getbootstrap.com/docs/5.3/components/modal/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog",
+        "popup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Navs",
+      "url": "https://getbootstrap.com/docs/5.3/components/navs-tabs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navs",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Navbar",
+      "url": "https://getbootstrap.com/docs/5.3/components/navbar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "navbar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Pagination",
+      "url": "https://getbootstrap.com/docs/5.3/components/pagination/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "navigation",
+        "paging",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Popover",
+      "url": "https://getbootstrap.com/docs/5.3/components/popovers/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "popover",
+        "tooltip",
+        "overlay",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Progress",
+      "url": "https://getbootstrap.com/docs/5.3/components/progress/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "progress",
+        "loading",
+        "progress bar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Select Menu",
+      "url": "https://getbootstrap.com/docs/4.5/components/forms/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select menu",
+        "dropdown",
+        "picker",
+        "form",
+        "navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Select Menu.Popup",
+      "url": "https://getbootstrap.com/docs/5.3/forms/select/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select menu popup",
+        "dropdown",
+        "picker",
+        "form",
+        "navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Scrollspy",
+      "url": "https://getbootstrap.com/docs/5.3/components/scrollspy/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "scrollspy",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Spinners",
+      "url": "https://getbootstrap.com/docs/5.3/components/spinners/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "spinners",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Tables",
+      "url": "https://getbootstrap.com/docs/5.3/content/tables/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tables",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Toasts",
+      "url": "https://getbootstrap.com/docs/5.3/components/toasts/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toasts",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Tooltips",
+      "url": "https://getbootstrap.com/docs/5.3/components/tooltips/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltips",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Bootstrap",
+      "title": "Img",
+      "url": "https://getbootstrap.com/docs/5.3/content/images/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "img",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Badge",
+      "url": "https://evergreen.segment.com/components/badges",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag",
+        "status",
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Tabs",
+      "url": "https://evergreen.segment.com/components/tabs",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation",
+        "tablist",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Avatar",
+      "url": "https://evergreen.segment.com/components/avatar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "profile",
+        "user",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Select",
+      "url": "https://evergreen.segment.com/components/select",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Combobox",
+      "url": "https://evergreen.segment.com/components/combobox",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "combobox",
+        "autocomplete",
+        "typeahead",
+        "select",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Select Menu",
+      "url": "https://evergreen.segment.com/components/select-menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select menu",
+        "dropdown",
+        "picker",
+        "form",
+        "navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Popover",
+      "url": "https://evergreen.segment.com/components/popover",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "popover",
+        "tooltip",
+        "overlay",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Menu",
+      "url": "https://evergreen.segment.com/components/menu",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown",
+        "navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Text Input",
+      "url": "https://evergreen.segment.com/components/text-input",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "text input",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Search Input",
+      "url": "https://evergreen.segment.com/components/search-input",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search input",
+        "search field",
+        "input",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Tag Input",
+      "url": "https://evergreen.segment.com/components/tag-input",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tag input",
+        "badge",
+        "chip",
+        "label",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Textarea",
+      "url": "https://evergreen.segment.com/components/textarea",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "textarea",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Autocomplete",
+      "url": "https://evergreen.segment.com/components/autocomplete",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "autocomplete",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Checkbox",
+      "url": "https://evergreen.segment.com/components/checkbox",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Radio",
+      "url": "https://evergreen.segment.com/components/radio",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "radio",
+        "form",
+        "choice",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Switch",
+      "url": "https://evergreen.segment.com/components/switch",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "switch",
+        "toggle",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Toaster",
+      "url": "https://evergreen.segment.com/components/toaster",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toaster",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Alert",
+      "url": "https://evergreen.segment.com/components/alert",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Spinner",
+      "url": "https://evergreen.segment.com/components/spinner",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "spinner",
+        "loading",
+        "progress",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Dialog",
+      "url": "https://evergreen.segment.com/components/dialog",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dialog",
+        "modal",
+        "popup",
+        "confirmation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Side Sheet",
+      "url": "https://evergreen.segment.com/components/side-sheet",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "side sheet",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Tooltip",
+      "url": "https://evergreen.segment.com/components/tooltip",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "hint",
+        "popover",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Corner Dialog",
+      "url": "https://evergreen.segment.com/components/corner-dialog",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "corner dialog",
+        "modal",
+        "popup",
+        "confirmation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Table",
+      "url": "https://evergreen.segment.com/components/table",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "table",
+        "data table",
+        "grid",
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Portal",
+      "url": "https://evergreen.segment.com/components/portal",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "portal",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Positioner",
+      "url": "https://evergreen.segment.com/components/positioner",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "positioner",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Evergreen",
+      "title": "Form Field",
+      "url": "https://evergreen.segment.com/components/form-field",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form field",
+        "validation",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Microsoft Fluent UI (Fabric)",
+      "title": "Button",
+      "url": "https://developer.microsoft.com/en-us/fluentui",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Microsoft Fluent UI (Fabric)",
+      "title": "Combobox",
+      "url": "https://storybooks.fluentui.dev/react/?path=/docs/components-combobox--default",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "combobox",
+        "autocomplete",
+        "typeahead",
+        "select",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Background",
+      "url": "https://www.goodbarber.com/uxdesign/background/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "background",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Textfield",
+      "url": "https://www.goodbarber.com/uxdesign/textfield/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "textfield",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Dropdown",
+      "url": "https://www.goodbarber.com/uxdesign/dropdown/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dropdown",
+        "menu",
+        "select",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "DatePicker",
+      "url": "https://www.goodbarber.com/uxdesign/date-time-picker/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "datepicker",
+        "date",
+        "calendar",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Checkbox",
+      "url": "https://www.goodbarber.com/uxdesign/checkboxes-radio-button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Button",
+      "url": "https://www.goodbarber.com/uxdesign/button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Thumbnail",
+      "url": "https://www.goodbarber.com/uxdesign/thumbnail/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "thumbnail",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "GoodBarber Design System",
+      "title": "Form",
+      "url": "https://www.goodbarber.com/uxdesign/form/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Abbr",
+      "url": "https://public-ui.github.io/en/docs/components/abbr",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "abbr",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Accordion",
+      "url": "https://public-ui.github.io/en/docs/components/accordion",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Alert",
+      "url": "https://public-ui.github.io/en/docs/components/alert",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Avatar",
+      "url": "https://public-ui.github.io/en/docs/components/avatar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "avatar",
+        "profile",
+        "user",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Badge",
+      "url": "https://public-ui.github.io/en/docs/components/badge",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag",
+        "status",
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Breadcrumb",
+      "url": "https://public-ui.github.io/en/docs/components/breadcrumb",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Button",
+      "url": "https://public-ui.github.io/en/docs/components/button",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "ButtonLink",
+      "url": "https://public-ui.github.io/en/docs/components/button-link",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "buttonlink",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Card",
+      "url": "https://public-ui.github.io/en/docs/components/card",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "tile",
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Combobox",
+      "url": "https://public-ui.github.io/en/docs/components/combobox",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "combobox",
+        "autocomplete",
+        "typeahead",
+        "select",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Details",
+      "url": "https://public-ui.github.io/en/docs/components/details",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "details",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Dialog",
+      "url": "https://public-ui.github.io/en/docs/components/dialog",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dialog",
+        "modal",
+        "popup",
+        "confirmation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Drawer",
+      "url": "https://public-ui.github.io/en/docs/components/drawer",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "drawer",
+        "side panel",
+        "sheet",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Form",
+      "url": "https://public-ui.github.io/en/docs/components/form",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Heading",
+      "url": "https://public-ui.github.io/en/docs/components/heading",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "heading",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Icon",
+      "url": "https://public-ui.github.io/en/docs/components/icon",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "icon",
+        "iconography",
+        "symbol",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Image",
+      "url": "https://public-ui.github.io/en/docs/components/image",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "image",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputCheckbox",
+      "url": "https://public-ui.github.io/en/docs/components/input-checkbox",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputcheckbox",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputColor",
+      "url": "https://public-ui.github.io/en/docs/components/input-color",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputcolor",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputDate",
+      "url": "https://public-ui.github.io/en/docs/components/input-date",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputdate",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputEmail",
+      "url": "https://public-ui.github.io/en/docs/components/input-email",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputemail",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputFile",
+      "url": "https://public-ui.github.io/en/docs/components/input-file",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputfile",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputNumber",
+      "url": "https://public-ui.github.io/en/docs/components/input-number",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputnumber",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputPassword",
+      "url": "https://public-ui.github.io/en/docs/components/input-password",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputpassword",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputRadio",
+      "url": "https://public-ui.github.io/en/docs/components/input-radio",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputradio",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputRange",
+      "url": "https://public-ui.github.io/en/docs/components/input-range",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputrange",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "InputText",
+      "url": "https://public-ui.github.io/en/docs/components/input-text",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "inputtext",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Kolibri",
+      "url": "https://public-ui.github.io/en/docs/components/kolibri",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "kolibri",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Link",
+      "url": "https://public-ui.github.io/en/docs/components/link",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "link",
+        "navigation",
+        "anchor",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "LinkButton",
+      "url": "https://public-ui.github.io/en/docs/components/link-button",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "linkbutton",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Modal",
+      "url": "https://public-ui.github.io/en/docs/components/modal",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog",
+        "popup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Nav",
+      "url": "https://public-ui.github.io/en/docs/components/nav",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "nav",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Pagination",
+      "url": "https://public-ui.github.io/en/docs/components/pagination",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "navigation",
+        "paging",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "PopoverButton",
+      "url": "https://public-ui.github.io/en/docs/components/popover-button",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "popoverbutton",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Progress",
+      "url": "https://public-ui.github.io/en/docs/components/progress",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "progress",
+        "loading",
+        "progress bar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Quote",
+      "url": "https://public-ui.github.io/en/docs/components/quote",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "quote",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Select",
+      "url": "https://public-ui.github.io/en/docs/components/select",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "SingleSelect",
+      "url": "https://public-ui.github.io/en/docs/components/single-select",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "singleselect",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "SkipNav",
+      "url": "https://public-ui.github.io/en/docs/components/skip-nav",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "skipnav",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Spin",
+      "url": "https://public-ui.github.io/en/docs/components/spin",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "spin",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "SplitButton",
+      "url": "https://public-ui.github.io/en/docs/components/split-button",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "splitbutton",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "TableStateful",
+      "url": "https://public-ui.github.io/en/docs/components/table-stateful",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tablestateful",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "TableStateless",
+      "url": "https://public-ui.github.io/en/docs/components/table-stateless",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tablestateless",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Tabs",
+      "url": "https://public-ui.github.io/en/docs/components/tabs",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation",
+        "tablist",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Textarea",
+      "url": "https://public-ui.github.io/en/docs/components/textarea",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "textarea",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Toolbar",
+      "url": "https://public-ui.github.io/en/docs/components/toolbar",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toolbar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "KoliBri",
+      "title": "Tree",
+      "url": "https://public-ui.github.io/en/docs/components/tree",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tree",
+        "tree view",
+        "hierarchy",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Accordion",
+      "url": "https://lion.js.org/components/accordion/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Button",
+      "url": "https://lion.js.org/components/button/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Calendar",
+      "url": "https://lion.js.org/components/calendar/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "calendar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Checkbox Group",
+      "url": "https://lion.js.org/components/checkbox-group/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox group",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Collapsible",
+      "url": "https://lion.js.org/components/collapsible/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "collapsible",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Combobox",
+      "url": "https://lion.js.org/components/combobox/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "combobox",
+        "autocomplete",
+        "typeahead",
+        "select",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Dialog",
+      "url": "https://lion.js.org/components/dialog/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dialog",
+        "modal",
+        "popup",
+        "confirmation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Drawer",
+      "url": "https://lion.js.org/components/drawer/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "drawer",
+        "side panel",
+        "sheet",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Fieldset",
+      "url": "https://lion.js.org/components/fieldset/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "fieldset",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Form",
+      "url": "https://lion.js.org/components/form/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input",
+      "url": "https://lion.js.org/components/input/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Amount",
+      "url": "https://lion.js.org/components/input-amount/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input amount",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Date",
+      "url": "https://lion.js.org/components/input-date/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input date",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Datepicker",
+      "url": "https://lion.js.org/components/input-datepicker/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input datepicker",
+        "text field",
+        "form",
+        "date",
+        "calendar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Email",
+      "url": "https://lion.js.org/components/input-email/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input email",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input File",
+      "url": "https://lion.js.org/components/input-file/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input file",
+        "text field",
+        "form",
+        "upload",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Iban",
+      "url": "https://lion.js.org/components/input-iban/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input iban",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Range",
+      "url": "https://lion.js.org/components/input-range/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input range",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Stepper",
+      "url": "https://lion.js.org/components/input-stepper/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input stepper",
+        "text field",
+        "form",
+        "wizard",
+        "steps",
+        "progress",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Input Tel",
+      "url": "https://lion.js.org/components/input-tel/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input tel",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Listbox",
+      "url": "https://lion.js.org/components/listbox/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "listbox",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Pagination",
+      "url": "https://lion.js.org/components/pagination/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "navigation",
+        "paging",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Progress Indicator",
+      "url": "https://lion.js.org/components/progress-indicator/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "progress indicator",
+        "loading",
+        "progress bar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Radio Group",
+      "url": "https://lion.js.org/components/radio-group/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "radio group",
+        "form",
+        "choice",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Select",
+      "url": "https://lion.js.org/components/select/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Select Rich",
+      "url": "https://lion.js.org/components/select-rich/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select rich",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Steps",
+      "url": "https://lion.js.org/components/steps/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "steps",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Switch",
+      "url": "https://lion.js.org/components/switch/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "switch",
+        "toggle",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Tabs",
+      "url": "https://lion.js.org/components/tabs/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation",
+        "tablist",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Textarea",
+      "url": "https://lion.js.org/components/textarea/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "textarea",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Lion",
+      "title": "Tooltip",
+      "url": "https://lion.js.org/components/tooltip/overview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "hint",
+        "popover",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Material UI",
+      "title": "Accordion",
+      "url": "https://mui.com/material-ui/react-accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Material UI",
+      "title": "TextField",
+      "url": "https://mui.com/material-ui/react-text-field/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "textfield",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Accordion",
+      "url": "https://oat.ink/components/accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Alert",
+      "url": "https://oat.ink/components/alert/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Badge",
+      "url": "https://oat.ink/components/badge/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "badge",
+        "tag",
+        "status",
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Breadcrumb",
+      "url": "https://oat.ink/components/breadcrumb/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Button",
+      "url": "https://oat.ink/components/button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Card",
+      "url": "https://oat.ink/components/card/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "tile",
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Dialog",
+      "url": "https://oat.ink/components/dialog/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dialog",
+        "modal",
+        "popup",
+        "confirmation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Dropdown",
+      "url": "https://oat.ink/components/dropdown/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dropdown",
+        "menu",
+        "select",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Meter",
+      "url": "https://oat.ink/components/meter/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "meter",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Pagination",
+      "url": "https://oat.ink/components/pagination/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "navigation",
+        "paging",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Progress",
+      "url": "https://oat.ink/components/progress/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "progress",
+        "loading",
+        "progress bar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Spinner",
+      "url": "https://oat.ink/components/spinner/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "spinner",
+        "loading",
+        "progress",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Skeleton",
+      "url": "https://oat.ink/components/skeleton/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "skeleton",
+        "loading",
+        "placeholder",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Sidebar",
+      "url": "https://oat.ink/components/sidebar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sidebar",
+        "navigation",
+        "drawer",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Switch",
+      "url": "https://oat.ink/components/switch/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "switch",
+        "toggle",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Table",
+      "url": "https://oat.ink/components/table/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "table",
+        "data table",
+        "grid",
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Tabs",
+      "url": "https://oat.ink/components/tabs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation",
+        "tablist",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Tooltip",
+      "url": "https://oat.ink/components/tooltip/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "hint",
+        "popover",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Oat",
+      "title": "Toast",
+      "url": "https://oat.ink/components/toast/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toast",
+        "notification",
+        "snackbar",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Button",
+      "url": "https://semantic-ui.com/elements/button",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Container",
+      "url": "https://semantic-ui.com/elements/container.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Divider",
+      "url": "https://semantic-ui.com/elements/divider.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "divider",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Dropdown",
+      "url": "https://semantic-ui.com/modules/dropdown.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dropdown",
+        "menu",
+        "select",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Flag",
+      "url": "https://semantic-ui.com/elements/flag.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "flag",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Header",
+      "url": "https://semantic-ui.com/elements/header.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "header",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Icon",
+      "url": "https://semantic-ui.com/elements/icon.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "icon",
+        "iconography",
+        "symbol",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Image",
+      "url": "https://semantic-ui.com/elements/image.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "image",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Input",
+      "url": "https://semantic-ui.com/elements/input.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Label",
+      "url": "https://semantic-ui.com/elements/label.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "List",
+      "url": "https://semantic-ui.com/elements/list.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Loader",
+      "url": "https://semantic-ui.com/elements/loader.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "loader",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Menu",
+      "url": "https://semantic-ui.com/collections/menu.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu",
+        "dropdown",
+        "navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Placeholder",
+      "url": "https://semantic-ui.com/elements/placeholder.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "placeholder",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Rail",
+      "url": "https://semantic-ui.com/elements/rail.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "rail",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Reveal",
+      "url": "https://semantic-ui.com/elements/reveal.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "reveal",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Segment",
+      "url": "https://semantic-ui.com/elements/segment.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "segment",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Step",
+      "url": "https://semantic-ui.com/elements/step.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "step",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Breadcrumb",
+      "url": "https://semantic-ui.com/collections/breadcrumb.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Form",
+      "url": "https://semantic-ui.com/collections/form.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form",
+        "validation",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Grid",
+      "url": "https://semantic-ui.com/collections/grid.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "grid",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Message",
+      "url": "https://semantic-ui.com/collections/message.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "message",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Table",
+      "url": "https://semantic-ui.com/collections/table.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "table",
+        "data table",
+        "grid",
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Advertisement",
+      "url": "https://semantic-ui.com/views/advertisement.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "advertisement",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Card",
+      "url": "https://semantic-ui.com/views/card.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "tile",
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Comment",
+      "url": "https://semantic-ui.com/views/comment.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "comment",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Feed",
+      "url": "https://semantic-ui.com/views/feed.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "feed",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Item",
+      "url": "https://semantic-ui.com/views/item.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "item",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Statistic",
+      "url": "https://semantic-ui.com/views/statistic.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "statistic",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Accordion",
+      "url": "https://semantic-ui.com/modules/accordion.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Checkbox",
+      "url": "https://semantic-ui.com/modules/checkbox.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Dimmer",
+      "url": "https://semantic-ui.com/modules/dimmer.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dimmer",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Embed",
+      "url": "https://semantic-ui.com/modules/embed.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "embed",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Modal",
+      "url": "https://semantic-ui.com/modules/modal.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog",
+        "popup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Popup",
+      "url": "https://semantic-ui.com/modules/popup.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "popup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Progress",
+      "url": "https://semantic-ui.com/modules/progress.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "progress",
+        "loading",
+        "progress bar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Rating",
+      "url": "https://semantic-ui.com/modules/rating.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "rating",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Search",
+      "url": "https://semantic-ui.com/modules/search.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "search field",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Shape",
+      "url": "https://semantic-ui.com/modules/shape.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "shape",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Sidebar",
+      "url": "https://semantic-ui.com/modules/sidebar.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sidebar",
+        "navigation",
+        "drawer",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Sticky",
+      "url": "https://semantic-ui.com/modules/sticky.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "sticky",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Tab",
+      "url": "https://semantic-ui.com/modules/tab.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tab",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Transition",
+      "url": "https://semantic-ui.com/modules/transition.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "transition",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "API",
+      "url": "https://semantic-ui.com/behaviors/api.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "api",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Form Validation",
+      "url": "https://semantic-ui.com/behaviors/form.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "form validation",
+        "validation",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Semantic UI",
+      "title": "Visibility",
+      "url": "https://semantic-ui.com/behaviors/visibility.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "visibility",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Adobe Spectrum",
+      "title": "Body",
+      "url": "https://spectrum.adobe.com/page/body/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "body",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Adobe Spectrum",
+      "title": "Bottom navigation (Android)",
+      "url": "https://spectrum.adobe.com/page/bottom-navigation-android/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "bottom navigation android",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Adobe Spectrum",
+      "title": "Code",
+      "url": "https://spectrum.adobe.com/page/code/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "code",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Adobe Spectrum",
+      "title": "Detail",
+      "url": "https://spectrum.adobe.com/page/detail/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "detail",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Adobe Spectrum",
+      "title": "Heading",
+      "url": "https://spectrum.adobe.com/page/heading/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "heading",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Adobe Spectrum",
+      "title": "Tab bar (iOS)",
+      "url": "https://spectrum.adobe.com/page/tab-bar-ios/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tab bar ios",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "Tailwind Elements",
+      "title": "Select",
+      "url": "https://tw-elements.com/docs/standard/forms/select/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Accordion",
+      "url": "https://designsystem.digital.gov/components/accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Alert",
+      "url": "https://designsystem.digital.gov/components/alert/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Banner",
+      "url": "https://designsystem.digital.gov/components/banner/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "banner",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Breadcrumb",
+      "url": "https://designsystem.digital.gov/components/breadcrumb/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Button",
+      "url": "https://designsystem.digital.gov/components/button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Button Group",
+      "url": "https://designsystem.digital.gov/components/button-group/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button group",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Card",
+      "url": "https://designsystem.digital.gov/components/card/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "card",
+        "tile",
+        "container",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Character Count",
+      "url": "https://designsystem.digital.gov/components/character-count/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "character count",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Checkbox",
+      "url": "https://designsystem.digital.gov/components/checkbox/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Collection",
+      "url": "https://designsystem.digital.gov/components/collection/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "collection",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Combo Box",
+      "url": "https://designsystem.digital.gov/components/combo-box/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "combo box",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Date Picker",
+      "url": "https://designsystem.digital.gov/components/date-picker/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "date picker",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "File Input",
+      "url": "https://designsystem.digital.gov/components/file-input/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "file input",
+        "upload",
+        "form",
+        "text field",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Footer",
+      "url": "https://designsystem.digital.gov/components/footer/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "footer",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Header",
+      "url": "https://designsystem.digital.gov/components/header/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "header",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Icon",
+      "url": "https://designsystem.digital.gov/components/icon/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "icon",
+        "iconography",
+        "symbol",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Icon List",
+      "url": "https://designsystem.digital.gov/components/icon-list/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "icon list",
+        "iconography",
+        "symbol",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Identifier",
+      "url": "https://designsystem.digital.gov/components/identifier/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "identifier",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "In-page Navigation",
+      "url": "https://designsystem.digital.gov/components/in-page-navigation/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "in page navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Input Mask",
+      "url": "https://designsystem.digital.gov/components/input-mask/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input mask",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Input Prefix/Suffix",
+      "url": "https://designsystem.digital.gov/components/input-prefix-suffix/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "input prefix suffix",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Language Selector",
+      "url": "https://designsystem.digital.gov/components/language-selector/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "language selector",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Link",
+      "url": "https://designsystem.digital.gov/components/link/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "link",
+        "navigation",
+        "anchor",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "List",
+      "url": "https://designsystem.digital.gov/components/list/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Memorable Date",
+      "url": "https://designsystem.digital.gov/components/memorable-date/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "memorable date",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Modal",
+      "url": "https://designsystem.digital.gov/components/modal/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "modal",
+        "dialog",
+        "popup",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Pagination",
+      "url": "https://designsystem.digital.gov/components/pagination/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "pagination",
+        "navigation",
+        "paging",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Process List",
+      "url": "https://designsystem.digital.gov/components/process-list/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "process list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Prose",
+      "url": "https://designsystem.digital.gov/components/prose/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "prose",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Radio Buttons",
+      "url": "https://designsystem.digital.gov/components/radio-buttons/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "radio buttons",
+        "form",
+        "choice",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Range Slider",
+      "url": "https://designsystem.digital.gov/components/range-slider/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "range slider",
+        "range",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Search",
+      "url": "https://designsystem.digital.gov/components/search/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "search",
+        "search field",
+        "input",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Select",
+      "url": "https://designsystem.digital.gov/components/select/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "select",
+        "dropdown",
+        "picker",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Side Navigation",
+      "url": "https://designsystem.digital.gov/components/side-navigation/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "side navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Site Alert",
+      "url": "https://designsystem.digital.gov/components/site-alert/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "site alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Step Indicator",
+      "url": "https://designsystem.digital.gov/components/step-indicator/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "step indicator",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Summary Box",
+      "url": "https://designsystem.digital.gov/components/summary-box/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "summary box",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Table",
+      "url": "https://designsystem.digital.gov/components/table/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "table",
+        "data table",
+        "grid",
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Tag",
+      "url": "https://designsystem.digital.gov/components/tag/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tag",
+        "badge",
+        "chip",
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Text Input",
+      "url": "https://designsystem.digital.gov/components/text-input/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "text input",
+        "text field",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Time Picker",
+      "url": "https://designsystem.digital.gov/components/time-picker/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "time picker",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Tooltip",
+      "url": "https://designsystem.digital.gov/components/tooltip/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "hint",
+        "popover",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "USWDS",
+      "title": "Validation",
+      "url": "https://designsystem.digital.gov/components/validation/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "validation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Accordion",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/accordion/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "accordion",
+        "disclosure",
+        "collapse",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Alert",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/alert/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Alert and Message Dialogs",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/alertdialog/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "alert and message dialogs",
+        "banner",
+        "notification",
+        "feedback",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Breadcrumb",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "breadcrumb",
+        "navigation",
+        "wayfinding",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Button",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Carousel",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/carousel/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "carousel",
+        "slider",
+        "gallery",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Checkbox",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Combobox",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "combobox",
+        "autocomplete",
+        "typeahead",
+        "select",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Datepicker dialog",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/datepicker-dialog/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "datepicker dialog",
+        "date",
+        "calendar",
+        "form",
+        "modal",
+        "popup",
+        "confirmation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Dialog (Modal)",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "dialog modal",
+        "modal",
+        "popup",
+        "confirmation",
+        "dialog",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Disclosure",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "disclosure",
+        "accordion",
+        "expand",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Feed",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/feed/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "feed",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Grid",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/grid/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "grid",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Link",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/link/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "link",
+        "navigation",
+        "anchor",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Listbox",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/listbox/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "listbox",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Menu and Menubar",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menubar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu and menubar",
+        "dropdown",
+        "navigation",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Meter",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/meter/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "meter",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Menu Button",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/menu-button/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "menu button",
+        "dropdown",
+        "navigation",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Radio Group",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/radio/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "radio group",
+        "form",
+        "choice",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Slider",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "slider",
+        "range",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Slider (Multi-Thumb)",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/slider-multithumb/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "slider multi thumb",
+        "range",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Spinbutton",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/spinbutton/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "spinbutton",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Switch",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/switch/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "switch",
+        "toggle",
+        "form",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Table",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/table/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "table",
+        "data table",
+        "grid",
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Tabs",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tabs",
+        "navigation",
+        "tablist",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Toolbar",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/toolbar/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "toolbar",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Tooltip",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tooltip/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tooltip",
+        "hint",
+        "popover",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Tree View",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/treeview/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "tree view",
+        "hierarchy",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Treegrid",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/treegrid/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "treegrid",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "WAI-ARIA Authoring Practices",
+      "title": "Window Splitter",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "window splitter",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Button",
+      "url": "https://html.spec.whatwg.org/multipage/form-elements.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "button",
+        "action",
+        "cta",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Checkbox",
+      "url": "https://html.spec.whatwg.org/multipage/input.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "checkbox",
+        "form",
+        "toggle",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Details",
+      "url": "https://html.spec.whatwg.org/multipage/interactive-elements.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "details",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Label",
+      "url": "https://html.spec.whatwg.org/multipage/forms.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "label",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "A",
+      "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "a",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Ul",
+      "url": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "ul",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Nav",
+      "url": "https://html.spec.whatwg.org/multipage/sections.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "nav",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Img",
+      "url": "https://html.spec.whatwg.org/multipage/embedded-content.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "img",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Video",
+      "url": "https://html.spec.whatwg.org/multipage/media.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "video",
+        "component"
+      ],
+      "via": "Open UI"
+    },
+    {
+      "system": "HTML Standard",
+      "title": "Table",
+      "url": "https://html.spec.whatwg.org/multipage/tables.html",
+      "platform": [
+        "web"
+      ],
+      "tags": [
+        "table",
+        "data table",
+        "grid",
+        "list",
+        "component"
+      ],
+      "via": "Open UI"
     }
-  ]
+  ],
+  "openui": {
+    "repository": "https://github.com/openui/open-ui",
+    "commit": "d75aa61535305b4483a2d91948fe9cf9da517903",
+    "license": "W3C Software and Document License"
+  }
 }

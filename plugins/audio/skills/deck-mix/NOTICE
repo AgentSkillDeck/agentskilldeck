@@ -128,3 +128,14 @@ listed in its CREDITS.json. The example renders use further CC0 and CC BY
 sounds, each credited in that example's CREDITS.md. The audiobook example
 reads a public-domain text (Arthur Conan Doyle, "A Study in Scarlet", 1887,
 via Project Gutenberg).
+
+-------------------------------------------------------------------------------
+Open UI — https://github.com/openui/open-ui
+Component names and documentation links for 15 design systems in the ui
+plugin's references index (plugins/ui/tools/patterns.json, entries marked
+"via": "Open UI") are taken from Open UI's design-system source data
+(site/src/sources/*.json, commit d75aa6153530), licensed under the
+W3C Software and Document License:
+https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+Copyright © Open UI Community Group contributors. Links were checked live when
+imported; dead links and links that redirect to a site's home page were dropped.

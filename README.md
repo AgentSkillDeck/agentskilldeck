@@ -256,7 +256,7 @@ $ node scripts/materials.mjs font "geometric sans" --limit 3
 node scripts/references.mjs "<job, object, state or interaction>" [--platform web|ios|android] [--limit 1-5] [--json]
 ```
 
-Searches a bundled index of about 215 documentation pages from 11 design systems (Material 3, Apple HIG, Shopify Polaris, Atlassian, IBM Carbon, GitHub Primer, GOV.UK, Microsoft Fluent 2, Salesforce Lightning, Ant Design, shadcn/ui). It runs offline; the agent then opens the returned pages in its browser tool.
+Searches a bundled index of about 550 documentation pages from 26 design systems: 215 hand-curated pages from Material 3, Apple HIG, Shopify Polaris, Atlassian, IBM Carbon, GitHub Primer, GOV.UK, Microsoft Fluent 2, Salesforce Lightning, Ant Design and shadcn/ui, plus about 340 component pages from 15 more (WAI-ARIA Authoring Practices, USWDS, Bootstrap, Adobe Spectrum, Boosted, KoliBri, Lion, Semantic UI, Evergreen and others) imported from [Open UI](https://github.com/openui/open-ui) with every link checked. It runs offline; the agent then opens the returned pages in its browser tool.
 
 ```text
 $ node scripts/references.mjs "empty state" --limit 2
@@ -297,7 +297,7 @@ No account, no API key, no server, no telemetry.
 | [Google Fonts tags](https://github.com/google/fonts/tree/main/tags) (`families.csv`) | `materials.mjs font` | Style tags (for example geometric, humanist, calm) that let you search fonts by character, not just by name |
 | [Iconify](https://iconify.design) API | `materials.mjs icon`, `animated-icon` | Icon search across open icon sets, per-set licence, React and SVG usage; animated sets for `animated-icon` |
 | [shadcn registry directory](https://ui.shadcn.com/r/registries.json) | `materials.mjs pack` | Community component registries with description, homepage and health status, plus a `shadcn add` line |
-| Bundled design-system index (`patterns.json`) | `references.mjs` | About 215 curated documentation links across 11 design systems, tagged by platform and pattern |
+| Bundled design-system index (`patterns.json`) | `references.mjs` | About 550 documentation links across 26 design systems, tagged by platform and pattern: 215 curated, the rest from [Open UI](https://github.com/openui/open-ui) (W3C Software and Document License) |
 | [Openverse](https://openverse.org) API | `sounds.mjs`, `produce.mjs` | CC-licensed sound effects, ambience and music, filtered to CC0 and CC BY, with ready attribution |
 | [Wikimedia Commons](https://commons.wikimedia.org) API | `sounds.mjs`, `produce.mjs` | Curated public-domain and CC BY audio |
 | [Freesound](https://freesound.org) API (your token, optional) | `sounds.mjs`, `produce.mjs` | The largest effects library, filtered to CC0 and CC BY |
