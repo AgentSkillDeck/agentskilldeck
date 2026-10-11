@@ -30,12 +30,12 @@ Open plugins for coding agents, one domain per plugin. `audio` makes finished, m
 Add the marketplace once, then install the plugins you want:
 
 ```text
-/plugin marketplace add AgentSkillDeck/agentskilldeck
+/plugin marketplace add AgentSkillDeck/skills
 /plugin install audio@agentskilldeck
 /plugin install ui@agentskilldeck
 ```
 
-A single UI skill also installs on its own with the `skills` CLI: `npx skills add AgentSkillDeck/agentskilldeck --skill deck-design` (swap the name for the others). Requires Node 18 or later; the audio plugin also needs Python 3.10 or later and ffmpeg.
+A single UI skill also installs on its own with the `skills` CLI: `npx skills add AgentSkillDeck/skills --skill deck-design` (swap the name for the others). Requires Node 18 or later; the audio plugin also needs Python 3.10 or later and ffmpeg.
 
 ## Skills at a glance
 

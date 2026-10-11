@@ -11,7 +11,7 @@ An open-source, multi-domain marketplace of coding-agent plugins. The first plug
 3. giving four skills distinct jobs instead of two near-duplicates;
 4. shipping **free** agent-run search scripts that do what uizze charges for: material search (fonts, icons, animated icons, component kits) and reference search, with licence metadata on every result.
 
-Success: a Claude Code user can `/plugin marketplace add AgentSkillDeck/agentskilldeck`, `/plugin install ui@agentskilldeck`, and get the skills plus working material and reference search with no account, API key, server, or npm install.
+Success: a Claude Code user can `/plugin marketplace add AgentSkillDeck/skills`, `/plugin install ui@agentskilldeck`, and get the skills plus working material and reference search with no account, API key, server, or npm install.
 
 ## Non-goals (v1)
 
