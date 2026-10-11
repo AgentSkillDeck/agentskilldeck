@@ -1,42 +1,65 @@
-<!-- Adapted from Impeccable reference/distill.md @ d631a88 (Apache-2.0) and uizze ui-design reference/distill.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
-# Simplify an interface
+<!-- Adapted from Impeccable reference/distill.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
+# Distill
 
-Use this guide when an interface feels cluttered, busy or hard to use and the user wants it simpler.
+Use this guide when an interface is cluttered and the user wants it simpler: too many actions, repeated information, competing emphasis or decoration that gets in the way.
 
-Remove obstacles between the user and the main task without removing necessary capability. Simplicity means fewer obstacles, not fewer features.
+Simplifying is not removing features. It removes what stands between the user and their goal. Lowering intensity without removing anything belongs to [quieter](quieter.md).
 
-## Find the excess
+## Find the core
 
-- Write down the one primary goal and the information required to complete it. If the goal is unclear from the code and brief, ask; do not guess.
-- List what competes with it: repeated copy, duplicate actions, decorative noise (borders, shadows, backgrounds that do not show grouping), and containers that do not clarify grouping.
-- Count the variation: colours, type sizes, weights, button styles, spacing values, surface treatments. Each one without a job is a cut.
-- Sort every element into essential, needed sometimes, or removable.
+- Render the screen and name its one primary action. If two actions compete for that role, decide which serves the main job, or ask.
+- Name the few subordinate actions that genuinely support it. Everything else is a candidate to demote, merge or remove.
+- List the sources of clutter: competing buttons, information said twice, too many colours, sizes or weights, borders and backgrounds that do no work, everything shown at once.
+- If the purpose or the users' priorities cannot be inferred from the code and brief, ask instead of guessing.
 
-## Simplify
+## Remove or demote
 
-- **One obvious primary action** and a small number of clearly subordinate actions; everything else tertiary or behind disclosure.
-- **Progressive disclosure** for advanced or infrequent controls (an "Advanced" section, a details row, a step), but keep essential information and decision-making facts visible.
-- **Reduce variation** as a default target (project tokens override): 1–2 colours plus neutrals, one font family, 3–4 sizes, 2–3 weights, one spacing scale with no arbitrary gaps.
-- **Flatten structure:** prefer spacing and alignment over cards; never nest a card inside a card.
-- **Fewer steps:** smart defaults for common choices, inline editing instead of modal flows where possible, merge similar buttons and forms.
-- **Copy:** prefer plain language over explanatory copy. Say it once (no heading restating the intro), active voice ("Save changes"), no jargon, marketing filler or hedging.
-- **Code:** remove the CSS, components and variants the cuts orphaned.
+- Remove what does not serve the task: duplicated explanations, headers that restate the intro, decorative containers, marketing filler.
+- Demote secondary actions to a quieter style, an overflow menu or a later step. Keep one clear primary action.
+- Cut copy hard: shorter sentences, active voice, plain words, said once. See [clarify](clarify.md).
 
-## Preserve clarity
+## Merge duplicates
 
-- Do not hide required actions behind mystery interactions (unlabelled icons, hover-only controls, hidden gestures).
-- Do not remove labels, focus states, accessibility semantics, error messages or recovery paths.
-- Do not flatten genuinely complex information until it becomes harder to understand; match the complexity of the interface to the complexity of the task.
-- Keep hierarchy: some things must still stand out.
+- Merge controls that do the same thing in different places into one, in the place users look for it.
+- Combine information that appears in several panels into one source.
+- Reduce component variants to the few the screen actually needs.
+
+## Disclose progressively
+
+- Move advanced or rarely used options behind a clear entry point: an "Advanced" section, an expandable row, a settings page.
+- Use smart defaults so common cases need no decision.
+- Prefer inline disclosure to a dialog; never hide something the user needs for the next decision.
+
+## Reduce visual noise
+
+- Fewer colours: neutrals plus one or two with jobs. See [colorize](colorize.md).
+- Fewer type sizes and weights, with clear steps between them. See [typeset](typeset.md).
+- Drop borders, shadows and backgrounds that do not mark hierarchy or function; use spacing and alignment to group instead. Flatten nesting, and never nest cards.
+- Keep hierarchy: the primary action and key content must still stand out. Even, flat sameness is not simplicity.
+
+## Never remove
+
+- Accessibility semantics: labels, accessible names, headings, landmarks, focus states.
+- Error messages, validation and warnings.
+- Recovery paths: undo, cancel, back, retry, and confirmation for destructive actions.
+- Information users need to make a decision, or functionality the task depends on.
+- Complexity the domain truly has; match the screen to the real task.
 
 ## Verify
 
-Verify that the simplified result still supports the complete task, including its important states (loading, empty, error, success), at the relevant screen sizes. Render it with the host's browser or simulator and check: fewer steps or decisions to finish the task, every necessary feature still reachable, and an obvious most-important element. Tell the user what you removed or moved and where it now lives. Hand off to [polish](polish.md) for the final pass.
+- Complete the main task end to end on the simplified screen, by mouse and by keyboard.
+- Compare before and after: list what was removed, merged or moved, and confirm each still-needed item is reachable.
+- Force error, empty and loading states to confirm they survived. See [harden](harden.md).
+- Check at 375, 768 and 1440 px, plus 320 px and any width the user reported failing.
+- Fix material problems in one batch and re-inspect; at most two rounds, then report what is still open.
+- Tell the user what was removed or hidden and where it now lives.
 
 ## Common failures
 
-- Deleting a feature users need and calling it simplification.
-- Icon-only buttons with no labels or accessible names.
-- Hiding the information users need to decide.
-- Every element flattened to equal weight.
-- Replacing cards with a different decorative container.
+- Hiding a needed option so deep nobody finds it.
+- Dropping error text or labels along with the clutter.
+- Making every element the same weight, so nothing leads.
+- Replacing visible controls with unlabelled icons.
+- Moving clutter into a dialog instead of removing it.
+
+When the simplified screen still completes the task, continue with [polish](polish.md).

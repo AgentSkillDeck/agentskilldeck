@@ -1,75 +1,65 @@
-<!-- Adapted from Impeccable reference/craft-floor.md and reference/craft.md @ d631a88 (Apache-2.0) and uizze ui-design reference/craft.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
-# Craft checks
+<!-- Adapted from Impeccable reference/craft.md, reference/craft-floor.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
+# Craft
 
-Use this guide when implementing or handing off any interface, after the direction is chosen. It is a floor, not a substitute for a direction.
+Use this guide when implementing or handing off any interface, new or changed. It is the quality floor every build must meet before anyone reviews it.
 
-Priority: the project's established system and the user's explicit choices override every default here; your own habits do not. Build to these checks silently; do not narrate the checklist to the user.
+The floor holds the mechanics; it never chooses the direction. A pinned brief or the established visual language overrides the defaults here, but your own habits do not. Apply it while building rather than announcing it as a checklist, and treat each item as a check on the rendered result, not an intention.
 
-## Inspect the built interface
+## Type
 
-Each item is a check on the rendered result, not an intention. Run them together in one batched inspection, exercising the actual screen, not as separate screenshot trips.
+Follow [typeset](typeset.md): body at 45–75ch, line height 1.5–1.6, display no larger than 6rem, tracking no tighter than −0.04em. Run the real copy at every width and fix what overflows. Same-role text looks the same everywhere.
 
-- **Hierarchy:** the primary task or message reads first; supporting information is visibly subordinate. Use scale, weight, alignment and grouping before adding containers.
-- **Typography:**
-  - Measure, line height, display size and tracking meet [typeset](typeset.md) (default: body 45–75ch, line height 1.5–1.6, display ≤ 6rem, tracking no tighter than −0.04em).
-  - A coherent scale with visible steps in size and weight; deliberate weights, not every weight the family offers.
-  - Balanced heading wraps (`text-wrap: balance`); no clipped ascenders or descenders, no awkward heading wraps, no truncated essential labels. Run the real copy at every breakpoint and fix what overflows.
-  - Tabular numerals for figures that are compared.
-  - A system font is right for native and product UI. Choose a distinctive face only when the direction benefits and its licence and loading are handled (`node scripts/materials.mjs font "<query>"` reports licences).
-- **Spacing:** relationships are visible. Related controls sit together, sections get clear separation, and there is more space above a heading than below it. Use the spacing scale; no arbitrary one-off gaps. Optical alignment agrees with the grid. Read computed values when in doubt.
-- **Colour:** semantic roles stay consistent. Text and placeholder contrast ≥ 4.5:1, large text (≥ 24 px, or ≥ 18.66 px bold) and UI components ≥ 3:1. Focus is visible and disabled and error states stay readable. On coloured surfaces tint secondary text from that hue or the foreground, never plain grey. Colour never carries meaning alone; pair it with text, icon or shape.
-- **Surfaces and depth:** coherent borders, radii and depth. Declare elevation once, border or shadow, not a 1 px border under a wide soft shadow. Shadows have an offset and soft blur; a zero-offset coloured halo is decoration. Card radii stay around 12–16 px; pills are for small controls.
-- **Assets:** correct image aspect ratio and crop; sharp at displayed size (2× for raster on high-density screens); no broken images, accidental seams or duplicated device or status-bar chrome. Icons come from one real library or authored SVG in one stroke and weight (`node scripts/materials.mjs icon "<query>"`).
-- **Browser surfaces:** text selection colour, caret colour, focus rings, link underline offset and scrollbar colours are themed from the palette, not left at browser defaults. Theme them; do not reinvent scrollbar behaviour.
-- **Controls:** labels name the action ("Save draft", not "Submit"); focus order and keyboard operation work; touch targets ≥ 44×44 pt iOS, ≥ 48×48 dp Android, ≥ 24×24 CSS px web (≥ 44×44 for primary touch controls). Standard controls stay recognisable. Loading and disabled states explain what is happening; errors name the problem and the recovery.
-- **States:** hover, focus, active, disabled, loading, error, empty and success wherever they can occur.
-- **Layout:** test the requested width, a narrow width (375 px, and 320 px for the smallest phones) and the principal desktop or native device class. Long names, empty lists, 200% text or the largest Dynamic Type size, the on-screen keyboard and overflowing menus must not break the task.
-- **Motion:** explains continuity, state or feedback. Content stays visible without animation; ease out from an already-visible default. Honour `prefers-reduced-motion`. Never block interaction behind an entrance sequence. Test interruption and reversal. One authored moment, not the same fade-up on every section.
-- **Content:** real product language and credible data. Label fixtures and illustrative values as such. Never invent customers, testimonials, capabilities or performance results; claims and configuration come from supplied facts.
-- **Coverage:** every requirement in the brief is present and findable within seconds.
+## Colour
 
-## Detect habitual design
+Follow [colorize](colorize.md) for contrast and roles. Body and placeholder text meet 4.5:1, large text and UI parts 3:1, in every state. Colour has jobs (primary action, selection, state, data); it is not scattered decoration. Secondary text on a coloured surface is tinted from that surface, never plain grey.
 
-Ask what the screen actually communicates and enables. "It compiles" and "nothing overlaps" do not establish visual quality. Compare the rendered hierarchy and detail with the user's target, not just with a list of defects.
+## Spacing and layout
 
-**Never add** (no brief earns these back):
+Follow [layout](layout.md). Use one spacing scale: related items sit close, distinct groups get clear separation, and a heading has more space above it than below. Read computed values rather than trusting the stylesheet. Shadows, where used, have an offset and a soft blur.
 
-- An eyebrow or kicker label above a heading. Delete it and let the heading carry its own weight.
-- A card nested inside a card.
-- Unicode glyphs or emoji standing in for an icon system.
-- A geometric mask (circle, polygon, radial cutout) faking the contour of a photographed subject. Use a real cut-out asset or omit the effect.
-- A modal for a task that needs neither interruption nor protected focus.
+## Interaction
 
-**Refuse by default.** These are common generated-UI defaults. Keep one only when the chosen direction or real task calls for it and you can say why; otherwise rewrite the element, do not merely soften it:
+- Every interactive element has hover, focus-visible, active and disabled states, plus loading where it triggers work.
+- Focus is always visible and tab order follows reading order.
+- Touch targets are at least 24×24 CSS px on web, and 44 px for primary touch controls (iOS 44 pt, Android 48 dp).
+- Theme the browser parts you did not draw: focus rings, text selection, caret, scrollbars where styled, link underline offset, and tabular numerals in data.
 
-- Same-size icon + heading + text cards as the page structure.
-- The hero-metric template: big number, small label, supporting stats, accent.
-- Section numbers (01 / 02 / 03) unless the sequence is information the reader needs.
-- Decorative charts, sparklines and progress rings standing in for content.
-- Gradient headline text; take emphasis from weight or size.
-- Glass and blur backgrounds as decoration.
-- A coloured `border-left`/`border-right` thicker than 1 px on cards, list items, callouts or alerts.
-- Hard offset shadows (`4px 4px 0`) outside a deliberately neobrutalist system.
-- Indiscriminate pill shapes; identical entrance animations on every section.
-- Monospace as a "technical" costume rather than for code, data or measurement.
-- A system display face (Impact, Arial Black, the platform sans) as the display voice of a branded page. Source and self-host a face with the right character.
-- Sketch-style SVG scenes or noise-filter grain imitating illustration. Crisp SVG geometry, diagrams and icons are fine.
-- Stripe or grid-overlay backgrounds with no canvas, map or blueprint under them.
-- Light or dark theme chosen by category instead of the use scene.
+## States, motion and media
 
-## Close the loop
+- Design loading (a skeleton, not a spinner over content), empty, error and success states per [harden](harden.md).
+- Motion follows [animate](animate.md): one authored moment rather than identical entrances everywhere, content visible by default, and reduced motion respected.
+- Images have explicit dimensions or an aspect ratio so they do not shift the layout, responsive sources, and alt text that says what matters (empty alt for decoration).
 
-Batch material corrections, recapture the affected sizes and states, and inspect the new captures. Check actual controls (click, tab, type, resize), not just screenshots. Run the project's relevant tests.
+## Semantics
 
-Report the scope of verification accurately. Never turn an unavailable browser, a failed service call, a skipped device or an unresolved finding into a pass. Do not create a novelty score or add effects merely to satisfy this checklist. With every check green, spend the remaining effort on the chosen direction; this floor never picks it.
+Use the right element: buttons for actions, links for navigation, headings in order, lists for lists, tables for tabular data. Every input has a visible label. Controls name their action, and errors name the problem and the way to recover, per [clarify](clarify.md).
+
+## Never add
+
+These are absolute; no brief earns them back:
+
+- Eyebrow or kicker labels above headings. The heading carries its own weight.
+- Nested cards.
+- Unicode glyphs or emoji standing in for real icons. Use one icon library or authored SVG, in one stroke and weight.
+- Faked subject masks: a circle, polygon or gradient cutout pretending to follow a photo's edge. Use a real cut-out or none.
+- Needless dialogs for tasks that need neither interruption nor protected focus.
+
+## Avoid default-template tells
+
+These are defaults, not bans; the brief's own words can justify one. Reaching for them when the choice is free means you were not deciding: grids of identical icon-heading-text cards as the page structure; a big number with a small label as the hero; section numbers that carry no information; gradient text; decorative glass and blur; thick coloured side borders on cards and alerts; hard offset shadows outside a deliberately brutalist look; monospace as a costume for "technical"; light or dark chosen by category instead of the use scene.
+
+## Implementation hygiene
+
+- Use design tokens instead of magic numbers; add a token only when a value is genuinely reused.
+- No inline one-off styles; put styles where the project keeps them.
+- Reuse the project's existing components before writing new ones, and keep one vocabulary for the same control across screens.
+- Remove debug output, dead code and styles the change made obsolete.
+
+## Verify
+
+- Render at 375, 768 and 1440 px, plus 320 px and any width the user reported failing.
+- Inspect real captures, opened and checked, not your memory of the code. Settle entrance motion before capturing.
+- Run the project's tests, linters and type checks.
+- Fix material problems in one batch and re-inspect; at most two inspection rounds, then report what is still open.
 
 When the floor holds, review the result with [critique](critique.md) or [audit](audit.md).
-
-## Common failures
-
-- Checklist compliance treated as design quality.
-- Browser-default selection, caret and focus ring on an otherwise themed page.
-- Grey secondary text on a coloured surface.
-- Every section entering with the same fade-up.
-- Placeholder data shipped unlabelled.
-- "Verified" claimed without rendering.

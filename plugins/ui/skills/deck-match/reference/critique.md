@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/critique.md @ d631a88 (Apache-2.0) and uizze ui-design reference/craft.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
+<!-- Adapted from Impeccable reference/critique.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Critique
 
 Use this guide when asked to review, critique or judge a built interface (a screen, flow or whole surface) against its brief before anyone changes it.
@@ -37,13 +37,13 @@ Render the target with the host's browser or simulator tool at the sizes it ship
 
 Reconcile: note where the passes agree, what Pass B caught that Pass A missed, and which mechanical hits are false positives, and why.
 
-## Detect habitual design
+## Spot template output
 
-[craft](craft.md) applies these while building; critique judges them in the result.
+[craft](craft.md) prevents these while building; here you check the finished result for them.
 
-Repeated icon-title-text cards, decorative charts, gradient headlines, glass backgrounds, indiscriminate pill shapes and identical section entrances are common defaults. They are not universal bans. Craft's "Never add" list (eyebrow or kicker labels, nested cards, glyph icons, faked subject masks, needless modals) is absolute: flag every instance. Keep a treatment when it serves the chosen direction or the real task; flag it when it adds no information or conflicts with the product.
+Generated interfaces drift toward the same few moves: a centred gradient hero, a row of three identical feature cards, glassy panels over a purple wash, placeholder metrics, one radius and one shadow on everything, and every section arriving with the same entrance. None is wrong in itself. Flag one when it tells the user nothing about this product or works against its direction. Craft's "Never add" list is absolute: flag every eyebrow or kicker label, nested card, glyph icon, faked subject mask and needless dialog.
 
-Ask what the screen actually communicates and enables. "It compiles" and "nothing overlaps" do not establish visual quality. Compare the rendered hierarchy and detail with the user's target, not only with a list of defects. Do not invent a novelty score, and do not recommend effects merely to satisfy a checklist.
+Judge what a person can learn and do on this screen, not merely that the build runs without bugs. Hold the render against the brief and any reference the user supplied, and recommend changes that improve the task, never effects added for their own sake.
 
 ## Heuristic scores
 

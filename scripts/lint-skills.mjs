@@ -63,8 +63,9 @@ export async function lintPlugin(pluginDir) {
     if (!/\.(md|mjs|js|json)$/.test(f)) continue;
     const text = await readFile(f, 'utf8');
     text.split('\n').forEach((line, i) => {
-      if (line.trimStart().startsWith('<!-- Adapted from')) return;
-      for (const re of FORBIDDEN) if (re.test(line)) problems.push(`${rel}:${i + 1}: forbidden "${re.source.replace(/\\/g, '')}"`);
+      // Provenance lines may name engine terms from a source, but never uizze: nothing here derives from it.
+      const provenance = line.trimStart().startsWith('<!-- Adapted from');
+      for (const re of FORBIDDEN) if ((!provenance || re.source === 'uizze') && re.test(line)) problems.push(`${rel}:${i + 1}: forbidden "${re.source.replace(/\\/g, '')}"`);
     });
     if (f.endsWith('.md') && rel.startsWith('skills/')) {
       for (const [, target] of text.matchAll(/\]\(([^)\s]+)\)/g)) {

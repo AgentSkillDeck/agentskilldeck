@@ -1,5 +1,7 @@
 # Consistency pass (Task 12.5)
 
+_Historical record of the 12.5 harmonisation pass. Ten guides and the four SKILL.md files were later rewritten in our own words, so line numbers for those no longer apply; the shared vocabulary and numbers listed here still hold._
+
 Every change made to `plugins/ui/library/*.md` while harmonising the 24 guides. Line numbers refer to the guide after the pass. Authority rules and the chosen vocabulary are recorded in [library-index.md](library-index.md).
 
 Rule keys: **V** vocabulary (one term per concept) · **N** numeric default per the authority guide · **R** rule conflict resolved for the authority guide · **D** duplicated rule block replaced by a pointer · **S** structure (opener, headings, hand-off line) · **L** links.

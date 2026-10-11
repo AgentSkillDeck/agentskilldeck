@@ -1,56 +1,61 @@
-<!-- Adapted from Impeccable reference/polish.md @ d631a88 (Apache-2.0) and uizze ui-design reference/polish.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
-# Refine an existing interface
+<!-- Adapted from Impeccable reference/polish.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
+# Polish
 
-Use this guide when the user asks to polish, tidy, tighten or finish an interface that already exists.
+Use this guide when refining or finishing something that already works: tightening spacing, fixing inconsistencies and bringing every part of the path up to the same standard.
 
-Polish improves the interface that exists; it never conceals a redesign. Preserve the product's visual language, content, behaviour and scope unless the user explicitly asks to change them. If the concept itself is wrong, say so and recommend a redesign ([new-work](new-work.md)) or [bolder](bolder.md) instead of smuggling one in.
+## Read the context
 
-## 1. Establish the system
+- Read the design notes (for example `DESIGN.md`) if present, then tokens, shared components and neighbouring screens. Without formal notes, follow the project's coherent conventions.
+- Use the feature yourself first. Confirm the path works, find out the expected quality bar and time available, and note anything deliberately unfinished.
+- If a recent critique exists, use its major findings as one input, alongside your own pass.
 
-Read the design notes (for example `DESIGN.md`) if present, the tokens, shared components and one or two neighbouring flows. Without a formal system, the coherent conventions in the code are the system. Classify each inconsistency before fixing it, and fix it at the narrowest correct level:
+## Keep the scope
 
-- **Missing token:** the system needs a reusable value; add it once.
-- **One-off implementation:** an existing shared component should replace it.
-- **Conceptual mismatch:** flow, information architecture or hierarchy differs from comparable areas.
-- **Local defect:** the implementation is simply incomplete.
+Polish refines; it does not redesign. Keep the visual language, content and behaviour, and do not touch parts that are fine as they are unless the user asks. If the concept itself is wrong, say so and recommend a redesign through [new-work](new-work.md) or a stronger direction through [bolder](bolder.md) rather than slipping one in.
 
-Ask only when a binding system principle cannot be inferred.
+For each inconsistency, find the cause before fixing it: a missing token, a one-off that a shared component should replace, a flow that differs from similar screens, or a plain local defect. Fix it at the narrowest correct level.
 
-## 2. Inspect the real result
+## Order of work
 
-Render or run the interface with the host's browser, simulator or emulator. For web, check 375, 768 and 1440 px wide; for native, the shipped device classes. Judge the rendered result, not the source alone. Use the feature yourself and note: whether the path is functionally complete, known constraints or deliberately unfinished work, and the content lengths, roles and input methods users will meet. If a previous critique or audit exists, use its high-priority findings as one input, then do your own pass.
-
-## 3. Triage
-
-Fix the largest observable problems first, in this order:
-
-1. Broken or blocked tasks, data loss, misleading state, inaccessible paths: controls without labels or keyboard access, contrast below 4.5:1 (3:1 for large text and UI components), focus not visible, poor keyboard behaviour.
-2. Missing feedback: hover, focus, disabled, loading, empty, error, success, permission.
-3. Unclear hierarchy or competing primary actions; flow, responsive and design-system drift.
-4. Visual inconsistencies: spacing, typography, colour, radius, icon treatment; clipping, overlap, overflow, distorted images, awkward wrapping; decorative noise that competes with the task.
+1. Broken or blocked tasks, misleading states and inaccessible paths.
+2. Missing loading, empty, error, success and disabled states.
+3. Hierarchy, responsive and design-system drift.
+4. Visual and motion inconsistencies.
 5. Code and asset cleanup.
 
-Do not perfect one corner while the rest of the path stays below the same bar.
+Bring the whole path to one standard rather than perfecting a single corner.
 
-## 4. Fix in one coherent pass
+## The pass
 
-- **Flow:** match neighbouring terminology, disclosure, save behaviour and routing. Arrival, empty and recovery paths connect instead of behaving as isolated screens.
-- **Layout and type:** align to the project's grid and spacing scale, optically as well as mathematically; tight within groups, generous between them. Same-role text uses the same style. Test wrapping, 200% zoom, localisation expansion (+30% text length) and font loading.
-- **Colour, imagery, icons:** semantic tokens with stable meanings across themes; one icon family, stroke and size per context; images at correct aspect ratio with reserved dimensions (no layout shift) and useful alt text.
-- **Interaction:** every control has default, hover, focus, active, disabled, loading, error and success where they apply; logical tab order; touch targets ≥ 44×44 pt iOS, ≥ 48×48 dp Android, ≥ 24×24 CSS px web (≥ 44×44 for primary touch controls). Keep motion coherent and interruptible; never add animation just to make polish visible.
-- **Content:** consistent terminology, capitalisation and punctuation. Ask before changing factual claims.
-- **Code:** reuse existing tokens and components; remove debug output, dead code and polish-created duplication; promote a value to a token only when it is reused. Avoid speculative cleanup and leave areas that already work alone.
+- **Alignment and spacing rhythm:** snap to the grid and spacing scale; fix optical alignment of icons and text, not only the numbers. Related items sit close, groups separate clearly. See [layout](layout.md).
+- **Type consistency:** same role, same size, weight and line height everywhere. Check wrapping, long translations and zoom. See [typeset](typeset.md).
+- **Colour and contrast:** semantic tokens, stable meanings across themes, text and focus contrast checked in every state. See [colorize](colorize.md).
+- **Interaction states:** default, hover, focus-visible, active, disabled, loading, error and success on every control; visible focus and a logical tab order.
+- **Transitions:** consistent durations and easing, interruptible, no animation added just to show effort. See [animate](animate.md).
+- **Copy consistency:** one term per concept, consistent capitalisation and punctuation, buttons that name their action. Ask before changing claims. See [clarify](clarify.md).
+- **Edge states:** long, missing, localised, slow, offline and permission-limited content. See [harden](harden.md).
+- **Responsive:** check 375, 768 and 1440 px, plus 320 px and any width the user reported failing; fix every width, not only the current screenshot.
+- **Performance smells:** layout shift from unsized images, oversized assets, slow interactions, console errors. See [optimize](optimize.md).
+- **Icons and images:** one icon family at consistent size and stroke; correct aspect ratios and useful alt text.
 
-## 5. Verify and finish
+## Check against the floor
 
-Confirm the changed surface once more after the fixes: walk the path with mouse, keyboard and touch where applicable; recheck the sizes from step 2 plus the loading, empty, error, long-content and missing-content states; check the console for errors. Run the project's tests and linters. Finish by reading your diff and removing accidental churn, orphaned code and temporary files. Report what was checked and what was not.
+Confirm the result meets [craft](craft.md), including its "Never add" list. Polish is a good moment to catch an eyebrow label, a nested card or a needless dialog that slipped in.
 
-For a technical pre-release check, continue with [audit](audit.md); for design judgement, [critique](critique.md).
+## Verify
+
+- Render before and after at the same widths and compare them side by side; the change should be visible where intended and nowhere else.
+- Walk the path again with mouse, keyboard and touch where it applies.
+- Fix material problems in one batch and re-inspect; at most two inspection rounds, then report what is still open.
+- Review the diff: remove accidental churn, unused code, duplicated values and temporary files.
+- Report what was checked, at which widths and with which tool.
 
 ## Common failures
 
-- A redesign delivered under the name of polish.
-- Fixing only what is in the current screenshot while other viewports still break.
-- Adding animation or decoration so the change looks visible.
+- A redesign presented as polish.
+- Restyling an area that worked and was out of scope.
+- Fixing the visible screenshot while other widths still break.
 - New one-off values instead of existing tokens.
-- "Cleaning up" working code outside the requested scope.
+- Removing focus or pressed states while tidying styles.
+
+When the pass is complete, return to the task, or ask [critique](critique.md) for a final check.

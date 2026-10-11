@@ -30,8 +30,13 @@ test('name mismatch, broken link, forbidden word are reported', async () => {
 });
 
 test('provenance comment line is allowed', async () => {
-  const { p, root } = await plugin(good, { 'skills/deck-x/reference/craft.md': '<!-- Adapted from uizze ui-design craft.md -->\n# Craft' });
+  const { p, root } = await plugin(good, { 'skills/deck-x/reference/craft.md': '<!-- Adapted from Impeccable reference/craft.md (npx impeccable) -->\n# Craft' });
   assert.deepEqual(await lintPlugin(p, { repoRoot: root }), []);
+});
+
+test('a provenance line may not name uizze', async () => {
+  const { p, root } = await plugin(good, { 'skills/deck-x/reference/craft.md': '<!-- Adapted from uizze ui-design craft.md -->\n# Craft' });
+  assert.match((await lintPlugin(p, { repoRoot: root })).join('\n'), /forbidden "uizze"/i);
 });
 
 test('overlong SKILL.md is reported', async () => {

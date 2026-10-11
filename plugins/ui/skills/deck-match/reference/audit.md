@@ -1,63 +1,79 @@
-<!-- Adapted from Impeccable reference/audit.md and reference/audit.native.md @ d631a88 (Apache-2.0) and uizze ui-design reference/audit.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
-# Audit an implemented interface
+<!-- Adapted from Impeccable reference/audit.md, reference/audit.native.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
+# Audit
 
-Use this guide when the user explicitly asks for an audit or technical quality check of a built interface, web or native.
+Use this guide when the user asks for an explicit technical quality check of an interface that is already built: accessibility, performance, responsive behaviour, states, theming and platform conformance.
 
-An audit is read-only: it does not modify the product unless the user also asked for fixes. Review only what can be observed in the code or the rendered result. Do not invent missing requirements or turn personal taste into a defect; design judgment belongs in [critique](critique.md).
+An audit measures and reports. It is read-only unless the user asked for fixes; do not edit files while auditing. Design judgement (is this generic, does it fit the brief) belongs to [critique](critique.md). This guide owns the severity scale that critique and the other guides use.
 
-## Gather evidence
+## Scope and environment
 
-1. Read the relevant source, tokens and components.
-2. Run the interface: web in the host's browser at 375, 768 and 1440 px wide plus any size the user reported; native on the simulator or emulator for each shipped device class, in light and dark appearance and at a large text size (see [ios](ios.md), [android](android.md)).
-3. Exercise the task and its states: loading, empty, error, success, disabled, recovery, long content.
-4. Run what the project already has: tests, linters, type checks, an accessibility checker if installed. Do not install new tooling for the audit.
-5. Record which checks ran and which could not, with the reason.
+- Name the target: the screens, flows or components in scope, and what is out of scope.
+- Record the environment: URL or build, browser or simulator and version, device or viewport, light or dark appearance, and any feature flags or test accounts used.
+- Run the interface. Read the source for what the render cannot show, but base findings on what actually happens.
+- For native apps, audit from the built app on a simulator, emulator or device, and read [ios](ios.md) or [android](android.md) first; both when the app ships to both.
 
-## Inspect
+## Checks by area
 
-Check each dimension and score it 0–4 (0 broken, 1 major gaps, 2 partial, 3 good with minor gaps, 4 excellent):
+### Accessibility
 
-1. **Task and system.** Task clarity and hierarchy; consistency with the product's existing system; repeated shortcuts or decorative content that conflict with the product; hard-coded colours and values instead of tokens; dark theme or dark appearance broken or poorly contrasted.
-2. **Accessibility.** Text contrast ≥ 4.5:1 body, ≥ 3:1 large text and UI components, in every theme and state; visible focus, logical tab or reading order, no keyboard traps; labels, roles and states on every control (web: semantic elements, not clickable `div`s; native: VoiceOver/TalkBack labels and traits); headings and landmarks; alt text; form labels, required markers and error messages; text scaling (200% zoom on web; Dynamic Type or `sp` on native) without clipping; reduced motion handled with an alternative that still shows the state change, not a global kill switch.
-3. **Layout and responsiveness.** Overflow and horizontal scroll at 375 px (and 320 px); fixed widths; media aspect ratio and cropping; target size ≥ 24×24 CSS px web (≥ 44×44 for primary touch controls), ≥ 44×44 pt iOS, ≥ 48×48 dp Android; touch gestures on sliders, drag surfaces and scroll strips (mouse-only handlers, missing `touch-action`, drag state not cleared on cancel); native: safe-area and keyboard insets, orientation, tablet and split-screen layouts.
-   - **Native platform conformance** (iOS and Android; score it with this dimension):
-     - system navigation, not custom global nav; no overloaded tab bars;
-     - no iOS patterns on Android or Android patterns on iOS;
-     - platform controls, not web-shaped buttons, custom toggles or hover-dependent affordances;
-     - one icon system: SF Symbols on iOS, Material Symbols on Android, no mixed sets;
-     - edge-swipe back (iOS) intact and predictive Back (Android) not hijacked;
-     - Android 12+ Dynamic Color has a static fallback scheme;
-     - the verdict: does it read as a native app or a ported website?
-4. **Interaction and states.** Feedback for every action; the necessary loading, empty, error, success, disabled and recovery states; overlays clipped by overflow containers; destructive actions without confirmation or undo.
-5. **Performance visible in the experience.** Layout shift, slow first render or launch, janky scroll or animation (animating layout properties, unbounded blur or shadow, `will-change` left on everywhere), unvirtualised long lists, images without dimensions, lazy loading or caching, full-size images decoded for thumbnails, obviously unused heavy dependencies.
+- Contrast: body text at least 4.5:1, large text and UI parts at least 3:1, in every theme.
+- Keyboard: every action reachable and operable, no traps, Esc closes dialogs and menus.
+- Focus: visible indicator on every focusable element; order follows reading order; focus moves into a dialog and returns to its trigger.
+- Labels and names: every input has a label; icon-only controls have an accessible name; screen readers announce role, name and state correctly.
+- Semantics: real buttons and links, one logical heading outline, landmarks present, images with useful alt text or marked decorative.
+- Reduced motion: movement replaced by an alternative that still shows the change; nothing flashes above safe thresholds.
+- Touch targets: 24×24 CSS px minimum on web, 44 px for primary touch controls (44 pt on iOS, 48 dp on Android).
+
+### Performance
+
+- Layout shift during load and after interaction (images without dimensions, late fonts, injected banners).
+- Load: time to first meaningful render, oversized images, unused code, render-blocking resources.
+- Input lag: typing, scrolling and dragging stay responsive; no long tasks on the main thread during input. See [optimize](optimize.md) for remedies.
+
+### Responsive
+
+Render at 375, 768 and 1440 px, plus 320 px and any width the user reported failing. Look for horizontal scroll, clipped or overlapping content, unreachable controls, and layouts that break at 200% text zoom. Exercise custom gestures under touch, not just the layout at a narrow viewport.
+
+### States
+
+Force loading, empty, error, partial, long-content, offline and permission states and record what renders. The checklist and remedies live in [harden](harden.md).
+
+### Theming and dark mode
+
+Check hard-coded colours that bypass tokens, contrast in the dark theme, values that do not update when the theme switches, and images or icons that disappear on a dark surface.
+
+### Native specifics
+
+Check system back and edge-swipe gestures, safe areas and system-bar insets, text scaling (Dynamic Type or `sp`), platform controls and icons, VoiceOver or TalkBack order and labels, and tablet or multi-window layouts. The platform rules are in [ios](ios.md) and [android](android.md).
+
+## Severity scale
+
+Tag every finding with one level:
+
+- **P0 blocking**: prevents task completion, loses data or locks out a required user group.
+- **P1 major**: significant difficulty, a clear accessibility failure or a platform-guideline violation. Fix before release.
+- **P2 minor**: an annoyance with a workaround. Fix in the next pass.
+- **P3 polish**: no real impact on use. Fix when time allows.
+
+Tie-breaker: would a user contact support about this? If yes, at least P1.
+
+Not everything is P0. A long list of P3s hides the findings that matter; group them.
 
 ## Report
 
-Lead with the most important finding, and do not hide additional release-blocking defects behind it. Order findings by user impact and tag each:
+Lead with a short summary: scope, environment, counts by severity and the three to five findings that matter most. Then list each finding:
 
-- **P0 Blocking:** prevents task completion, loses data or locks out a required user group; fix immediately.
-- **P1 Major:** significant difficulty, a broken brief requirement, WCAG AA failure or platform-guideline violation; fix before release.
-- **P2 Minor:** annoyance with a workaround; fix in the next pass.
-- **P3 Polish:** no real user impact. Keep P3s few; noise hides what matters.
+- **Finding**: what is wrong, in one sentence.
+- **Evidence and location**: screenshot, measured value, reproduction steps, and the file, component or screen.
+- **Severity**: P0–P3 on the scale above.
+- **Fix**: a specific change, and the guide that covers it when one does.
 
-Torn between two levels? Ask "would a user contact support about this?" If yes, it is at least P1.
+Add patterns that recur across screens as one systemic finding rather than many copies, and note what is working well so it is kept.
 
-For each finding give: the observed screen or state, the location (file and line where known), the evidence (measurement, screenshot, failing step), the user impact, the standard it breaks if any (WCAG criterion, HIG, Material), and the smallest concrete correction. Mark each as **confirmed** or **suspected (could not verify)**; never report an unverified suspicion as a defect.
+## What was not checked
 
-Then add:
+List every check that could not run and why (no device, no screen reader, no test account, service unavailable). Never write "pass" for an area you did not verify; say "not checked" instead. State which evidence came from emulation and which from real hardware.
 
-- a score table (five dimensions, total out of 20; 18–20 excellent, 14–17 good, 10–13 acceptable, 6–9 poor, 0–5 critical);
-- systemic patterns ("hard-coded colours in 15+ components", "list-row targets consistently below 44 pt");
-- what works well and should be kept;
-- the checks that could not run.
+## Hand-off
 
-If nothing material is visible, say so, stated at the scope actually inspected ("no material issues on the checkout flow at 375, 768 and 1440 px; native builds not run"). For fixes, point to [polish](polish.md), [harden](harden.md), [optimize](optimize.md) or [adapt](adapt.md).
-
-## Common failures
-
-- Reporting taste ("the blue feels cold") as a defect.
-- Generic advice ("improve accessibility") with no location or fix.
-- Everything marked P0, or no prioritisation.
-- Unverified false positives presented as confirmed.
-- Passing a check that could not run.
-- Editing code during a read-only audit.
+If the user asked only for the audit, return the report and go back to the task. If fixes were requested, fix material problems in one batch using the guides named in the findings (for example [harden](harden.md), [optimize](optimize.md), [adapt](adapt.md)), re-inspect, stop after two inspection rounds and report what is still open.

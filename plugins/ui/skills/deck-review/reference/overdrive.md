@@ -1,83 +1,73 @@
-<!-- Adapted from Impeccable reference/overdrive.md @ d631a88 (Apache-2.0) and uizze ui-design reference/overdrive.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
-# Overdrive: exceptional interaction work
+<!-- Adapted from Impeccable reference/overdrive.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
+# Overdrive
 
-Use this guide only when the user explicitly asks for overdrive, or for ambitious, technically exceptional interaction work on an existing experience. It is opt-in, never the default for ordinary UI work. It is a design workflow using the host's existing tools, not a command to download an engine.
+Use this guide only when the user explicitly asks for "overdrive" or for exceptional interaction work: canvas or WebGL rendering, view transitions, physics-based motion, scroll-driven scenes, or virtualised views over large data sets.
 
-## Choose the result before the technique
+Overdrive is never the default. A normal build, redesign or polish pass does not reach for it, and nothing in this guide justifies adding spectacle the user did not ask for. When the fundamentals are weak (hierarchy, layout, states), fix those first with the relevant guide; ambitious technique on a shaky screen only makes the weakness louder.
 
-Goal: make an existing experience unusually good in a way its users will notice. Context decides what that means. A particle system on a creative portfolio is impressive; on a settings page it is embarrassing. A settings page with instant, reliable saves and clear animated state transitions is the settings-page version of exceptional. Ask: what would make a user of this specific interface say "that's nice"?
+## Start from the product's job
 
-Fix hierarchy, readability and usability first ([polish](polish.md), [craft](craft.md)). Technical ambition never masks weak fundamentals.
+Decide what the enhancement is for before deciding how to build it. Ask what the screen helps the user do and where an exceptional interaction would make that easier, clearer or more satisfying.
 
-Before writing any code, propose 2–3 concrete directions in one message. Each option states:
+- On a marketing or portfolio surface, the payoff is often sensory: a scroll-paced scene, a shader backdrop, a transition that carries the eye from one section to the next.
+- On functional UI, the payoff is how it feels in use: a dialog that grows out of the control that opened it, a drag with believable momentum, a list of 100,000 rows that scrolls without a stutter.
+- On data-heavy views, the payoff is fluency: canvas or WebGL rendering for sets too large for the DOM, charts that morph between states instead of redrawing.
 
-- the visible result (what the user sees and feels, in one or two sentences);
-- why it fits this product;
-- platform and browser support for the actual targets;
-- performance cost;
-- implementation complexity.
+One focused moment beats several competing ones. If removing the effect would leave the experience unchanged, it is not earning its cost. Overdrive changes how existing features behave, not what the product does; new backend capabilities are product decisions, not interface work.
 
-Put the tradeoffs inside each option so the user chooses between things they can read. Ask for the user's choice. If the user already chose a specific effect and scope, honour it instead of reopening the decision. An unanswered choice is not approval: continue ordinary in-scope polish, or stop at the proposal.
+## Choose a direction first
 
-Keep the chosen enhancement focused. One well-executed interaction beats several competing effects. Do not replace an established identity or expand product functionality under the label of polish.
+Do not write code until the user has picked a direction.
 
-## Match ambition to the surface
+1. Propose two or three ambitious options. For each, describe what the user would see and feel, the technique behind it, and its cost and risk: browser support, performance load, implementation effort, new dependencies, and how it degrades.
+2. Put each option's description and trade-offs inside the choice itself, so the user can read what they are choosing between. When the host has a structured question tool, use it; otherwise ask in plain text and stop until the user answers.
+3. Build only the option the user confirms. If the answer changes the brief, update the brief before building.
 
-- **Marketing or expressive work:** a distinctive composition, a product-led reveal, a scroll-driven sequence or a shared-element transition makes the subject tangible. The offer and primary action stay understandable within the first viewport.
-- **Functional UI:** a dialog keeps continuity with its trigger, filters update without losing focus, selection and reordering feel direct (drag with spring physics). Keep predictable controls, loading, rollback and error feedback.
-- **Data-heavy work:** animated transitions between data states explain change; virtualisation makes genuinely large collections usable; Canvas or WebGL rendering suits datasets too large for SVG or DOM. Keep labels, keyboard navigation and an accessible representation (table or summary). Never render fake data to suggest a capability.
-- **Performance-critical work:** search that filters 50k items without a flicker, a form that never blocks the main thread. Move demonstrably expensive work off the main thread, reduce unnecessary work, load only what is needed. Measure before and after; never claim an unmeasured improvement.
-- **Native iOS and Android:** use the project's native animation and navigation mechanisms. Preserve back gestures, safe areas, keyboard behaviour, Dynamic Type or font scale, and Reduce Motion or Remove animations. Web APIs are not a native implementation plan. See [ios](ios.md), [android](android.md).
+## Build the real technique
 
-## Choose the smallest suitable implementation
+- Implement the actual mechanism the user chose. A view transition must be a real transition, a physics drag must respond to real input, a virtualised table must render only the visible rows. A static image or a looping video standing in for an interactive effect is not the deliverable.
+- Use platform features first: the View Transitions API, `@starting-style`, scroll-driven animations, the Web Animations API, `@property`, Canvas 2D or OffscreenCanvas, Web Workers. Reach for WebGL or WebGPU only for effects CSS and canvas cannot express.
+- Do not add a heavy dependency or download an engine, model or asset pack unless it gives a concrete benefit the platform cannot, and the user has approved it. Name the package, its size and its licence when you ask.
+- Motion runtime rules (durations, easing, interruption) belong to [animate](animate.md); follow them rather than inventing new ones.
 
-Prefer the project's existing stack and native platform capabilities. Verify current support for the actual target browsers and devices (MDN, caniuse, platform docs) instead of relying on a compatibility table in this guide.
+## Progressive enhancement
 
-- **UI continuity:** CSS transitions, `@starting-style` for entry from `display: none`, the Web Animations API, or the project's motion library. Make transitions interruptible and reversible. Spring physics where direct manipulation needs it.
-- **Navigation and storytelling:** View Transitions for shared-element morphs, scroll-driven animation (`animation-timeline: scroll()`) for scroll-linked effects, `@property` to animate gradients and custom values. Wrap them in `@supports` or feature checks, keep a functional no-enhancement path, and never hide content while waiting for an optional API.
-- **Rendering:** SVG for geometry, diagrams and precise icons. Canvas, WebGL or WebGPU (with a WebGL2 fallback) only for genuinely custom, dense or spatial rendering that DOM and CSS cannot express. A glow does not need a new renderer.
-- **Computation:** virtualisation for measured large-list cost; Web Workers or OffscreenCanvas for expensive computation or rendering. WASM or any new dependency needs a concrete benefit and project approval, not a preference for novelty.
-- **Device features:** sensors, sound and personal data are separate permission decisions. No autoplay sound (audio starts only after a user gesture and an explicit opt-in), no surprise permission prompts, no unrequested device access.
+The screen must work and look finished without the enhancement. Ship a baseline first, then layer the effect on top behind feature detection.
 
-This changes how existing functionality feels, not what the product promises. Real-time collaboration, offline sync, new backend services, payments and authentication are separate product work. Use optimistic feedback only when the existing operation supports reliable failure recovery.
+```css
+@supports (animation-timeline: scroll()) {
+  .scene { animation-timeline: scroll(); }
+}
+```
 
-## Implement a resilient enhancement
+```js
+if ('gpu' in navigator) { /* WebGPU path */ }
+else if (canvas.getContext('webgl2')) { /* WebGL2 path */ }
+/* otherwise the static baseline stays in place */
+```
 
-- The baseline stays fully usable without the effect, with reduced motion, on touch devices, and when assets or optional capabilities fail. Preserve semantics, focus, keyboard access and content order.
-- Use feature detection where required (`@supports`, `'gpu' in navigator`, `canvas.getContext('webgl2')`).
-- Lazy-initialise heavy resources (WebGL contexts, WASM modules, large assets) only when near the viewport. Pause off-screen or background-tab rendering.
-- Clean up observers, animation loops, listeners and GPU resources when the view unmounts.
-- Avoid layout thrashing (batched reads before writes) and unbounded particle or DOM growth.
-- Do not add a dependency or external service without authority.
-- Target 60 fps on representative mid-range devices; measure frame pacing and input responsiveness rather than trusting the development machine. Reduce complexity when frame rate drops below ~50 fps, input is delayed, layout shifts, or rendering runs continuously on battery. A simpler implementation that stays responsive is the correct outcome.
-- Spend the last pass on refinement: the easing curve, stagger offsets, secondary motion. The first version that works is rarely the one to ship.
+Content, controls and the primary action must never depend on the effect loading. If the effect fails to initialise, the user should not notice anything broken.
 
-## Verify the actual experience
+## Performance budget
 
-Use the host's browser automation, or the simulator or device for native work, and inspect the result in motion, not only its source or a single still frame. Expect several rounds; ambitious effects rarely work first time.
+- Set the budget before building: target 60 fps on a mid-range device, and simplify the effect if it drops below 50 fps.
+- Initialise heavy resources (GL contexts, WASM modules, large textures) lazily, when the element nears the viewport, and pause or tear them down when it leaves.
+- Keep the main thread free during input: move heavy computation to a worker, and never block scrolling or typing.
+- Watch layout shift and load cost. The enhancement must not delay the first meaningful render or push content around after it appears.
 
-1. Capture the baseline and the enhanced state, then exercise entry, exit, rapid repeated input and interrupted transitions.
-2. Check desktop and mobile widths or the relevant native device classes, keyboard and touch use, reduced motion and the fallback path.
-3. Inspect against the approved direction: timing, easing, continuity, asset sharpness and typography form one coherent result.
-4. Batch the material fixes and repeat the affected checks. Do not call an unpreviewed effect polished.
+## Reduced motion and accessibility
 
-Answer four final questions:
+- Under `prefers-reduced-motion: reduce`, replace movement with a crossfade, a cut or a static state that still communicates the same change. Do not simply delete the feedback.
+- Keyboard and screen reader users get the same content and actions. A canvas scene needs a real DOM alternative for anything meaningful it shows; a custom drag needs a keyboard path.
+- No flashing above safe thresholds, and no sound without the user opting in.
+- Focus must stay visible and in order through every transition.
 
-- **Fit:** does it suit this product and audience?
-- **Removal:** is the experience worse without it, or would nobody notice?
-- **Fallback:** does everything still work without the enhancement?
-- **Smoothness:** is it smooth on the devices actually tested?
+## Verify
 
-If preview or device access is unavailable, keep the implementation bounded and report exactly what was and was not verified. Never fabricate frame-rate results, user reactions, performance gains or a visual pass. Stop when the chosen result works; propose extra scope separately.
+- Capture the baseline and the enhanced version side by side at 375, 768 and 1440 px, plus 320 px and any width the user reported failing.
+- Exercise entry and exit, rapid repeated input, interruption mid-animation (click again, scroll back, resize, switch tab) and back navigation. Nothing may get stuck halfway.
+- Run it on a low-end device or with CPU throttled in the browser tool (4x or 6x) and record the frame rate you observed.
+- Check reduced motion, keyboard-only use and the fallback path with the feature disabled.
+- Fix material problems in one batch and re-inspect; stop after two inspection rounds and report what is still open, including which checks ran on real hardware and which on emulation.
 
 When the enhancement holds, continue with [polish](polish.md).
-
-## Common failures
-
-- Building before the user chose a direction.
-- A showpiece effect on a functional screen that needed speed and clarity.
-- Several competing "wow" moments on one surface.
-- Bleeding-edge APIs with no working fallback, or content hidden until they load.
-- Jank on mid-range devices, or animation loops left running off-screen.
-- Sound or permission prompts without explicit opt-in.
-- Performance claims with no measurement.

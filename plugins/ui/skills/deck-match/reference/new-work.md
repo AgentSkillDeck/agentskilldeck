@@ -1,84 +1,68 @@
-<!-- Adapted from Impeccable reference/new-work.md @ d631a88 (Apache-2.0) and uizze ui-design reference/new-work.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
-# New interface or major redesign
+<!-- Adapted from Impeccable reference/new-work.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
+# New work
 
-Use this guide when building a new screen, page, flow or product, or when the user has approved replacing an existing visual language.
+Use this guide when building a new screen, page, flow or product, or carrying out a redesign the user has approved.
 
-## 1. Establish what must remain true
+## Settle what is already fixed
 
-Read before designing: the brief, 2–3 representative screens, shared components, tokens, assets, and any PRODUCT.md, DESIGN.md or README design notes. Write down two lists: product facts (audience, job, content, behaviour, constraints, brand commitments) and visual choices (type, colour, density, composition). Only the second list is open.
+Separate product facts from open visual choices before designing anything. Content, function, constraints, real assets and stated brand commitments are facts; you keep them. Read the design notes (for example `DESIGN.md`), tokens, shared components and a few representative screens, then place the work in one of five cases:
 
-Classify the work; the class decides how much you invent:
+- **Addition to an established surface:** a section, state or component inside a screen that already has a look. It inherits that look. Resolve only its content, hierarchy, states and how it joins its neighbours.
+- **New surface in an established product:** the visual system stays fixed; only the structure of this surface is open.
+- **Incomplete brand:** keep the confirmed assets and recognisable traits, then extend the system with the user.
+- **Approved redesign:** keep the product truth and replace the old visual language. The old look tells you what the product is, not what it must become.
+- **Brand-new product:** no visual authority exists yet; build one with the user.
 
-- **Addition to an established surface** (section, component, feature, state): inherit its identity and composition. Solve the new task, hierarchy, content, states and how it joins the surrounding screens. No direction round, no identity exercise, no design-notes change unless the user approves a system change.
-- **New surface inside an established product**: keep the visual system fixed; the composition may differ. A coherent identity already in code counts as the system even when no design notes exist.
-- **Incomplete brand**: keep confirmed assets and recognisable traits; extend the rest with the user.
-- **Approved redesign**: replace the visual language, never the product's truth, working behaviour, content or explicit brand commitments. The old look is evidence of what the product is, not authority over what it becomes.
-- **New product with no visual authority**: choose a direction with the user. A default dashboard or landing-page template is not a direction.
+Never turn a local addition into an identity exercise. A coherent identity in code still counts when the design notes are missing.
 
-Name the surface's main purpose; it shapes the composition, not the aesthetic:
+## Name what the surface is for
 
-- **Persuade**: a purchase or sign-up page states a real offer and one action.
-- **Operate**: a working screen exposes tasks and state first. Also load [operate](operate.md).
-- **Read**: docs and long-form need structure, wayfinding and a 65–75ch measure for long-form; 45ch minimum only in narrow columns and cards.
-- **Experience**: a portfolio or showcase leads with the work itself.
+- **Persuade:** someone must believe something and act. Identify the real proof, content and assets that earn it.
+- **Operate:** the user is doing a job. Also load [operate](operate.md).
+- **Read:** someone needs to understand long material. Give prose a sensible measure, per [typeset](typeset.md), and clear wayfinding.
+- **Experience:** exploration is the point. Decide what leads and which interaction or transition matters.
 
-## 2. Decide before building
+## Decide before building
 
-Ask only what changes the result, 2–3 questions in one message: audience, job, primary action, real content and proof, constraints, what must not change, what would make a polished result feel wrong. Skip facts the brief or files already settle. Never ask the user for CSS values or to pick from canned style lanes. A precise request needs only a one-line confirmation of your reading.
+- Ask two or three questions whose answers change the result: who must act or what task they do, what success looks like, what must not change. A precise request needs only a short confirmation. Never ask for CSS values.
+- For open-ended identity work, offer two or three genuinely different directions. Give each its first viewport, density, type and colour character, key interaction and an honest tradeoff. Variations on one idea are not a choice.
+- Pick a colour strategy before picking colours, per [colorize](colorize.md): restrained, committed, full palette or drenched.
+- Choose light or dark from the physical scene: write one sentence on who uses it, where and under what light, and let that decide.
+- Choose fonts per [typeset](typeset.md). Operate and read surfaces are well served by system stacks and sturdy UI faces. On persuade and experience surfaces, Fraunces, Playfair Display, Cormorant, Lora, Crimson, Newsreader, Syne, Space Grotesk, Space Mono, IBM Plex, Inter as display, DM Sans, DM Serif, Outfit, Plus Jakarta Sans and Instrument Sans are overused defaults; using one needs a reason no other face meets, and "books want a serif" is not one.
+- Check the direction against the looks generated interfaces fall into: cream ground with a contrasty serif and terracotta accent; near-black with one neon accent and glows; hairline editorial rules with italic serif and tracked mono labels; flat saturated ink with hard offset shadows. Each is fine when the brief asks for it. If someone could guess your look from the category alone, keep working.
 
-For an open-ended whole surface or a new identity, propose 2–3 substantially different directions grounded in the product. For each give: the first viewport (what sits where, at what scale, where the primary action is), information density, type and colour character, the one interaction that matters, and an honest tradeoff. Colour-swapped versions of one template count as one direction. Get the user's choice before committing a new identity; a direction already supplied, or an explicit "you choose", is enough.
+## Write the design contract
 
-Commit colour and type deliberately:
+Before code, write about 150 words in the brief: thesis, composition and first viewport, roles (colour, type, components), responsive behaviour, states, and the finish condition. If a line reads like a mood rather than a decision, the direction is not settled. Keep the contract out of anything the browser receives: no comments, hidden markup, data attributes, metadata or bundled files.
 
-- Pick a colour strategy before colours: Restrained (neutrals, optionally tinted, plus one accent; the usual floor for Operate and Read), Committed (one saturated colour carries large regions of the surface), Full palette (3–4 named roles), or Drenched (the surface is the colour). The strategy follows the brief and the chosen direction, not a percentage rule; see [colorize](colorize.md). Persuade and Experience may take the bolder strategies when the brief allows.
-- Decide light or dark from one sentence of physical scene (who uses it, where, under what light), not from the category.
-- Operate and Read surfaces are well served by system stacks and workhorse UI faces; select and pair faces per [typeset](typeset.md). Persuade and Experience surfaces only: these faces mean you stopped looking: Fraunces, Playfair Display, Cormorant, Lora, Crimson, Newsreader, Syne, Space Grotesk, Space Mono, IBM Plex, Inter as display, DM Sans, DM Serif, Outfit, Plus Jakarta Sans, Instrument Sans. Use one only with a reason no other face satisfies; "books want a serif" or "tech wants mono" is not a reason. Search alternatives with `node scripts/materials.mjs font "<character you need>" --category <cat>`.
-- Self-check against the four looks generated UI defaults to when the brief leaves the aesthetic open: cream ground with high-contrast serif and terracotta accent; near-black with one neon accent and glowing edges; editorial hairlines, italic display serif and tracked mono labels; flat saturated ink with black boxes and hard offset shadows. If someone could guess your aesthetic from the category alone, rework it.
+## Build
 
-Use references to answer a real structural question, and inspect what you find (see [reference-policy](reference-policy.md)): `node scripts/references.mjs "<pattern or state>" --platform <web|ios|android>`. Extract the transferable lesson, such as how a table exposes comparison, how a form recovers from errors, or how an onboarding step teaches the next action. A reference is evidence, not a licence to copy a brand.
+- Build the first viewport first, with real content. It should show what the product does at a glance.
+- Show the product working (the interface in use, the mechanism in action) instead of decorative filler such as gradients, glass or generic icon tiles.
+- Never invent prices, customers, testimonials or metrics. Illustrative demo data is fine when labelled; claims are not.
+- An approved comp is a spatial target: match its regions, scale and words, and add nothing it does not show.
+- Carry the direction through every element. Navigation, buttons, inputs and links belong to the same language; one stock component breaks it.
+- Pace long pages: vary density, scale and quiet within one spacing rhythm, and end on a real close.
+- Give the page one deliberate motion moment rather than effects on every section, per [animate](animate.md).
+- Find fonts, icons and kits with `node scripts/materials.mjs <font|icon|animated-icon|pack> "<query>"`. Check each `License:` line; adding one is a dependency decision for the user.
+- Look up how design systems handle a pattern with `node scripts/references.mjs "<job, object, state or interaction>"`.
 
-Write a design contract of about 150 words in the working plan or an existing development brief:
+## Complete and verify
 
-- **Thesis:** the one idea this surface owns and the category-default arrangement it refuses.
-- **Composition / first viewport:** what is where, at what scale, where the primary action sits.
-- **Roles:** typography, colour and material roles, specific enough to recognise with content removed.
-- **Responsive:** what stacks, collapses, scrolls or stays fixed per breakpoint.
-- **States:** the reachable states you will implement.
-- **Finish:** a verifiable exit condition (sizes rendered, states exercised, checks run).
-
-If a line reads like a mood ("clean, modern, friendly"), the direction is not decided yet. Keep the contract out of anything the browser receives: no HTML or framework comments, hidden DOM, `data-*` attributes, serialized props, metadata or files served beside the build. Do not create a documentation system for a small task.
-
-## 3. Build the chosen direction
-
-- **Start with the first meaningful viewport**, using realistic content and actual assets. It communicates the task or offer within 5 seconds and shows one obvious next action. Ask: if someone left after one viewport, what would they describe an hour later? If the answer is a mood, the concept has not committed.
-- **Prove, don't claim.** Show the product doing its job. Do not fill missing substance with decorative cards, empty charts, gradients, glass, icon tiles or invented metrics.
-- **Truth binds claims, not demonstrations.** In greenfield work, author illustrative content at full fidelity, label it illustrative wherever a visitor could mistake it for real, and list for the user what to replace. Never invent prices, customers, testimonials, benchmarks, capabilities or performance results.
-- **A supplied or approved comp is a spatial target.** Compare against the actual image at its own pixel dimensions. Measure layout regions, spacing, type scale, asset crops and control placement. Keep text and controls semantic and working. Never ship a screenshot of the comp as the interface, and never copy features or commercial claims that appear only in generated imagery.
-- **Carry the direction through every atom**: navigation, inputs, buttons, links, content and secondary states. Distinction can come from composition, product-specific content, strong typography, imagery or interaction; it need not come from unusual controls. Do not quietly dilute the approved direction into the first familiar template.
-- **Pace long pages**: vary density, scale and quiet inside one grammar, keep one spacing rhythm with more space above a heading than below it, and end on a real close.
-- **Motion once, as material**: one orchestrated moment rather than scattered hover effects; content visible by default. If the direction names a technique (canvas, view transitions, WebGL), build the technique, not a static imitation; see [overdrive](overdrive.md) for ambitious work.
-- **Assets:** use project assets and licensed materials; prefer one decisive photo of the subject over five generic ones, and verify every image URL resolves. Find fonts, icons and component kits with `node scripts/materials.mjs <font|icon|animated-icon|pack> "<query>"` and record each result's licence. Provide a functional fallback (system font stack, alt text, sized placeholder). Do not fetch or install dependencies without the task's authority.
-- **Design documentation:** for a genuinely new system, record the final reusable decisions (tokens, type scale, component rules) in the project's normal design docs after the build, describing what was built. Never overwrite an existing DESIGN.md unless updating it is in scope.
-
-## 4. Complete and verify
-
-1. Apply [craft](craft.md), plus [operate](operate.md), [ios](ios.md) or [android](android.md) where relevant.
-2. Implement every reachable state: loading, empty, error, disabled, success and recovery. Skip impossible states; do not build a gallery of decorative ones.
-3. Make responsive choices structural. Test real copy, the longest realistic values and a 375 px width (320 px for the smallest phones). Implement the actual primary interaction; a convincing screenshot with inert controls is unfinished.
-4. Render the build with the host's browser or simulator at representative sizes (web: 375, 768 and 1440 px, plus the user's reported viewport). Wait for fonts and images, settle or disable entrance motion, and capture from the top of the page. Open every capture and confirm it shows what its name claims: no blank regions, no half-loaded state. Broken captures are not design evidence.
-5. Inspect full context and detail crops, never only a thumbnail. Compare hierarchy, composition and interaction against the contract and any supplied reference.
-6. Fix material gaps in one batch, then inspect the changed result once more. Two inspection rounds is the ceiling; continue only while resolving named issues within scope. If a round makes no progress, report the limitation and the decision the user needs to make.
-7. For a whole new surface, get a fresh-eyes review: if the host can start a subagent with no conversation history, give it the request, contract, screenshot paths and [critique](critique.md); otherwise run a separate pass of that guide yourself and say so.
-8. Report exactly what was rendered, which states and sizes were checked, and what was not. Never announce a complete visual pass when rendering, a required state or the requested target was not checked.
-
-When the build verifies, continue with [polish](polish.md).
+- Apply the quality floor in [craft](craft.md).
+- Implement every reachable state: loading (skeleton), empty, error, success, disabled, long content. See [harden](harden.md).
+- Check responsive behaviour at 375, 768 and 1440 px, plus 320 px and any width the user reported failing.
+- Render and inspect real captures. Settle entrance motion first, capture from the top of the document, and open every file to confirm it shows what its name claims. Never judge from one full-page thumbnail.
+- Fix material problems in one batch and re-inspect; stop after two rounds and report what is still open.
+- Get a fresh-eyes review with [critique](critique.md), ideally from a context that did not build it.
+- Report exactly what was checked, at which widths and with which tool, and what stayed untested.
 
 ## Common failures
 
-- Turning a small addition into a new identity or a direction round.
-- Offering three colour-swaps of one template as "directions".
-- A first viewport of hero headline, subline and two buttons that could belong to any product.
-- Placeholder metrics, testimonials or logos presented as real.
-- Inert controls behind a polished screenshot.
-- Declaring done from one desktop thumbnail, or from captures taken mid-animation.
-- The design contract leaking into shipped HTML comments or attributes.
+- Turning a small addition into a new visual identity.
+- A standard hero with a vague headline where the product should be shown working.
+- Invented logos, testimonials or numbers.
+- A committed direction that fades into stock components below the first viewport.
+- Declaring it finished from memory without rendering it.
+
+When the build verifies, continue with [polish](polish.md).
