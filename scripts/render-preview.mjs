@@ -77,7 +77,7 @@ html,body{margin:0;width:${W}px;height:${H}px;overflow:hidden;background:#0b0f17
 .line{position:absolute;left:80px;right:80px;top:330px;height:1px;background:#1f2937;}
 .b{position:absolute;right:80px;top:64px;color:#6b7280;font-size:17px;letter-spacing:0.08em;text-transform:uppercase;}
 .track{position:absolute;left:0;right:0;bottom:0;height:4px;background:#111827;}
-</style></head><body><div class="bg"></div><div class="t">${esc(title)}</div><div class="s">${esc(subtitle)}</div><div class="line"></div><div class="b">agentatelier audio</div><div class="track"></div></body></html>`;
+</style></head><body><div class="bg"></div><div class="t">${esc(title)}</div><div class="s">${esc(subtitle)}</div><div class="line"></div><div class="b">agentskilldeck audio</div><div class="track"></div></body></html>`;
 }
 
 // One tall page: a caption block per cue (CAP_H high), then a scene label block per scene (SCENE_H).
@@ -144,7 +144,7 @@ export function filterGraph({ cues, scenes, duration }) {
   return { graph: parts.join(';'), out: last };
 }
 
-export async function renderPreview(dir, { out, maxMb = 3, chrome: chromeOpt, ffmpeg = process.env.AGENTATELIER_FFMPEG ?? 'ffmpeg' } = {}) {
+export async function renderPreview(dir, { out, maxMb = 3, chrome: chromeOpt, ffmpeg = process.env.AGENTSKILLDECK_FFMPEG ?? 'ffmpeg' } = {}) {
   const tl = JSON.parse(readFileSync(join(dir, 'timeline.json'), 'utf8'));
   const cues = parseVtt(readFileSync(join(dir, 'captions.vtt'), 'utf8'));
   const audio = ['mix.wav', 'mix.mp3'].map((f) => join(dir, f)).find((p) => existsSync(p));

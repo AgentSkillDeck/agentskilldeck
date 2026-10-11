@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/adapt.md and reference/adapt.native.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/adapt.md and reference/adapt.native.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Adapt
 
 Use this guide when an existing design must work in a different context: another screen size, input method, device class, orientation, platform (iOS, Android, web), or medium (print, email).

@@ -42,7 +42,7 @@ Rule keys: **V** vocabulary (one term per concept) · **N** numeric default per 
 | quieter | 44 | "keep colour as an accent on roughly 10% of the surface" → "keep colour for accents that have a job. Dosage follows the brief, not a percentage rule (see [colorize](colorize.md))." | R (colorize: no fixed percentage rule) |
 | quieter | 46 | Two bullets restating colorize (tint neutrals only for cohesion; no grey text on colour, "use a darker shade or transparency") → one line pointing to [colorize](colorize.md). Also drops "transparency", which contradicted colorize's "prefer explicit colours to translucent overlays". | D + R |
 | reference-policy | 4 | "Use this guide before running the reference or material scripts, or before using any outside page …" → "Use this guide when running the reference or material scripts or using any outside page …" | S (opener) |
-| reference-policy | 42 | (appended) "Then return to the calling guide." (plain text; the guide stays link-free for atelier-radar; kept short so the guide stays within 2× its 2,233-byte source) | S (hand-off) |
+| reference-policy | 42 | (appended) "Then return to the calling guide." (plain text; the guide stays link-free for deck-radar; kept short so the guide stays within 2× its 2,233-byte source) | S (hand-off) |
 | shape | 4 | "it returns a confirmed design brief" → "it returns the confirmed brief" | V (the brief) |
 | shape | 71 | (new) "Once the brief is confirmed, build it with [new-work](new-work.md) or the guide the task names." | S (hand-off) |
 | typeset | 61 | "uppercase … for short labels only." → "… for short labels only, never as an eyebrow above a heading." | R (eyebrow ban is absolute) |

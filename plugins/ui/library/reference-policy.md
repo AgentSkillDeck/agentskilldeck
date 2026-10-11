@@ -1,4 +1,4 @@
-<!-- Adapted from uizze ui-design references/uizze-reference-policy.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from uizze ui-design references/uizze-reference-policy.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Reference and material policy
 
 Use this guide when running the reference or material scripts or using any outside page as design evidence.

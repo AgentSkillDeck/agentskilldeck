@@ -1,6 +1,6 @@
 {
   "skills": {
-    "atelier-script": {
+    "deck-script": {
       "guides": [
         "captions",
         "casting",
@@ -18,7 +18,7 @@
       ],
       "tools": true
     },
-    "atelier-voice": {
+    "deck-voice": {
       "guides": [
         "captions",
         "casting",
@@ -36,7 +36,7 @@
       ],
       "tools": true
     },
-    "atelier-mix": {
+    "deck-mix": {
       "guides": [
         "captions",
         "casting",

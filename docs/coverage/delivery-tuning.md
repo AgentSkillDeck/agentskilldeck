@@ -1,6 +1,6 @@
 # Delivery preset tuning (T10)
 
-Date: 2026-10-10. Script: `agentatelier-lab/tuning/tune.mjs` (not shipped); raw results in `agentatelier-lab/tuning/results.json`.
+Date: 2026-10-10. Script: `agentskilldeck-lab/tuning/tune.mjs` (not shipped); raw results in `agentskilldeck-lab/tuning/results.json`.
 
 ## Method
 

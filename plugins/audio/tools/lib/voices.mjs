@@ -6,7 +6,7 @@
 //   record           the user speaks this character's lines (record.mjs)
 //   clone:<name>     Supertonic renders the line with the clone's base voice,
 //                    then Chatterbox voice conversion (engine/clone.py) gives it
-//                    the timbre of the reference in ~/.agentatelier/voices/<name>/.
+//                    the timbre of the reference in ~/.agentskilldeck/voices/<name>/.
 //                    clone:<name>@F2 forces the base voice.
 // A clone voice is a folder: reference.wav (10-60 s, cleaned), voice.json
 // {version, name, base, f0_median_hz, reference, duration_s, source, created}
@@ -48,7 +48,7 @@ export function parseVoice(v) {
 }
 
 export function voicesDir({ env = process.env, home = homedir() } = {}) {
-  return env.AGENTATELIER_VOICES || join(home, '.agentatelier', 'voices');
+  return env.AGENTSKILLDECK_VOICES || join(home, '.agentskilldeck', 'voices');
 }
 
 // --- consent ------------------------------------------------------------

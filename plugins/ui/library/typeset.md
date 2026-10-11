@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/typeset.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/typeset.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Typeset
 
 Use this guide when typography is the problem: weak hierarchy, arbitrary sizes, poor reading comfort, unfit faces, or font loading that shifts or hides text.

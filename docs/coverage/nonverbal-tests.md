@@ -42,7 +42,7 @@ Owner listening (T10, stacks of three on M3 and F4):
 
 ## 4. Placement
 
-Placement test (2026-10-11, `agentatelier-lab/placement`): six tags × five positions (line start, after a period, after a comma, mid-line without punctuation, line end) × three spacings (spaced, joined `<laugh><laugh><laugh>`, glued to a word) on M3 and F4, scored by the QA insertion check:
+Placement test (2026-10-11, `agentskilldeck-lab/placement`): six tags × five positions (line start, after a period, after a comma, mid-line without punctuation, line end) × three spacings (spaced, joined `<laugh><laugh><laugh>`, glued to a word) on M3 and F4, scored by the QA insertion check:
 
 | Tag | Clean takes |
 |---|---|

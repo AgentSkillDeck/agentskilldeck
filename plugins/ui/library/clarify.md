@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/clarify.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/clarify.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Clarify
 
 Use this guide when interface text is the problem: vague labels, unhelpful errors, empty states with no next step, or confirmations that do not name what will happen.

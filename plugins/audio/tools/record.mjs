@@ -6,7 +6,7 @@
 //   highpass, -20 LUFS), transcribed and checked against the script; produce
 //   then uses the recordings in place of synthesis.
 //   Reference for cloning: --reference --name me stores a 10-60 s cleaned
-//   reference in ~/.agentatelier/voices/me/; cast `voice: clone:me`.
+//   reference in ~/.agentskilldeck/voices/me/; cast `voice: clone:me`.
 // Both need a typed consent statement (--consent, or typed at the prompt).
 // Exit codes: 0 ok · 1 usage/script/consent error or unusable audio · 2 setup
 // missing or service error · 3 a line failed the check (recordings kept).
@@ -115,13 +115,13 @@ async function getConsent({ given, existing, ctx, what }) {
 // shell has no TTY: refuse there (before any consent is stored) and point to
 // running the command in a terminal, or to --from.
 function assertCanRecordLive(o, ctx) {
-  if (o.from || ctx.interactive || ctx.inputArgs || ctx.env.AGENTATELIER_RECORD_INPUT) return;
+  if (o.from || ctx.interactive || ctx.inputArgs || ctx.env.AGENTSKILLDECK_RECORD_INPUT) return;
   throw new UsageError('Live recording needs a terminal: the user reads each line as it appears. Run this command yourself in a terminal (not through an agent), or give an existing recording with --from <file>.');
 }
 
 function micInput(o, ctx) {
   if (ctx.inputArgs) return ctx.inputArgs;
-  if (ctx.env.AGENTATELIER_RECORD_INPUT) return JSON.parse(ctx.env.AGENTATELIER_RECORD_INPUT); // test seam: an ffmpeg lavfi source
+  if (ctx.env.AGENTSKILLDECK_RECORD_INPUT) return JSON.parse(ctx.env.AGENTSKILLDECK_RECORD_INPUT); // test seam: an ffmpeg lavfi source
   return inputArgs({ platform: ctx.platform, device: o.device });
 }
 
@@ -220,7 +220,7 @@ async function lines(o, ctx) {
   assertCanRecordLive(o, ctx);
   const consent = await getConsent({ given: o.consent, existing: projectConsent(out, o.speaker), ctx, what: `${o.speaker}'s lines` });
   if (!projectConsent(out, o.speaker)) addProjectConsent(out, o.speaker, consent);
-  if (!(await (ctx.hasFfmpeg ?? hasFfmpeg)())) throw new SetupError('ffmpeg not found. Install it (macOS: `brew install ffmpeg`, Linux: `sudo apt install ffmpeg`) or set AGENTATELIER_FFMPEG.');
+  if (!(await (ctx.hasFfmpeg ?? hasFfmpeg)())) throw new SetupError('ffmpeg not found. Install it (macOS: `brew install ffmpeg`, Linux: `sudo apt install ffmpeg`) or set AGENTSKILLDECK_FFMPEG.');
   const engine = await selectEngine({ engine: ctx.engine, env: ctx.env, checkSetupImpl: ctx.checkSetup });
   const cacheDir = join(out, '.cache');
   const dir = recordingsDir(out);

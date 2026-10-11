@@ -217,12 +217,12 @@ test('clone voices use the base voice row from the voice store named by env (lau
   mkdirSync(join(store, 'rex'));
   writeFileSync(join(store, 'rex', 'voice.json'), JSON.stringify({ version: 1, name: 'rex', base: 'M3', reference: 'reference.wav' }));
   const doc = `---\ncast:\n  REX: { voice: clone:rex }\n---\nREX: <laugh> Fine. <breath> Really.\n`;
-  const plan = planRender(parsed(doc), { env: { AGENTATELIER_VOICES: store } });
+  const plan = planRender(parsed(doc), { env: { AGENTSKILLDECK_VOICES: store } });
   const speech = plan.items.filter((i) => i.kind === 'speech');
   assert.ok(speech.some((i) => i.text.includes('<laugh>')), 'laugh stays native on the base row');
   const nv = plan.items.find((i) => i.kind === 'nv');
   assert.equal(nv.tag, 'breath');
   assert.equal(nv.base_voice, 'M3');
-  const unknown = planRender(parsed(doc), { env: { AGENTATELIER_VOICES: join(store, 'none') } });
+  const unknown = planRender(parsed(doc), { env: { AGENTSKILLDECK_VOICES: join(store, 'none') } });
   assert.ok(!unknown.items.some((i) => i.kind === 'speech' && i.text.includes('<laugh>')), 'no base voice: sample');
 });

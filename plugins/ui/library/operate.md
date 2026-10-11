@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/operate.md and reference/mode-operate.md @ d631a88 (Apache-2.0) and uizze ui-design reference/operate.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/operate.md and reference/mode-operate.md @ d631a88 (Apache-2.0) and uizze ui-design reference/operate.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Product and dashboard interfaces
 
 Use this guide when building app screens, admin dashboards, settings, data tables, tools and any authenticated surface where the user is doing a task.

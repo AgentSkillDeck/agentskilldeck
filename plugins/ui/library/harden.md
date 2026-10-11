@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/harden.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/harden.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Harden
 
 Use this guide when an interface works with ideal data and must survive real inputs: errors, empty, long, RTL or translated content, offline and slow networks, missing permissions, rate limits and concurrent actions.

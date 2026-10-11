@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/polish.md @ d631a88 (Apache-2.0) and uizze ui-design reference/polish.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/polish.md @ d631a88 (Apache-2.0) and uizze ui-design reference/polish.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Refine an existing interface
 
 Use this guide when the user asks to polish, tidy, tighten or finish an interface that already exists.

@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/distill.md @ d631a88 (Apache-2.0) and uizze ui-design reference/distill.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/distill.md @ d631a88 (Apache-2.0) and uizze ui-design reference/distill.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Simplify an interface
 
 Use this guide when an interface feels cluttered, busy or hard to use and the user wants it simpler.

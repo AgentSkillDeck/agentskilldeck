@@ -86,7 +86,7 @@ function applyNonverbalMode(segments, mode, voice, table, env) {
 
 // spliceLines: script line numbers planned as `sample` whatever the mode (the
 // fallback for a line whose inline tag was spoken on every take).
-// env: where clone voices are looked up (AGENTATELIER_VOICES), default process.env.
+// env: where clone voices are looked up (AGENTSKILLDECK_VOICES), default process.env.
 export function planRender(parsed, { preset, voiceOverrides, spliceLines, nativeTable, env = process.env } = {}) {
   const { meta, lines } = parsed;
   const table = nativeTable ?? loadNativeTable();

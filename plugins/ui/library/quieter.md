@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/quieter.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/quieter.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Quieter
 
 Use this guide when a design is too loud, aggressive or overstimulating and the task asks to calm it down without losing personality or turning generic.

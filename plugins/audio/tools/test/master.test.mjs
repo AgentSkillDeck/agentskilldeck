@@ -7,7 +7,7 @@ import { master, parseLoudnormJson, parseAstats, parseSilences, gateProblems, mp
 import { run, hasFfmpeg } from '../lib/ffmpeg.mjs';
 
 const HAVE_FFMPEG = await hasFfmpeg();
-const SKIP = HAVE_FFMPEG ? false : 'ffmpeg not found (install ffmpeg or set AGENTATELIER_FFMPEG) - skipping real-audio test';
+const SKIP = HAVE_FFMPEG ? false : 'ffmpeg not found (install ffmpeg or set AGENTSKILLDECK_FFMPEG) - skipping real-audio test';
 
 async function tone(path, { d = 8, db = 0 } = {}) {
   await run(['-filter_complex', `sine=f=440:d=${d},volume=${db}dB,aformat=sample_fmts=s16:sample_rates=44100:channel_layouts=stereo`, '-c:a', 'pcm_s16le', path]);

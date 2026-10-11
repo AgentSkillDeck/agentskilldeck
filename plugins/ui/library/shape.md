@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/shape.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/shape.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Shape
 
 Use this guide when the task is to decide what should be made and how it should work before building: it returns the confirmed brief, never code.

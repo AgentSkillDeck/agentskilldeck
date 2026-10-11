@@ -29,7 +29,7 @@ function layout() {
     warnings: [],
     assets: [
       { ids: ['L4-0'], type: 'sfx', path: join(work, 'assets', 'door.mp3'), source: 'openverse', title: 'Door creak', creator: 'Ann', license: 'CC BY 4.0', license_url: 'https://creativecommons.org/licenses/by/4.0/', source_url: 'https://freesound.org/s/1', attribution: '"Door creak" by Ann (https://freesound.org/s/1), licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)' },
-      { ids: ['L1-1'], type: 'ambience', path: join(work, 'assets', 'sea.wav'), source: 'generated', title: 'Generated pink', creator: 'agentatelier (ffmpeg generator)', license: 'generated', license_url: '', source_url: '', attribution: 'Generated pink: generated with ffmpeg, no attribution required' },
+      { ids: ['L1-1'], type: 'ambience', path: join(work, 'assets', 'sea.wav'), source: 'generated', title: 'Generated pink', creator: 'agentskilldeck (ffmpeg generator)', license: 'generated', license_url: '', source_url: '', attribution: 'Generated pink: generated with ffmpeg, no attribution required' },
     ],
   };
 }

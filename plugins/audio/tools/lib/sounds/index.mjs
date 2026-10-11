@@ -63,7 +63,7 @@ export async function searchSounds(query, { kind = 'sfx', limit = 5, minDuration
   const pre = [];
   if (wanted.has('freesound') && !freesoundToken) {
     wanted.delete('freesound');
-    pre.push('freesound needs FREESOUND_TOKEN (or freesound_token in ~/.agentatelier/config.json); skipped');
+    pre.push('freesound needs FREESOUND_TOKEN (or freesound_token in ~/.agentskilldeck/config.json); skipped');
   }
   const providers = SOURCES.filter((n) => wanted.has(n)).map((n) => [n, all[n]]);
   const results = [], warnings = [...pre], failed = [], seen = new Set();
@@ -150,7 +150,7 @@ export async function fetchSound(sound, destDir, { fetchImpl = globalThis.fetch,
   if (!/^https:\/\//i.test(String(sound.download_url ?? ''))) throw new ServiceError(sound.source ?? 'download', `download URL is not https: ${sound.download_url}`);
   let res;
   try {
-    res = await fetchImpl(sound.download_url, { signal: AbortSignal.timeout(timeoutMs), headers: { 'user-agent': 'agentatelier' }, redirect: 'follow' });
+    res = await fetchImpl(sound.download_url, { signal: AbortSignal.timeout(timeoutMs), headers: { 'user-agent': 'agentskilldeck' }, redirect: 'follow' });
   } catch (e) {
     throw new ServiceError(sound.source ?? 'download', e?.name === 'TimeoutError' ? `download timed out after ${timeoutMs} ms` : (e?.message ?? String(e)));
   }
@@ -297,11 +297,11 @@ export async function resolveCue(cue, { projectDir, offline = false, destDir, fe
   }
 }
 
-// Freesound token: explicit option, then FREESOUND_TOKEN, then ~/.agentatelier/config.json {freesound_token}.
+// Freesound token: explicit option, then FREESOUND_TOKEN, then ~/.agentskilldeck/config.json {freesound_token}.
 export function freesoundTokenFromEnv(env = process.env) {
   if (env.FREESOUND_TOKEN) return env.FREESOUND_TOKEN;
   try {
-    const cfg = JSON.parse(readFileSync(join(homedir(), '.agentatelier', 'config.json'), 'utf8'));
+    const cfg = JSON.parse(readFileSync(join(homedir(), '.agentskilldeck', 'config.json'), 'utf8'));
     return cfg.freesound_token || cfg.freesoundToken || undefined;
   } catch { return undefined; }
 }

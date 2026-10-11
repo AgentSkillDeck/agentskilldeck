@@ -1,18 +1,18 @@
 {
   "skills": {
-    "atelier-design": {
+    "deck-design": {
       "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
       "tools": true
     },
-    "atelier-review": {
+    "deck-review": {
       "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
       "tools": true
     },
-    "atelier-radar": {
+    "deck-radar": {
       "guides": ["reference-policy"],
       "tools": true
     },
-    "atelier-match": {
+    "deck-match": {
       "guides": ["adapt", "android", "animate", "audit", "bolder", "clarify", "colorize", "craft", "critique", "delight", "distill", "harden", "ios", "layout", "new-work", "onboard", "operate", "optimize", "overdrive", "polish", "quieter", "reference-policy", "shape", "typeset"],
       "tools": true
     }

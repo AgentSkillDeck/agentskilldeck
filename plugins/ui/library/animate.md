@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/animate.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/animate.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Animate
 
 Use this guide when adding or fixing motion: feedback on actions, state and layout transitions, navigation continuity, or one authored focal moment.

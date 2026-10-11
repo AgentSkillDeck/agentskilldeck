@@ -36,11 +36,11 @@ function findBinary(name, envVar) {
 }
 
 export function ffmpegPath() {
-  return findBinary('ffmpeg', 'AGENTATELIER_FFMPEG');
+  return findBinary('ffmpeg', 'AGENTSKILLDECK_FFMPEG');
 }
 
 export function ffprobePath() {
-  return findBinary('ffprobe', 'AGENTATELIER_FFPROBE');
+  return findBinary('ffprobe', 'AGENTSKILLDECK_FFPROBE');
 }
 
 // Observers for every ffmpeg invocation (tests use this to bound input counts).

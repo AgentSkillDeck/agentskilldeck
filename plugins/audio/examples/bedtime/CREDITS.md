@@ -10,11 +10,11 @@ Sounds:
 - "Sigh_4_Female" by Drkvixn91 (https://freesound.org/people/Drkvixn91/sounds/318085), CC0 1.0 (public domain dedication, no attribution required)
 - "Music box lullaby" by csnmedia (https://freesound.org/people/csnmedia/sounds/381973), CC0 1.0 (public domain dedication, no attribution required) (faded)
 
-Generated sounds: no attribution required (made with ffmpeg by agentatelier).
+Generated sounds: no attribution required (made with ffmpeg by agentskilldeck).
 
 ## About this example
 
-Original script (agentatelier), kids preset. GLOW's laugh is the voice's own (three joined native laugh tags). PIP's yawn plays the bundled sigh clip, because a native yawn is spoken as a word (owner listening, placement test).
+Original script (agentskilldeck), kids preset. GLOW's laugh is the voice's own (three joined native laugh tags). PIP's yawn plays the bundled sigh clip, because a native yawn is spoken as a word (owner listening, placement test).
 
 - Rendered by `produce.mjs` on 2026-10-11 with Supertonic 3 (supertonic 1.3.1); QA clean (12 segments).
 - `mix.mp3`: re-encoded from mix.wav at 112 kbps CBR to stay under 1 MB (produce.mjs writes LAME VBR quality 2), through a -2.19 dBFS peak limiter because the encode overshot the peak limit (decoded true peak -1.85 dBTP, sample peak -1.94 dBFS).

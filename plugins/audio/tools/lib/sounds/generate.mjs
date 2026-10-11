@@ -18,7 +18,7 @@ const RECIPES = {
   tone: `aevalsrc=0.12*sin(2*PI*110*t)+0.06*sin(2*PI*165*t)+0.03*sin(2*PI*220*t):s=${RATE}`,
 };
 
-// Same discovery as the mixer (AGENTATELIER_FFMPEG, PATH, then the usual install dirs).
+// Same discovery as the mixer (AGENTSKILLDECK_FFMPEG, PATH, then the usual install dirs).
 export const ffmpegPath = () => findFfmpeg();
 
 export function runFfmpeg(args) {
@@ -39,7 +39,7 @@ const codecArgs = (out) => (extname(out).toLowerCase() === '.mp3'
   : ['-c:a', 'pcm_s16le']);
 
 export function generatedSidecar(title) {
-  const s = { title, creator: 'agentatelier (ffmpeg generator)', license: 'generated', license_url: '', source_url: '' };
+  const s = { title, creator: 'agentskilldeck (ffmpeg generator)', license: 'generated', license_url: '', source_url: '' };
   return { ...s, attribution: attribution(s) };
 }
 

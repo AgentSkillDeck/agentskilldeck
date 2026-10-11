@@ -2,7 +2,7 @@ import './fixtures/native-env.mjs';
 // record.mjs and the user's own voice in produce.mjs, end to end with the fake
 // engine (and the fake clone worker). The "user" recordings are generated
 // audio; the microphone is never opened (the live path uses an ffmpeg lavfi
-// source through AGENTATELIER_RECORD_INPUT).
+// source through AGENTSKILLDECK_RECORD_INPUT).
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
@@ -40,7 +40,7 @@ async function call(fn, args, { env = {}, ...ctx } = {}) {
   let err = '';
   const code = await fn(args, {
     engine: { python: process.execPath, script: FAKE, clone: { python: process.execPath, script: FAKE_CLONE } },
-    env: { ...process.env, AGENTATELIER_VOICES: VOICES, ...env },
+    env: { ...process.env, AGENTSKILLDECK_VOICES: VOICES, ...env },
     interactive: false,
     stdout: (s) => { out += s; }, stderr: (s) => { err += s; }, ...ctx,
   });
@@ -210,7 +210,7 @@ test('--one-take splits one file into the speaker\'s lines by the ASR word times
 test('live per-line capture (lavfi source in place of the mic) stops on silence and stores the line', { skip: SKIP }, async () => {
   const out = join(work, 'live');
   const input = ['-re', '-f', 'lavfi', '-i', 'aevalsrc=if(between(t\\,0.3\\,1.5)\\,0.2*sin(2*PI*190*t)\\,0):s=44100:d=20'];
-  const r = await call(record, [scriptFile, '--speaker', 'ME', '--out', out, '--line', '8', '--consent', OWN], { env: { FAKE_ENGINE_ASR_TEXT: 'Good morning, Eli.', AGENTATELIER_RECORD_INPUT: JSON.stringify(input) } });
+  const r = await call(record, [scriptFile, '--speaker', 'ME', '--out', out, '--line', '8', '--consent', OWN], { env: { FAKE_ENGINE_ASR_TEXT: 'Good morning, Eli.', AGENTSKILLDECK_RECORD_INPUT: JSON.stringify(input) } });
   assert.equal(r.code, 0, r.err);
   assert.match(r.err, /Line 8 \(ME, happy\):\n {2}\(laugh\) Good morning, Eli\./);
   assert.match(r.err, /stops by itself after 1\.2 s of silence/);

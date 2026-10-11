@@ -28,9 +28,9 @@ test('parseVoice: presets, record, clone:<name> with an optional @base', () => {
   }
 });
 
-test('voicesDir honours AGENTATELIER_VOICES, else ~/.agentatelier/voices', () => {
-  assert.equal(voicesDir({ env: { AGENTATELIER_VOICES: '/x/v' }, home: '/h' }), '/x/v');
-  assert.equal(voicesDir({ env: {}, home: '/h' }), join('/h', '.agentatelier', 'voices'));
+test('voicesDir honours AGENTSKILLDECK_VOICES, else ~/.agentskilldeck/voices', () => {
+  assert.equal(voicesDir({ env: { AGENTSKILLDECK_VOICES: '/x/v' }, home: '/h' }), '/x/v');
+  assert.equal(voicesDir({ env: {}, home: '/h' }), join('/h', '.agentskilldeck', 'voices'));
 });
 
 test('consent statements: own voice, or a named speaker; anything else is refused', () => {
@@ -85,14 +85,14 @@ test('readPcm16/writePcm16 round-trip a mono WAV', () => {
 });
 
 test('clone voice store: write, read, load; missing voice or consent is a clear exit-1 error', () => {
-  const env = { AGENTATELIER_VOICES: join(tmp, 'store') };
+  const env = { AGENTSKILLDECK_VOICES: join(tmp, 'store') };
   const ref = join(tmp, 'ref.wav');
   writePcm16(ref, voiced(200, 44100, 2), 44100);
   assert.equal(readCloneVoice('me', { env }), null);
   assert.throws(() => loadCloneVoice('me', { env }), (e) => e instanceof CloneVoiceError && e.exitCode === 1 && /record\.mjs --reference --name me/.test(e.message));
   const v = writeCloneVoice('me', { reference: ref, f0_median_hz: 204.5, duration_s: 2, source: 'file', consent: parseConsent('This is my own voice') }, { env });
   assert.equal(v.base, 'F2');
-  const dir = join(env.AGENTATELIER_VOICES, 'me');
+  const dir = join(env.AGENTSKILLDECK_VOICES, 'me');
   assert.ok(existsSync(join(dir, 'reference.wav')));
   const meta = JSON.parse(readFileSync(join(dir, 'voice.json'), 'utf8'));
   assert.equal(meta.name, 'me');

@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/overdrive.md @ d631a88 (Apache-2.0) and uizze ui-design reference/overdrive.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/overdrive.md @ d631a88 (Apache-2.0) and uizze ui-design reference/overdrive.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Overdrive: exceptional interaction work
 
 Use this guide only when the user explicitly asks for overdrive, or for ambitious, technically exceptional interaction work on an existing experience. It is opt-in, never the default for ordinary UI work. It is a design workflow using the host's existing tools, not a command to download an engine.

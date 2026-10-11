@@ -1,5 +1,5 @@
-agentatelier
-Copyright 2026 agentatelier contributors
+agentskilldeck
+Copyright 2026 agentskilldeck contributors
 
 This product includes material adapted from the following works.
 
@@ -14,8 +14,8 @@ not an endorsement by the original author.
 -------------------------------------------------------------------------------
 Uizze skills — https://github.com/uizze/uizze
 Copyright (c) 2026 UIZZE.
-The SKILL.md files of atelier-design, atelier-review, atelier-radar and
-atelier-match adapt the uizze ui-design, anti-ui-slop, ui-radar and image-to-ui
+The SKILL.md files of deck-design, deck-review, deck-radar and
+deck-match adapt the uizze ui-design, anti-ui-slop, ui-radar and image-to-ui
 skills respectively.
 The ui-design and anti-ui-slop playbooks are licensed under the Apache License,
 Version 2.0 (themselves adapted from Impeccable). The ui-radar and image-to-ui
@@ -106,7 +106,7 @@ model, including the examples here. They are summarised in the audio plugin's
 ethics-licensing guide; the full text above governs.
 
 -------------------------------------------------------------------------------
-careeros voice skill (same author as agentatelier)
+careeros voice skill (same author as agentskilldeck)
 The audio guides "writing for the ear", script format, nonverbal, casting and
 captions adapt guidance from the careeros voice skill, which is owned by the
 author of this project and used with permission. That skill in turn credits

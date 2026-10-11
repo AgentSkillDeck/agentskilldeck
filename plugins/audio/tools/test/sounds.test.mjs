@@ -44,7 +44,7 @@ function fakeFetch({ openverse = () => json(OV), commons = () => json(COMMONS), 
   return f;
 }
 const offlineFetch = () => { const f = async () => { throw new TypeError('fetch failed'); }; f.calls = []; return f; };
-const hasFfmpeg = spawnSync(process.env.AGENTATELIER_FFMPEG || 'ffmpeg', ['-version']).status === 0;
+const hasFfmpeg = spawnSync(process.env.AGENTSKILLDECK_FFMPEG || 'ffmpeg', ['-version']).status === 0;
 const probe = (p) => Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', p], { encoding: 'utf8' }).stdout.trim());
 
 test('openverse results map to Sound with seconds, canonical license and TASL attribution', () => {
@@ -288,7 +288,7 @@ test('generateBreath (pack fallback for breath/sigh) is short and not silent', {
     await generateBreath(tag, out, { gender: 'male' });
     const d = probe(out);
     assert.ok(d > 0.5 && d <= 1.5, `${tag} ${d}`);
-    const st = spawnSync(process.env.AGENTATELIER_FFMPEG || 'ffmpeg', ['-hide_banner', '-i', out, '-af', 'astats=measure_perchannel=none:measure_overall=RMS_level', '-f', 'null', '-'], { encoding: 'utf8' }).stderr;
+    const st = spawnSync(process.env.AGENTSKILLDECK_FFMPEG || 'ffmpeg', ['-hide_banner', '-i', out, '-af', 'astats=measure_perchannel=none:measure_overall=RMS_level', '-f', 'null', '-'], { encoding: 'utf8' }).stderr;
     assert.ok(Number(st.match(/RMS level dB: (-?[\d.]+)/)[1]) > -40, tag);
   }
 });
@@ -374,12 +374,12 @@ test('generator finds ffmpeg through lib/ffmpeg.mjs discovery and reports a miss
   const gen = await import('../lib/sounds/generate.mjs');
   const ff = await import('../lib/ffmpeg.mjs');
   assert.equal(gen.ffmpegPath(), ff.ffmpegPath());
-  const prev = process.env.AGENTATELIER_FFMPEG;
-  process.env.AGENTATELIER_FFMPEG = join(work, 'no such ffmpeg');
+  const prev = process.env.AGENTSKILLDECK_FFMPEG;
+  process.env.AGENTSKILLDECK_FFMPEG = join(work, 'no such ffmpeg');
   try {
     await assert.rejects(generateBed('rain', 1, join(work, 'nogen', 'x.wav')), (e) => e.name === 'ServiceError');
   } finally {
-    if (prev === undefined) delete process.env.AGENTATELIER_FFMPEG; else process.env.AGENTATELIER_FFMPEG = prev;
+    if (prev === undefined) delete process.env.AGENTSKILLDECK_FFMPEG; else process.env.AGENTSKILLDECK_FFMPEG = prev;
   }
 });
 

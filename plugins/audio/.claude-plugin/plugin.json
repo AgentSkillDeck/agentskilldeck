@@ -3,9 +3,9 @@
   "version": "0.1.1",
   "description": "Finished multi-voice audio, free and on your machine: narration, dialogue, audiobooks (ACX), lessons, podcasts, drama, ads and meditations, with delivery presets, licensed sound, a transcription QA gate, mastering and captions.",
   "author": {
-    "name": "agentatelier"
+    "name": "agentskilldeck"
   },
-  "repository": "https://github.com/JKL404/agentatelier",
+  "repository": "https://github.com/AgentSkillDeck/agentskilldeck",
   "license": "Apache-2.0",
   "keywords": [
     "audio",

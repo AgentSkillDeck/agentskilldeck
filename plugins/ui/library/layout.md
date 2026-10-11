@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/layout.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/layout.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Layout
 
 Use this guide when the structure is the problem: unclear reading order, weak grouping, monotonous spacing, framework-default grids, or breakage across viewports.

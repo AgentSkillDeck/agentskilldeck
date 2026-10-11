@@ -1,7 +1,7 @@
-"""agentatelier clone worker: Chatterbox voice conversion (Resemble AI, MIT).
+"""agentskilldeck clone worker: Chatterbox voice conversion (Resemble AI, MIT).
 
 Turns a Supertonic render into the timbre of a reference recording, keeping
-its words, timing and delivery. Runs in its own venv (~/.agentatelier/venv-clone,
+its words, timing and delivery. Runs in its own venv (~/.agentskilldeck/venv-clone,
 `setup.mjs --install-clone`): chatterbox-tts==0.1.7 and setuptools<81 (the
 PerTh watermarker needs pkg_resources). ChatterboxVC applies Resemble's PerTh
 imperceptible watermark to every output; it is kept on.
@@ -17,7 +17,7 @@ the whole run: take 0, every retake round and the nonverbal fallback.
   {"mode": "warm"}
       -> {id: "warm", device}                  (downloads the weights, ~1.1 GB, once)
 
-Device: AGENTATELIER_CLONE_DEVICE, else mps when available, else cpu; a load
+Device: AGENTSKILLDECK_CLONE_DEVICE, else mps when available, else cpu; a load
 failure on mps falls back to cpu. Saved with soundfile (torchaudio.save needs
 torchcodec). Exit codes: 0 ok, 1 bad job or engine failure, 2 packages missing.
 """
@@ -53,7 +53,7 @@ except ImportError as e:
 
 
 def pick_device():
-    want = os.environ.get("AGENTATELIER_CLONE_DEVICE")
+    want = os.environ.get("AGENTSKILLDECK_CLONE_DEVICE")
     if want:
         return want
     try:

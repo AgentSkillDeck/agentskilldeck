@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/onboard.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/onboard.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Onboard
 
 Use this guide when designing or fixing first-run experiences: welcome and setup flows, first-use empty states, feature discovery, tours and in-product help.

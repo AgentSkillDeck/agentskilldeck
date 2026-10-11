@@ -273,7 +273,7 @@ export function writeCredits(assets, out, { draft = false, recorded = [], clones
     credited.push(`- ${text}`);
   }
   if (credited.length) lines.push('Sounds:', '', ...credited, '');
-  if ((assets ?? []).some((a) => a.license === 'generated' || a.source === 'generated')) lines.push('Generated sounds: no attribution required (made with ffmpeg by agentatelier).');
+  if ((assets ?? []).some((a) => a.license === 'generated' || a.source === 'generated')) lines.push('Generated sounds: no attribution required (made with ffmpeg by agentskilldeck).');
   const md = lines.join('\n') + '\n';
   writeFile(out, md);
   return md;

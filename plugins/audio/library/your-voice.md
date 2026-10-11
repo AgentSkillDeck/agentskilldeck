@@ -29,7 +29,7 @@ Every recording and every clone needs one typed statement, stored with the audio
 - `This is my own voice`
 - `I have the speaker's consent: <name>`
 
-Ask the user to type it themselves, then pass it word for word with `--consent "<statement>"` (or they type it at the prompt when running the command in their terminal). Never type it on their behalf, never invent a name, and do not proceed if they cannot give it. The statement is stored in `<out>/recordings/consent.json` (recorded lines, per speaker) or `~/.agentatelier/voices/<name>/consent.json` (clones). Each file also records how it was given (`"via": "flag"` or `"prompt"`) and when. This is a recorded attestation by the user, not a verification: the tools cannot check who typed it or whether the named person really agreed. `produce.mjs` refuses a `record` speaker or a clone without it (exit 1). Cloning a voice without the owner's consent, or presenting a clone as someone who did not agree, is never allowed ([ethics-licensing](ethics-licensing.md)).
+Ask the user to type it themselves, then pass it word for word with `--consent "<statement>"` (or they type it at the prompt when running the command in their terminal). Never type it on their behalf, never invent a name, and do not proceed if they cannot give it. The statement is stored in `<out>/recordings/consent.json` (recorded lines, per speaker) or `~/.agentskilldeck/voices/<name>/consent.json` (clones). Each file also records how it was given (`"via": "flag"` or `"prompt"`) and when. This is a recorded attestation by the user, not a verification: the tools cannot check who typed it or whether the named person really agreed. `produce.mjs` refuses a `record` speaker or a clone without it (exit 1). Cloning a voice without the owner's consent, or presenting a clone as someone who did not agree, is never allowed ([ethics-licensing](ethics-licensing.md)).
 
 ## Recorded lines
 
@@ -64,7 +64,7 @@ node scripts/record.mjs --reference --name me --consent "This is my own voice"  
 node scripts/record.mjs --reference --name me --from /abs/voice-memo.m4a --consent "..."   # from a file
 ```
 
-It stores `~/.agentatelier/voices/me/` with `reference.wav`, `consent.json` and `voice.json` (base voice, median pitch, duration). `--force` replaces an existing reference.
+It stores `~/.agentskilldeck/voices/me/` with `reference.wav`, `consent.json` and `voice.json` (base voice, median pitch, duration). `--force` replaces an existing reference.
 
 2. Cast `ME: { voice: clone:me }` and render with produce as usual. The first render needs the clone engine: ask once, then `node scripts/setup.mjs --install-clone` ([setup](setup.md)).
 

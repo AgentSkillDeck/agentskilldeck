@@ -18,7 +18,7 @@ const LIVE_AUDIO = process.env.LIVE_AUDIO === '1';
 const LIVE_CLONE = process.env.LIVE_CLONE === '1';
 const work = mkdtempSync(join(tmpdir(), 'aa live record '));
 after(() => { if (!process.env.KEEP_LIVE_OUT) rmSync(work, { recursive: true, force: true }); else process.stderr.write(`kept ${work}\n`); });
-const env = { ...process.env, AGENTATELIER_VOICES: join(work, 'voices') };
+const env = { ...process.env, AGENTSKILLDECK_VOICES: join(work, 'voices') };
 const OWN = 'This is my own voice';
 
 async function call(fn, args) {

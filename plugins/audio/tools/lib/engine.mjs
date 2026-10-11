@@ -39,22 +39,22 @@ export function which(name, env = process.env) {
 }
 
 export function venvDir({ env = process.env, home = homedir() } = {}) {
-  return env.AGENTATELIER_VENV || join(home, '.agentatelier', 'venv');
+  return env.AGENTSKILLDECK_VENV || join(home, '.agentskilldeck', 'venv');
 }
 
 // The optional clone engine (Chatterbox voice conversion) has its own venv:
-// AGENTATELIER_CLONE_VENV, else ~/.agentatelier/venv-clone.
+// AGENTSKILLDECK_CLONE_VENV, else ~/.agentskilldeck/venv-clone.
 export function cloneVenvDir({ env = process.env, home = homedir() } = {}) {
-  return env.AGENTATELIER_CLONE_VENV || join(home, '.agentatelier', 'venv-clone');
+  return env.AGENTSKILLDECK_CLONE_VENV || join(home, '.agentskilldeck', 'venv-clone');
 }
 
 export function venvPython(dir) {
   return process.platform === 'win32' ? join(dir, 'Scripts', 'python.exe') : join(dir, 'bin', 'python');
 }
 
-// Venv first (AGENTATELIER_VENV, then ~/.agentatelier/venv), then python3 on PATH.
+// Venv first (AGENTSKILLDECK_VENV, then ~/.agentskilldeck/venv), then python3 on PATH.
 export function findPython({ env = process.env, home = homedir() } = {}) {
-  const dirs = [env.AGENTATELIER_VENV, join(home, '.agentatelier', 'venv')].filter(Boolean);
+  const dirs = [env.AGENTSKILLDECK_VENV, join(home, '.agentskilldeck', 'venv')].filter(Boolean);
   for (const d of dirs) {
     const p = venvPython(d);
     if (isExecutable(p)) return p;
@@ -335,7 +335,7 @@ export async function draftSynth(item, out, { platform = process.platform, run =
   const ffmpeg = whichImpl('ffmpeg');
   if (!ffmpeg) throw new SetupError('ffmpeg not found; install it (macOS: `brew install ffmpeg`, Linux: `apt install ffmpeg`).');
   mkdirSync(dirname(out), { recursive: true });
-  const tmpBase = join(tmpdir(), `agentatelier-draft-${process.pid}-${Date.now()}-${Math.random().toString(36).slice(2)}`);
+  const tmpBase = join(tmpdir(), `agentskilldeck-draft-${process.pid}-${Date.now()}-${Math.random().toString(36).slice(2)}`);
   const raw = `${tmpBase}.wav`; // say: AIFF is big-endian only, so LEI16 needs a WAVE container
   const textFile = `${tmpBase}.txt`; // text via a file: a line starting with "-" is never read as an option
   writeFileSync(textFile, text);

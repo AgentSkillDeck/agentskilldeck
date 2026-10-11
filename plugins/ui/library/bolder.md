@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/bolder.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/bolder.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Bolder
 
 Use this guide when an existing section or screen reads flat and the task asks to make it bolder, stronger or more confident inside a visual world that has already shipped.

@@ -46,7 +46,7 @@ function parse(argv) {
   const badT = tags.filter((t) => !CANDIDATE_TAGS.includes(t));
   if (!tags.length || badT.length) throw new UsageError(`Unknown tag ${badT.join(', ')}. Tags: ${CANDIDATE_TAGS.join(', ')}.\n${USAGE}`);
   if (values.seeds !== undefined && !/^[1-9]\d*$/.test(values.seeds)) throw new UsageError(`--seeds must be a whole number of at least 1.\n${USAGE}`);
-  return { voices, tags, seeds: Number(values.seeds ?? 4), out: resolve(values.out ?? NATIVE_TABLE_PATH), cache: resolve(values.cache ?? join(tmpdir(), 'agentatelier-calibrate')) };
+  return { voices, tags, seeds: Number(values.seeds ?? 4), out: resolve(values.out ?? NATIVE_TABLE_PATH), cache: resolve(values.cache ?? join(tmpdir(), 'agentskilldeck-calibrate')) };
 }
 
 // Merges measured rows into a table, keeping owner_overrides and other rows.

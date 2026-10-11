@@ -2,7 +2,7 @@
 
 Voices synthesised with Supertonic 3 by Supertone Inc. (https://github.com/supertone-inc/supertonic); code MIT, model weights OpenRAIL-M. AI-generated voices, not real people.
 
-Generated sounds: no attribution required (made with ffmpeg by agentatelier).
+Generated sounds: no attribution required (made with ffmpeg by agentskilldeck).
 
 ## About this example
 

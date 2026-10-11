@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/audit.md and reference/audit.native.md @ d631a88 (Apache-2.0) and uizze ui-design reference/audit.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/audit.md and reference/audit.native.md @ d631a88 (Apache-2.0) and uizze ui-design reference/audit.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Audit an implemented interface
 
 Use this guide when the user explicitly asks for an audit or technical quality check of a built interface, web or native.

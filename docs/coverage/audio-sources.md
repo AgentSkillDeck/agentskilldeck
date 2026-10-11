@@ -6,10 +6,10 @@ Where the `plugins/audio` guides and skills got their material, and where each b
 
 | Source | What was used | License | Lives in |
 |---|---|---|---|
-| careeros `plugin/skills/voice/SKILL.md` (same author; read-only, not modified; it credits its own timing and pacing guidance to HyperFrames, Apache-2.0) | "Writing for the ear" rules and the narration script format (paragraph = scene, `[pause N]`, sparing expression tags, respell-then-fix-captions redo flow, default voice F4 and recommended male M3) | same author as agentatelier | `library/writing-for-the-ear.md`, `library/script-format.md`, `library/nonverbal.md`, `library/casting.md`, `library/captions.md` |
-| `agentatelier-lab/tagtest` (results.json, spec §2.1) | the measured spoken-tag table | lab evidence | `library/nonverbal.md` |
-| `agentatelier-lab/emotions/presets.py` | the 14 delivery presets: speed, gain, filters and every example line | lab evidence | `library/delivery.md` (values mirrored in `tools/lib/presets.mjs`) |
-| `agentatelier-lab/voices/voices.json` | measured median pitch, pitch range and words/s per voice (same sentence, seed 0, 10 steps) | lab evidence | `library/casting.md` |
+| careeros `plugin/skills/voice/SKILL.md` (same author; read-only, not modified; it credits its own timing and pacing guidance to HyperFrames, Apache-2.0) | "Writing for the ear" rules and the narration script format (paragraph = scene, `[pause N]`, sparing expression tags, respell-then-fix-captions redo flow, default voice F4 and recommended male M3) | same author as agentskilldeck | `library/writing-for-the-ear.md`, `library/script-format.md`, `library/nonverbal.md`, `library/casting.md`, `library/captions.md` |
+| `agentskilldeck-lab/tagtest` (results.json, spec §2.1) | the measured spoken-tag table | lab evidence | `library/nonverbal.md` |
+| `agentskilldeck-lab/emotions/presets.py` | the 14 delivery presets: speed, gain, filters and every example line | lab evidence | `library/delivery.md` (values mirrored in `tools/lib/presets.mjs`) |
+| `agentskilldeck-lab/voices/voices.json` | measured median pitch, pitch range and words/s per voice (same sentence, seed 0, 10 steps) | lab evidence | `library/casting.md` |
 | Supertonic 3 model license (OpenRAIL-M, Attachment A) and package metadata | use restrictions, disclosure rule, language list | OpenRAIL-M (model), MIT (code) | `library/ethics-licensing.md`, `library/script-format.md` |
 | HyperFrames `hyperframes-audio` / `media-use` | ideas only: voiceover carve and sidechain ducking, separate music stem, `audio_meta.json` shape | Apache-2.0 (ideas, no text copied) | `library/mixing.md`, `library/captions.md` |
 | opus-sound-layer | idea: a QA gate that fails on loudness or peaks | ideas only | `library/mastering.md` |
@@ -31,8 +31,8 @@ Where the `plugins/audio` guides and skills got their material, and where each b
 | Paragraphs separated by a blank line, one paragraph per scene | script-format, "Narration-only scripts" | kept; added the `Word:` trap |
 | `[pause 8]` paragraph makes 8 s of silence | script-format, cue table | now a cue usable anywhere; exempt from the 4 s silence gate |
 | `# notes` lines are skipped | script-format, "Characters that never reach the engine" | not carried over: the audio format has no body comments; use `[scene:]` |
-| Default voice F4; M3 as the recommended male alternative; never change the user's voice without asking | casting, voice map and rule 8; atelier-voice "Before the first render" | kept |
+| Default voice F4; M3 as the recommended male alternative; never change the user's voice without asking | casting, voice map and rule 8; deck-voice "Before the first render" | kept |
 | Voice previews of all ten voices from one sentence | casting, "Audition before you cast" (`audition.mjs`) | per line, with emotion and language options |
-| Redo: respell the word for that line, re-render, set the caption word back; never edit the WAV | writing-for-the-ear, "Pronunciation"; captions, caption rules; atelier-voice "Redo a line" | the content-hash cache re-renders only the changed line |
+| Redo: respell the word for that line, re-render, set the caption word back; never edit the WAV | writing-for-the-ear, "Pronunciation"; captions, caption rules; deck-voice "Redo a line" | the content-hash cache re-renders only the changed line |
 | Fallback to macOS `say`, and tell the user the voice changed | setup, "Draft fallback" | drafts are explicit (`--draft`), never a silent fallback for finals |
 | Exit codes | every SKILL.md, "Exit codes" | renumbered to the plugin's 0/1/2/3 scheme |

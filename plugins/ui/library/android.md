@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/android.md @ d631a88 (Apache-2.0), itself distilled from ehmo/platform-design-skills (MIT, https://github.com/ehmo/platform-design-skills); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/android.md @ d631a88 (Apache-2.0), itself distilled from ehmo/platform-design-skills (MIT, https://github.com/ehmo/platform-design-skills); modified by agentskilldeck -->
 # Android
 
 Use this guide when building or reviewing a native Android app: Jetpack Compose, Android Views, React Native, Expo or Flutter shipping to Android hardware.

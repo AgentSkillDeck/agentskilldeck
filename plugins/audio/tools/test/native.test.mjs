@@ -40,7 +40,7 @@ test('nativeVerdict: the owner override for the voice wins, then the "*" overrid
 
 test('clone voices use their base voice row (voice.json in the voice store, or @base); no voice is the engine default M1', () => {
   const store = join(work, 'voices');
-  const env = { AGENTATELIER_VOICES: store };
+  const env = { AGENTSKILLDECK_VOICES: store };
   for (const [name, base] of [['rex', 'M3'], ['ana', 'F4']]) {
     mkdirSync(join(store, name), { recursive: true });
     writeFileSync(join(store, name, 'voice.json'), JSON.stringify({ version: 1, name, base, reference: 'reference.wav' }));
@@ -53,10 +53,10 @@ test('clone voices use their base voice row (voice.json in the voice store, or @
   assert.equal(nativeOk('clone:rex', 'cough', TABLE, { env }), false);
   assert.equal(nativeOk('clone:ana', 'cough', TABLE, { env }), true);
   assert.equal(nativeOk('clone:someone', 'laugh', TABLE, { env }), false, 'an unknown base has no row: sample');
-  const prev = process.env.AGENTATELIER_VOICES;
-  process.env.AGENTATELIER_VOICES = store;
+  const prev = process.env.AGENTSKILLDECK_VOICES;
+  process.env.AGENTSKILLDECK_VOICES = store;
   try { assert.equal(nativeVerdict('clone:ana', 'cough', TABLE).ok, true, 'process env is the default'); } finally {
-    if (prev === undefined) delete process.env.AGENTATELIER_VOICES; else process.env.AGENTATELIER_VOICES = prev;
+    if (prev === undefined) delete process.env.AGENTSKILLDECK_VOICES; else process.env.AGENTSKILLDECK_VOICES = prev;
   }
 });
 

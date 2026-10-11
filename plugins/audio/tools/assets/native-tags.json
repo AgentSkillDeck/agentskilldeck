@@ -2,7 +2,7 @@
   "_meta": {
     "about": "Per-voice verdicts for Supertonic's native nonverbal tags, sent as joined stacks (lib/native.mjs NATIVE_STACK). Rows are written by tools/calibrate.mjs (laugh only by default); owner_overrides record listening and placement tests and always win (voice first, then \"*\" for every voice). A tag with no ok verdict is spliced from the sample pack.",
     "status": "calibrated",
-    "placement_test": "2026-10-11, agentatelier-lab/placement: 6 tags x 5 positions (line start, after period, after comma, mid line without punctuation, line end) x 3 spacings (spaced, joined, glued) on M3 and F4, insertion QA. Clean takes: laugh 28/28, hmm 18/28, cough 17/28, breath 16/28, groan 6/28, yawn 2/28. Joined stacks scored best overall (58% vs 47% spaced). Decision: native laugh only.",
+    "placement_test": "2026-10-11, agentskilldeck-lab/placement: 6 tags x 5 positions (line start, after period, after comma, mid line without punctuation, line end) x 3 spacings (spaced, joined, glued) on M3 and F4, insertion QA. Clean takes: laugh 28/28, hmm 18/28, cough 17/28, breath 16/28, groan 6/28, yawn 2/28. Joined stacks scored best overall (58% vs 47% spaced). Decision: native laugh only.",
     "owner_listening": "2026-10-10/11: laugh x3 works on M3 and F4; sigh x3 spoken; cough x3 spoken on M3 (works on F4); breath x3 spoken on F4 (works on M3); yawn x3 spoken on M3 and F4; groan x3 spoken on F4 (works on M3).",
     "calibrated_at": "2026-10-11",
     "engine": "supertonic 3 (supertonic 1.3.1), 10 steps; QA faster-whisper",

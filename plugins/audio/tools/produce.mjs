@@ -122,7 +122,7 @@ async function producePipeline(opts, ctx, run) {
     if (f.kind === 'clone' && !clones.has(it.voice)) clones.set(it.voice, loadCloneVoice(f.name, { env, ...(f.base ? { base: f.base } : {}) }));
   }
 
-  if (!(await (ctx.hasFfmpeg ?? hasFfmpeg)())) throw new SetupError('ffmpeg not found. Install it (macOS: `brew install ffmpeg`, Linux: `sudo apt install ffmpeg`) or set AGENTATELIER_FFMPEG.');
+  if (!(await (ctx.hasFfmpeg ?? hasFfmpeg)())) throw new SetupError('ffmpeg not found. Install it (macOS: `brew install ffmpeg`, Linux: `sudo apt install ffmpeg`) or set AGENTSKILLDECK_FFMPEG.');
   const engine = await selectEngine({ draft: opts.draft, engine: ctx.engine, env, checkSetupImpl: ctx.checkSetup, clone: clones.size > 0, checkCloneImpl: ctx.checkCloneSetup });
   const draft = engine.mode === 'draft';
   if (draft) warn('draft voice: rendered with the system voice for timing only (not Supertonic); not for release');

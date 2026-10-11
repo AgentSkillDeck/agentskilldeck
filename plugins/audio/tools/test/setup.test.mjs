@@ -13,7 +13,7 @@ after(() => rmSync(tmp, { recursive: true, force: true }));
 
 function fakeHome({ venv = true, model = true } = {}) {
   const home = mkdtempSync(join(tmp, 'home-'));
-  if (venv) { mkdirSync(join(home, '.agentatelier', 'venv', 'bin'), { recursive: true }); writeFileSync(join(home, '.agentatelier', 'venv', 'bin', 'python'), '', { mode: 0o755 }); }
+  if (venv) { mkdirSync(join(home, '.agentskilldeck', 'venv', 'bin'), { recursive: true }); writeFileSync(join(home, '.agentskilldeck', 'venv', 'bin', 'python'), '', { mode: 0o755 }); }
   if (model) { mkdirSync(join(home, '.cache', 'supertonic3', 'onnx'), { recursive: true }); for (const f of ['duration_predictor', 'text_encoder', 'vector_estimator', 'vocoder']) writeFileSync(join(home, '.cache', 'supertonic3', 'onnx', `${f}.onnx`), 'x'); }
   return home;
 }
@@ -24,8 +24,8 @@ test('checkSetup reports every field and ok when all present', async () => {
   const home = fakeHome();
   const r = await checkSetup({ env: { PATH: '' }, home, which, probe });
   assert.deepEqual(Object.keys(r), ['python', 'venv', 'supertonic', 'whisper', 'model_cached', 'ffmpeg', 'ffprobe', 'ok']);
-  assert.equal(r.python, join(home, '.agentatelier', 'venv', 'bin', 'python'));
-  assert.equal(r.venv, join(home, '.agentatelier', 'venv'));
+  assert.equal(r.python, join(home, '.agentskilldeck', 'venv', 'bin', 'python'));
+  assert.equal(r.venv, join(home, '.agentskilldeck', 'venv'));
   assert.equal(r.supertonic, '1.3.1');
   assert.equal(r.whisper, '1.2.1');
   assert.equal(r.model_cached, true);
@@ -82,7 +82,7 @@ test('main --install runs venv, pip, warm-up in order, prints steps and records 
   };
   const code = await main(['--install'], { env: {}, home, which, probe, run, warm, stdout: (s) => { out += s; }, stderr: () => {} });
   assert.equal(code, 0, out);
-  const venv = join(home, '.agentatelier', 'venv');
+  const venv = join(home, '.agentskilldeck', 'venv');
   assert.deepEqual(calls[0], ['/opt/bin/python3', '-m', 'venv', venv]);
   assert.equal(calls[1][0], join(venv, 'bin', 'python'));
   assert.deepEqual(calls[1].slice(1, 4), ['-m', 'pip', 'install']);
@@ -90,7 +90,7 @@ test('main --install runs venv, pip, warm-up in order, prints steps and records 
   assert.deepEqual(calls.at(-1), ['warm', join(venv, 'bin', 'python')]);
   assert.match(out, /\[1\/4\]/);
   assert.match(out, /\[4\/4\]/);
-  assert.deepEqual(JSON.parse(readFileSync(join(home, '.agentatelier', 'config.json'), 'utf8')), { install_ok: true });
+  assert.deepEqual(JSON.parse(readFileSync(join(home, '.agentskilldeck', 'config.json'), 'utf8')), { install_ok: true });
 });
 
 test('main --install exits 2 with the failing step when pip fails', async () => {
@@ -107,7 +107,7 @@ test('main --install exits 2 with the failing step when pip fails', async () => 
 
 function cloneHome({ venv = true, model = true } = {}) {
   const home = fakeHome();
-  if (venv) { mkdirSync(join(home, '.agentatelier', 'venv-clone', 'bin'), { recursive: true }); writeFileSync(join(home, '.agentatelier', 'venv-clone', 'bin', 'python'), '', { mode: 0o755 }); }
+  if (venv) { mkdirSync(join(home, '.agentskilldeck', 'venv-clone', 'bin'), { recursive: true }); writeFileSync(join(home, '.agentskilldeck', 'venv-clone', 'bin', 'python'), '', { mode: 0o755 }); }
   if (model) { const snap = join(home, '.cache', 'huggingface', 'hub', 'models--ResembleAI--chatterbox', 'snapshots', 'abc'); mkdirSync(snap, { recursive: true }); writeFileSync(join(snap, 's3gen.safetensors'), 'x'); }
   return home;
 }
@@ -116,14 +116,14 @@ const cloneProbe = async () => ({ chatterbox: '0.1.7', torch: '2.9.0' });
 test('checkCloneSetup reports the optional clone venv, its packages and the cached weights', async () => {
   const home = cloneHome();
   const r = await checkCloneSetup({ env: {}, home, probe: cloneProbe });
-  assert.deepEqual(r, { optional: true, venv: join(home, '.agentatelier', 'venv-clone'), python: join(home, '.agentatelier', 'venv-clone', 'bin', 'python'), chatterbox: '0.1.7', torch: '2.9.0', model_cached: true, ok: true });
+  assert.deepEqual(r, { optional: true, venv: join(home, '.agentskilldeck', 'venv-clone'), python: join(home, '.agentskilldeck', 'venv-clone', 'bin', 'python'), chatterbox: '0.1.7', torch: '2.9.0', model_cached: true, ok: true });
   const none = await checkCloneSetup({ env: {}, home: fakeHome(), probe: cloneProbe });
   assert.equal(none.venv, null);
   assert.equal(none.python, null);
   assert.equal(none.chatterbox, null);
   assert.equal(none.ok, false);
-  const other = await checkCloneSetup({ env: { AGENTATELIER_CLONE_VENV: join(home, 'elsewhere') }, home, probe: cloneProbe });
-  assert.equal(other.venv, null, 'AGENTATELIER_CLONE_VENV moves the venv');
+  const other = await checkCloneSetup({ env: { AGENTSKILLDECK_CLONE_VENV: join(home, 'elsewhere') }, home, probe: cloneProbe });
+  assert.equal(other.venv, null, 'AGENTSKILLDECK_CLONE_VENV moves the venv');
   const noWeights = await checkCloneSetup({ env: {}, home: cloneHome({ model: false }), probe: cloneProbe });
   assert.equal(noWeights.model_cached, false);
   assert.equal(noWeights.ok, true, 'the weights download on first use');
@@ -150,7 +150,7 @@ test('main --install-clone creates the clone venv, installs requirements-clone.t
   const warmClone = async (python) => { calls.push(['warm-clone', python]); };
   const code = await main(['--install-clone'], { env: {}, home, which, probe, cloneProbe, run, warmClone, stdout: (s) => { out += s; }, stderr: () => {} });
   assert.equal(code, 0, out);
-  const venv = join(home, '.agentatelier', 'venv-clone');
+  const venv = join(home, '.agentskilldeck', 'venv-clone');
   assert.deepEqual(calls[0], ['/opt/bin/python3', '-m', 'venv', venv]);
   assert.deepEqual(calls[1].slice(0, 4), [join(venv, 'bin', 'python'), '-m', 'pip', 'install']);
   assert.equal(calls[1].at(-1), CLONE_REQUIREMENTS);
@@ -158,7 +158,7 @@ test('main --install-clone creates the clone venv, installs requirements-clone.t
   assert.deepEqual(calls.at(-1), ['warm-clone', join(venv, 'bin', 'python')]);
   assert.match(out, /\[1\/4\]/);
   assert.match(out, /PerTh/);
-  assert.equal(JSON.parse(readFileSync(join(home, '.agentatelier', 'config.json'), 'utf8')).clone_install_ok, true);
+  assert.equal(JSON.parse(readFileSync(join(home, '.agentskilldeck', 'config.json'), 'utf8')).clone_install_ok, true);
   let err = '';
   const failing = async (cmd, args) => { if (args.includes('pip')) throw new Error('pip exited with code 1'); return run(cmd, args); };
   assert.equal(await main(['--install-clone'], { env: {}, home: fakeHome(), which, probe, cloneProbe, run: failing, warmClone, stdout: () => {}, stderr: (s) => { err += s; } }), 2);
@@ -175,7 +175,7 @@ for (const [label, dir] of [['real path', toolsDir], ['symlinked dir', linkedToo
     const home = fakeHome({ venv: false, model: false });
     const r = spawnSync(process.execPath, [join(dir, 'setup.mjs'), '--check'], {
       encoding: 'utf8', timeout: 20_000,
-      env: { HOME: home, PATH: '', AGENTATELIER_VENV: join(home, 'none'), PYTHONDONTWRITEBYTECODE: '1' },
+      env: { HOME: home, PATH: '', AGENTSKILLDECK_VENV: join(home, 'none'), PYTHONDONTWRITEBYTECODE: '1' },
     });
     assert.equal(r.status, 2, r.stderr);
     const j = JSON.parse(r.stdout);

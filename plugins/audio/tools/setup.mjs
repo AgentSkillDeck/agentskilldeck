@@ -122,7 +122,7 @@ function runLoud(cmd, args) {
 
 // One-word synth (downloads/loads Supertonic) and its transcription (downloads whisper base.en).
 async function defaultWarm(python) {
-  const dir = mkdtempSync(join(tmpdir(), 'agentatelier-warm-'));
+  const dir = mkdtempSync(join(tmpdir(), 'agentskilldeck-warm-'));
   try {
     const [s] = await runWorker({ mode: 'synth', out_dir: dir, items: [{ id: 'warm', text: 'Hello.', voice: 'M1', lang: 'en', speed: 1, seed: 0 }] }, { python });
     await runWorker({ mode: 'asr', items: [{ id: 'warm', path: s.path, lang: 'en' }] }, { python });
@@ -132,7 +132,7 @@ async function defaultWarm(python) {
 }
 
 function recordInstall(home, key = 'install_ok') {
-  const dir = join(home, '.agentatelier');
+  const dir = join(home, '.agentskilldeck');
   const file = join(dir, 'config.json');
   let cfg = {};
   try { cfg = JSON.parse(readFileSync(file, 'utf8')); } catch { /* new or unreadable: start fresh */ }

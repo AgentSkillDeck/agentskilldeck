@@ -11,7 +11,7 @@ node scripts/setup.mjs --check
 Prints JSON and exits 0 when everything is ready, 2 when something is missing:
 
 ```json
-{ "python": "/Users/me/.agentatelier/venv/bin/python", "venv": "/Users/me/.agentatelier/venv",
+{ "python": "/Users/me/.agentskilldeck/venv/bin/python", "venv": "/Users/me/.agentskilldeck/venv",
   "supertonic": "1.3.1", "whisper": "1.2.1", "model_cached": true,
   "ffmpeg": "/opt/homebrew/bin/ffmpeg", "ffprobe": "/opt/homebrew/bin/ffprobe", "ok": true }
 ```
@@ -22,11 +22,11 @@ Run it at the start of the first audio task in a conversation. If it exits 0, go
 
 If anything is missing, ask the user one question, with the facts:
 
-> To render voices on this machine I need to install a Python environment at `~/.agentatelier/venv` with Supertonic 3 and faster-whisper, and download about 550 MB of models (400 MB voice, 150 MB speech recognition). It runs offline afterwards and nothing is sent anywhere. Install now? If not, I can make a draft with the system voice for timing only.
+> To render voices on this machine I need to install a Python environment at `~/.agentskilldeck/venv` with Supertonic 3 and faster-whisper, and download about 550 MB of models (400 MB voice, 150 MB speech recognition). It runs offline afterwards and nothing is sent anywhere. Install now? If not, I can make a draft with the system voice for timing only.
 
 - **Yes:** run the install (step 3).
 - **No:** use `--draft` renders for this conversation and do not ask again in it. Say clearly that draft output uses the system voice and is not a final.
-- Once installed, `~/.agentatelier/config.json` records `"install_ok": true`. Later conversations see `--check` pass and never ask.
+- Once installed, `~/.agentskilldeck/config.json` records `"install_ok": true`. Later conversations see `--check` pass and never ask.
 
 If only ffmpeg is missing, do not install the Python side yet; ask the user to install ffmpeg first (below). The tools never run a system package manager themselves.
 
@@ -49,24 +49,24 @@ Python 3.10 or later is required; on macOS, `brew install python` if `python3` i
 
 Only when the user wants a clone of their own voice (`voice: clone:<name>`, see [your-voice](your-voice.md)). `--check` reports it under `"clone"` (`"optional": true`); its absence never fails the check. A render with a clone voice and no clone engine exits 2 with this hint. Ask once, with the facts:
 
-> To clone your voice on this machine I need to install a second Python environment at `~/.agentatelier/venv-clone` with Chatterbox voice conversion (Resemble AI, MIT): about 1.5 GB of packages (PyTorch) and 1.1 GB of model weights. It runs offline afterwards, nothing is uploaded, and every converted line carries an imperceptible watermark that marks it as AI-generated. Install now?
+> To clone your voice on this machine I need to install a second Python environment at `~/.agentskilldeck/venv-clone` with Chatterbox voice conversion (Resemble AI, MIT): about 1.5 GB of packages (PyTorch) and 1.1 GB of model weights. It runs offline afterwards, nothing is uploaded, and every converted line carries an imperceptible watermark that marks it as AI-generated. Install now?
 
 ```sh
 node scripts/setup.mjs --install-clone
 ```
 
-It creates the venv, installs `chatterbox-tts==0.1.7` and `setuptools<81` (the watermarker needs `pkg_resources`), then loads the converter once (the weight download). `~/.agentatelier/config.json` records `"clone_install_ok": true`. If the user declines, cast a preset or `voice: record` instead. It runs on Apple-silicon GPUs (MPS), CUDA or the CPU; set `AGENTATELIER_CLONE_DEVICE=cpu` to force the CPU.
+It creates the venv, installs `chatterbox-tts==0.1.7` and `setuptools<81` (the watermarker needs `pkg_resources`), then loads the converter once (the weight download). `~/.agentskilldeck/config.json` records `"clone_install_ok": true`. If the user declines, cast a preset or `voice: record` instead. It runs on Apple-silicon GPUs (MPS), CUDA or the CPU; set `AGENTSKILLDECK_CLONE_DEVICE=cpu` to force the CPU.
 
 ## Overrides
 
 | Variable | Effect |
 |---|---|
-| `AGENTATELIER_VENV` | use a different venv directory |
-| `AGENTATELIER_CLONE_VENV` | use a different clone venv (default `~/.agentatelier/venv-clone`) |
-| `AGENTATELIER_VOICES` | where clone voices live (default `~/.agentatelier/voices`) |
-| `AGENTATELIER_CLONE_DEVICE` | `mps`, `cuda` or `cpu` for the clone engine |
+| `AGENTSKILLDECK_VENV` | use a different venv directory |
+| `AGENTSKILLDECK_CLONE_VENV` | use a different clone venv (default `~/.agentskilldeck/venv-clone`) |
+| `AGENTSKILLDECK_VOICES` | where clone voices live (default `~/.agentskilldeck/voices`) |
+| `AGENTSKILLDECK_CLONE_DEVICE` | `mps`, `cuda` or `cpu` for the clone engine |
 | `SUPERTONIC_CACHE_DIR` | where the voice model lives (default `~/.cache/supertonic3`) |
-| `AGENTATELIER_FFMPEG` | ffmpeg binary used by the sound generator |
+| `AGENTSKILLDECK_FFMPEG` | ffmpeg binary used by the sound generator |
 | `FREESOUND_TOKEN` | optional Freesound API token for more sound effects |
 
 ## Draft fallback
@@ -81,6 +81,6 @@ It creates the venv, installs `chatterbox-tts==0.1.7` and `setuptools<81` (the w
 | `pip` fails on a package | re-run `--install`; if it still fails, show the user the last lines of the error |
 | `model_cached: false` after install | the download was interrupted; re-run `--install` |
 | `ffmpeg: null` | install ffmpeg (above) |
-| everything installed but `ok: false` | check `AGENTATELIER_VENV` is not pointing at an old venv |
+| everything installed but `ok: false` | check `AGENTSKILLDECK_VENV` is not pointing at an old venv |
 
 Exit codes of every script: 0 ok, 1 usage or script error, 2 setup missing or service error, 3 QA failed (outputs kept).

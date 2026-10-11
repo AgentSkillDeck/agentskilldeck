@@ -7,7 +7,7 @@ import { layoutTimeline, buildDialogueStem, buildMix, mixArgs } from '../lib/mix
 import { run, hasFfmpeg, probeDuration, onRun, countInputs } from '../lib/ffmpeg.mjs';
 
 const HAVE_FFMPEG = await hasFfmpeg();
-const SKIP = HAVE_FFMPEG ? false : 'ffmpeg not found (install ffmpeg or set AGENTATELIER_FFMPEG) - skipping real-audio test';
+const SKIP = HAVE_FFMPEG ? false : 'ffmpeg not found (install ffmpeg or set AGENTSKILLDECK_FFMPEG) - skipping real-audio test';
 
 async function sine(path, { f = 440, d = 1, ch = 'mono' } = {}) {
   await run(['-filter_complex', `sine=f=${f}:d=${d},aformat=sample_fmts=s16:sample_rates=44100:channel_layouts=${ch}`, '-c:a', 'pcm_s16le', path]);

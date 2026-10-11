@@ -1,8 +1,8 @@
 {
-  "name": "agentatelier",
+  "name": "agentskilldeck",
   "owner": {
-    "name": "agentatelier",
-    "url": "https://github.com/JKL404/agentatelier"
+    "name": "AgentSkillDeck",
+    "url": "https://github.com/AgentSkillDeck/agentskilldeck"
   },
   "metadata": {
     "description": "Open plugins for coding agents: design, engineering and more.",

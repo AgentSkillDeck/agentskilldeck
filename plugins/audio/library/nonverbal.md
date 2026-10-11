@@ -64,7 +64,7 @@ Joined stacks scored best overall (58% clean against 47% spaced). The decision: 
 
 ## The native-tag table
 
-The decision lives in `tools/assets/native-tags.json`, not in code: one row per voice and tag, plus `owner_overrides` that always win (first for the voice, then for every voice, `"*"`). The shipped table allows the laugh (calibrated 2026-10-11: 8/8 clean takes on each of F1–F5 and M1–M5; confirmed by ear on M3 and F4) and marks every other tag `ok: false` ("placement test 2026-10-11"). A clone voice (`clone:<name>`) uses its base voice's row: the `base` in `~/.agentatelier/voices/<name>/voice.json`, or the voice after `@` in `clone:<name>@F2`. A recorded line (`voice: record`) never sends tags: the speaker performs them.
+The decision lives in `tools/assets/native-tags.json`, not in code: one row per voice and tag, plus `owner_overrides` that always win (first for the voice, then for every voice, `"*"`). The shipped table allows the laugh (calibrated 2026-10-11: 8/8 clean takes on each of F1–F5 and M1–M5; confirmed by ear on M3 and F4) and marks every other tag `ok: false` ("placement test 2026-10-11"). A clone voice (`clone:<name>`) uses its base voice's row: the `base` in `~/.agentskilldeck/voices/<name>/voice.json`, or the voice after `@` in `clone:<name>@F2`. A recorded line (`voice: record`) never sends tags: the speaker performs them.
 
 `calibrate.mjs` writes the rows: each tag as a joined stack in two positions × 4 seeds per voice, checked by the production QA; `ok` only if every take passes. By default it measures the laugh only:
 
@@ -73,7 +73,7 @@ node scripts/calibrate.mjs                                  # laugh, all voices,
 node scripts/calibrate.mjs --voices M3,F4 --tags cough --seeds 6   # re-measure another tag after an engine upgrade
 ```
 
-It rewrites the rows it measured and keeps everything else, including the overrides; to let a re-measured tag through, remove its `"*"` override after listening. `AGENTATELIER_NATIVE_TAGS=<file>` points the tools at another table. QA hears less than a listener (a stacked sigh passed the transcript check on M3 while the owner heard the word), so a new `ok` from calibration alone deserves a listen.
+It rewrites the rows it measured and keeps everything else, including the overrides; to let a re-measured tag through, remove its `"*"` override after listening. `AGENTSKILLDECK_NATIVE_TAGS=<file>` points the tools at another table. QA hears less than a listener (a stacked sigh passed the transcript check on M3 while the owner heard the word), so a new `ok` from calibration alone deserves a listen.
 
 ## Laugh size
 

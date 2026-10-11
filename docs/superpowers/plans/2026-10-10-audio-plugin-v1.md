@@ -2,11 +2,11 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Ship the `audio` plugin in the agentatelier marketplace. One `*.audio.md` script becomes a mastered mix, stems, `timeline.json`, captions, a HyperFrames `audio_meta.json` and credits, voiced on-device by Supertonic 3 with spliced nonverbals and a transcript QA gate.
+**Goal:** Ship the `audio` plugin in the agentskilldeck marketplace. One `*.audio.md` script becomes a mastered mix, stems, `timeline.json`, captions, a HyperFrames `audio_meta.json` and credits, voiced on-device by Supertonic 3 with spliced nonverbals and a transcript QA gate.
 
 **Architecture:**
 - Dependency-free Node ≥18 ESM tools do parsing, planning, sound sourcing, ffmpeg mixing, QA scoring and deliverables.
-- A thin Python worker (`engine/synth.py`, run in `~/.agentatelier/venv`) does synthesis and transcription in one model load per batch, using JSON in and JSON out.
+- A thin Python worker (`engine/synth.py`, run in `~/.agentskilldeck/venv`) does synthesis and transcription in one model load per batch, using JSON in and JSON out.
 - Skills and guides follow the ui plugin's library → skill sync model.
 
 **Tech Stack:**
@@ -15,13 +15,13 @@
 - ffmpeg/ffprobe
 - Openverse, Wikimedia Commons and Internet Archive APIs (no key); Freesound (optional token)
 
-**Spec:** `docs/superpowers/specs/2026-10-10-audio-plugin-design.md`. Lab evidence: `~/Project/agentatelier-lab/` (tagtest, emotions).
+**Spec:** `docs/superpowers/specs/2026-10-10-audio-plugin-design.md`. Lab evidence: `~/Project/agentskilldeck-lab/` (tagtest, emotions).
 
 ## Global Constraints
 
 - Node ≥18, no npm dependencies. Python deps are only those in `engine/requirements.txt`: `supertonic==1.3.1`, `faster-whisper==1.2.1`, `soundfile`, `numpy`.
 - Load audio with soundfile and resample with numpy, never PyAV. faster-whisper's own `decode_audio` breaks with the installed `av` (`metadata_errors` TypeError).
-- The venv lives at `~/.agentatelier/venv`, with `AGENTATELIER_VENV` as an override. Config is `~/.agentatelier/config.json`. The cache is `tmpdir()/agentatelier-cache-<uid>` (mode 0700), as in the ui plugin's `http.mjs`.
+- The venv lives at `~/.agentskilldeck/venv`, with `AGENTSKILLDECK_VENV` as an override. Config is `~/.agentskilldeck/config.json`. The cache is `tmpdir()/agentskilldeck-cache-<uid>` (mode 0700), as in the ui plugin's `http.mjs`.
 - Never pass `[ ] ( ) * / | # _`, unknown tags, `<breath>` or `<sigh>` to Supertonic. Only plain text goes in, plus `<laugh>` when `nonverbals: model`.
 - Exit codes: 0 ok · 1 script/usage error · 2 setup missing or service error · 3 QA failed (outputs kept).
 - Commands in SKILL.md run from the skill base directory: `node scripts/<tool>.mjs …`.
@@ -97,7 +97,7 @@
 
 **Interfaces:**
 - `DOMAIN_PRESETS` keys: `education, audiobook, drama, podcast, playbook, ad, meditation, kids, language, video`. Each is `{speed, gap_s, lead_s, tail_s, music: 'none'|'bed'|'scored'|'stinger', duck_db, loudness: {mode: 'lufs'|'acx', I?, TP, rms_min?, rms_max?, peak_max?}, captions: bool, room_tone?: {head_s, tail_s}}`, using the values in spec §5. `drama.gap_s` = 0.25, `audiobook.loudness` = `{mode: 'acx', rms_min: -23, rms_max: -18, peak_max: -3}`, and so on.
-- `DELIVERY_PRESETS` keys: the 14 from spec §6. Each is `{speed, gain_db, af: string (ffmpeg filter or ''), pre_s, post_s, nonverbal?: tag}`. Start from `~/Project/agentatelier-lab/emotions/presets.py` (speed, gain and fx). `hushed` uses gain -9 with `highpass=f=250,lowpass=f=5000`.
+- `DELIVERY_PRESETS` keys: the 14 from spec §6. Each is `{speed, gain_db, af: string (ffmpeg filter or ''), pre_s, post_s, nonverbal?: tag}`. Start from `~/Project/agentskilldeck-lab/emotions/presets.py` (speed, gain and fx). `hushed` uses gain -9 with `highpass=f=250,lowpass=f=5000`.
 - Modifiers: `slow ×0.9`, `fast ×1.1`, `loud +3 dB`, `soft -4 dB`. Speed is clamped to 0.7–2.0.
 - `planRender(parsed, {preset?, voiceOverrides?}) → Plan`:
   - `Plan = {meta, preset, items: PlanItem[]}`
@@ -263,11 +263,11 @@
 ### Task 9: Library guides + three skills
 
 **Files:**
-- Create: `plugins/audio/library/{script-format,domains,delivery,casting,nonverbal,sound-sourcing,mixing,mastering,captions,ethics-licensing,writing-for-the-ear,setup}.md`, `plugins/audio/skills/{atelier-script,atelier-voice,atelier-mix}/SKILL.md`, `docs/coverage/audio-sources.md`
+- Create: `plugins/audio/library/{script-format,domains,delivery,casting,nonverbal,sound-sourcing,mixing,mastering,captions,ethics-licensing,writing-for-the-ear,setup}.md`, `plugins/audio/skills/{deck-script,deck-voice,deck-mix}/SKILL.md`, `docs/coverage/audio-sources.md`
 - Modify: `plugins/audio/sync.json`
-  - `atelier-script`: all guides, tools: true
-  - `atelier-voice`: all guides, tools: true
-  - `atelier-mix`: all guides, tools: true
+  - `deck-script`: all guides, tools: true
+  - `deck-voice`: all guides, tools: true
+  - `deck-mix`: all guides, tools: true
 
 **Content requirements:**
 - `writing-for-the-ear` carries over careeros `plugin/skills/voice/SKILL.md` "Writing for the ear" and the script-format rules, adapted and credited:
@@ -284,11 +284,11 @@
 - `ethics-licensing` summarises OpenRAIL-M, the CC rules and disclosure.
 - `setup` covers the ask-once install flow.
 - Each SKILL.md has: when to use (trigger phrases across domains), a routing table to the guides, the exact commands, exit-code handling, the untrusted-data rule for fetched metadata, and a hand-off between the three skills (script → voice → mix).
-  - `atelier-voice` owns `produce.mjs` for whole renders.
-  - `atelier-mix` owns sound search and re-mixing an existing `timeline.json`.
+  - `deck-voice` owns `produce.mjs` for whole renders.
+  - `deck-mix` owns sound search and re-mixing an existing `timeline.json`.
 
 - [ ] `npm run sync && npm run check` clean.
-- [ ] Commit `feat(audio): library guides and atelier-script/voice/mix skills`.
+- [ ] Commit `feat(audio): library guides and deck-script/voice/mix skills`.
 
 ### Task 10: Preset tuning + showcase examples + README
 
@@ -316,12 +316,12 @@
 - `claude plugin validate .` passes.
 - Bump the marketplace `metadata.version` to 0.2.0.
 - Push `feat/audio-plugin` and fast-forward `main`. The repo stays PRIVATE.
-- Run `claude plugin marketplace update agentatelier && claude plugin install audio@agentatelier`.
+- Run `claude plugin marketplace update agentskilldeck && claude plugin install audio@agentskilldeck`.
 - Smoke test: from the installed skill dir, `node scripts/produce.mjs examples/...` and `node scripts/setup.mjs --check`.
 
 ### Task 12: Your own voice — recorded lines + free local cloning (owner request, controller-added; NO Voice Builder)
 
-**Files:** Create `tools/record.mjs`, `tools/lib/recorder.mjs`, `tools/lib/voices.mjs`, tests; modify `tools/engine/synth.py`, `lib/plan.mjs`, `lib/render.mjs`/`produce.mjs`, `library/casting.md`, `library/ethics-licensing.md`, new `library/your-voice.md`, SKILL.md of atelier-voice.
+**Files:** Create `tools/record.mjs`, `tools/lib/recorder.mjs`, `tools/lib/voices.mjs`, tests; modify `tools/engine/synth.py`, `lib/plan.mjs`, `lib/render.mjs`/`produce.mjs`, `library/casting.md`, `library/ethics-licensing.md`, new `library/your-voice.md`, SKILL.md of deck-voice.
 
 **Interfaces:**
 - Cast voice forms: preset `F1..M5`; custom style `voice: ./path/style.json` (Supertonic Voice Builder export; `synth.py` uses `get_voice_style_from_path`; validate JSON shape, clear error otherwise); recorded `voice: record` (the user speaks this character's lines).
@@ -337,9 +337,9 @@
 - No Voice Builder anywhere. Remove `voice: ./style.json` from scope.
 - Two input paths, agent asks the user which: (a) live mic via `record.mjs`; (b) existing file via `record.mjs --from <file>` (wav/mp3/m4a/aac/flac/ogg; ffmpeg converts).
 - One-take mode: `record.mjs <script> --speaker NAME --one-take [--from file]` — user reads all of that speaker's lines in one go; split by ASR word timestamps aligned to the script lines (word-level alignment, tolerate small misreads; report lines with WER > 0.15 and offer per-line re-record).
-- Cloning: `record.mjs --reference --name me [--from file]` stores a 10–60 s cleaned reference in `~/.agentatelier/voices/me/` (+ consent.json); cast `voice: clone:me`. Engine `clone` = Chatterbox (MIT) in `~/.agentatelier/venv-clone` (installed only on first clone use, ask once; setup.mjs --check reports it). Worker `engine/clone.py` with the same JSON job protocol as synth.py (mode synth; item gains `ref_path`, `exaggeration`). Map our delivery presets to Chatterbox `exaggeration`/`cfg_weight`; QA/retakes/timeline unchanged. Keep the PerTh watermark on. If Chatterbox cannot install, implement the OpenVoice V2 converter path instead and report.
+- Cloning: `record.mjs --reference --name me [--from file]` stores a 10–60 s cleaned reference in `~/.agentskilldeck/voices/me/` (+ consent.json); cast `voice: clone:me`. Engine `clone` = Chatterbox (MIT) in `~/.agentskilldeck/venv-clone` (installed only on first clone use, ask once; setup.mjs --check reports it). Worker `engine/clone.py` with the same JSON job protocol as synth.py (mode synth; item gains `ref_path`, `exaggeration`). Map our delivery presets to Chatterbox `exaggeration`/`cfg_weight`; QA/retakes/timeline unchanged. Keep the PerTh watermark on. If Chatterbox cannot install, implement the OpenVoice V2 converter path instead and report.
 
-**Task 12 amendment 2 (controller, from lab spike ~/Project/agentatelier-lab/clone, binding):**
+**Task 12 amendment 2 (controller, from lab spike ~/Project/agentskilldeck-lab/clone, binding):**
 - `clone:<name>` voices = Supertonic synth (base voice chosen by reference gender/pitch: measure the reference's median f0 and pick the nearest preset from the voice table) → Chatterbox **VC** (`chatterbox.vc.ChatterboxVC.generate(src_wav, target_voice_path=ref)`) → QA on the converted audio. Measured on M-series MPS: VC load 28 s, ~2 s compute per 1 s audio; transcripts exact. Full Chatterbox TTS rejected as default (hallucinated words at exaggeration 0.9, 7–12× slower); Turbo fails on MPS (float64).
 - Clone venv setup: `pip install chatterbox-tts==0.1.7 "setuptools<81"` (perth watermarker needs pkg_resources); save with soundfile (torchaudio.save needs torchcodec). Device mps → cpu fallback. Keep the PerTh watermark (ChatterboxVC applies it).
 - Worker `engine/clone.py`: mode `convert`, items `{id, src_path, ref_path, out}` → `{id, path, duration_s}`; same JSON-lines protocol and progress as synth.py. Batch one process per produce run.

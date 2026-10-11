@@ -71,5 +71,5 @@ test('fetchText throws ServiceError naming the source after retries exhausted', 
 
 test('default cache dir is per-user', async () => {
   const { DEFAULT_CACHE } = await import('../lib/http.mjs');
-  assert.equal(DEFAULT_CACHE, join(tmpdir(), `agentatelier-cache-${process.getuid?.() ?? 'user'}`));
+  assert.equal(DEFAULT_CACHE, join(tmpdir(), `agentskilldeck-cache-${process.getuid?.() ?? 'user'}`));
 });

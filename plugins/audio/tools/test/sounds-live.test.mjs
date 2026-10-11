@@ -9,7 +9,7 @@ test('live: "rain" returns an allowed result whose download URL resolves', { ski
   const s = results[0];
   assert.ok(isAllowed(s.license), s.license);
   assert.match(s.download_url, /^https:\/\//);
-  const res = await fetch(s.download_url, { headers: { range: 'bytes=0-1023', 'user-agent': 'agentatelier' }, signal: AbortSignal.timeout(20000) });
+  const res = await fetch(s.download_url, { headers: { range: 'bytes=0-1023', 'user-agent': 'agentskilldeck' }, signal: AbortSignal.timeout(20000) });
   assert.ok(res.status === 200 || res.status === 206, `HTTP ${res.status}`);
   assert.doesNotMatch(res.headers.get('content-type') ?? '', /text\/html/);
   await res.body?.cancel();

@@ -1,6 +1,6 @@
-# agentatelier `audio` plugin — design
+# agentskilldeck `audio` plugin — design
 
-Date: 2026-10-10 · Status: draft for owner review · Marketplace: agentatelier (private until the owner publishes)
+Date: 2026-10-10 · Status: draft for owner review · Marketplace: agentskilldeck (private until the owner publishes)
 
 ## 1. Goal
 
@@ -15,7 +15,7 @@ that a listener would not mistake for a robotic TTS demo.
 
 ## 2. What we learned (evidence, 2026-10-10)
 
-### 2.1 Supertonic 3 (engine), measured in `~/Project/agentatelier-lab`
+### 2.1 Supertonic 3 (engine), measured in `~/Project/agentskilldeck-lab`
 
 - `pip install supertonic` (v1.3.1). The model is ~400 MB in `~/.cache/supertonic3/`. Code is MIT; the weights are OpenRAIL-M (no impersonation without consent, no harmful use, attribution). The upstream repo is archived, so pin the version.
 - API: `synthesize(text, voice_style, lang, speed 0.7–2.0, total_steps 5–12, max_chunk_length, silence_duration)`. Output is 44.1 kHz mono. Voices are F1–F5 and M1–M5. 31 languages plus `na`. Diffusion sampling uses numpy's random generator, so `np.random.seed(n)` gives a different take.
@@ -34,7 +34,7 @@ that a listener would not mistake for a robotic TTS demo.
 | tag glued to a word (`worked<breath>`) | spoken |
 
 - Even working tags are faint (≈0–0.3 s of extra sound). Conclusion: **the engine's tags are hints, not performances.**
-- Emotion test: 14 delivery presets × 2 voices × 2 lines (`agentatelier-lab/emotions/index.html`). Speed, phrasing, punctuation and gain/EQ carry emotion. Owner listening ratings decide the shipped presets.
+- Emotion test: 14 delivery presets × 2 voices × 2 lines (`agentskilldeck-lab/emotions/index.html`). Speed, phrasing, punctuation and gain/EQ carry emotion. Owner listening ratings decide the shipped presets.
 
 ### 2.2 Competitors
 
@@ -76,9 +76,9 @@ Ideas we adopt:
 plugins/audio/
   .claude-plugin/plugin.json
   skills/
-    atelier-script/   SKILL.md + reference/   write for the ear, per domain; emotion direction; script format
-    atelier-voice/    SKILL.md + reference/ + scripts/   cast, audition, render, QA
-    atelier-mix/      SKILL.md + reference/ + scripts/   find sounds, mix, master, deliver
+    deck-script/   SKILL.md + reference/   write for the ear, per domain; emotion direction; script format
+    deck-voice/    SKILL.md + reference/ + scripts/   cast, audition, render, QA
+    deck-mix/      SKILL.md + reference/ + scripts/   find sounds, mix, master, deliver
   library/            guides (synced into skills like the ui plugin): script-format, domains, delivery,
                       casting, nonverbal, sound-sourcing, mixing, mastering, captions, ethics-licensing
   tools/              Node ≥18 ESM, no deps: parse, plan, sounds, mix, qa, deliver, setup
@@ -145,7 +145,7 @@ Each is a recipe:
 - gain and EQ/compression applied to that line's clip
 - pre/post pause
 
-The tuned values come from the owner's ratings of the lab clips. `atelier-script` teaches the phrasing half, because the words carry most of the emotion. Honest labelling: "delivery presets", not "emotional TTS".
+The tuned values come from the owner's ratings of the lab clips. `deck-script` teaches the phrasing half, because the words carry most of the emotion. Honest labelling: "delivery presets", not "emotional TTS".
 
 ## 7. Nonverbals (fix for the spoken-tag bug)
 
@@ -215,10 +215,10 @@ How they appear:
 ## 10. Setup and install policy
 
 - On first use the agent runs `setup.mjs --check`. If anything is missing, it asks the user once and then installs:
-  - the venv at `~/.agentatelier/venv` (supertonic==1.3.1, faster-whisper);
+  - the venv at `~/.agentskilldeck/venv` (supertonic==1.3.1, faster-whisper);
   - the model download (~400 MB plus ~150 MB for whisper base);
   - ffmpeg via the package manager.
-- The answer is remembered in `~/.agentatelier/config.json`.
+- The answer is remembered in `~/.agentskilldeck/config.json`.
 - **Draft fallback:** macOS `say` (or `espeak-ng` on Linux) for timing drafts, labelled "draft voice" in output and `qa.json`. It is never used for a final render unless the user says so.
 
 ## 11. Ethics and licensing

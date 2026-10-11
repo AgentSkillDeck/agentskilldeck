@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/optimize.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/optimize.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Optimize
 
 Use this guide when an interface is slow or janky: slow first load, layout shift, laggy input, dropped frames during scroll or animation, or heavy bundles and images.

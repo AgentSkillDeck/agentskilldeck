@@ -1,5 +1,5 @@
 {
- "pack": "agentatelier audio: bundled nonverbal clips",
+ "pack": "agentskilldeck audio: bundled nonverbal clips",
  "built_on": "2026-10-10",
  "license_policy": "Only CC0 1.0 or Public Domain Mark clips, or clips generated with ffmpeg (breath and sigh only, when no CC0 recording exists). No attribution is legally required, but every source is credited here.",
  "selection": "Two clips per tag per gender from Openverse searches '<gender> <tag>' (license=cc0; plus 'man crying' and 'man laughing'), chosen by title, tags and duration. Each item's license was re-checked on the Openverse detail endpoint and on the Freesound landing page (an item whose page did not show CC0 was skipped).",

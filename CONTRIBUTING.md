@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping. agentatelier has no runtime or test dependencies; you need Node 18 or later and nothing else. The npm scripts assume a POSIX shell (macOS, Linux or WSL on Windows).
+Thanks for helping. agentskilldeck has no runtime or test dependencies; you need Node 18 or later and nothing else. The npm scripts assume a POSIX shell (macOS, Linux or WSL on Windows).
 
 ## Where to edit
 

@@ -1,4 +1,4 @@
-# agentatelier
+# AgentSkillDeck
 
 Open plugins for coding agents, one domain per plugin. `audio` makes finished, multi-voice audio on your own machine; `ui` designs, reviews and matches interfaces. Every skill is plain Markdown plus small dependency-free scripts.
 
@@ -8,13 +8,13 @@ Open plugins for coding agents, one domain per plugin. `audio` makes finished, m
 - [Skills at a glance](#skills-at-a-glance)
 - [Audio plugin](#audio-plugin)
   - [Setup](#setup)
-  - Skills: [`atelier-script`](#atelier-script) · [`atelier-voice`](#atelier-voice) · [`atelier-mix`](#atelier-mix)
+  - Skills: [`deck-script`](#deck-script) · [`deck-voice`](#deck-voice) · [`deck-mix`](#deck-mix)
   - [Your own voice](#your-own-voice)
   - [Listen: eight examples](#listen)
   - [How it compares](#how-it-compares)
   - [The Supertonic tag bug, and our fix](#the-supertonic-tag-bug-and-our-fix)
 - [UI plugin](#ui-plugin)
-  - Skills: [`atelier-design`](#atelier-design) · [`atelier-review`](#atelier-review) · [`atelier-radar`](#atelier-radar) · [`atelier-match`](#atelier-match)
+  - Skills: [`deck-design`](#deck-design) · [`deck-review`](#deck-review) · [`deck-radar`](#deck-radar) · [`deck-match`](#deck-match)
   - [The guide library](#the-guide-library)
   - [The two scripts](#the-two-scripts)
   - [How it differs from uizze and Impeccable](#how-it-differs-from-uizze-and-impeccable)
@@ -25,24 +25,24 @@ Open plugins for coding agents, one domain per plugin. `audio` makes finished, m
 Add the marketplace once, then install the plugins you want:
 
 ```text
-/plugin marketplace add JKL404/agentatelier
-/plugin install audio@agentatelier
-/plugin install ui@agentatelier
+/plugin marketplace add AgentSkillDeck/agentskilldeck
+/plugin install audio@agentskilldeck
+/plugin install ui@agentskilldeck
 ```
 
-A single UI skill also installs on its own with the `skills` CLI: `npx skills add JKL404/agentatelier --skill atelier-design` (swap the name for the others). Requires Node 18 or later; the audio plugin also needs Python 3.10 or later and ffmpeg.
+A single UI skill also installs on its own with the `skills` CLI: `npx skills add AgentSkillDeck/agentskilldeck --skill deck-design` (swap the name for the others). Requires Node 18 or later; the audio plugin also needs Python 3.10 or later and ffmpeg.
 
 ## Skills at a glance
 
 | Plugin | Skill | Use it to | Example prompt |
 |---|---|---|---|
-| audio | [`atelier-script`](#atelier-script) | Write scripts for the ear: narration, lessons, podcasts, drama, ads, meditations, kids' stories | "Turn this article into a 60-second narration for a calm female voice." |
-| audio | [`atelier-voice`](#atelier-voice) | Render the script on-device: cast, emotions, QA, mix, captions; your own voice | "Make an audiobook of chapter one with a different voice for Holmes." |
-| audio | [`atelier-mix`](#atelier-mix) | Find licensed sound, place cues, remix and re-master | "Add rain behind the second scene and duck the music under the voices." |
-| ui | [`atelier-design`](#atelier-design) | Design, build, redesign or polish web, iOS and Android interfaces | "Redesign our billing settings page so the current plan and invoices are easy to scan." |
-| ui | [`atelier-review`](#atelier-review) | Critique, audit or gate a built interface before it ships | "Review the onboarding flow before we ship. Is it ready, and does it look generic?" |
-| ui | [`atelier-radar`](#atelier-radar) | Answer one UI question with evidence from design systems | "How do design systems handle a destructive confirmation dialog?" |
-| ui | [`atelier-match`](#atelier-match) | Recreate a screenshot or mockup as a 1:1 working UI | "Build this screenshot as a React page and match it exactly." |
+| audio | [`deck-script`](#deck-script) | Write scripts for the ear: narration, lessons, podcasts, drama, ads, meditations, kids' stories | "Turn this article into a 60-second narration for a calm female voice." |
+| audio | [`deck-voice`](#deck-voice) | Render the script on-device: cast, emotions, QA, mix, captions; your own voice | "Make an audiobook of chapter one with a different voice for Holmes." |
+| audio | [`deck-mix`](#deck-mix) | Find licensed sound, place cues, remix and re-master | "Add rain behind the second scene and duck the music under the voices." |
+| ui | [`deck-design`](#deck-design) | Design, build, redesign or polish web, iOS and Android interfaces | "Redesign our billing settings page so the current plan and invoices are easy to scan." |
+| ui | [`deck-review`](#deck-review) | Critique, audit or gate a built interface before it ships | "Review the onboarding flow before we ship. Is it ready, and does it look generic?" |
+| ui | [`deck-radar`](#deck-radar) | Answer one UI question with evidence from design systems | "How do design systems handle a destructive confirmation dialog?" |
+| ui | [`deck-match`](#deck-match) | Recreate a screenshot or mockup as a 1:1 working UI | "Build this screenshot as a React page and match it exactly." |
 
 ## Audio plugin
 
@@ -52,19 +52,19 @@ Out come `mix.mp3`/`mix.wav`, per-speaker stems, `timeline.json` with word timin
 
 ### Setup
 
-On first use the agent runs `setup.mjs --check` and, if anything is missing, asks you once before installing: a Python environment at `~/.agentatelier/venv` with Supertonic 3 and faster-whisper (about 550 MB of models, downloaded once, then everything runs offline), and it tells you the one command to install ffmpeg if you do not have it (the tools never run a package manager themselves). It asks once before installing; when you say yes, the install records it in `~/.agentatelier/config.json` and later sessions see the check pass. A no is not stored: the agent renders timing drafts with the system voice for that conversation. Requires Node 18 or later and Python 3.10 or later.
+On first use the agent runs `setup.mjs --check` and, if anything is missing, asks you once before installing: a Python environment at `~/.agentskilldeck/venv` with Supertonic 3 and faster-whisper (about 550 MB of models, downloaded once, then everything runs offline), and it tells you the one command to install ffmpeg if you do not have it (the tools never run a package manager themselves). It asks once before installing; when you say yes, the install records it in `~/.agentskilldeck/config.json` and later sessions see the check pass. A no is not stored: the agent renders timing drafts with the system voice for that conversation. Requires Node 18 or later and Python 3.10 or later.
 
 ### Skills
 
-The three skills hand work to each other: write with `atelier-script`, render with `atelier-voice`, then shape the sound with `atelier-mix`. All three ship the same thirteen guides (script format, writing for the ear, domains, delivery, nonverbals, casting, sound sourcing, mixing, mastering, captions, setup, your voice, ethics and licensing) and the same scripts.
+The three skills hand work to each other: write with `deck-script`, render with `deck-voice`, then shape the sound with `deck-mix`. All three ship the same thirteen guides (script format, writing for the ear, domains, delivery, nonverbals, casting, sound sourcing, mixing, mastering, captions, setup, your voice, ethics and licensing) and the same scripts.
 
-#### `atelier-script`
+#### `deck-script`
 
 Writes words for the ear in the `*.audio.md` format the pipeline renders: one speaker turn per line (`NAME (emotion, modifier): text`), cues such as `[scene:]`, `[ambience:]`, `[sfx:]`, `[music:]` and `[pause 1.5]` on their own lines. It budgets about 2.5 words per second, picks one of ten domain structures (lesson, audiobook, drama, podcast, playbook, ad, meditation, kids, language, video voiceover) and one of 14 delivery presets per line, and writes the phrasing that carries the emotion.
 
 > "Script a 30-second ad for our coffee app, two voices, upbeat." · "Add emotion to this dialogue." · "Adapt this chapter for audio."
 
-#### `atelier-voice`
+#### `deck-voice`
 
 Renders a script on your machine with Supertonic 3: ten voices (F1–F5, M1–M5, measured for pitch and pace), 31 languages, the delivery presets, native laughs and spliced CC0 nonverbals. Every line is transcribed and re-rendered if it misreads, skips a word or speaks a tag; then it mixes, masters to the domain's loudness and writes stems, captions, `timeline.json`, `audio_meta.json` and `CREDITS.md`. It also owns setup, auditions and your own voice.
 
@@ -76,7 +76,7 @@ node scripts/produce.mjs /abs/story.audio.md --out /abs/out/final
 
 > "Read this aloud." · "Which voice should the narrator be?" · "Redo line 12." · "Use my voice for the narrator."
 
-#### `atelier-mix`
+#### `deck-mix`
 
 Finds sound effects, ambience and music licensed CC0 or CC BY (Openverse and Wikimedia Commons by default; Freesound with your free token, Internet Archive on request), places them as cues, and remixes or re-masters a rendered piece from its `timeline.json` and stems: levels, fades, ducking, the voice carve, ACX for audiobooks, and the credits each sound needs.
 
@@ -160,27 +160,27 @@ The `ui` plugin gives Claude Code (and any agent that reads Agent Skills) four d
 
 ### Skills
 
-`atelier-design`, `atelier-review` and `atelier-match` each ship the full guide library and both scripts. `atelier-radar` ships the scripts and the reference policy only.
+`deck-design`, `deck-review` and `deck-match` each ship the full guide library and both scripts. `deck-radar` ships the scripts and the reference policy only.
 
-#### `atelier-design`
+#### `deck-design`
 
 Design, build, redesign or polish web, iOS and Android interfaces. It routes to the right guide: new work, operational screens, polish, bolder, quieter, typography, colour, layout, motion, hardening and more.
 
 > "Redesign our billing settings page so the current plan, payment method and invoices are easy to scan. Reuse our components."
 
-#### `atelier-review`
+#### `deck-review`
 
 Critique, audit or run a pre-ship finish gate on a built interface. Read-only unless you ask for fixes. Returns a pass/fail verdict against the brief, findings ordered by user impact with evidence and the smallest fix, and a list of what could not be verified.
 
 > "Review the onboarding flow in `app/onboarding` before we ship. Is it ready, and does it look generic?"
 
-#### `atelier-radar`
+#### `deck-radar`
 
 Answer one focused UI question with evidence from established design systems (Material, Apple HIG, Polaris, Carbon, Fluent, GOV.UK and others), or look up a specific font or icon, then return to the task.
 
 > "How do design systems handle a destructive confirmation dialog on web? I need to decide whether to require typing the name."
 
-#### `atelier-match`
+#### `deck-match`
 
 Recreate a screenshot, mockup or design export as a 1:1 working UI, then render, compare against the image and correct.
 
@@ -269,19 +269,19 @@ Next: Open the page with your browser tool (screenshot it if you can), inspect t
 
 ### How it differs from uizze and Impeccable
 
-agentatelier builds directly on both projects (see Credits), and both are good. The differences are factual:
+agentskilldeck builds directly on both projects (see Credits), and both are good. The differences are factual:
 
 - **Search is free and local.** The uizze skills are free, but live reference and material search goes through its paid MCP service with an agent token. Here, font, icon, animated-icon and component-kit search calls public APIs directly from a local script, and design-system reference search runs offline from a bundled index. What we do not have: uizze's index of 800,000+ real product screens. Our references are design-system documentation, not screenshots of shipped apps.
-- **Engine-free.** Impeccable installs a CLI and offers live browser iteration and 59 deterministic detector rules. agentatelier keeps Impeccable's engine-free design guidance and replaces the engine steps with checks the agent runs with its own tools (rendering in the host browser or simulator, source greps, the project's own tests). If you want the detector rules or live mode, Impeccable has them and we do not.
-- **24 guides instead of 8.** The uizze skills share 8 reference guides plus a reference policy. agentatelier keeps every one of their instructions and adds 15 more adapted from Impeccable (typography, colour, layout, motion, hardening, copy, onboarding, critique, adaptation, performance, Android, bolder, quieter, delight, shape), then harmonises vocabulary and numeric defaults across all 24.
-- **Distinct skills with clear jobs.** Build (`atelier-design`), judge (`atelier-review`, read-only by default), look up evidence (`atelier-radar`) and match an image (`atelier-match`). Each skill states when to use it and when to hand off to another.
+- **Engine-free.** Impeccable installs a CLI and offers live browser iteration and 59 deterministic detector rules. agentskilldeck keeps Impeccable's engine-free design guidance and replaces the engine steps with checks the agent runs with its own tools (rendering in the host browser or simulator, source greps, the project's own tests). If you want the detector rules or live mode, Impeccable has them and we do not.
+- **24 guides instead of 8.** The uizze skills share 8 reference guides plus a reference policy. agentskilldeck keeps every one of their instructions and adds 15 more adapted from Impeccable (typography, colour, layout, motion, hardening, copy, onboarding, critique, adaptation, performance, Android, bolder, quieter, delight, shape), then harmonises vocabulary and numeric defaults across all 24.
+- **Distinct skills with clear jobs.** Build (`deck-design`), judge (`deck-review`, read-only by default), look up evidence (`deck-radar`) and match an image (`deck-match`). Each skill states when to use it and when to hand off to another.
 
 ## Privacy
 
 No account, no API key, no server, no telemetry.
 
-- **UI:** only your query terms go to the public APIs below; `references.mjs` makes no network requests. Catalogue responses are cached for 24 hours in a per-user temp folder (`agentatelier-cache-<uid>`); requests time out after 8 seconds and are retried once.
-- **Audio:** voices, transcription and cloning run on your machine. The network is used for the one-time model downloads (Supertonic 3 and faster-whisper from Hugging Face; Chatterbox only if you enable cloning) and for sound searches, which send only your query to the sound sources below. Recordings and voice references stay in your project and `~/.agentatelier/voices`, in owner-only folders.
+- **UI:** only your query terms go to the public APIs below; `references.mjs` makes no network requests. Catalogue responses are cached for 24 hours in a per-user temp folder (`agentskilldeck-cache-<uid>`); requests time out after 8 seconds and are retried once.
+- **Audio:** voices, transcription and cloning run on your machine. The network is used for the one-time model downloads (Supertonic 3 and faster-whisper from Hugging Face; Chatterbox only if you enable cloning) and for sound searches, which send only your query to the sound sources below. Recordings and voice references stay in your project and `~/.agentskilldeck/voices`, in owner-only folders.
 
 ## Data sources
 
@@ -301,7 +301,7 @@ No account, no API key, no server, no telemetry.
 
 ## Credits
 
-agentatelier adapts and builds on:
+agentskilldeck adapts and builds on:
 
 - [Impeccable](https://github.com/pbakaus/impeccable) by Paul Bakaus (Apache-2.0): the source of most of the design guides.
 - [uizze](https://github.com/uizze/uizze) skills (Apache-2.0 and MIT): the source of the four SKILL.md workflows and eight core guides.

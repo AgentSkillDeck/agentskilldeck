@@ -12,11 +12,11 @@ Sounds:
 - "Wooden door creaking" by TheBuilder15 (https://freesound.org/people/TheBuilder15/sounds/367052), CC0 1.0 (public domain dedication, no attribution required) (faded)
 - "Melancholic piano music" by ZHRØ (https://freesound.org/people/ZHR%C3%98/sounds/623426), CC0 1.0 (public domain dedication, no attribution required) (faded)
 
-Generated sounds: no attribution required (made with ffmpeg by agentatelier).
+Generated sounds: no attribution required (made with ffmpeg by agentskilldeck).
 
 ## About this example
 
-Original script (agentatelier). Three voices with per-line delivery presets over wind, sea and thunder. ELI's small laugh is the voice's own (two joined native laugh tags); MAYA's sigh and ELI's breath are bundled CC0 clips, set 5.2 dB and 4.6 dB under the line's speech.
+Original script (agentskilldeck). Three voices with per-line delivery presets over wind, sea and thunder. ELI's small laugh is the voice's own (two joined native laugh tags); MAYA's sigh and ELI's breath are bundled CC0 clips, set 5.2 dB and 4.6 dB under the line's speech.
 
 - Rendered by `produce.mjs` on 2026-10-11 with Supertonic 3 (supertonic 1.3.1); QA clean (13 segments).
 - `mix.mp3`: re-encoded from mix.wav at 112 kbps CBR to stay under 1 MB (produce.mjs writes LAME VBR quality 2) (decoded true peak -0.98 dBTP, sample peak -0.98 dBFS).

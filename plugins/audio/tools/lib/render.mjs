@@ -26,17 +26,17 @@ export function exitCodeFor(e) {
 }
 
 // Which voice engine renders this run. `engine` ({python, script}) overrides
-// discovery (tests, AGENTATELIER_ENGINE_SCRIPT); otherwise the venv must have
+// discovery (tests, AGENTSKILLDECK_ENGINE_SCRIPT); otherwise the venv must have
 // supertonic + faster-whisper, unless the user asked for a draft.
 // clone: the run has clone:<name> voices, so the clone engine (engine.clone =
-// {python, script}) is needed too: `engine.clone`, AGENTATELIER_CLONE_SCRIPT
-// (+ AGENTATELIER_CLONE_PYTHON), or the clone venv.
+// {python, script}) is needed too: `engine.clone`, AGENTSKILLDECK_CLONE_SCRIPT
+// (+ AGENTSKILLDECK_CLONE_PYTHON), or the clone venv.
 export async function selectEngine({ draft, engine, env = process.env, checkSetupImpl, clone = false, checkCloneImpl }) {
   if (draft) return { mode: 'draft' };
   let e;
-  const script = engine?.script ?? env.AGENTATELIER_ENGINE_SCRIPT;
+  const script = engine?.script ?? env.AGENTSKILLDECK_ENGINE_SCRIPT;
   if (script) {
-    const python = engine?.python ?? env.AGENTATELIER_ENGINE_PYTHON ?? (script.endsWith('.py') ? undefined : process.execPath);
+    const python = engine?.python ?? env.AGENTSKILLDECK_ENGINE_PYTHON ?? (script.endsWith('.py') ? undefined : process.execPath);
     e = { mode: 'engine', script, python };
   } else {
     const check = checkSetupImpl ?? (await import('../setup.mjs')).checkSetup;
@@ -61,8 +61,8 @@ export function openCloneSession(engine, env = process.env) {
 
 async function selectClone({ engine, env, checkCloneImpl }) {
   if (engine?.clone) return { ...engine.clone };
-  const script = env.AGENTATELIER_CLONE_SCRIPT;
-  if (script) return { script, python: env.AGENTATELIER_CLONE_PYTHON ?? (script.endsWith('.py') ? venvPython(cloneVenvDir({ env })) : process.execPath) };
+  const script = env.AGENTSKILLDECK_CLONE_SCRIPT;
+  if (script) return { script, python: env.AGENTSKILLDECK_CLONE_PYTHON ?? (script.endsWith('.py') ? venvPython(cloneVenvDir({ env })) : process.execPath) };
   const check = checkCloneImpl ?? (await import('../setup.mjs')).checkCloneSetup;
   const s = await check({ env });
   if (!s.ok) throw new SetupError(CLONE_INSTALL_HINT);

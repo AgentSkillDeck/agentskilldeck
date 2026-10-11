@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/delight.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/delight.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Delight
 
 Use this guide when an interface works but feels anonymous, and the task asks for personality, polish or memorable moments.

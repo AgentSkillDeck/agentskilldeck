@@ -1,0 +1,130 @@
+agentskilldeck
+Copyright 2026 agentskilldeck contributors
+
+This product includes material adapted from the following works.
+
+-------------------------------------------------------------------------------
+Impeccable — https://github.com/pbakaus/impeccable
+Copyright 2025 Paul Bakaus. Licensed under the Apache License, Version 2.0.
+Design guides in plugins/ui/library (copied into each skill's reference/
+folder) marked "Adapted from Impeccable" are modified adaptations; see
+docs/ATTRIBUTION.md for source commits and changes. This is an adaptation,
+not an endorsement by the original author.
+
+-------------------------------------------------------------------------------
+Uizze skills — https://github.com/uizze/uizze
+Copyright (c) 2026 UIZZE.
+The SKILL.md files of deck-design, deck-review, deck-radar and
+deck-match adapt the uizze ui-design, anti-ui-slop, ui-radar and image-to-ui
+skills respectively.
+The ui-design and anti-ui-slop playbooks are licensed under the Apache License,
+Version 2.0 (themselves adapted from Impeccable). The ui-radar and image-to-ui
+skills are licensed under the MIT License:
+
+MIT License
+
+Copyright (c) 2026 UIZZE
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Platform Design Skills — https://github.com/ehmo/platform-design-skills
+Author: ehmo. Licensed under the MIT License. iOS and Android guidance reaches
+this project through Impeccable's adaptation.
+
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Supertonic 3 — https://github.com/supertone-inc/supertonic
+The audio plugin (plugins/audio) drives the Supertonic 3 text-to-speech engine,
+installed on the user's machine by setup.mjs (pip package supertonic==1.3.1;
+model from https://huggingface.co/Supertone/supertonic-3). Neither the engine
+code nor the model weights are redistributed in this repository. The example
+audio in plugins/audio/examples was generated with it.
+
+Engine code: MIT License, Copyright (c) 2025 Supertone Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Model weights: BigScience Open RAIL-M License (dated August 18, 2022), as
+published with the model by Supertone Inc.:
+https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE
+Its use-based restrictions (Attachment A) apply to anything generated with the
+model, including the examples here. They are summarised in the audio plugin's
+ethics-licensing guide; the full text above governs.
+
+-------------------------------------------------------------------------------
+careeros voice skill (same author as agentskilldeck)
+The audio guides "writing for the ear", script format, nonverbal, casting and
+captions adapt guidance from the careeros voice skill, which is owned by the
+author of this project and used with permission. That skill in turn credits
+its narration timing and pacing guidance to HyperFrames (Apache-2.0).
+
+-------------------------------------------------------------------------------
+HyperFrames — https://github.com/heygen-com/hyperframes
+Licensed under the Apache License, Version 2.0. The audio plugin adopts ideas
+from HyperFrames' hyperframes-audio and media-use skills (voiceover carve with
+sidechain ducking, a separate music stem, and the audio_meta.json hand-off
+shape). No HyperFrames text or code is copied; where a guide paraphrases an
+idea, docs/coverage/audio-sources.md says so.
+
+-------------------------------------------------------------------------------
+Bundled nonverbal clips and example sounds
+plugins/audio/tools/assets/nonverbal contains CC0 1.0 recordings from
+Freesound (via Openverse); every file's source, creator and license check is
+listed in its CREDITS.json. The example renders use further CC0 and CC BY
+sounds, each credited in that example's CREDITS.md. The audiobook example
+reads a public-domain text (Arthur Conan Doyle, "A Study in Scarlet", 1887,
+via Project Gutenberg).

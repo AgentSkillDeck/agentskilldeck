@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/colorize.md @ d631a88 (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/colorize.md @ d631a88 (Apache-2.0); modified by agentskilldeck -->
 # Colorize
 
 Use this guide when an interface needs colour to carry hierarchy, meaning or atmosphere: grey screens where state is hard to read, a palette with no roles, contrast failures, or a missing dark theme.

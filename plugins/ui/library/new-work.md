@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/new-work.md @ d631a88 (Apache-2.0) and uizze ui-design reference/new-work.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/new-work.md @ d631a88 (Apache-2.0) and uizze ui-design reference/new-work.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # New interface or major redesign
 
 Use this guide when building a new screen, page, flow or product, or when the user has approved replacing an existing visual language.

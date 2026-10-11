@@ -1,4 +1,4 @@
-"""agentatelier audio engine worker (Supertonic 3 TTS + faster-whisper ASR).
+"""agentskilldeck audio engine worker (Supertonic 3 TTS + faster-whisper ASR).
 
 Protocol: one JSON job on stdin, one JSON result per line on stdout, progress as
 JSON lines {"progress": i, "total": n} on stderr. Models load once per process.

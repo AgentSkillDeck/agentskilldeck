@@ -40,7 +40,7 @@ test('plugins/audio/.claude-plugin/plugin.json parses', async () => {
 }
 
 // produce.mjs and audition.mjs (task 8): a full render through the fake engine
-// (AGENTATELIER_ENGINE_SCRIPT) with offline sounds, from both paths, plus usage errors.
+// (AGENTSKILLDECK_ENGINE_SCRIPT) with offline sounds, from both paths, plus usage errors.
 {
   const { spawnSync } = await import('node:child_process');
   const { mkdtempSync, symlinkSync, rmSync, writeFileSync, existsSync, readFileSync } = await import('node:fs');
@@ -56,7 +56,7 @@ test('plugins/audio/.claude-plugin/plugin.json parses', async () => {
   after(() => rmSync(root, { recursive: true, force: true }));
   const script = join(root, 'my script.audio.md');
   writeFileSync(script, '---\npreset: drama\ncast:\n  ELI: { voice: M3 }\n---\nELI (scared): <breath> Did you hear that?\nNARRATOR: Nobody answered.\n');
-  const env = { ...process.env, AGENTATELIER_ENGINE_SCRIPT: fake };
+  const env = { ...process.env, AGENTSKILLDECK_ENGINE_SCRIPT: fake };
   const ffmpegOk = spawnSync('ffmpeg', ['-version']).status === 0 || existsSync('/opt/homebrew/bin/ffmpeg');
   for (const [label, dir] of [['real path', toolsDir], ['symlinked dir', linkedTools]]) {
     test(`produce.mjs and audition.mjs run as CLIs via ${label}`, { skip: !ffmpegOk && 'ffmpeg not installed', timeout: 120_000 }, () => {
@@ -103,14 +103,14 @@ test('plugins/audio/.claude-plugin/plugin.json parses', async () => {
   }
   for (const [label, dir] of [['real path', toolsDir], ['symlinked dir', linkedTools]]) {
     test(`record.mjs runs as a CLI via ${label}`, { skip: ffmpegOk ? false : 'ffmpeg not found' }, () => {
-      const env = { ...process.env, AGENTATELIER_VOICES: join(root, `voices ${label}`) };
+      const env = { ...process.env, AGENTSKILLDECK_VOICES: join(root, `voices ${label}`) };
       const none = spawnSync(process.execPath, [join(dir, 'record.mjs')], { encoding: 'utf8', timeout: 20_000, env });
       assert.equal(none.status, 1);
       assert.match(none.stderr, /Usage:/);
       const r = spawnSync(process.execPath, [join(dir, 'record.mjs'), '--reference', '--name', 'me', '--from', ref, '--consent', 'This is my own voice', '--json'], { encoding: 'utf8', timeout: 120_000, env });
       assert.equal(r.status, 0, r.stderr);
       assert.equal(JSON.parse(r.stdout).base, 'M4');
-      assert.equal(JSON.parse(readFileSync(join(env.AGENTATELIER_VOICES, 'me', 'voice.json'), 'utf8')).base, 'M4');
+      assert.equal(JSON.parse(readFileSync(join(env.AGENTSKILLDECK_VOICES, 'me', 'voice.json'), 'utf8')).base, 'M4');
     });
   }
 }

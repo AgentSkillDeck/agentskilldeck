@@ -100,14 +100,14 @@ test('runWorker refuses synth text the engine would speak as words', async () =>
   assert.throws(() => assertEngineText('<groan> <groan> <groan> Ugh.'), /engine text/, 'groan is never native');
 });
 
-test('findPython prefers AGENTATELIER_VENV, then ~/.agentatelier/venv, then python3 on PATH', () => {
+test('findPython prefers AGENTSKILLDECK_VENV, then ~/.agentskilldeck/venv, then python3 on PATH', () => {
   const home = join(tmp, 'home');
   const venv = join(tmp, 'custom venv');
   const bin = join(tmp, 'pathbin');
-  for (const d of [join(home, '.agentatelier', 'venv', 'bin'), join(venv, 'bin'), bin]) mkdirSync(d, { recursive: true });
-  for (const f of [join(home, '.agentatelier', 'venv', 'bin', 'python'), join(venv, 'bin', 'python'), join(bin, 'python3')]) writeFileSync(f, '', { mode: 0o755 });
-  assert.equal(findPython({ env: { AGENTATELIER_VENV: venv, PATH: bin }, home }), join(venv, 'bin', 'python'));
-  assert.equal(findPython({ env: { PATH: bin }, home }), join(home, '.agentatelier', 'venv', 'bin', 'python'));
+  for (const d of [join(home, '.agentskilldeck', 'venv', 'bin'), join(venv, 'bin'), bin]) mkdirSync(d, { recursive: true });
+  for (const f of [join(home, '.agentskilldeck', 'venv', 'bin', 'python'), join(venv, 'bin', 'python'), join(bin, 'python3')]) writeFileSync(f, '', { mode: 0o755 });
+  assert.equal(findPython({ env: { AGENTSKILLDECK_VENV: venv, PATH: bin }, home }), join(venv, 'bin', 'python'));
+  assert.equal(findPython({ env: { PATH: bin }, home }), join(home, '.agentskilldeck', 'venv', 'bin', 'python'));
   assert.equal(findPython({ env: { PATH: bin }, home: join(tmp, 'nohome') }), join(bin, 'python3'));
   assert.equal(findPython({ env: { PATH: '' }, home: join(tmp, 'nohome') }), null);
 });

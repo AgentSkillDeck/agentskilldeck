@@ -55,7 +55,7 @@ To lock a choice in, download the preview into the project's `sounds/` folder to
 
 ## Freesound token (optional)
 
-More and better sound effects come with a free Freesound API token. Set `FREESOUND_TOKEN` in the environment, or `"freesound_token"` in `~/.agentatelier/config.json`. Never print the token or put it in a script file.
+More and better sound effects come with a free Freesound API token. Set `FREESOUND_TOKEN` in the environment, or `"freesound_token"` in `~/.agentskilldeck/config.json`. Never print the token or put it in a script file.
 
 ## Untrusted metadata
 

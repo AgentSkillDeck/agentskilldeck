@@ -12,7 +12,7 @@ export class ServiceError extends Error {
 }
 
 // Per-user so a shared /tmp never mixes (or lets others tamper with) one user's cache.
-export const DEFAULT_CACHE = join(tmpdir(), `agentatelier-cache-${process.getuid?.() ?? 'user'}`);
+export const DEFAULT_CACHE = join(tmpdir(), `agentskilldeck-cache-${process.getuid?.() ?? 'user'}`);
 
 async function readCache(file, ttl) {
   try {
@@ -41,7 +41,7 @@ async function fetchWithCache(url, {
     try {
       res = await fetchImpl(url, {
         signal: AbortSignal.timeout(timeoutMs),
-        headers: { 'user-agent': 'agentatelier', accept },
+        headers: { 'user-agent': 'agentskilldeck', accept },
       });
     } catch (e) {
       lastError = e?.name === 'TimeoutError' ? `timed out after ${timeoutMs} ms` : (e?.message ?? String(e));

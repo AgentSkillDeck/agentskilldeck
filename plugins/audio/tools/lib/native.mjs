@@ -22,9 +22,9 @@ export const CANDIDATE_TAGS = Object.keys(NATIVE_STACK);
 export const NATIVE_TABLE_PATH = fileURLToPath(new URL('../assets/native-tags.json', import.meta.url));
 
 const cache = new Map();
-// The table in force: AGENTATELIER_NATIVE_TAGS=<file> overrides the bundled one.
+// The table in force: AGENTSKILLDECK_NATIVE_TAGS=<file> overrides the bundled one.
 export function loadNativeTable({ env = process.env, path } = {}) {
-  const file = path ?? env.AGENTATELIER_NATIVE_TAGS ?? NATIVE_TABLE_PATH;
+  const file = path ?? env.AGENTSKILLDECK_NATIVE_TAGS ?? NATIVE_TABLE_PATH;
   if (!cache.has(file)) {
     let table;
     try { table = JSON.parse(readFileSync(file, 'utf8')); } catch { table = {}; }
@@ -34,8 +34,8 @@ export function loadNativeTable({ env = process.env, path } = {}) {
 }
 
 // The synth voice a row belongs to: "M3" → M3; a clone ("clone:me") uses its
-// base voice's row, read from ~/.agentatelier/voices/me/voice.json
-// (AGENTATELIER_VOICES overrides the store), or the explicit "clone:me@F2";
+// base voice's row, read from ~/.agentskilldeck/voices/me/voice.json
+// (AGENTSKILLDECK_VOICES overrides the store), or the explicit "clone:me@F2";
 // a recorded voice ("record") and an unknown clone have none (null); no voice
 // is the engine default M1.
 export function baseVoice(voice, { env = process.env } = {}) {

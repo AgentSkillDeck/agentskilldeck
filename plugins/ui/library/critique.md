@@ -1,4 +1,4 @@
-<!-- Adapted from Impeccable reference/critique.md @ d631a88 (Apache-2.0) and uizze ui-design reference/craft.md @ 146928e (Apache-2.0); modified by agentatelier -->
+<!-- Adapted from Impeccable reference/critique.md @ d631a88 (Apache-2.0) and uizze ui-design reference/craft.md @ 146928e (Apache-2.0); modified by agentskilldeck -->
 # Critique
 
 Use this guide when asked to review, critique or judge a built interface (a screen, flow or whole surface) against its brief before anyone changes it.
