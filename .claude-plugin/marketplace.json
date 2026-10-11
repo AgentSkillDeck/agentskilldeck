@@ -13,7 +13,7 @@
       "name": "ui",
       "source": "./plugins/ui",
       "description": "Product-specific UI design, review, references and 1:1 image matching, with free font/icon/component search.",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "license": "Apache-2.0",
       "keywords": [
         "ui",
