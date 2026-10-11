@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 0 144 128" role="img" aria-label="AgentSkillDeck">
+  <g transform="rotate(-24 64 112)"><rect x="38" y="24" width="52" height="72" rx="10" fill="#3d4e78"/></g>
+  <g transform="rotate(24 64 112)"><rect x="38" y="24" width="52" height="72" rx="10" fill="#6077a8"/></g>
+  <rect x="38" y="22" width="52" height="72" rx="10" fill="#f3f4f6" stroke="#0b0f17" stroke-width="3"/>
+  <path d="M64 38 L68.5 53.5 L84 58 L68.5 62.5 L64 78 L59.5 62.5 L44 58 L59.5 53.5 Z" fill="#ffb224"/>
+</svg>

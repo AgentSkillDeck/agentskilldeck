@@ -1,4 +1,9 @@
-# AgentSkillDeck
+<h1>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="brand/wordmark-dark.svg">
+    <img src="brand/wordmark-light.svg" alt="AgentSkillDeck" width="360">
+  </picture>
+</h1>
 
 Open plugins for coding agents, one domain per plugin. `audio` makes finished, multi-voice audio on your own machine; `ui` designs, reviews and matches interfaces. Every skill is plain Markdown plus small dependency-free scripts.
 
