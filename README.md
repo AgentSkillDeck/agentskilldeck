@@ -33,6 +33,7 @@ Add the marketplace once, then install the plugins you want:
 /plugin marketplace add AgentSkillDeck/skills
 /plugin install audio@agentskilldeck
 /plugin install ui@agentskilldeck
+/plugin install keepwatch@agentskilldeck   # Mac: needs the Keepwatch app
 ```
 
 A single UI skill also installs on its own with the `skills` CLI: `npx skills add AgentSkillDeck/skills --skill deck-design` (swap the name for the others). Requires Node 18 or later; the audio plugin also needs Python 3.10 or later and ffmpeg.
@@ -48,6 +49,7 @@ A single UI skill also installs on its own with the `skills` CLI: `npx skills ad
 | ui | [`deck-review`](#deck-review) | Critique, audit or gate a built interface before it ships | "Review the onboarding flow before we ship. Is it ready, and does it look generic?" |
 | ui | [`deck-radar`](#deck-radar) | Answer one UI question with evidence from design systems | "How do design systems handle a destructive confirmation dialog?" |
 | ui | [`deck-match`](#deck-match) | Recreate a screenshot or mockup as a 1:1 working UI | "Build this screenshot as a React page and match it exactly." |
+| keepwatch | [`keepwatch`](https://github.com/AgentSkillDeck/keepwatch/blob/main/skills/keepwatch/SKILL.md) | Keep the Mac awake while agent work runs; list and stop agent sessions; check power, mic, camera and security (macOS, needs the [Keepwatch app](https://agentskilldeck.github.io/keepwatch/)) | "Keep my Mac awake while the test suite runs, then let it sleep." |
 
 ## Audio plugin
 

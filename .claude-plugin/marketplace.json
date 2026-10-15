@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Open plugins for coding agents: design, engineering and more.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
@@ -39,6 +39,23 @@
         "sound"
       ],
       "category": "development"
+    },
+    {
+      "name": "keepwatch",
+      "source": {
+        "source": "github",
+        "repo": "AgentSkillDeck/keepwatch"
+      },
+      "description": "Keep a Mac awake while agents run, list and stop agent sessions, and check power, mic, camera, security and memory. Needs the free Keepwatch app for macOS.",
+      "version": "0.2.0",
+      "license": "Apache-2.0",
+      "keywords": [
+        "macos",
+        "keep-awake",
+        "agents",
+        "privacy"
+      ],
+      "category": "productivity"
     }
   ]
 }
