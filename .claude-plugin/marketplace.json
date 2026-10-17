@@ -47,7 +47,7 @@
         "repo": "AgentSkillDeck/keepwatch"
       },
       "description": "Keep a Mac awake while agents run, list and stop agent sessions, and check power, mic, camera, security and memory. Needs the free Keepwatch app for macOS.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "license": "Apache-2.0",
       "keywords": [
         "macos",
